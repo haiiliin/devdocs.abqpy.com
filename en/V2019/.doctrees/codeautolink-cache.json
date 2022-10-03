@@ -1,0 +1,610 @@
+{
+  "getting_started": [
+    {
+      "source": "def run():\n    abaqus = 'abaqus'\n    if 'ABAQUS_BAT_PATH' in os.environ.keys():\n        abaqus = os.environ['ABAQUS_BAT_PATH']\n\n    filePath = os.path.abspath(__main__.__file__)\n    args = \" \".join(sys.argv[1:])\n\n    os.system(f\"{abaqus} cae noGUI={filePath} -- {args}\")\n\n    sys.exit(0)",
+      "names": [],
+      "example": {
+        "document": "getting_started",
+        "ref_id": "how-does-this-package-work",
+        "headings": [
+          "Getting Started",
+          "How does this package work?"
+        ]
+      },
+      "doc_lineno": 79
+    }
+  ],
+  "index": [],
+  "reference/kernel": [],
+  "reference/kernel/cae_display_preferences": [],
+  "reference/kernel/input": [],
+  "reference/kernel/kernel": [],
+  "reference/kernel/messaging": [],
+  "reference/kernel/text_representation": [],
+  "reference/kernel/utility": [],
+  "reference/mdb": [],
+  "reference/mdb/annotation": [],
+  "reference/mdb/edit_mesh": [],
+  "reference/mdb/job": [],
+  "reference/mdb/model": [],
+  "reference/mdb/model/adaptivity": [],
+  "reference/mdb/model/amplitude": [],
+  "reference/mdb/model/assembly": [],
+  "reference/mdb/model/bc": [],
+  "reference/mdb/model/calibration": [],
+  "reference/mdb/model/constraint": [],
+  "reference/mdb/model/field": [],
+  "reference/mdb/model/filter": [],
+  "reference/mdb/model/interaction": [],
+  "reference/mdb/model/load": [],
+  "reference/mdb/model/material": [],
+  "reference/mdb/model/mesh": [],
+  "reference/mdb/model/optimization": [],
+  "reference/mdb/model/output": [],
+  "reference/mdb/model/part": [],
+  "reference/mdb/model/part_assembly": [],
+  "reference/mdb/model/part_assembly/datum": [],
+  "reference/mdb/model/part_assembly/engineering": [],
+  "reference/mdb/model/part_assembly/feature": [],
+  "reference/mdb/model/part_assembly/geometry": [],
+  "reference/mdb/model/part_assembly/region": [],
+  "reference/mdb/model/predefined": [],
+  "reference/mdb/model/profile": [],
+  "reference/mdb/model/property": [],
+  "reference/mdb/model/section": [],
+  "reference/mdb/model/section/connector": [],
+  "reference/mdb/model/sketcher": [],
+  "reference/mdb/model/step": [],
+  "reference/mdb/model/step/step_miscellaneous": [],
+  "reference/odb": [],
+  "reference/session": [],
+  "reference/session/animation": [],
+  "reference/session/canvas": [],
+  "reference/session/display": [],
+  "reference/session/display_options": [],
+  "reference/session/field_report": [],
+  "reference/session/odb_display": [],
+  "reference/session/path": [],
+  "reference/session/plot_options": [],
+  "reference/session/print": [],
+  "reference/session/xy": [],
+  "references": [],
+  "summary": [],
+  "summary/header": [
+    {
+      "source": "from abaqus import *\nfrom abaqusConstants import *\nfrom driverUtils import *",
+      "names": [],
+      "example": {
+        "document": "summary/header",
+        "ref_id": "header-of-the-python-script",
+        "headings": [
+          "Header of the Python script"
+        ]
+      },
+      "doc_lineno": 7
+    },
+    {
+      "source": "executeOnCaeStartup()",
+      "names": [],
+      "example": {
+        "document": "summary/header",
+        "ref_id": "header-of-the-python-script",
+        "headings": [
+          "Header of the Python script"
+        ]
+      },
+      "doc_lineno": 25
+    }
+  ],
+  "summary/mdb": [],
+  "summary/mdb/job": [],
+  "summary/mdb/model": [],
+  "summary/mdb/model/adaptivity": [],
+  "summary/mdb/model/amplitude": [],
+  "summary/mdb/model/assembly": [],
+  "summary/mdb/model/bc": [],
+  "summary/mdb/model/calibration": [],
+  "summary/mdb/model/constraint": [],
+  "summary/mdb/model/field": [],
+  "summary/mdb/model/filter": [],
+  "summary/mdb/model/interaction": [],
+  "summary/mdb/model/load": [],
+  "summary/mdb/model/material": [],
+  "summary/mdb/model/optimization": [],
+  "summary/mdb/model/output": [],
+  "summary/mdb/model/part": [],
+  "summary/mdb/model/predefined": [],
+  "summary/mdb/model/profile": [],
+  "summary/mdb/model/property": [],
+  "summary/mdb/model/section": [],
+  "summary/mdb/model/section/connector": [],
+  "summary/mdb/model/sketcher": [],
+  "summary/mdb/model/step": [],
+  "summary/mdb/model/step/step_miscellaneous": [],
+  "summary/odb": [],
+  "summary/session": [],
+  "templates": [
+    {
+      "source": ">>> from abqpy.template import CompressionTemplate\n>>> template = CompressionTemplate(params='params.toml')\n>>> template.write('script.py')\n>>> template = CompressionTemplate()\n>>> template.write('script.py', param1=1, param2=2)",
+      "names": [
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "CompressionTemplate"
+          ],
+          "code_str": "CompressionTemplate",
+          "lineno": 1,
+          "end_lineno": 1,
+          "context": "import_target",
+          "resolved_location": "abqpy.template.CompressionTemplate"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "CompressionTemplate"
+          ],
+          "code_str": "CompressionTemplate",
+          "lineno": 2,
+          "end_lineno": 2,
+          "context": "none",
+          "resolved_location": "abqpy.template.CompressionTemplate"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "CompressionTemplate",
+            "()"
+          ],
+          "code_str": "template",
+          "lineno": 2,
+          "end_lineno": 2,
+          "context": "none",
+          "resolved_location": "abqpy.template.CompressionTemplate"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "CompressionTemplate",
+            "()",
+            "write"
+          ],
+          "code_str": "template.write",
+          "lineno": 3,
+          "end_lineno": 3,
+          "context": "none",
+          "resolved_location": "abqpy.template.ScriptTemplate.write"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "CompressionTemplate"
+          ],
+          "code_str": "CompressionTemplate",
+          "lineno": 4,
+          "end_lineno": 4,
+          "context": "none",
+          "resolved_location": "abqpy.template.CompressionTemplate"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "CompressionTemplate",
+            "()"
+          ],
+          "code_str": "template",
+          "lineno": 4,
+          "end_lineno": 4,
+          "context": "none",
+          "resolved_location": "abqpy.template.CompressionTemplate"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "CompressionTemplate",
+            "()",
+            "write"
+          ],
+          "code_str": "template.write",
+          "lineno": 5,
+          "end_lineno": 5,
+          "context": "none",
+          "resolved_location": "abqpy.template.ScriptTemplate.write"
+        }
+      ],
+      "example": {
+        "document": "templates",
+        "ref_id": "compressiontemplate",
+        "headings": [
+          "Templates",
+          "CompressionTemplate"
+        ]
+      },
+      "doc_lineno": 9
+    },
+    {
+      "source": "from abaqus import *\nfrom abaqusConstants import *\nfrom caeModules import *\nfrom driverUtils import *\n\nexecuteOnCaeStartup()\n\n# Model\nmodel = mdb.models['Model-1']\n\n# Part\nsketch = model.ConstrainedSketch(name='sketch', sheetSize=1.0)\nsketch.rectangle((0, 0), ({{ width }}, {{ length }}))\npart = model.Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_BODY)\npart.BaseSolidExtrude(sketch=sketch, depth={{ height }})\n\n# Create sets\npart.Set(name='set-all', cells=part.cells.findAt(coordinates=(({{ width / 2 }}, {{ length / 2 }}, {{ height / 2 }}),)))\npart.Set(name='set-bottom', faces=part.faces.findAt(coordinates=(({{ width / 2 }}, {{ length / 2 }}, 0.0),)))\npart.Set(name='set-top', faces=part.faces.findAt(coordinates=(({{ width / 2 }}, {{ length / 2 }}, {{ height }}),)))\npart.Surface(name='surface-top',\n             side1Faces=part.faces.findAt(coordinates=(({{ width / 2 }}, {{ length / 2 }}, {{ height }}),)))\n\n# Assembly\nmodel.rootAssembly.DatumCsysByDefault(CARTESIAN)\nmodel.rootAssembly.Instance(name='instance', part=part, dependent=ON)\n\n# Material\nmaterial = model.Material(name='material')\nmaterial.Elastic(table=(({{ E }}, {{ mu }}),))\nmaterial.Density(table=(({{ rho }},),))\n\n# Section\nmodel.HomogeneousSolidSection(name='section', material='material', thickness=None)\npart.SectionAssignment(region=part.sets['set-all'], sectionName='section')\n\n# Step\nstep = model.StaticStep(name='Step-1', previous='Initial', description='',\n                        timePeriod={{ timePeriod }}, timeIncrementationMethod=AUTOMATIC,\n                        maxNumInc={{ maxNumInc }}, initialInc= {{ initialInc }},\n                        minInc= {{ minInc }}, maxInc= {{ maxInc }})\n\n# Output request\nfield = model.FieldOutputRequest('F-Output-1', createStepName='Step-1',\n                                 variables=('S', 'E', 'U'))\n\n# Boundary condition\nbottom_instance = model.rootAssembly.instances['instance'].sets['set-bottom']\nbc = model.DisplacementBC(name='BC-1', createStepName='Initial',\n                          region=bottom_instance, u3=SET)\n\n# Load\ntop_instance = model.rootAssembly.instances['instance'].surfaces['surface-top']\npressure = model.Pressure('pressure', createStepName='Step-1', region=top_instance,\n                          magnitude={{ pressure }})\n\n# Mesh\nelem1 = mesh.ElemType(elemCode=C3D8R)\nelem2 = mesh.ElemType(elemCode=C3D6)\nelem3 = mesh.ElemType(elemCode=C3D4)\npart.setElementType(regions=(part.cells,), elemTypes=(elem1, elem2, elem3))\npart.seedPart(size={{ mesh_size }})\npart.generateMesh()\n\n# Job\njob = mdb.Job(name='{{ job_name }}', model='Model-1')\njob.writeInput()\n\n# Submit the job\njob.submit()\njob.waitForCompletion()\n\n# Save abaqus model\nmdb.saveAs('compression.cae')",
+      "names": [
+        {
+          "import_components": [
+            "caeModules",
+            "mesh",
+            "ElemType"
+          ],
+          "code_str": "mesh.ElemType",
+          "lineno": 58,
+          "end_lineno": 58,
+          "context": "none",
+          "resolved_location": "abaqus.Mesh.ElemType.ElemType"
+        },
+        {
+          "import_components": [
+            "caeModules",
+            "mesh",
+            "ElemType",
+            "()"
+          ],
+          "code_str": "elem1",
+          "lineno": 58,
+          "end_lineno": 58,
+          "context": "none",
+          "resolved_location": "abaqus.Mesh.ElemType.ElemType"
+        },
+        {
+          "import_components": [
+            "caeModules",
+            "mesh",
+            "ElemType"
+          ],
+          "code_str": "mesh.ElemType",
+          "lineno": 59,
+          "end_lineno": 59,
+          "context": "none",
+          "resolved_location": "abaqus.Mesh.ElemType.ElemType"
+        },
+        {
+          "import_components": [
+            "caeModules",
+            "mesh",
+            "ElemType",
+            "()"
+          ],
+          "code_str": "elem2",
+          "lineno": 59,
+          "end_lineno": 59,
+          "context": "none",
+          "resolved_location": "abaqus.Mesh.ElemType.ElemType"
+        },
+        {
+          "import_components": [
+            "caeModules",
+            "mesh",
+            "ElemType"
+          ],
+          "code_str": "mesh.ElemType",
+          "lineno": 60,
+          "end_lineno": 60,
+          "context": "none",
+          "resolved_location": "abaqus.Mesh.ElemType.ElemType"
+        },
+        {
+          "import_components": [
+            "caeModules",
+            "mesh",
+            "ElemType",
+            "()"
+          ],
+          "code_str": "elem3",
+          "lineno": 60,
+          "end_lineno": 60,
+          "context": "none",
+          "resolved_location": "abaqus.Mesh.ElemType.ElemType"
+        },
+        {
+          "import_components": [
+            "caeModules",
+            "mesh",
+            "ElemType",
+            "()"
+          ],
+          "code_str": "elem1",
+          "lineno": 61,
+          "end_lineno": 61,
+          "context": "none",
+          "resolved_location": "abaqus.Mesh.ElemType.ElemType"
+        },
+        {
+          "import_components": [
+            "caeModules",
+            "mesh",
+            "ElemType",
+            "()"
+          ],
+          "code_str": "elem2",
+          "lineno": 61,
+          "end_lineno": 61,
+          "context": "none",
+          "resolved_location": "abaqus.Mesh.ElemType.ElemType"
+        },
+        {
+          "import_components": [
+            "caeModules",
+            "mesh",
+            "ElemType",
+            "()"
+          ],
+          "code_str": "elem3",
+          "lineno": 61,
+          "end_lineno": 61,
+          "context": "none",
+          "resolved_location": "abaqus.Mesh.ElemType.ElemType"
+        },
+        {
+          "import_components": [
+            "abaqus",
+            "mdb",
+            "Job",
+            "()"
+          ],
+          "code_str": "job",
+          "lineno": 66,
+          "end_lineno": 66,
+          "context": "none",
+          "resolved_location": "abaqus.Job.ModelJob.ModelJob"
+        },
+        {
+          "import_components": [
+            "abaqus",
+            "mdb",
+            "Job",
+            "()",
+            "writeInput"
+          ],
+          "code_str": "job.writeInput",
+          "lineno": 67,
+          "end_lineno": 67,
+          "context": "none",
+          "resolved_location": "abaqus.Job.ModelJob.ModelJob.writeInput"
+        },
+        {
+          "import_components": [
+            "abaqus",
+            "mdb",
+            "Job",
+            "()",
+            "submit"
+          ],
+          "code_str": "job.submit",
+          "lineno": 70,
+          "end_lineno": 70,
+          "context": "none",
+          "resolved_location": "abaqus.Job.Job.Job.submit"
+        },
+        {
+          "import_components": [
+            "abaqus",
+            "mdb",
+            "Job",
+            "()",
+            "waitForCompletion"
+          ],
+          "code_str": "job.waitForCompletion",
+          "lineno": 71,
+          "end_lineno": 71,
+          "context": "none",
+          "resolved_location": "abaqus.Job.Job.Job.waitForCompletion"
+        },
+        {
+          "import_components": [
+            "abaqus",
+            "mdb",
+            "saveAs"
+          ],
+          "code_str": "mdb.saveAs",
+          "lineno": 74,
+          "end_lineno": 74,
+          "context": "none",
+          "resolved_location": "abaqus.Mdb.MdbBase.MdbBase.saveAs"
+        }
+      ],
+      "example": {
+        "document": "templates",
+        "ref_id": "compressiontemplate",
+        "headings": [
+          "Templates",
+          "CompressionTemplate",
+          "Details of required parameters",
+          "User config file (A toml or json file)",
+          "The template source code"
+        ]
+      },
+      "doc_lineno": 100
+    },
+    {
+      "source": ">>> from abqpy.template import ScriptTemplate\n>>> template = ScriptTemplate(template='template.py', config='config.toml', params='params.toml')\n>>> template.write('script.py')\n>>> template = ScriptTemplate(template='template.py', config='config.toml')\n>>> template.write('script.py', param1=1, param2=2)",
+      "names": [
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "ScriptTemplate"
+          ],
+          "code_str": "ScriptTemplate",
+          "lineno": 1,
+          "end_lineno": 1,
+          "context": "import_target",
+          "resolved_location": "abqpy.template.ScriptTemplate"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "ScriptTemplate"
+          ],
+          "code_str": "ScriptTemplate",
+          "lineno": 2,
+          "end_lineno": 2,
+          "context": "none",
+          "resolved_location": "abqpy.template.ScriptTemplate"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "ScriptTemplate",
+            "()"
+          ],
+          "code_str": "template",
+          "lineno": 2,
+          "end_lineno": 2,
+          "context": "none",
+          "resolved_location": "abqpy.template.ScriptTemplate"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "ScriptTemplate",
+            "()",
+            "write"
+          ],
+          "code_str": "template.write",
+          "lineno": 3,
+          "end_lineno": 3,
+          "context": "none",
+          "resolved_location": "abqpy.template.ScriptTemplate.write"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "ScriptTemplate"
+          ],
+          "code_str": "ScriptTemplate",
+          "lineno": 4,
+          "end_lineno": 4,
+          "context": "none",
+          "resolved_location": "abqpy.template.ScriptTemplate"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "ScriptTemplate",
+            "()"
+          ],
+          "code_str": "template",
+          "lineno": 4,
+          "end_lineno": 4,
+          "context": "none",
+          "resolved_location": "abqpy.template.ScriptTemplate"
+        },
+        {
+          "import_components": [
+            "abqpy",
+            "template",
+            "ScriptTemplate",
+            "()",
+            "write"
+          ],
+          "code_str": "template.write",
+          "lineno": 5,
+          "end_lineno": 5,
+          "context": "none",
+          "resolved_location": "abqpy.template.ScriptTemplate.write"
+        }
+      ],
+      "example": {
+        "document": "templates",
+        "ref_id": "scripttemplate",
+        "headings": [
+          "Templates",
+          "CompressionTemplate",
+          "Details of required parameters",
+          "User config file (A toml or json file)",
+          "The template source code",
+          "ScriptTemplate"
+        ]
+      },
+      "doc_lineno": 9
+    }
+  ],
+  "tutorials": [],
+  "user": [],
+  "user/about": [],
+  "user/about/examples": [],
+  "user/about/examples/create-part": [],
+  "user/about/examples/read-output": [],
+  "user/about/examples/summary": [],
+  "user/about/interact": [],
+  "user/about/interface": [],
+  "user/environment": [],
+  "user/environment/about": [],
+  "user/environment/pde-basics": [],
+  "user/environment/use-pde": [],
+  "user/examples": [],
+  "user/examples/cantilever": [],
+  "user/examples/plot": [],
+  "user/examples/sensitivity": [],
+  "user/examples/settings": [],
+  "user/output": [],
+  "user/output/cpp": [],
+  "user/output/cpp/about": [],
+  "user/output/cpp/access": [],
+  "user/output/cpp/architecture": [],
+  "user/output/cpp/compile-link": [],
+  "user/output/cpp/computations": [],
+  "user/output/cpp/examples": [],
+  "user/output/cpp/exceptions": [],
+  "user/output/cpp/improve-efficiency": [],
+  "user/output/cpp/need-what-access": [],
+  "user/output/cpp/object-model": [],
+  "user/output/cpp/output-object-model": [],
+  "user/output/cpp/read": [],
+  "user/output/cpp/style": [],
+  "user/output/cpp/utility": [],
+  "user/output/cpp/write": [],
+  "user/output/python": [],
+  "user/output/python/computations": [],
+  "user/output/python/examples": [],
+  "user/output/python/exceptions": [],
+  "user/output/python/execute-script": [],
+  "user/output/python/improve-efficiency": [],
+  "user/output/python/need-what-to-understand": [],
+  "user/output/python/object-model": [],
+  "user/output/python/output-object-model": [],
+  "user/output/python/read": [],
+  "user/output/python/write": [],
+  "user/python": [],
+  "user/python/introduction": [],
+  "user/python/introduction/further-reading": [],
+  "user/python/introduction/oop-basics": [],
+  "user/python/introduction/programming": [],
+  "user/python/introduction/python-abaqus": [],
+  "user/python/introduction/python-basics": [],
+  "user/python/introduction/python-interpreter": [],
+  "user/python/introduction/python-resources": [],
+  "user/python/python-abaqus": [],
+  "user/python/python-abaqus/errors": [],
+  "user/python/python-abaqus/executing": [],
+  "user/python/python-abaqus/extending": [],
+  "user/python/python-abaqus/oop": [],
+  "user/python/python-abaqus/style": [],
+  "user/python/python-abaqus/types": [],
+  "user/python/use-scripts": [],
+  "user/python/use-scripts/environment-file": [],
+  "user/python/use-scripts/interact": [],
+  "user/python/use-scripts/modify-objects": [],
+  "user/python/use-scripts/namespace": [],
+  "user/python/use-scripts/object-model": [],
+  "user/python/use-scripts/sequences": [],
+  "user/python/use-scripts/specify-region": [],
+  "user/python/use-scripts/specify-viewport": [],
+  "user/python/use-scripts/user-input": []
+}
