@@ -1,5 +1,7 @@
 # abqpy Documentation
 
+[![pages-build-deployment](https://github.com/haiiliin/docs.abqpy.com/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/haiiliin/docs.abqpy.com/actions/workflows/pages/pages-build-deployment)
+
 - English (en)
   - [abqpy 2022 English documentation](/en/2022/)
   - [abqpy 2021 English documentation](/en/2021/)
