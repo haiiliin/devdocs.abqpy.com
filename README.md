@@ -1,4 +1,4 @@
-# abqpy Documentation
+# abqpy documentation
 
 [![pages-build-deployment](https://github.com/haiiliin/docs.abqpy.com/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/haiiliin/docs.abqpy.com/actions/workflows/pages/pages-build-deployment)
 
