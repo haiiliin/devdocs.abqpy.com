@@ -32,8 +32,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Exclude directories and/or files from the conversion. These exclusions are relative to 
-# the site's source directory and cannot be outside the source directory.
+# Force inclusion of directories and/or files in the conversion. .htaccess is a good example 
+# since dotfiles are excluded by default.
 include: 
   - _images
   - _static
