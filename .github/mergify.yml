@@ -4,7 +4,7 @@ pull_request_rules:
     conditions:
       - and:
         - label!=conflicts
-        - title~=docs\/\w+\/((main)|(V20\d+))
+        - title~=docs\/((en)|(zh_CN))\/((main)|(V20\d\d))
     actions:
       merge:
         method: squash
