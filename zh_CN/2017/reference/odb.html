@@ -43,8 +43,8 @@
     <script src="../_static/translations.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/odb';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2017';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/_static/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '2017';
         </script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -184,7 +184,7 @@
       <div class="navbar-end-item">
         <div class="version-switcher__container dropdown">
     <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
-        v2017  <!-- this text may get changed later by javascript -->
+        2017  <!-- this text may get changed later by javascript -->
         <span class="caret"></span>
     </button>
     <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
@@ -345,7 +345,7 @@
       <div class="navbar-end-item">
         <div class="version-switcher__container dropdown">
     <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
-        v2017  <!-- this text may get changed later by javascript -->
+        2017  <!-- this text may get changed later by javascript -->
         <span class="caret"></span>
     </button>
     <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
@@ -6327,11 +6327,11 @@ The default value is INPUT.</p></li>
 <li><p><strong>isothermal</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying specify whether the OdbRigidBody can have temperature gradients or
 be isothermal. This is used only for fully coupled thermal-stress analysis The default
 value is ON.</p></li>
-<li><p><strong>elements</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff60bb0f8e0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the element set whose motion is governed by the motion of
+<li><p><strong>elements</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f6228125210&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the element set whose motion is governed by the motion of
 rigid body reference node.</p></li>
-<li><p><strong>tieNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff60bb0ca30&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have both translational and rotational
+<li><p><strong>tieNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f6228110430&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have both translational and rotational
 degrees of freedom associated with the rigid body.</p></li>
-<li><p><strong>pinNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff60bb0e770&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have only translational degrees of
+<li><p><strong>pinNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f6228110be0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have only translational degrees of
 freedom associated with the rigid body.</p></li>
 </ul>
 </dd>
@@ -10661,7 +10661,7 @@ model.</p>
 <dt class="field-odd">参数<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>point</strong> (<a class="reference internal" href="#abaqus.Odb.HistoryPoint.HistoryPoint" title="abaqus.Odb.HistoryPoint.HistoryPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryPoint</span></code></a>) – A <a class="reference internal" href="#abaqus.Odb.HistoryPoint.HistoryPoint" title="abaqus.Odb.HistoryPoint.HistoryPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryPoint</span></code></a> object specifying the point in the model.</p></li>
-<li><p><strong>loadCase</strong> (<a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbLoadCase.OdbLoadCase</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff60bc98be0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a> object specifying a load case in the step.</p></li>
+<li><p><strong>loadCase</strong> (<a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbLoadCase.OdbLoadCase</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f62280012d0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a> object specifying a load case in the step.</p></li>
 </ul>
 </dd>
 <dt class="field-even">返回<span class="colon">:</span></dt>
@@ -10882,7 +10882,7 @@ model.</p>
 <dt class="field-odd">参数<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>point</strong> (<a class="reference internal" href="#abaqus.Odb.HistoryPoint.HistoryPoint" title="abaqus.Odb.HistoryPoint.HistoryPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryPoint</span></code></a>) – A <a class="reference internal" href="#abaqus.Odb.HistoryPoint.HistoryPoint" title="abaqus.Odb.HistoryPoint.HistoryPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryPoint</span></code></a> object specifying the point in the model.</p></li>
-<li><p><strong>loadCase</strong> (<a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbLoadCase.OdbLoadCase</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff60bc98be0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a> object specifying a load case in the step.</p></li>
+<li><p><strong>loadCase</strong> (<a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbLoadCase.OdbLoadCase</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f62280012d0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a> object specifying a load case in the step.</p></li>
 </ul>
 </dd>
 <dt class="field-even">返回<span class="colon">:</span></dt>
