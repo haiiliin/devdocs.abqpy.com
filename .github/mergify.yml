@@ -1,0 +1,28 @@
+pull_request_rules:
+
+  - name: Auto merge updating docs pull request
+    conditions:
+      - and:
+        - label!=conflicts
+        - title~=docs\/\w+\/((latest)|(20\d+))
+    actions:
+      merge:
+        method: squash
+
+  - name: Warn on conflicts
+    conditions:
+      - conflict
+    actions:
+      comment:
+        message: "@{{author}} this pull request is now in conflicts 😩"
+      label:
+        add:
+          - conflicts
+
+  - name: Remove conflicts label if not needed 
+    conditions: 
+      - -conflict 
+    actions: 
+      label: 
+        remove: 
+          - conflicts
