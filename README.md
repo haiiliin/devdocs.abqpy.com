@@ -1,4 +1,4 @@
-# ABQPY Documentation
+# abqpy Documentation
 
 - English (en)
   - [abqpy 2022 English documentation](/en/2022/)
