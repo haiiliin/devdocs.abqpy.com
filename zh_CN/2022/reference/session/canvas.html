@@ -410,6 +410,13 @@
 
   
   <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item">
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
   <p class="bd-links__title" role="heading" aria-level="1">
     Section Navigation
@@ -745,6 +752,8 @@
   </div>
 </nav>
     </div>
+    <div class="sidebar-start-items__item">
+    </div>
   </div>
   
 
@@ -851,49 +860,46 @@
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">layers</span></code></p></td>
 <td><p>A repository of Layer objects specifying the key to the repository is a String with the name of the layer.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">view</span></code></p></td>
-<td><p>A <a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> object specifying the object that controls viewing of the viewport content.</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbDisplay</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbDisplay</span></code></p></td>
 <td><p>An <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay</span></code></a> object specifying the display options for the Odb object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">partDisplay</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">partDisplay</span></code></p></td>
 <td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartDisplayOptions</span></code></a> object specifying the display options for the Part object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">assemblyDisplay</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">assemblyDisplay</span></code></p></td>
 <td><p>An <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssemblyDisplayOptions</span></code></a> object specifying the display options for the Assembly object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewportAnnotationOptions</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewportAnnotationOptions</span></code></p></td>
 <td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">detailPlotOptions</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">detailPlotOptions</span></code></p></td>
 <td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions" title="abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DetailPlotOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotationsToPlot</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotationsToPlot</span></code></p></td>
 <td><p>An <a class="reference internal" href="../mdb/annotation.html#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnotationsToPlotArray</span></code></a> object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleLayers</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleLayers</span></code></p></td>
 <td><p>A tuple of Strings specifying the names of layers that will be displayed in the viewport when <strong>displayMode</strong> = OVERLAY.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentOrigin</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentOrigin</span></code></p></td>
 <td><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters in the canvas coordinate system of the lower left corner of the current viewport, regardless of the value of <strong>windowState</strong>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">iconOrigin</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">iconOrigin</span></code></p></td>
 <td><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters of the lower left corner of the current viewport from a coordinate system having its origin in the lower left corner of the drawing area.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lightOptions</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lightOptions</span></code></p></td>
 <td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageOptions</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageOptions</span></code></p></td>
 <td><p>An <a class="reference internal" href="#abaqus.Canvas.ImageOptions.ImageOptions" title="abaqus.Canvas.ImageOptions.ImageOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movieOptions</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movieOptions</span></code></p></td>
 <td><p>A <a class="reference internal" href="#abaqus.Canvas.MovieOptions.MovieOptions" title="abaqus.Canvas.MovieOptions.MovieOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MovieOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationController</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationController</span></code></p></td>
 <td><p>An AnimationController object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
 <td><p>A tuple of Strings specifying keys to the session.drawings repository.</p></td>
 </tr>
 </tbody>
@@ -1128,49 +1134,46 @@ Viewport object, see Viewport object.</p>
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">layers</span></code></p></td>
 <td><p>A repository of Layer objects specifying the key to the repository is a String with the name of the layer.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">view</span></code></p></td>
-<td><p>A <a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> object specifying the object that controls viewing of the viewport content.</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbDisplay</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbDisplay</span></code></p></td>
 <td><p>An <a class="reference internal" href="odb_display.html#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="abaqus.OdbDisplay.OdbDisplay.OdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbDisplay</span></code></a> object specifying the display options for the Odb object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">partDisplay</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">partDisplay</span></code></p></td>
 <td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions" title="abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PartDisplayOptions</span></code></a> object specifying the display options for the Part object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">assemblyDisplay</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">assemblyDisplay</span></code></p></td>
 <td><p>An <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions" title="abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AssemblyDisplayOptions</span></code></a> object specifying the display options for the Assembly object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewportAnnotationOptions</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewportAnnotationOptions</span></code></p></td>
 <td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">detailPlotOptions</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">detailPlotOptions</span></code></p></td>
 <td><p>A <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions" title="abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DetailPlotOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotationsToPlot</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">annotationsToPlot</span></code></p></td>
 <td><p>An <a class="reference internal" href="../mdb/annotation.html#abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray" title="abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnnotationsToPlotArray</span></code></a> object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleLayers</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">visibleLayers</span></code></p></td>
 <td><p>A tuple of Strings specifying the names of layers that will be displayed in the viewport when <strong>displayMode</strong> = OVERLAY.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentOrigin</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentOrigin</span></code></p></td>
 <td><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters in the canvas coordinate system of the lower left corner of the current viewport, regardless of the value of <strong>windowState</strong>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">iconOrigin</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">iconOrigin</span></code></p></td>
 <td><p>A pair of Floats specifying the <strong>X</strong>- and <strong>Y</strong>-coordinates in millimeters of the lower left corner of the current viewport from a coordinate system having its origin in the lower left corner of the drawing area.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lightOptions</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lightOptions</span></code></p></td>
 <td><p>A <a class="reference internal" href="display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageOptions</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageOptions</span></code></p></td>
 <td><p>An <a class="reference internal" href="#abaqus.Canvas.ImageOptions.ImageOptions" title="abaqus.Canvas.ImageOptions.ImageOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movieOptions</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">movieOptions</span></code></p></td>
 <td><p>A <a class="reference internal" href="#abaqus.Canvas.MovieOptions.MovieOptions" title="abaqus.Canvas.MovieOptions.MovieOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MovieOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationController</span></code></p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationController</span></code></p></td>
 <td><p>An AnimationController object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></p></td>
 <td><p>A tuple of Strings specifying keys to the session.drawings repository.</p></td>
 </tr>
 </tbody>
@@ -1293,6 +1296,13 @@ plot. The default value is zero.</p></li>
 </ul>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">view</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><span class="pre">View</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Annotation/AnnotationViewport.py"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> object specifying the object that controls viewing of the
+viewport content.</p>
 </dd></dl>
 
 </dd></dl>
@@ -2937,7 +2947,7 @@ set to ‘As is’ then translucency will have no effect.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Canvas.ViewportBase.ViewportBase.view">
-<span class="sig-name descname"><span class="pre">view</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.10）"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><span class="pre">View</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Canvas/ViewportBase.py#L285-L287"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.view" title="永久链接至目标">#</a></dt>
+<span class="sig-name descname"><span class="pre">view</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><span class="pre">View</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Canvas/ViewportBase.py"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Canvas.ViewportBase.ViewportBase.view" title="永久链接至目标">#</a></dt>
 <dd><p>A <a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.View.View" title="abaqus.UtilityAndView.View.View"><code class="xref py py-class docutils literal notranslate"><span class="pre">View</span></code></a> object specifying the object that controls viewing of the
 viewport content.</p>
 </dd></dl>
