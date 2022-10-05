@@ -86,6 +86,11 @@
                     </a>
 </li>
 <li class="nav-item">
+<a class="nav-link" href="cli.html">
+                        CLI
+                    </a>
+</li>
+<li class="nav-item">
 <a class="nav-link" href="templates.html">
                         Templates
                     </a>
@@ -95,16 +100,16 @@
                         User’s Guide
                     </a>
 </li>
-<li class="nav-item">
-<a class="nav-link" href="summary.html">
-                        API Summary
-                    </a>
-</li>
 <div class="nav-item dropdown">
 <button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
                     More
                 </button>
 <div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link" href="summary.html">
+                        API Summary
+                    </a>
+</li>
 <li class="nav-item">
 <a class="nav-link" href="references.html">
                         API Reference
@@ -191,6 +196,11 @@
                     </a>
 </li>
 <li class="nav-item">
+<a class="nav-link" href="cli.html">
+                        CLI
+                    </a>
+</li>
+<li class="nav-item">
 <a class="nav-link" href="templates.html">
                         Templates
                     </a>
@@ -200,16 +210,16 @@
                         User’s Guide
                     </a>
 </li>
-<li class="nav-item">
-<a class="nav-link" href="summary.html">
-                        API Summary
-                    </a>
-</li>
 <div class="nav-item dropdown">
 <button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
                     More
                 </button>
 <div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link" href="summary.html">
+                        API Summary
+                    </a>
+</li>
 <li class="nav-item">
 <a class="nav-link" href="references.html">
                         API Reference
@@ -337,13 +347,13 @@
 script (i.e., <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">abaqus</span> <span class="pre">import</span> <span class="pre">*</span></code>), your Python interpreter (not Abaqus Python interpreter) will call this function and use the
 <strong>abaqus</strong> command to submit the script to Abaqus. After it is submitted to Abaqus, <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code>
 will exit the interpreter, because the script will already run in Abaqus Python interpreter.</p>
-<p>In the output script, we might not want to always use the <code class="xref py py-mod docutils literal notranslate"><span class="pre">abaqus</span></code> module, which needs the Abaqus/CAE kernel (and its license),
-but instead the module <code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code> (i.e., <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">odbAccess</span> <span class="pre">import</span> <span class="pre">*</span></code>), which requires only the Abaqus Python interpreter.
-Then another similar <strong>abaqus</strong> command line is needed:</p>
+<p>In the output script, we might not want to always use the <code class="xref py py-mod docutils literal notranslate"><span class="pre">abaqus</span></code> module, because it needs the Abaqus/CAE kernel (and its license).
+Instead, we use the module <code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code> (i.e., <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">odbAccess</span> <span class="pre">import</span> <span class="pre">*</span></code>), which requires only the Abaqus Python interpreter.
+Then, another similar <strong>abaqus</strong> command line is needed:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus python script.py
 </pre></div>
 </div>
-<p>So, <code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code> is also reimplemented to call the <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code> function, and the actual implementation of this function is similar to:</p>
+<p>So, the <code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code> module is also reimplemented to call the <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code> function, and the actual implementation of this function is similar to:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">cae</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
     <span class="n">abaqus</span> <span class="o">=</span> <span class="s1">'abaqus'</span>
     <span class="k">if</span> <span class="s1">'ABAQUS_BAT_PATH'</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
