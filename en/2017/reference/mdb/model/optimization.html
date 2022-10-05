@@ -409,6 +409,13 @@
 
   
   <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item">
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
   <p class="bd-links__title" role="heading" aria-level="1">
     Section Navigation
@@ -738,6 +745,8 @@
 
   </div>
 </nav>
+    </div>
+    <div class="sidebar-start-items__item">
     </div>
   </div>
   
@@ -1665,7 +1674,7 @@ OFF.</p></li>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the geometric restriction repository key.</p></li>
-<li><p><strong>region</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7fd51dd60b50&gt;</span></code>) – A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the region to which the geometric restriction is applied.
+<li><p><strong>region</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7fb8c4ab2aa0&gt;</span></code>) – A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the region to which the geometric restriction is applied.
 When used with a TopologyTask, there is no default value. When used with a ShapeTask,
 the default value is MODEL.</p></li>
 </ul>
@@ -4617,7 +4626,7 @@ the default value is MODEL.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>region</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7fd51dbc60e0&gt;</span></code>) – A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the region to which the geometric restriction is applied.
+<dd class="field-odd"><p><strong>region</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7fb8c2998ac0&gt;</span></code>) – A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the region to which the geometric restriction is applied.
 When used with a TopologyTask, there is no default value. When used with a ShapeTask,
 the default value is MODEL.</p>
 </dd>
