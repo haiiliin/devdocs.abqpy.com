@@ -131,48 +131,19 @@
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../../cli.html">
-                        CLI
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../../templates.html">
-                        Templates
-                    </a>
-                </li>
-                
-
                 <li class="nav-item current active">
                     <a class="nav-link" href="../../user.html">
                         User’s Guide
                     </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="../../summary.html">
-                        API Summary
-                    </a>
-                </li>
-                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../references.html">
-                        API Reference
+                    <a class="nav-link" href="../../api.html">
+                        API References
                     </a>
                 </li>
                 
-                </div>
-            </div>
-            
     </ul>
 </nav>
       </div>
@@ -302,48 +273,19 @@
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../../cli.html">
-                        CLI
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../../templates.html">
-                        Templates
-                    </a>
-                </li>
-                
-
                 <li class="nav-item current active">
                     <a class="nav-link" href="../../user.html">
                         User’s Guide
                     </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="../../summary.html">
-                        API Summary
-                    </a>
-                </li>
-                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../references.html">
-                        API Reference
+                    <a class="nav-link" href="../../api.html">
+                        API References
                     </a>
                 </li>
                 
-                </div>
-            </div>
-            
     </ul>
 </nav>
       </div>
@@ -929,7 +871,7 @@
 </section>
 <section id="the-cantilever-beam-example-script">
 <h2>The cantilever beam example script<a class="headerlink" href="#the-cantilever-beam-example-script" title="Permalink to this heading">#</a></h2>
-<p>The first line of the script, <cite>from abaqus import *</cite>, imports the Mdb and Session objects. The current viewport is <cite>session.viewports[‘Viewport: 1’]</cite>, and the current model is <cite>mdb.models[‘Model-1’]</cite>. Both of these objects are available to the script after you import the <cite>abaqus</cite> module. The second line of the script, <cite>from abaqusConstants import *</cite>, imports the Symbolic Constants defined in the Abaqus Scripting Interface. The script then creates a new model that will contain the cantilever beam example and creates a new viewport in which to display the model and the results of the analysis. For a description of the commands used in this section, see the appropriate sections in the <a class="reference internal" href="../../references.html"><span class="doc">API Reference</span></a>.</p>
+<p>The first line of the script, <cite>from abaqus import *</cite>, imports the Mdb and Session objects. The current viewport is <cite>session.viewports[‘Viewport: 1’]</cite>, and the current model is <cite>mdb.models[‘Model-1’]</cite>. Both of these objects are available to the script after you import the <cite>abaqus</cite> module. The second line of the script, <cite>from abaqusConstants import *</cite>, imports the Symbolic Constants defined in the Abaqus Scripting Interface. The script then creates a new model that will contain the cantilever beam example and creates a new viewport in which to display the model and the results of the analysis. For a description of the commands used in this section, see the appropriate sections in the <a class="reference internal" href="../../references.html"><span class="doc">Class References</span></a>.</p>
 <p>The script then imports the <cite>Part</cite> module. Most of the sections in this example begin with importing the appropriate module, which illustrates how a script can import a module at any time to extend or augment the object model. However, the Abaqus Scripting Interface has a convention that all the required modules are imported at the start of a script; and that convention is followed in other example scripts in this guide.</p>
 <div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">beamExample.py</span>
