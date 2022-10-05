@@ -410,6 +410,13 @@
 
   
   <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item">
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
     <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
   <p class="bd-links__title" role="heading" aria-level="1">
     Section Navigation
@@ -593,6 +600,8 @@
 
   </div>
 </nav>
+    </div>
+    <div class="sidebar-start-items__item">
     </div>
   </div>
   
@@ -2944,7 +2953,7 @@ closed profile.</p>
 <dt class="field-odd">参数<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>sketch</strong> (<a class="reference internal" href="../../../reference/mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a>) – A <a class="reference internal" href="../../../reference/mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object specifying the plane shape to be extruded.</p></li>
-<li><p><strong>depth</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – A Float specifying the extrusion depth. Possible values are 10-5 ≤ <strong>depth</strong> ≤ 105.</p></li>
+<li><p><strong>depth</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – A Float specifying the extrusion depth. Possible values are 10^-5 &lt;= <strong>depth</strong> &lt;= 10^5.</p></li>
 <li><p><strong>draftAngle</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ <strong>draftAngle</strong>
 ≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
 an inner loop will draft inward. The opposite is true for a negative draft angle. The
