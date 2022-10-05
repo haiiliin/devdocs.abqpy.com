@@ -132,48 +132,19 @@
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../cli.html">
-                        CLI
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../templates.html">
-                        Templates
-                    </a>
-                </li>
-                
-
                 <li class="nav-item current active">
                     <a class="nav-link" href="../../../user.html">
                         User’s Guide
                     </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../summary.html">
-                        API Summary
-                    </a>
-                </li>
-                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../../references.html">
-                        API Reference
+                    <a class="nav-link" href="../../../api.html">
+                        API References
                     </a>
                 </li>
                 
-                </div>
-            </div>
-            
     </ul>
 </nav>
       </div>
@@ -303,48 +274,19 @@
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../cli.html">
-                        CLI
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../templates.html">
-                        Templates
-                    </a>
-                </li>
-                
-
                 <li class="nav-item current active">
                     <a class="nav-link" href="../../../user.html">
                         User’s Guide
                     </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../summary.html">
-                        API Summary
-                    </a>
-                </li>
-                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../../references.html">
-                        API Reference
+                    <a class="nav-link" href="../../../api.html">
+                        API References
                     </a>
                 </li>
                 
-                </div>
-            </div>
-            
     </ul>
 </nav>
       </div>
@@ -899,8 +841,8 @@
               
   <section id="abaqus-scripting-interface-documentation-style">
 <h1>Abaqus Scripting Interface documentation style<a class="headerlink" href="#abaqus-scripting-interface-documentation-style" title="此标题的永久链接">#</a></h1>
-<p>This section describes the style that is used to describe a command in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a>. You may want to refer to the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> while you read this section and compare the style of a documented command with the descriptions provided here.</p>
-<p>The following list describes the order in which commands are documented in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a>:</p>
+<p>This section describes the style that is used to describe a command in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a>. You may want to refer to the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> while you read this section and compare the style of a documented command with the descriptions provided here.</p>
+<p>The following list describes the order in which commands are documented in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a>:</p>
 <ul class="simple">
 <li><p>Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, <a class="reference internal" href="../../../reference/session/animation.html"><span class="doc">Animation Options</span></a>, and <a class="reference internal" href="../../../reference/mdb/model/assembly.html"><span class="doc">Assembly</span></a>.</p></li>
 <li><p>Within each chapter the primary objects appear first and are followed by other objects in alphabetical order. For example, in <a class="reference internal" href="../../../reference/mdb/model/mesh.html"><span class="doc">Mesh</span></a> the objects are listed in the following order:</p>
@@ -923,7 +865,7 @@
 </ul>
 <section id="access">
 <h2>Access<a class="headerlink" href="#access" title="此标题的永久链接">#</a></h2>
-<p>The description of each object in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> begins with a section that describes how you access an instance of the object.</p>
+<p>The description of each object in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> begins with a section that describes how you access an instance of the object.</p>
 <p>The following is the access description for the Part object:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="p">.</span><span class="n">parts</span><span class="p">()[</span><span class="n">name</span><span class="p">]</span><span class="w"></span>
 </pre></div>
@@ -958,7 +900,7 @@
 </section>
 <section id="path">
 <h2>Path<a class="headerlink" href="#path" title="此标题的永久链接">#</a></h2>
-<p>A method that creates an object is called a constructor. The Abaqus C++ API uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> includes a path to the command. For example, the following describes the path to the Part constructor:</p>
+<p>A method that creates an object is called a constructor. The Abaqus C++ API uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> includes a path to the command. For example, the following describes the path to the Part constructor:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="p">.</span><span class="n">Part</span><span class="w"></span>
 </pre></div>
 </div>

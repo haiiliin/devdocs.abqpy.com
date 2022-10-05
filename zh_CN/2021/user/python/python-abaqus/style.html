@@ -132,48 +132,19 @@
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../cli.html">
-                        CLI
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../templates.html">
-                        Templates
-                    </a>
-                </li>
-                
-
                 <li class="nav-item current active">
                     <a class="nav-link" href="../../../user.html">
                         User’s Guide
                     </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../summary.html">
-                        API Summary
-                    </a>
-                </li>
-                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../../references.html">
-                        API Reference
+                    <a class="nav-link" href="../../../api.html">
+                        API References
                     </a>
                 </li>
                 
-                </div>
-            </div>
-            
     </ul>
 </nav>
       </div>
@@ -303,48 +274,19 @@
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../cli.html">
-                        CLI
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../templates.html">
-                        Templates
-                    </a>
-                </li>
-                
-
                 <li class="nav-item current active">
                     <a class="nav-link" href="../../../user.html">
                         User’s Guide
                     </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../summary.html">
-                        API Summary
-                    </a>
-                </li>
-                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../../references.html">
-                        API Reference
+                    <a class="nav-link" href="../../../api.html">
+                        API References
                     </a>
                 </li>
                 
-                </div>
-            </div>
-            
     </ul>
 </nav>
       </div>
@@ -899,10 +841,10 @@
               
   <section id="abaqus-scripting-interface-documentation-style">
 <h1>Abaqus Scripting Interface documentation style<a class="headerlink" href="#abaqus-scripting-interface-documentation-style" title="此标题的永久链接">#</a></h1>
-<p>This section describes the style that is used to describe Abaqus Scripting Interface commands. The commands are found in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a>. You may want to refer to the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> while you read this section and compare the style of a documented command with the descriptions provided here.</p>
+<p>This section describes the style that is used to describe Abaqus Scripting Interface commands. The commands are found in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a>. You may want to refer to the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> while you read this section and compare the style of a documented command with the descriptions provided here.</p>
 <section id="how-the-commands-are-ordered">
 <h2>How the commands are ordered<a class="headerlink" href="#how-the-commands-are-ordered" title="此标题的永久链接">#</a></h2>
-<p>The following list describes the order in which commands are documented in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a>:</p>
+<p>The following list describes the order in which commands are documented in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a>:</p>
 <p>Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, Amplitude commands, Animation commands, and Assembly commands.</p>
 <p>Within each chapter the primary objects appear first and are followed by other objects in alphabetical order. For example, in Mesh commands the objects are listed in the following order:</p>
 <ul class="simple">
@@ -925,7 +867,7 @@
 </section>
 <section id="access">
 <h2>Access<a class="headerlink" href="#access" title="此标题的永久链接">#</a></h2>
-<p>The description of each object in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the <cite>import module name</cite> statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:</p>
+<p>The description of each object in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the <cite>import module name</cite> statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:</p>
 <div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
@@ -969,7 +911,7 @@
 </section>
 <section id="path">
 <h2>Path<a class="headerlink" href="#path" title="此标题的永久链接">#</a></h2>
-<p>A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> includes a path to the command. For example, the following describes the path to the Viewport constructor:</p>
+<p>A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> includes a path to the command. For example, the following describes the path to the Viewport constructor:</p>
 <div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">Viewport</span>
 </pre></div>
 </div>
@@ -1001,7 +943,7 @@
 <div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">makeCurrent</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Some arguments of a command are required, and some arguments are optional. In the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> the required arguments are listed first, followed by the optional arguments. If the argument is optional, the default value is provided. The default value is the value of an optional argument when you call a method and omit the argument.</p>
+<p>Some arguments of a command are required, and some arguments are optional. In the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> the required arguments are listed first, followed by the optional arguments. If the argument is optional, the default value is provided. The default value is the value of an optional argument when you call a method and omit the argument.</p>
 <p>The <cite>setValues</cite> method is a special case. All of the arguments to the <cite>setValues</cite> method are optional, but any argument that you omit retains its current value; Abaqus does not assign a default value to the argument.</p>
 <p>Some objects have no constructors; Abaqus creates the objects for you. For such objects the documentation describes the initial value of an optional argument. The initial value given for the argument is the initial value assigned to the corresponding member when Abaqus creates the object. For example, the defaultViewportAnnotationOptions object has no constructor; Abaqus creates the defaultViewportAnnotationOptions object when you start a session. When you create a new viewport, the settings are copied from the current viewport.</p>
 <p>You can use the <cite>setValues</cite> method to modify the value of a member; for example, to modify the value of the triad member of the defaultViewportAnnotationsOptions object. When you call session.</p>
