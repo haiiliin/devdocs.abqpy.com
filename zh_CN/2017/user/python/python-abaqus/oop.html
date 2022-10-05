@@ -132,48 +132,19 @@
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../cli.html">
-                        CLI
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../templates.html">
-                        Templates
-                    </a>
-                </li>
-                
-
                 <li class="nav-item current active">
                     <a class="nav-link" href="../../../user.html">
                         User’s Guide
                     </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../summary.html">
-                        API Summary
-                    </a>
-                </li>
-                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../../references.html">
-                        API Reference
+                    <a class="nav-link" href="../../../api.html">
+                        API References
                     </a>
                 </li>
                 
-                </div>
-            </div>
-            
     </ul>
 </nav>
       </div>
@@ -303,48 +274,19 @@
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../cli.html">
-                        CLI
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../templates.html">
-                        Templates
-                    </a>
-                </li>
-                
-
                 <li class="nav-item current active">
                     <a class="nav-link" href="../../../user.html">
                         User’s Guide
                     </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../summary.html">
-                        API Summary
-                    </a>
-                </li>
-                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../../references.html">
-                        API Reference
+                    <a class="nav-link" href="../../../api.html">
+                        API References
                     </a>
                 </li>
                 
-                </div>
-            </div>
-            
     </ul>
 </nav>
       </div>
@@ -921,7 +863,7 @@
 <div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s1">&#39;myViewport&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">__methods__</span>
 </pre></div>
 </div>
-<p>See the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> for a description of each method of the Abaqus Scripting Interface objects.</p>
+<p>See the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> for a description of each method of the Abaqus Scripting Interface objects.</p>
 </section>
 <section id="the-abaqus-scripting-interface-and-members">
 <h2>The Abaqus Scripting Interface and members<a class="headerlink" href="#the-abaqus-scripting-interface-and-members" title="此标题的永久链接">#</a></h2>
@@ -981,7 +923,7 @@
 <span class="n">mySection</span><span class="o">.</span><span class="n">thickness</span> <span class="o">=</span> <span class="mf">1.0</span>
 </pre></div>
 </div>
-<p>You use the <cite>Access</cite> description provided with each object in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> to determine how you access the object. You append a method or member to this description when you are writing a script. Similarly, you use the <cite>Path</cite> description provided with each constructor in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> to determine the path to the constructor.</p>
+<p>You use the <cite>Access</cite> description provided with each object in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> to determine how you access the object. You append a method or member to this description when you are writing a script. Similarly, you use the <cite>Path</cite> description provided with each constructor in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> to determine the path to the constructor.</p>
 </section>
 <section id="object-oriented-programming-and-the-abaqus-scripting-interface-a-summary">
 <h2>Object-oriented programming and the Abaqus Scripting Interface - a summary<a class="headerlink" href="#object-oriented-programming-and-the-abaqus-scripting-interface-a-summary" title="此标题的永久链接">#</a></h2>
@@ -994,8 +936,8 @@
 <li><p>The Abaqus Scripting Interface uses the convention that the name of a type of object begins with an uppercase character; for example, a Viewport object.</p></li>
 <li><p>A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character.</p></li>
 <li><p>After you create an object, you then use methods of the object to enter or to modify the data associated with the object. For example, if you are creating an output database, you first create an Odb object. You then use the <cite>addNodes</cite> and <cite>addElements</cite> methods of the Part object to add nodes and elements, respectively. Similarly, you use the <cite>addData</cite> method of the <cite>FieldOutput</cite> object to add field output data to the output database.</p></li>
-<li><p>You use the <cite>Access</cite> description provided with each object in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> to determine how you access the object. You append a method or a member to this description when you are writing a script.</p></li>
-<li><p>You use the <cite>Path</cite> description provided with each constructor in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> to determine the path to the constructor.</p></li>
+<li><p>You use the <cite>Access</cite> description provided with each object in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> to determine how you access the object. You append a method or a member to this description when you are writing a script.</p></li>
+<li><p>You use the <cite>Path</cite> description provided with each constructor in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> to determine the path to the constructor.</p></li>
 <li><p>You use the <cite>setValues()</cite> method to modify the members of an Abaqus Scripting Interface object.</p></li>
 </ul>
 <div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s1">&#39;Side view&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
