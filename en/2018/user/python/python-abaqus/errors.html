@@ -131,48 +131,19 @@
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../cli.html">
-                        CLI
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../templates.html">
-                        Templates
-                    </a>
-                </li>
-                
-
                 <li class="nav-item current active">
                     <a class="nav-link" href="../../../user.html">
                         User’s Guide
                     </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../summary.html">
-                        API Summary
-                    </a>
-                </li>
-                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../../references.html">
-                        API Reference
+                    <a class="nav-link" href="../../../api.html">
+                        API References
                     </a>
                 </li>
                 
-                </div>
-            </div>
-            
     </ul>
 </nav>
       </div>
@@ -302,48 +273,19 @@
                 </li>
                 
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../cli.html">
-                        CLI
-                    </a>
-                </li>
-                
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../templates.html">
-                        Templates
-                    </a>
-                </li>
-                
-
                 <li class="nav-item current active">
                     <a class="nav-link" href="../../../user.html">
                         User’s Guide
                     </a>
                 </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    More
-                </button>
-                <div class="dropdown-menu">
-                    
-                <li class="nav-item">
-                    <a class="nav-link" href="../../../summary.html">
-                        API Summary
-                    </a>
-                </li>
-                
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../../references.html">
-                        API Reference
+                    <a class="nav-link" href="../../../api.html">
+                        API References
                     </a>
                 </li>
                 
-                </div>
-            </div>
-            
     </ul>
 </nav>
       </div>
@@ -901,12 +843,12 @@
 <p>The basics of Python’s exception handling apply to the Abaqus Scripting Interface. Python’s exception handling is described in <a class="reference internal" href="../introduction/programming.html#error-handling"><span class="std std-ref">Error handling</span></a>. If certain circumstances arise while a script is running, Python allows you to take the necessary action and still allows the script to continue. Alternatively, when Abaqus/CAE issues (or “throws”) an exception and the exception is not handled by the script, Abaqus/CAE displays the exception message in the message area and the script stops executing.</p>
 <section id="standard-python-exceptions">
 <h2>Standard Python exceptions<a class="headerlink" href="#standard-python-exceptions" title="Permalink to this heading">#</a></h2>
-<p>Python exceptions arise from either system-related problems, such as a disk or network error, or from programming errors, such as numeric overflow or reference to an index that does not exist. Standard Python exceptions are not described in this guide and are not listed as possible exceptions in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a>.</p>
+<p>Python exceptions arise from either system-related problems, such as a disk or network error, or from programming errors, such as numeric overflow or reference to an index that does not exist. Standard Python exceptions are not described in this guide and are not listed as possible exceptions in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a>.</p>
 <p>Look at the standard Python documentation on the official Python website (<a class="reference external" href="https://www.python.org">https://www.python.org</a>) for a list of standard Python exceptions. Standard exceptions are described in the Built-in Exceptions section of the Python Library Reference.</p>
 </section>
 <section id="standard-abaqus-scripting-interface-exceptions">
 <h2>Standard Abaqus Scripting Interface exceptions<a class="headerlink" href="#standard-abaqus-scripting-interface-exceptions" title="Permalink to this heading">#</a></h2>
-<p>Standard Abaqus Scripting Interface exceptions arise from errors in a script that relate to Abaqus/CAE. The standard Abaqus Scripting Interface exceptions that can be raised by a method are listed with each command in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a>.</p>
+<p>Standard Abaqus Scripting Interface exceptions arise from errors in a script that relate to Abaqus/CAE. The standard Abaqus Scripting Interface exceptions that can be raised by a method are listed with each command in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a>.</p>
 <p>The standard Abaqus Scripting Interface exception types are listed below:</p>
 <ul>
 <li><p><strong>InvalidNameError</strong></p>
@@ -936,12 +878,12 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The command descriptions in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> list the type of standard Abaqus Scripting Interface exceptions that can occur; however, the exception messages are not included with the command description.</p>
+<p>The command descriptions in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> list the type of standard Abaqus Scripting Interface exceptions that can occur; however, the exception messages are not included with the command description.</p>
 </div>
 </section>
 <section id="additional-abaqus-scripting-interface-exceptions">
 <h2>Additional Abaqus Scripting Interface exceptions<a class="headerlink" href="#additional-abaqus-scripting-interface-exceptions" title="Permalink to this heading">#</a></h2>
-<p>Each command in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> lists the standard Abaqus Scripting Interface exceptions that can be raised by a command. In addition, if the exception is not a standard Python or Abaqus Scripting Interface exception, the description lists the following:</p>
+<p>Each command in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> lists the standard Abaqus Scripting Interface exceptions that can be raised by a command. In addition, if the exception is not a standard Python or Abaqus Scripting Interface exception, the description lists the following:</p>
 <ul class="simple">
 <li><p>A brief description of the problem.</p></li>
 <li><p>The exception type.</p></li>
@@ -958,7 +900,7 @@
 </section>
 <section id="exception-handling">
 <span id="id1"></span><h2>Exception handling<a class="headerlink" href="#exception-handling" title="Permalink to this heading">#</a></h2>
-<p>The Python exception handling techniques described in Error handling apply to the Abaqus Scripting Interface. You should use the command description in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> to decide for which exception types you need to account. For example, the following Abaqus Scripting Interface script attempts to create a viewport and prints a message if the width or height are too small:</p>
+<p>The Python exception handling techniques described in Error handling apply to the Abaqus Scripting Interface. You should use the command description in the <a class="reference internal" href="../../../references.html"><span class="doc">Class References</span></a> to decide for which exception types you need to account. For example, the following Abaqus Scripting Interface script attempts to create a viewport and prints a message if the width or height are too small:</p>
 <div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
      <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;tiny&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
  <span class="k">except</span> <span class="n">RangeError</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span>
