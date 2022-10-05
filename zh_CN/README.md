@@ -1,4 +1,4 @@
-# [docs.abqpy.com/zh_CN](https://docs.abqpy.com/zh_CN)
+# 简体中文文档
 
 这里是 abqpy 的简体中文文档。
 
