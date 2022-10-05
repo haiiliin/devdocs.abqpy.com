@@ -3,6 +3,7 @@ pull_request_rules:
   - name: Auto merge updating docs pull request
     conditions:
       - and:
+        - -conflict
         - label!=conflicts
         - title~=docs\/((en)|(zh_CN))\/((latest)|(20\d\d))-\w+
     actions:
