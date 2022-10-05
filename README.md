@@ -5,7 +5,7 @@
 This is the website for abqpy documentation.
 
 - [English Documentation](/en/)
-  - [abqpy dev English documentation](/en/dev/)
+  - [abqpy 2023 (dev) English documentation](/en/dev/)
   - [abqpy 2022 English documentation](/en/2022/)
   - [abqpy 2021 English documentation](/en/2021/)
   - [abqpy 2020 English documentation](/en/2020/)
@@ -14,7 +14,7 @@ This is the website for abqpy documentation.
   - [abqpy 2017 English documentation](/en/2017/)
   - [abqpy 2016 English documentation](/en/2016/)
 - [简体中文文档](/zh_CN/)
-  - [abqpy dev 简体中文文档](/zh_CN/dev/)
+  - [abqpy 2023 (dev) 简体中文文档](/zh_CN/dev/)
   - [abqpy 2022 简体中文文档](/zh_CN/2022/)
   - [abqpy 2021 简体中文文档](/zh_CN/2021/)
   - [abqpy 2020 简体中文文档](/zh_CN/2020/)
