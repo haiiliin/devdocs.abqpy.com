@@ -1,11 +1,6 @@
 [
     {
-        "name": "latest",
-        "version": "latest",
-        "url": "https://docs.abqpy.com/en/latest/"
-    },
-    {
-        "name": "2022",
+        "name": "2022 (latest)",
         "version": "2022",
         "url": "https://docs.abqpy.com/en/2022/"
     },
