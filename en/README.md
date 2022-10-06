@@ -2,7 +2,6 @@
 
 This is the abqpy documentation for English.
 
-- [abqpy 2023 (dev) English documentation](/en/dev/)
 - [abqpy 2022 English documentation](/en/2022/)
 - [abqpy 2021 English documentation](/en/2021/)
 - [abqpy 2020 English documentation](/en/2020/)
