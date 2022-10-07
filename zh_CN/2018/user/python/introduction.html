@@ -13,8 +13,8 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=1e1de1a1873e13ef5536" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1e1de1a1873e13ef5536" rel="stylesheet">
 
   
   <link rel="stylesheet"
@@ -23,6 +23,8 @@
     href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
@@ -30,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1e1de1a1873e13ef5536">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -71,7 +73,7 @@
     <div class="search-button__search-container">
       
 <form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
+  <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form>
@@ -81,7 +83,7 @@
   
   <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
   <label class="sidebar-toggle primary-toggle" for="__primary">
-      <span class="fas fa-bars"></span>
+      <span class="fa-solid fa-bars"></span>
   </label>
   <div id="navbar-start">
     
@@ -154,8 +156,8 @@
     <div id="navbar-end">
       <div class="navbar-end-item navbar-end__search-button-container">
         
-<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
-  <i class="fas fa-search"></i>
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
 </button>
       </div>
       
@@ -172,10 +174,10 @@
       </div>
       
       <div class="navbar-end-item">
-        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
-    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
-    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
-    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" data-toggle="tooltip">
+    <a class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="fa-regular fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></a>
 </span>
       </div>
       
@@ -188,7 +190,8 @@
           
           
           
-          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-github"></i></span>
             <label class="sr-only">GitHub</label></a>
         </li>
         <li class="nav-item">
@@ -198,7 +201,8 @@
           
           
           
-          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
         </li>
         <li class="nav-item">
           
@@ -207,7 +211,8 @@
           
           
           
-          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
         </li>
         <li class="nav-item">
           
@@ -216,7 +221,8 @@
           
           
           
-          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
         </li>
       </ul>
       </div>
@@ -227,14 +233,14 @@
 
   
   <div class="search-button-container--mobile">
-<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
-  <i class="fas fa-search"></i>
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
 </button>
   </div>
 
   
   <label class="sidebar-toggle secondary-toggle" for="__secondary">
-      <span class="fas fa-outdent"></span>
+      <span class="fa-solid fa-outdent"></span>
   </label>
   
 
@@ -311,10 +317,10 @@
       </div>
       
       <div class="navbar-end-item">
-        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
-    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
-    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
-    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" data-toggle="tooltip">
+    <a class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="fa-regular fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></a>
 </span>
       </div>
       
@@ -327,7 +333,8 @@
           
           
           
-          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-github"></i></span>
             <label class="sr-only">GitHub</label></a>
         </li>
         <li class="nav-item">
@@ -337,7 +344,8 @@
           
           
           
-          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
         </li>
         <li class="nav-item">
           
@@ -346,7 +354,8 @@
           
           
           
-          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
         </li>
         <li class="nav-item">
           
@@ -355,7 +364,8 @@
           
           
           
-          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
         </li>
       </ul>
       </div>
@@ -368,7 +378,7 @@
   <div class="sidebar-start-items sidebar-primary__section">
     <div class="sidebar-start-items__item">
 <form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
+  <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form>
@@ -378,439 +388,100 @@
     Section Navigation
   </p>
   <div class="bd-toc-item navbar-nav">
-    <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Contents
- </span>
-</p>
+    <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../about.html">
-   About the Abaqus Scripting Interface
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../about/interface.html">
-     Abaqus/CAE and the Abaqus Scripting Interface
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../about/interact.html">
-     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
-    </a>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../about/examples.html">
-     Simple examples
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-2">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../about/examples/create-part.html">
-       Creating a part
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../about/examples/read-output.html">
-       Reading from an output database
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../about/examples/summary.html">
-       Summary
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="../python.html">
-   Using the Abaqus Scripting Interface
-  </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active has-children">
-    <a class="current reference internal" href="#">
-     Introduction to Python
-    </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-4">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="introduction/python-abaqus.html">
-       Python and Abaqus
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="introduction/python-resources.html">
-       Python resources
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="introduction/python-interpreter.html">
-       Using the Python interpreter
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="introduction/oop-basics.html">
-       Object-oriented basics
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="introduction/python-basics.html">
-       The basics of Python
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="introduction/programming.html">
-       Programming techniques
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="introduction/further-reading.html">
-       Further reading
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="python-abaqus.html">
-     Using Python and the Abaqus Scripting Interface
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-5">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="python-abaqus/executing.html">
-       Executing scripts
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="python-abaqus/style.html">
-       Abaqus Scripting Interface documentation style
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="python-abaqus/types.html">
-       Abaqus Scripting Interface data types
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="python-abaqus/oop.html">
-       Object-oriented programming and the Abaqus Scripting Interface
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="python-abaqus/errors.html">
-       Error handling in the Abaqus Scripting Interface
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="python-abaqus/extending.html">
-       Extending the Abaqus Scripting Interface
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="use-scripts.html">
-     Using the Abaqus Scripting Interface with Abaqus/CAE
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-6">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="use-scripts/object-model.html">
-       The Abaqus object model
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="use-scripts/modify-objects.html">
-       Copying, deleting, and renaming Abaqus Scripting Interface objects
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="use-scripts/sequences.html">
-       Abaqus/CAE sequences
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="use-scripts/namespace.html">
-       Namespace
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="use-scripts/specify-viewport.html">
-       Specifying what is displayed in the viewport
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="use-scripts/specify-region.html">
-       Specifying a region
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="use-scripts/user-input.html">
-       Prompting the user for input
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="use-scripts/interact.html">
-       Interacting with Abaqus/Standard and Abaqus/Explicit
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="use-scripts/environment-file.html">
-       Using Abaqus Scripting Interface commands in your environment file
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../environment.html">
-   The Abaqus Python Development Environment
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-7">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../environment/about.html">
-     About the Abaqus Python development environment
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../environment/pde-basics.html">
-     Abaqus PDE basics
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../environment/use-pde.html">
-     Using the Abaqus PDE
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../examples.html">
-   Putting it all Together: Abaqus Scripting Interface Examples
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-8">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../examples/cantilever.html">
-     Reproducing the cantilever beam tutorial
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../examples/plot.html">
-     Generating a customized plot
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../examples/sensitivity.html">
-     Investigating the skew sensitivity of shell elements
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../examples/settings.html">
-     Editing display preferences and GUI settings
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../output.html">
-   Accessing an Output Database
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
-  <label class="toctree-toggle" for="toctree-checkbox-9">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../output/python.html">
-     Using the Abaqus Scripting Interface to access an output database
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-10">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/python/need-what-to-understand.html">
-       What do you need to access the output database?
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/python/object-model.html">
-       How the object model for the output database relates to commands
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/python/output-object-model.html">
-       Object model for the output database
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/python/execute-script.html">
-       Executing a script that accesses an output database
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/python/read.html">
-       Reading from an output database
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/python/write.html">
-       Writing to an output database
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/python/exceptions.html">
-       Exception handling in an output database
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/python/computations.html">
-       Computations with Abaqus results
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/python/improve-efficiency.html">
-       Improving the efficiency of your scripts
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/python/examples.html">
-       Example scripts that access data from an output database
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../output/cpp.html">
-     Using C++ to access an output database
-    </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
-    <label class="toctree-toggle" for="toctree-checkbox-11">
-     <i class="fas fa-chevron-down">
-     </i>
-    </label>
-    <ul>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/about.html">
-       About the C++ interface
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/need-what-access.html">
-       What do you need to access the output database?
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/style.html">
-       Abaqus Scripting Interface documentation style
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/object-model.html">
-       How the object model for the output database relates to commands
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/output-object-model.html">
-       Object model for the output database
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/compile-link.html">
-       Compiling and linking your C++ source code
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/access.html">
-       Accessing the C++ interface from an existing application
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/architecture.html">
-       The Abaqus C++ API architecture
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/utility.html">
-       Utility interface
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/read.html">
-       Reading from an output database
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/write.html">
-       Writing to an output database
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/exceptions.html">
-       Exception handling in an output database
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/computations.html">
-       Computations with Abaqus results
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/improve-efficiency.html">
-       Improving the efficiency of your scripts
-      </a>
-     </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../output/cpp/examples.html">
-       Example programs that access data from an output database
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../about.html">About the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about/interface.html">Abaqus/CAE and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/interact.html">How does the Abaqus Scripting Interface interact with Abaqus/CAE?</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../about/examples.html">Simple examples</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../about/examples/create-part.html">Creating a part</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../about/examples/read-output.html">Reading from an output database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../about/examples/summary.html">Summary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../python.html">Using the Abaqus Scripting Interface</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Introduction to Python</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="introduction/python-abaqus.html">Python and Abaqus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction/python-resources.html">Python resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction/python-interpreter.html">Using the Python interpreter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction/oop-basics.html">Object-oriented basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction/python-basics.html">The basics of Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction/programming.html">Programming techniques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="introduction/further-reading.html">Further reading</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="python-abaqus.html">Using Python and the Abaqus Scripting Interface</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="python-abaqus/executing.html">Executing scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-abaqus/style.html">Abaqus Scripting Interface documentation style</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-abaqus/types.html">Abaqus Scripting Interface data types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-abaqus/oop.html">Object-oriented programming and the Abaqus Scripting Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-abaqus/errors.html">Error handling in the Abaqus Scripting Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-abaqus/extending.html">Extending the Abaqus Scripting Interface</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="use-scripts.html">Using the Abaqus Scripting Interface with Abaqus/CAE</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="use-scripts/object-model.html">The Abaqus object model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="use-scripts/modify-objects.html">Copying, deleting, and renaming Abaqus Scripting Interface objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="use-scripts/sequences.html">Abaqus/CAE sequences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="use-scripts/namespace.html">Namespace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="use-scripts/specify-viewport.html">Specifying what is displayed in the viewport</a></li>
+<li class="toctree-l3"><a class="reference internal" href="use-scripts/specify-region.html">Specifying a region</a></li>
+<li class="toctree-l3"><a class="reference internal" href="use-scripts/user-input.html">Prompting the user for input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="use-scripts/interact.html">Interacting with Abaqus/Standard and Abaqus/Explicit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="use-scripts/environment-file.html">Using Abaqus Scripting Interface commands in your environment file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../environment.html">The Abaqus Python Development Environment</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../environment/about.html">About the Abaqus Python development environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../environment/pde-basics.html">Abaqus PDE basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../environment/use-pde.html">Using the Abaqus PDE</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../examples.html">Putting it all Together: Abaqus Scripting Interface Examples</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../examples/cantilever.html">Reproducing the cantilever beam tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/plot.html">Generating a customized plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/sensitivity.html">Investigating the skew sensitivity of shell elements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/settings.html">Editing display preferences and GUI settings</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../output.html">Accessing an Output Database</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../output/python.html">Using the Abaqus Scripting Interface to access an output database</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../output/python/need-what-to-understand.html">What do you need to access the output database?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/python/object-model.html">How the object model for the output database relates to commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/python/output-object-model.html">Object model for the output database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/python/execute-script.html">Executing a script that accesses an output database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/python/read.html">Reading from an output database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/python/write.html">Writing to an output database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/python/exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/python/computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/python/improve-efficiency.html">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/python/examples.html">Example scripts that access data from an output database</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../output/cpp.html">Using C++ to access an output database</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/about.html">About the C++ interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/need-what-access.html">What do you need to access the output database?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/style.html">Abaqus Scripting Interface documentation style</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/object-model.html">How the object model for the output database relates to commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/output-object-model.html">Object model for the output database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/compile-link.html">Compiling and linking your C++ source code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/access.html">Accessing the C++ interface from an existing application</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/architecture.html">The Abaqus C++ API architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/utility.html">Utility interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/read.html">Reading from an output database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/write.html">Writing to an output database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/exceptions.html">Exception handling in an output database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/computations.html">Computations with Abaqus results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/improve-efficiency.html">Improving the efficiency of your scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../output/cpp/examples.html">Example programs that access data from an output database</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
   </div>
@@ -866,7 +537,7 @@
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
   <a class='left-prev' id="prev-link" href="../python.html" title="上一页 页">
-      <i class="fas fa-angle-left"></i>
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">上一页</p>
           <p class="prev-next-title">Using the Abaqus Scripting Interface</p>
@@ -877,7 +548,7 @@
       <p class="prev-next-subtitle">下一页</p>
       <p class="prev-next-title">Python and Abaqus</p>
   </div>
-  <i class="fas fa-angle-right"></i>
+  <i class="fa-solid fa-angle-right"></i>
   </a>
 </div>
             </footer>
@@ -890,13 +561,18 @@
               
 <div class="toc-item">
   
+<div id="searchbox"></div>
+</div>
+
+<div class="toc-item">
+  
 </div>
 
 <div class="toc-item">
   
 <div class="tocsection sourcelink">
     <a href="../../_sources/user/python/introduction.rst.txt">
-        <i class="fas fa-file-alt"></i> 显示源代码
+        <i class="fa-solid fa-file-lines"></i> 显示源代码
     </a>
 </div>
 
@@ -919,7 +595,7 @@
   
     
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1e1de1a1873e13ef5536"></script>
 
   <footer class="bd-footer"><div class="bd-footer__inner container">
   
