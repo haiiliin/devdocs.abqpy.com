@@ -1,5 +1,10 @@
 [
     {
+        "name": "2023 (dev)",
+        "version": "2023",
+        "url": "https://docs.abqpy.com/en/dev/"
+    },
+    {
         "name": "2022 (latest)",
         "version": "2022",
         "url": "https://docs.abqpy.com/en/2022/"
