@@ -1357,7 +1357,7 @@ SELECT_BY_NUMBER.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.PlotOptions.BasicOptions.BasicOptions.selectedSectorNumbers">
-<span class="sig-name descname"><span class="pre">selectedSectorNumbers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.10)"><span class="pre">Tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/PlotOptions/BasicOptions.py#L400-L403"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PlotOptions.BasicOptions.BasicOptions.selectedSectorNumbers" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">selectedSectorNumbers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.10)"><span class="pre">Sequence</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/PlotOptions/BasicOptions.py#L400-L403"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PlotOptions.BasicOptions.BasicOptions.selectedSectorNumbers" title="Permalink to this definition">#</a></dt>
 <dd><p>A tuple of Ints specifying which sectors to display when
 <strong>sectorSelectionType</strong> = SELECT_BY_NUMBER. Possible values are 1 ≤ <strong>selectedSectorNumbers</strong>
 ≤ the number of sectors. The default value is (1).</p>
@@ -1467,7 +1467,7 @@ OFF.</p></li>
 <li><p><strong>sectorSelectionType</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">SELECT_BY_NUMBER</span></code>) – A SymbolicConstant specifying how sectors will be selected for sweeping. Possible values
 are SELECT_BY_NUMBER, SELECT_BY_ANGLE, and SELECT_ALL. The default value is
 SELECT_BY_NUMBER.</p></li>
-<li><p><strong>selectedSectorNumbers</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#Ellipsis" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">()</span></code>) – A sequence of Ints specifying which sectors to display when
+<li><p><strong>selectedSectorNumbers</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">()</span></code>) – A sequence of Ints specifying which sectors to display when
 <strong>sectorSelectionType</strong> = SELECT_BY_NUMBER. Possible values are 1 ≤ <strong>selectedSectorNumbers</strong>
 ≤ the number of sectors. The default value is (1).</p></li>
 <li><p><strong>sweepSectorStartAngle</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) – A Float specifying the angle (in degrees) from which to sweep cyclic symmetry sectors
@@ -3903,7 +3903,7 @@ is only one frame in a step.</p>
 <dd class="field-odd"><p>A tuple containing coordinates of the nodes pertaining to the constraint.</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Tuple[float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">]</span></code></p>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence[float]</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -6711,7 +6711,7 @@ UNIFORM, SPECTRUM, and CONTINUOUS. The default value is UNIFORM.</p></li>
 <dd class="field-odd"><p>A tuple containing coordinates of the nodes pertaining to the constraint.</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Tuple[float</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">]</span></code></p>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence[float]</span></code></p>
 </dd>
 </dl>
 </dd></dl>
