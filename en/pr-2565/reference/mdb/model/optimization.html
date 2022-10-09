@@ -1467,7 +1467,7 @@ OFF.</p></li>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the geometric restriction repository key.</p></li>
-<li><p><strong>region</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7fc51d278250&gt;</span></code>) – A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the region to which the geometric restriction is applied.
+<li><p><strong>region</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f450d7e1480&gt;</span></code>) – A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the region to which the geometric restriction is applied.
 When used with a TopologyTask, there is no default value. When used with a ShapeTask,
 the default value is MODEL.</p></li>
 </ul>
@@ -2525,7 +2525,7 @@ value is None.</p></li>
 region. If the value is OVERHANG_REGION, the value of <strong>region</strong> is used as both the
 overhang control region and the overhang check region. The default value is
 OVERHANG_REGION.</p></li>
-<li><p><strong>pointRegion</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7fc51d1c39d0&gt;</span></code>) – A Region object specifying the point on a plane perpendicular to the <strong>pullDirection</strong>
+<li><p><strong>pointRegion</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f450d89bd00&gt;</span></code>) – A Region object specifying the point on a plane perpendicular to the <strong>pullDirection</strong>
 that is used to specify the base plane when <strong>technique</strong> is POINT.</p></li>
 <li><p><strong>radius</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – A Float specifying the radius to define the size of the cones that are used in the
 internal check for the overhang criteria.</p></li>
@@ -3410,118 +3410,118 @@ The BeadTask object is derived from the OptimizationTask object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OptimizationTask</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SingleTermDesignResponse</span></code>(name, identifier[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SingleTermDesignResponse</span></code></a>(name, identifier[, ...])</p></td>
 <td><p>This method creates a SingleTermDesignResponse object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectiveFunction</span></code>(name, objectives[, target])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectiveFunction</span></code></a>(name, objectives[, target])</p></td>
 <td><p>This method creates an ObjectiveFunction object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationConstraint</span></code>(name, designResponse, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint" title="abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationConstraint</span></code></a>(name, designResponse, ...)</p></td>
 <td><p>This method creates an OptimizationConstraint object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadFixedRegion</span></code>(name, region[, csys, u1, u2, u3])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadFixedRegion</span></code></a>(name, region[, csys, u1, u2, u3])</p></td>
 <td><p>This method creates a BeadFixedRegion object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadGrowth</span></code>(name, region[, beadGrowth, shrink])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadGrowth</span></code></a>(name, region[, beadGrowth, shrink])</p></td>
 <td><p>This method creates a BeadGrowth object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPenetrationCheck</span></code>(name, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPenetrationCheck</span></code></a>(name, ...)</p></td>
 <td><p>This method creates a BeadPenetrationCheck object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPlanarSymmetry</span></code>(name, region[, axis, csys])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPlanarSymmetry</span></code></a>(name, region[, axis, csys])</p></td>
 <td><p>This method creates a BeadPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPointSymmetry</span></code>(name, region[, csys])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPointSymmetry</span></code></a>(name, region[, csys])</p></td>
 <td><p>This method creates a BeadPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a BeadRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignDirection</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignDirection</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a DesignDirection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrillControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrillControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a DrillControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedRegion</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedRegion</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a FixedRegion object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FrozenArea</span></code>(name[, region])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FrozenArea</span></code></a>(name[, region])</p></td>
 <td><p>This method creates a FrozenArea object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Growth</span></code>(name, region[, growth, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.Growth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.Growth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Growth</span></code></a>(name, region[, growth, ...])</p></td>
 <td><p>This method creates a Growth object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PenetrationCheck</span></code>(name, ...[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PenetrationCheck</span></code></a>(name, ...[, ...])</p></td>
 <td><p>This method creates a PenetrationCheck object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeDemoldControl</span></code>(name, pullDirection, region)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeDemoldControl</span></code></a>(name, pullDirection, region)</p></td>
 <td><p>This method creates a ShapeDemoldControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeMemberSize</span></code>(name, region[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeMemberSize</span></code></a>(name, region[, ...])</p></td>
 <td><p>This method creates a ShapeMemberSize object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePlanarSymmetry</span></code>(name, clientDirection, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePlanarSymmetry</span></code></a>(name, clientDirection, ...)</p></td>
 <td><p>This method creates a ShapePlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a ShapePointSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeRotationalSymmetry</span></code>(name, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeRotationalSymmetry</span></code></a>(name, ...[, ...])</p></td>
 <td><p>This method creates a ShapeRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingClusterAreas</span></code>(name, regions)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingClusterAreas</span></code></a>(name, regions)</p></td>
 <td><p>This method creates a SizingClusterAreas object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingCyclicSymmetry</span></code>(name, region, translation)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingCyclicSymmetry</span></code></a>(name, region, translation)</p></td>
 <td><p>This method creates a SizingCyclicSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingFrozenArea</span></code>(name, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingFrozenArea</span></code></a>(name, region)</p></td>
 <td><p>This method creates a SizingFrozenArea object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingMemberSize</span></code>(name, region, minWidth)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingMemberSize</span></code></a>(name, region, minWidth)</p></td>
 <td><p>This method creates a SizingMemberSize object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPlanarSymmetry</span></code>(name, region[, axis, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPlanarSymmetry</span></code></a>(name, region[, axis, ...])</p></td>
 <td><p>This method creates a SizingPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a SizingPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a SizingRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SlideRegionControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SlideRegionControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a SlideRegionControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StampControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StampControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a StampControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyCyclicSymmetry</span></code>(name, region, translation)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyCyclicSymmetry</span></code></a>(name, region, translation)</p></td>
 <td><p>This method creates a TopologyCyclicSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyDemoldControl</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyDemoldControl</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a TopologyDemoldControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMemberSize</span></code>(name, region[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMemberSize</span></code></a>(name, region[, ...])</p></td>
 <td><p>This method creates a TopologyMemberSize object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMillingControl</span></code>(name, ...[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMillingControl</span></code></a>(name, ...[, csys, ...])</p></td>
 <td><p>This method creates a TopologyMillingControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyOverhangControl</span></code>(name, pullDirection, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyOverhangControl</span></code></a>(name, pullDirection, ...)</p></td>
 <td><p>This method creates a TopologyOverhangControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPlanarSymmetry</span></code>(name, region[, axis, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPlanarSymmetry</span></code></a>(name, region[, axis, ...])</p></td>
 <td><p>This method creates a TopologyPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a TopologyPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a TopologyRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TurnControl</span></code>(name, clientDirection, region[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TurnControl</span></code></a>(name, clientDirection, region[, ...])</p></td>
 <td><p>This method creates a TurnControl object.</p></td>
 </tr>
 </tbody>
@@ -4634,7 +4634,7 @@ the default value is MODEL.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>region</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7fc51d029cf0&gt;</span></code>) – A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the region to which the geometric restriction is applied.
+<dd class="field-odd"><p><strong>region</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f450f8e00a0&gt;</span></code>) – A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the region to which the geometric restriction is applied.
 When used with a TopologyTask, there is no default value. When used with a ShapeTask,
 the default value is MODEL.</p>
 </dd>
@@ -6398,118 +6398,118 @@ The ShapeTask object is derived from the OptimizationTask object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OptimizationTask</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SingleTermDesignResponse</span></code>(name, identifier[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SingleTermDesignResponse</span></code></a>(name, identifier[, ...])</p></td>
 <td><p>This method creates a SingleTermDesignResponse object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectiveFunction</span></code>(name, objectives[, target])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectiveFunction</span></code></a>(name, objectives[, target])</p></td>
 <td><p>This method creates an ObjectiveFunction object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationConstraint</span></code>(name, designResponse, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint" title="abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationConstraint</span></code></a>(name, designResponse, ...)</p></td>
 <td><p>This method creates an OptimizationConstraint object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadFixedRegion</span></code>(name, region[, csys, u1, u2, u3])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadFixedRegion</span></code></a>(name, region[, csys, u1, u2, u3])</p></td>
 <td><p>This method creates a BeadFixedRegion object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadGrowth</span></code>(name, region[, beadGrowth, shrink])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadGrowth</span></code></a>(name, region[, beadGrowth, shrink])</p></td>
 <td><p>This method creates a BeadGrowth object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPenetrationCheck</span></code>(name, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPenetrationCheck</span></code></a>(name, ...)</p></td>
 <td><p>This method creates a BeadPenetrationCheck object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPlanarSymmetry</span></code>(name, region[, axis, csys])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPlanarSymmetry</span></code></a>(name, region[, axis, csys])</p></td>
 <td><p>This method creates a BeadPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPointSymmetry</span></code>(name, region[, csys])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPointSymmetry</span></code></a>(name, region[, csys])</p></td>
 <td><p>This method creates a BeadPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a BeadRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignDirection</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignDirection</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a DesignDirection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrillControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrillControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a DrillControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedRegion</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedRegion</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a FixedRegion object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FrozenArea</span></code>(name[, region])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FrozenArea</span></code></a>(name[, region])</p></td>
 <td><p>This method creates a FrozenArea object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Growth</span></code>(name, region[, growth, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.Growth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.Growth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Growth</span></code></a>(name, region[, growth, ...])</p></td>
 <td><p>This method creates a Growth object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PenetrationCheck</span></code>(name, ...[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PenetrationCheck</span></code></a>(name, ...[, ...])</p></td>
 <td><p>This method creates a PenetrationCheck object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeDemoldControl</span></code>(name, pullDirection, region)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeDemoldControl</span></code></a>(name, pullDirection, region)</p></td>
 <td><p>This method creates a ShapeDemoldControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeMemberSize</span></code>(name, region[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeMemberSize</span></code></a>(name, region[, ...])</p></td>
 <td><p>This method creates a ShapeMemberSize object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePlanarSymmetry</span></code>(name, clientDirection, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePlanarSymmetry</span></code></a>(name, clientDirection, ...)</p></td>
 <td><p>This method creates a ShapePlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a ShapePointSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeRotationalSymmetry</span></code>(name, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeRotationalSymmetry</span></code></a>(name, ...[, ...])</p></td>
 <td><p>This method creates a ShapeRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingClusterAreas</span></code>(name, regions)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingClusterAreas</span></code></a>(name, regions)</p></td>
 <td><p>This method creates a SizingClusterAreas object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingCyclicSymmetry</span></code>(name, region, translation)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingCyclicSymmetry</span></code></a>(name, region, translation)</p></td>
 <td><p>This method creates a SizingCyclicSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingFrozenArea</span></code>(name, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingFrozenArea</span></code></a>(name, region)</p></td>
 <td><p>This method creates a SizingFrozenArea object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingMemberSize</span></code>(name, region, minWidth)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingMemberSize</span></code></a>(name, region, minWidth)</p></td>
 <td><p>This method creates a SizingMemberSize object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPlanarSymmetry</span></code>(name, region[, axis, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPlanarSymmetry</span></code></a>(name, region[, axis, ...])</p></td>
 <td><p>This method creates a SizingPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a SizingPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a SizingRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SlideRegionControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SlideRegionControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a SlideRegionControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StampControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StampControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a StampControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyCyclicSymmetry</span></code>(name, region, translation)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyCyclicSymmetry</span></code></a>(name, region, translation)</p></td>
 <td><p>This method creates a TopologyCyclicSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyDemoldControl</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyDemoldControl</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a TopologyDemoldControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMemberSize</span></code>(name, region[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMemberSize</span></code></a>(name, region[, ...])</p></td>
 <td><p>This method creates a TopologyMemberSize object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMillingControl</span></code>(name, ...[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMillingControl</span></code></a>(name, ...[, csys, ...])</p></td>
 <td><p>This method creates a TopologyMillingControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyOverhangControl</span></code>(name, pullDirection, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyOverhangControl</span></code></a>(name, pullDirection, ...)</p></td>
 <td><p>This method creates a TopologyOverhangControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPlanarSymmetry</span></code>(name, region[, axis, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPlanarSymmetry</span></code></a>(name, region[, axis, ...])</p></td>
 <td><p>This method creates a TopologyPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a TopologyPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a TopologyRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TurnControl</span></code>(name, clientDirection, region[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TurnControl</span></code></a>(name, clientDirection, region[, ...])</p></td>
 <td><p>This method creates a TurnControl object.</p></td>
 </tr>
 </tbody>
@@ -7861,118 +7861,118 @@ The SizingTask object is derived from the OptimizationTask object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OptimizationTask</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SingleTermDesignResponse</span></code>(name, identifier[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SingleTermDesignResponse</span></code></a>(name, identifier[, ...])</p></td>
 <td><p>This method creates a SingleTermDesignResponse object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectiveFunction</span></code>(name, objectives[, target])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectiveFunction</span></code></a>(name, objectives[, target])</p></td>
 <td><p>This method creates an ObjectiveFunction object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationConstraint</span></code>(name, designResponse, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint" title="abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationConstraint</span></code></a>(name, designResponse, ...)</p></td>
 <td><p>This method creates an OptimizationConstraint object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadFixedRegion</span></code>(name, region[, csys, u1, u2, u3])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadFixedRegion</span></code></a>(name, region[, csys, u1, u2, u3])</p></td>
 <td><p>This method creates a BeadFixedRegion object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadGrowth</span></code>(name, region[, beadGrowth, shrink])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadGrowth</span></code></a>(name, region[, beadGrowth, shrink])</p></td>
 <td><p>This method creates a BeadGrowth object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPenetrationCheck</span></code>(name, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPenetrationCheck</span></code></a>(name, ...)</p></td>
 <td><p>This method creates a BeadPenetrationCheck object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPlanarSymmetry</span></code>(name, region[, axis, csys])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPlanarSymmetry</span></code></a>(name, region[, axis, csys])</p></td>
 <td><p>This method creates a BeadPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPointSymmetry</span></code>(name, region[, csys])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPointSymmetry</span></code></a>(name, region[, csys])</p></td>
 <td><p>This method creates a BeadPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a BeadRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignDirection</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignDirection</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a DesignDirection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrillControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrillControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a DrillControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedRegion</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedRegion</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a FixedRegion object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FrozenArea</span></code>(name[, region])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FrozenArea</span></code></a>(name[, region])</p></td>
 <td><p>This method creates a FrozenArea object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Growth</span></code>(name, region[, growth, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.Growth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.Growth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Growth</span></code></a>(name, region[, growth, ...])</p></td>
 <td><p>This method creates a Growth object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PenetrationCheck</span></code>(name, ...[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PenetrationCheck</span></code></a>(name, ...[, ...])</p></td>
 <td><p>This method creates a PenetrationCheck object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeDemoldControl</span></code>(name, pullDirection, region)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeDemoldControl</span></code></a>(name, pullDirection, region)</p></td>
 <td><p>This method creates a ShapeDemoldControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeMemberSize</span></code>(name, region[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeMemberSize</span></code></a>(name, region[, ...])</p></td>
 <td><p>This method creates a ShapeMemberSize object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePlanarSymmetry</span></code>(name, clientDirection, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePlanarSymmetry</span></code></a>(name, clientDirection, ...)</p></td>
 <td><p>This method creates a ShapePlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a ShapePointSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeRotationalSymmetry</span></code>(name, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeRotationalSymmetry</span></code></a>(name, ...[, ...])</p></td>
 <td><p>This method creates a ShapeRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingClusterAreas</span></code>(name, regions)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingClusterAreas</span></code></a>(name, regions)</p></td>
 <td><p>This method creates a SizingClusterAreas object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingCyclicSymmetry</span></code>(name, region, translation)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingCyclicSymmetry</span></code></a>(name, region, translation)</p></td>
 <td><p>This method creates a SizingCyclicSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingFrozenArea</span></code>(name, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingFrozenArea</span></code></a>(name, region)</p></td>
 <td><p>This method creates a SizingFrozenArea object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingMemberSize</span></code>(name, region, minWidth)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingMemberSize</span></code></a>(name, region, minWidth)</p></td>
 <td><p>This method creates a SizingMemberSize object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPlanarSymmetry</span></code>(name, region[, axis, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPlanarSymmetry</span></code></a>(name, region[, axis, ...])</p></td>
 <td><p>This method creates a SizingPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a SizingPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a SizingRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SlideRegionControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SlideRegionControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a SlideRegionControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StampControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StampControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a StampControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyCyclicSymmetry</span></code>(name, region, translation)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyCyclicSymmetry</span></code></a>(name, region, translation)</p></td>
 <td><p>This method creates a TopologyCyclicSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyDemoldControl</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyDemoldControl</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a TopologyDemoldControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMemberSize</span></code>(name, region[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMemberSize</span></code></a>(name, region[, ...])</p></td>
 <td><p>This method creates a TopologyMemberSize object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMillingControl</span></code>(name, ...[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMillingControl</span></code></a>(name, ...[, csys, ...])</p></td>
 <td><p>This method creates a TopologyMillingControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyOverhangControl</span></code>(name, pullDirection, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyOverhangControl</span></code></a>(name, pullDirection, ...)</p></td>
 <td><p>This method creates a TopologyOverhangControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPlanarSymmetry</span></code>(name, region[, axis, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPlanarSymmetry</span></code></a>(name, region[, axis, ...])</p></td>
 <td><p>This method creates a TopologyPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a TopologyPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a TopologyRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TurnControl</span></code>(name, clientDirection, region[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TurnControl</span></code></a>(name, clientDirection, region[, ...])</p></td>
 <td><p>This method creates a TurnControl object.</p></td>
 </tr>
 </tbody>
@@ -9654,118 +9654,118 @@ The TopologyTask object is derived from the OptimizationTask object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OptimizationTask</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SingleTermDesignResponse</span></code>(name, identifier[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SingleTermDesignResponse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SingleTermDesignResponse</span></code></a>(name, identifier[, ...])</p></td>
 <td><p>This method creates a SingleTermDesignResponse object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectiveFunction</span></code>(name, objectives[, target])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ObjectiveFunction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ObjectiveFunction</span></code></a>(name, objectives[, target])</p></td>
 <td><p>This method creates an ObjectiveFunction object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationConstraint</span></code>(name, designResponse, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint" title="abaqus.Optimization.OptimizationTask.OptimizationTask.OptimizationConstraint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OptimizationConstraint</span></code></a>(name, designResponse, ...)</p></td>
 <td><p>This method creates an OptimizationConstraint object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadFixedRegion</span></code>(name, region[, csys, u1, u2, u3])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadFixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadFixedRegion</span></code></a>(name, region[, csys, u1, u2, u3])</p></td>
 <td><p>This method creates a BeadFixedRegion object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadGrowth</span></code>(name, region[, beadGrowth, shrink])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadGrowth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadGrowth</span></code></a>(name, region[, beadGrowth, shrink])</p></td>
 <td><p>This method creates a BeadGrowth object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPenetrationCheck</span></code>(name, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPenetrationCheck</span></code></a>(name, ...)</p></td>
 <td><p>This method creates a BeadPenetrationCheck object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPlanarSymmetry</span></code>(name, region[, axis, csys])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPlanarSymmetry</span></code></a>(name, region[, axis, csys])</p></td>
 <td><p>This method creates a BeadPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPointSymmetry</span></code>(name, region[, csys])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadPointSymmetry</span></code></a>(name, region[, csys])</p></td>
 <td><p>This method creates a BeadPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.BeadRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BeadRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a BeadRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignDirection</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DesignDirection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DesignDirection</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a DesignDirection object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrillControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.DrillControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DrillControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a DrillControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedRegion</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FixedRegion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FixedRegion</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a FixedRegion object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FrozenArea</span></code>(name[, region])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea" title="abaqus.Optimization.OptimizationTask.OptimizationTask.FrozenArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FrozenArea</span></code></a>(name[, region])</p></td>
 <td><p>This method creates a FrozenArea object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Growth</span></code>(name, region[, growth, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.Growth" title="abaqus.Optimization.OptimizationTask.OptimizationTask.Growth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Growth</span></code></a>(name, region[, growth, ...])</p></td>
 <td><p>This method creates a Growth object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PenetrationCheck</span></code>(name, ...[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck" title="abaqus.Optimization.OptimizationTask.OptimizationTask.PenetrationCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PenetrationCheck</span></code></a>(name, ...[, ...])</p></td>
 <td><p>This method creates a PenetrationCheck object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeDemoldControl</span></code>(name, pullDirection, region)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeDemoldControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeDemoldControl</span></code></a>(name, pullDirection, region)</p></td>
 <td><p>This method creates a ShapeDemoldControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeMemberSize</span></code>(name, region[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeMemberSize</span></code></a>(name, region[, ...])</p></td>
 <td><p>This method creates a ShapeMemberSize object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePlanarSymmetry</span></code>(name, clientDirection, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePlanarSymmetry</span></code></a>(name, clientDirection, ...)</p></td>
 <td><p>This method creates a ShapePlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapePointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapePointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a ShapePointSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeRotationalSymmetry</span></code>(name, ...[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.ShapeRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShapeRotationalSymmetry</span></code></a>(name, ...[, ...])</p></td>
 <td><p>This method creates a ShapeRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingClusterAreas</span></code>(name, regions)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingClusterAreas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingClusterAreas</span></code></a>(name, regions)</p></td>
 <td><p>This method creates a SizingClusterAreas object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingCyclicSymmetry</span></code>(name, region, translation)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingCyclicSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingCyclicSymmetry</span></code></a>(name, region, translation)</p></td>
 <td><p>This method creates a SizingCyclicSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingFrozenArea</span></code>(name, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingFrozenArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingFrozenArea</span></code></a>(name, region)</p></td>
 <td><p>This method creates a SizingFrozenArea object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingMemberSize</span></code>(name, region, minWidth)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingMemberSize</span></code></a>(name, region, minWidth)</p></td>
 <td><p>This method creates a SizingMemberSize object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPlanarSymmetry</span></code>(name, region[, axis, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPlanarSymmetry</span></code></a>(name, region[, axis, ...])</p></td>
 <td><p>This method creates a SizingPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingPointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a SizingPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SizingRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SizingRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a SizingRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SlideRegionControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.SlideRegionControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SlideRegionControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a SlideRegionControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StampControl</span></code>(name, clientDirection, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.StampControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StampControl</span></code></a>(name, clientDirection, region)</p></td>
 <td><p>This method creates a StampControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyCyclicSymmetry</span></code>(name, region, translation)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyCyclicSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyCyclicSymmetry</span></code></a>(name, region, translation)</p></td>
 <td><p>This method creates a TopologyCyclicSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyDemoldControl</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyDemoldControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyDemoldControl</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a TopologyDemoldControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMemberSize</span></code>(name, region[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMemberSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMemberSize</span></code></a>(name, region[, ...])</p></td>
 <td><p>This method creates a TopologyMemberSize object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMillingControl</span></code>(name, ...[, csys, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyMillingControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyMillingControl</span></code></a>(name, ...[, csys, ...])</p></td>
 <td><p>This method creates a TopologyMillingControl object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyOverhangControl</span></code>(name, pullDirection, ...)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyOverhangControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyOverhangControl</span></code></a>(name, pullDirection, ...)</p></td>
 <td><p>This method creates a TopologyOverhangControl object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPlanarSymmetry</span></code>(name, region[, axis, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPlanarSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPlanarSymmetry</span></code></a>(name, region[, axis, ...])</p></td>
 <td><p>This method creates a TopologyPlanarSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPointSymmetry</span></code>(name, region[, csys, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyPointSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyPointSymmetry</span></code></a>(name, region[, csys, ...])</p></td>
 <td><p>This method creates a TopologyPointSymmetry object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyRotationalSymmetry</span></code>(name, angle, region)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TopologyRotationalSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TopologyRotationalSymmetry</span></code></a>(name, angle, region)</p></td>
 <td><p>This method creates a TopologyRotationalSymmetry object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">TurnControl</span></code>(name, clientDirection, region[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl" title="abaqus.Optimization.OptimizationTask.OptimizationTask.TurnControl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TurnControl</span></code></a>(name, clientDirection, region[, ...])</p></td>
 <td><p>This method creates a TurnControl object.</p></td>
 </tr>
 </tbody>
