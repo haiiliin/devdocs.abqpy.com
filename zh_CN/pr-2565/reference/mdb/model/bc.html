@@ -778,16 +778,16 @@
 <tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, description, ...])</p></td>
 <td><p>This method creates a Model object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromInputFile</span></code>(name, inputFileName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.ModelFromInputFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromInputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromInputFile</span></code></a>(name, inputFileName)</p></td>
 <td><p>This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromOdbFile</span></code>(name, odbFileName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromOdbFile</span></code></a>(name, odbFileName)</p></td>
 <td><p>This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromNastranFile</span></code>(modelName, inputFileName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromNastranFile</span></code></a>(modelName, inputFileName)</p></td>
 <td><p>This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([description, noPartsInputFile, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.setValues" title="abaqus.Model.ModelBase.ModelBase.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([description, noPartsInputFile, ...])</p></td>
 <td><p>This method modifies the Model object.</p></td>
 </tr>
 </tbody>
@@ -2624,29 +2624,29 @@ The AccelerationBaseMotionBC object is derived from the BoundaryCondition object
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.setValues" title="abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([amplitudeScaleFactor, ...])</p></td>
-<td><p>This method modifies the data for an existing AccelerationBaseMotionBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.setValuesInStep" title="abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing AccelerationBaseMotionBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -2939,29 +2939,29 @@ The AccelerationBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValues" title="abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([fieldName, a1, a2, a3, ar1, ar2, ...])</p></td>
-<td><p>This method modifies the data for an existing AccelerationBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep" title="abaqus.BoundaryCondition.AccelerationBC.AccelerationBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, a1, a2, a3, ar1, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing AccelerationBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -3382,29 +3382,29 @@ The AcousticPressureBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.setValues" title="abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([fieldName, magnitude, ...])</p></td>
-<td><p>This method modifies the data for an existing AcousticPressureBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.setValuesInStep" title="abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing AcousticPressureBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -3699,29 +3699,29 @@ The ConcentrationBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC.setValues" title="abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([fieldName, magnitude, ...])</p></td>
-<td><p>This method modifies the data for an existing ConcentrationBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC.setValuesInStep" title="abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing ConcentrationBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -4020,29 +4020,29 @@ The ConnAccelerationBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValues" title="abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([region, fastenerName, ...])</p></td>
-<td><p>This method modifies the data for an existing ConnAccelerationBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValuesInStep" title="abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, a1, a2, a3, ar1, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing ConnAccelerationBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -4503,29 +4503,29 @@ The ConnDisplacementBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.setValues" title="abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([region, fastenerName, ...])</p></td>
-<td><p>This method modifies the data for an existing ConnDisplacementBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.setValuesInStep" title="abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, u1, u2, u3, ur1, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing ConnDisplacementBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -5002,29 +5002,29 @@ The ConnVelocityBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValues" title="abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([region, fastenerName, ...])</p></td>
-<td><p>This method modifies the data for an existing ConnVelocityBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValuesInStep" title="abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, v1, v2, v3, vr1, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing ConnVelocityBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -5479,29 +5479,29 @@ The DisplacementBaseMotionBC object is derived from the BoundaryCondition object
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC.setValues" title="abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([amplitudeScaleFactor, ...])</p></td>
-<td><p>This method modifies the data for an existing DisplacementBaseMotionBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC.setValuesInStep" title="abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing DisplacementBaseMotionBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -5801,29 +5801,29 @@ The DisplacementBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValues" title="abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([fieldName, u1, u2, u3, ur1, ur2, ...])</p></td>
-<td><p>This method modifies the data for an existing DisplacementBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValuesInStep" title="abaqus.BoundaryCondition.DisplacementBC.DisplacementBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, u1, u2, u3, ur1, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing DisplacementBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -6279,29 +6279,29 @@ The ElectricPotentialBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC.setValues" title="abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([fieldName, magnitude, ...])</p></td>
-<td><p>This method modifies the data for an existing ElectricPotentialBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC.setValuesInStep" title="abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing ElectricPotentialBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -6599,29 +6599,29 @@ The EulerianBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValues" title="abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(region[, definition, inflowType, ...])</p></td>
-<td><p>This method modifies the data for an existing EulerianBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValuesInStep" title="abaqus.BoundaryCondition.EulerianBC.EulerianBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, definition, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing EulerianBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -7024,29 +7024,29 @@ The EulerianMotionBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.setValues" title="abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(instanceName[, followRegion, ...])</p></td>
-<td><p>This method modifies the data for an existing EulerianMotionBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.setValuesInStep" title="abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, ctrPosition1, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing EulerianMotionBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -7768,29 +7768,29 @@ The FluidCavityPressureBC object is derived from the BoundaryCondition object.</
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValues" title="abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([magnitude, amplitude, fixed])</p></td>
-<td><p>This method modifies the data for an existing FluidCavityPressureBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValuesInStep" title="abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing FluidCavityPressureBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -8068,29 +8068,29 @@ The MagneticVectorPotentialBC object is derived from the BoundaryCondition objec
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValues" title="abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([component1, component2, ...])</p></td>
-<td><p>This method modifies the data for an existing MagneticVectorPotentialBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValuesInStep" title="abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, component1, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing MagneticVectorPotentialBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -8275,29 +8275,29 @@ The MaterialFlowBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.setValues" title="abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([fieldName, magnitude, ...])</p></td>
-<td><p>This method modifies the data for an existing MaterialFlowBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.setValuesInStep" title="abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing MaterialFlowBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -8592,29 +8592,29 @@ The PorePressureBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.setValues" title="abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([fieldName, magnitude, ...])</p></td>
-<td><p>This method modifies the data for an existing PorePressureBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.setValuesInStep" title="abaqus.BoundaryCondition.PorePressureBC.PorePressureBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing PorePressureBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -8904,29 +8904,29 @@ The RetainedNodalDofsBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC.setValues" title="abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([u1, u2, u3, ur1, ur2, ur3])</p></td>
-<td><p>This method modifies the data for an existing RetainedNodalDofsBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC.setValuesInStep" title="abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, u1, u2, u3, ur1, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing RetainedNodalDofsBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -9098,29 +9098,29 @@ The SecondaryBaseBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.setValues" title="abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
-<td><p>This method modifies the data for an existing SecondaryBaseBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.setValuesInStep" title="abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName)</p></td>
-<td><p>This method modifies the propagating data for an existing SecondaryBaseBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -9369,29 +9369,29 @@ The SubmodelBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValues" title="abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([globalDrivingRegion, ...])</p></td>
-<td><p>This method modifies the data for an existing SubmodelBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValuesInStep" title="abaqus.BoundaryCondition.SubmodelBC.SubmodelBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, fixed, dof, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing SubmodelBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -9800,29 +9800,29 @@ The TemperatureBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValues" title="abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([fieldName, magnitude, dof, ...])</p></td>
-<td><p>This method modifies the data for an existing TemperatureBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValuesInStep" title="abaqus.BoundaryCondition.TemperatureBC.TemperatureBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, magnitude, dof, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing TemperatureBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -10162,29 +10162,29 @@ The TypeBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.setValues" title="abaqus.BoundaryCondition.TypeBC.TypeBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(region[, typeName, buckleCase, ...])</p></td>
-<td><p>This method modifies the data for an existing TypeBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.TypeBC.TypeBC.setValuesInStep" title="abaqus.BoundaryCondition.TypeBC.TypeBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, typeName])</p></td>
-<td><p>This method always returns a value error for a TypeBC; it is inherited from the BoundaryCondition object.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -10781,29 +10781,29 @@ The VelocityBaseMotionBC object is derived from the BoundaryCondition object.</p
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValues" title="abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([amplitudeScaleFactor, ...])</p></td>
-<td><p>This method modifies the data for an existing VelocityBaseMotionBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValuesInStep" title="abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, amplitude])</p></td>
-<td><p>This method modifies the propagating data for an existing VelocityBaseMotionBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -11095,29 +11095,29 @@ The VelocityBC object is derived from the BoundaryCondition object.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BoundaryCondition</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
 <td><p>This method deactivates the boundary condition in the specified step and all subsequent steps.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code>(fromStepName, toStepName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.move"><code class="xref py py-obj docutils literal notranslate"><span class="pre">move</span></code></a>(fromStepName, toStepName)</p></td>
 <td><p>This method moves the boundary condition state from one step to a different step.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code>(stepName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(stepName)</p></td>
 <td><p>This method resets the boundary condition state of the specified step to the state of the previous analysis step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.resume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code></a>()</p></td>
 <td><p>This method resumes the boundary condition that was previously suppressed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.suppress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code></a>()</p></td>
 <td><p>This method suppresses the boundary condition.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code>(indices)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.delete"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete</span></code></a>(indices)</p></td>
 <td><p>This method allows you to delete existing boundary conditions.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValues" title="abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([fieldName, v1, v2, v3, vr1, vr2, ...])</p></td>
-<td><p>This method modifies the data for an existing VelocityBC object in the step where it is created.</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValuesInStep" title="abaqus.BoundaryCondition.VelocityBC.VelocityBC.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(stepName[, v1, v2, v3, vr1, ...])</p></td>
-<td><p>This method modifies the propagating data for an existing VelocityBC object in the specified step.</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep" title="abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition.setValuesInStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValuesInStep</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
 </tr>
 </tbody>
 </table>
