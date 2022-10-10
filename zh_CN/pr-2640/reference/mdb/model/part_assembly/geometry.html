@@ -620,27 +620,6 @@
 </div>
 <hr class="docutils" />
 <dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'featureName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'instanceName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'isReferenceRep':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Cell.py#L7-L150"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.Cell',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'isReferenceRep':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'featureName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'instanceName':</span> <span class="pre">typing.Optional[float]},</span> <span class="pre">'__doc__':</span> <span class="pre">'Cells</span> <span class="pre">are</span> <span class="pre">volumetric</span> <span class="pre">regions</span> <span class="pre">of</span> <span class="pre">geometry.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSets[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSets[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].sets[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].sets[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSets[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSets[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].sets[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].sets[name].cells[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.sets[name].cells[i]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`Cell</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'index':</span> <span class="pre">None,</span> <span class="pre">'isReferenceRep':</span> <span class="pre">OFF,</span> <span class="pre">'pointOn':</span> <span class="pre">None,</span> <span class="pre">'featureName':</span> <span class="pre">None,</span> <span class="pre">'instanceName':</span> <span class="pre">None,</span> <span class="pre">'getSize':</span> <span class="pre">&lt;function</span> <span class="pre">Cell.getSize&gt;,</span> <span class="pre">'getFaces':</span> <span class="pre">&lt;function</span> <span class="pre">Cell.getFaces&gt;,</span> <span class="pre">'getEdges':</span> <span class="pre">&lt;function</span> <span class="pre">Cell.getEdges&gt;,</span> <span class="pre">'getVertices':</span> <span class="pre">&lt;function</span> <span class="pre">Cell.getVertices&gt;,</span> <span class="pre">'getAdjacentCells':</span> <span class="pre">&lt;function</span> <span class="pre">Cell.getAdjacentCells&gt;,</span> <span class="pre">'getNodes':</span> <span class="pre">&lt;function</span> <span class="pre">Cell.getNodes&gt;,</span> <span class="pre">'getElements':</span> <span class="pre">&lt;function</span> <span class="pre">Cell.getElements&gt;,</span> <span class="pre">'getCADAttributes':</span> <span class="pre">&lt;function</span> <span class="pre">Cell.getCADAttributes&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Cell'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Cell'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Cell.py#L7-L150"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.Cell'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Cell.py#L7-L150"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Cell.py#L7-L150"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Cell.Cell.featureName">
 <span class="sig-name descname"><span class="pre">featureName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.10）"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Cell.py#L41-L42"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Cell.Cell.featureName" title="永久链接至目标">#</a></dt>
 <dd><p>A tuple of Floats specifying the name of the feature that created this cell.</p>
@@ -989,16 +968,6 @@ the cell.</p>
 </table>
 </details></div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.CellArray.CellArray.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/CellArray.py#L11-L274"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.CellArray.CellArray.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.CellArray.CellArray.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.CellArray',</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">CellArray</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">Cell</span> <span class="pre">objects.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSets[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSets[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].sets[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].sets[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSets[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSets[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].sets[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].sets[name].cells\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.sets[name].cells\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`CellArray</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">CellArray.__init__&gt;,</span> <span class="pre">'findAt':</span> <span class="pre">&lt;function</span> <span class="pre">CellArray.findAt&gt;,</span> <span class="pre">'getExteriorFaces':</span> <span class="pre">&lt;function</span> <span class="pre">CellArray.getExteriorFaces&gt;,</span> <span class="pre">'getSequenceFromMask':</span> <span class="pre">&lt;function</span> <span class="pre">CellArray.getSequenceFromMask&gt;,</span> <span class="pre">'getMask':</span> <span class="pre">&lt;function</span> <span class="pre">CellArray.getMask&gt;,</span> <span class="pre">'getByBoundingBox':</span> <span class="pre">&lt;function</span> <span class="pre">CellArray.getByBoundingBox&gt;,</span> <span class="pre">'getByBoundingCylinder':</span> <span class="pre">&lt;function</span> <span class="pre">CellArray.getByBoundingCylinder&gt;,</span> <span class="pre">'getByBoundingSphere':</span> <span class="pre">&lt;function</span> <span class="pre">CellArray.getByBoundingSphere&gt;,</span> <span class="pre">'getBoundingBox':</span> <span class="pre">&lt;function</span> <span class="pre">CellArray.getBoundingBox&gt;,</span> <span class="pre">'__orig_bases__':</span> <span class="pre">(typing.List[abaqus.BasicGeometry.Cell.Cell],),</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'CellArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'CellArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__parameters__':</span> <span class="pre">(),</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/CellArray.py#L11-L274"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.CellArray.CellArray.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.CellArray.CellArray.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cells</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/CellArray.py#L34-L54"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.CellArray.CellArray.__init__" title="永久链接至目标">#</a></dt>
@@ -1025,27 +994,6 @@ the cell.</p>
 <dd class="field-odd"><p><a class="reference internal" href="#abaqus.BasicGeometry.CellArray.CellArray" title="abaqus.BasicGeometry.CellArray.CellArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">CellArray</span></code></a></p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.CellArray.CellArray.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.CellArray'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/CellArray.py#L11-L274"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.CellArray.CellArray.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.CellArray.CellArray.__orig_bases__">
-<span class="sig-name descname"><span class="pre">__orig_bases__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(typing.List[abaqus.BasicGeometry.Cell.Cell],)</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/CellArray.py#L11-L274"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.CellArray.CellArray.__orig_bases__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.CellArray.CellArray.__parameters__">
-<span class="sig-name descname"><span class="pre">__parameters__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/CellArray.py#L11-L274"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.CellArray.CellArray.__parameters__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.CellArray.CellArray.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/CellArray.py#L11-L274"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.CellArray.CellArray.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1365,27 +1313,6 @@ efficient.</p>
 </table>
 </div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'featureName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'instanceName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'isReferenceRep':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Edge.py#L7-L212"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.Edge',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'isReferenceRep':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'featureName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'instanceName':</span> <span class="pre">typing.Optional[float]},</span> <span class="pre">'__doc__':</span> <span class="pre">'Edges</span> <span class="pre">are</span> <span class="pre">one-dimensional</span> <span class="pre">regions</span> <span class="pre">of</span> <span class="pre">geometry.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSets[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSurfaces[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSets[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSurfaces[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].sets[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].surfaces[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].sets[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].surfaces[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSets[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSurfaces[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSets[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSurfaces[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].sets[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].surfaces[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].sets[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.sets[name].edges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.surfaces[name].edges[i]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`Edge</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'index':</span> <span class="pre">None,</span> <span class="pre">'isReferenceRep':</span> <span class="pre">OFF,</span> <span class="pre">'pointOn':</span> <span class="pre">None,</span> <span class="pre">'featureName':</span> <span class="pre">None,</span> <span class="pre">'instanceName':</span> <span class="pre">None,</span> <span class="pre">'isTangentFlipped':</span> <span class="pre">&lt;function</span> <span class="pre">Edge.isTangentFlipped&gt;,</span> <span class="pre">'getCurvature':</span> <span class="pre">&lt;function</span> <span class="pre">Edge.getCurvature&gt;,</span> <span class="pre">'getFaces':</span> <span class="pre">&lt;function</span> <span class="pre">Edge.getFaces&gt;,</span> <span class="pre">'getAdjacentEdges':</span> <span class="pre">&lt;function</span> <span class="pre">Edge.getAdjacentEdges&gt;,</span> <span class="pre">'getEdgesByEdgeAngle':</span> <span class="pre">&lt;function</span> <span class="pre">Edge.getEdgesByEdgeAngle&gt;,</span> <span class="pre">'getNodes':</span> <span class="pre">&lt;function</span> <span class="pre">Edge.getNodes&gt;,</span> <span class="pre">'getElements':</span> <span class="pre">&lt;function</span> <span class="pre">Edge.getElements&gt;,</span> <span class="pre">'getRadius':</span> <span class="pre">&lt;function</span> <span class="pre">Edge.getRadius&gt;,</span> <span class="pre">'getSize':</span> <span class="pre">&lt;function</span> <span class="pre">Edge.getSize&gt;,</span> <span class="pre">'getVertices':</span> <span class="pre">&lt;function</span> <span class="pre">Edge.getVertices&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Edge'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Edge'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Edge.py#L7-L212"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.Edge'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Edge.py#L7-L212"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Edge.py#L7-L212"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Edge.Edge.featureName">
 <span class="sig-name descname"><span class="pre">featureName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.10）"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Edge.py#L52-L53"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Edge.Edge.featureName" title="永久链接至目标">#</a></dt>
@@ -1807,16 +1734,6 @@ must be updated for that part.</p>
 </table>
 </details></div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.EdgeArray.EdgeArray.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/EdgeArray.py#L10-L304"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.EdgeArray.EdgeArray.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.EdgeArray',</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">EdgeArray</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">Edge</span> <span class="pre">objects.</span> <span class="pre">If</span> <span class="pre">the</span> <span class="pre">part</span> <span class="pre">is</span> <span class="pre">modified,</span> <span class="pre">then</span> <span class="pre">EdgeArray\n</span>&#160;&#160;&#160; <span class="pre">must</span> <span class="pre">be</span> <span class="pre">updated</span> <span class="pre">for</span> <span class="pre">that</span> <span class="pre">part.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSets[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSurfaces[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSets[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSurfaces[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].sets[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].surfaces[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].sets[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].surfaces[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSets[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSurfaces[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSets[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSurfaces[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].sets[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].surfaces[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].sets[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.sets[name].edges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.surfaces[name].edges\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`EdgeArray</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">EdgeArray.__init__&gt;,</span> <span class="pre">'findAt':</span> <span class="pre">&lt;function</span> <span class="pre">EdgeArray.findAt&gt;,</span> <span class="pre">'getClosest':</span> <span class="pre">&lt;function</span> <span class="pre">EdgeArray.getClosest&gt;,</span> <span class="pre">'getSequenceFromMask':</span> <span class="pre">&lt;function</span> <span class="pre">EdgeArray.getSequenceFromMask&gt;,</span> <span class="pre">'getMask':</span> <span class="pre">&lt;function</span> <span class="pre">EdgeArray.getMask&gt;,</span> <span class="pre">'getByBoundingBox':</span> <span class="pre">&lt;function</span> <span class="pre">EdgeArray.getByBoundingBox&gt;,</span> <span class="pre">'getByBoundingCylinder':</span> <span class="pre">&lt;function</span> <span class="pre">EdgeArray.getByBoundingCylinder&gt;,</span> <span class="pre">'getByBoundingSphere':</span> <span class="pre">&lt;function</span> <span class="pre">EdgeArray.getByBoundingSphere&gt;,</span> <span class="pre">'getBoundingBox':</span> <span class="pre">&lt;function</span> <span class="pre">EdgeArray.getBoundingBox&gt;,</span> <span class="pre">'__orig_bases__':</span> <span class="pre">(typing.List[abaqus.BasicGeometry.Edge.Edge],),</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'EdgeArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'EdgeArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__parameters__':</span> <span class="pre">(),</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/EdgeArray.py#L10-L304"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edges</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/EdgeArray.py#L45-L65"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__" title="永久链接至目标">#</a></dt>
@@ -1843,27 +1760,6 @@ must be updated for that part.</p>
 <dd class="field-odd"><p><a class="reference internal" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray" title="abaqus.BasicGeometry.EdgeArray.EdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">EdgeArray</span></code></a></p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.EdgeArray.EdgeArray.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.EdgeArray'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/EdgeArray.py#L10-L304"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.EdgeArray.EdgeArray.__orig_bases__">
-<span class="sig-name descname"><span class="pre">__orig_bases__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(typing.List[abaqus.BasicGeometry.Edge.Edge],)</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/EdgeArray.py#L10-L304"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__orig_bases__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.EdgeArray.EdgeArray.__parameters__">
-<span class="sig-name descname"><span class="pre">__parameters__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/EdgeArray.py#L10-L304"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__parameters__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.EdgeArray.EdgeArray.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/EdgeArray.py#L10-L304"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -2222,27 +2118,6 @@ efficient.</p>
 </table>
 </div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'featureName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'instanceName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'isReferenceRep':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Face.py#L7-L301"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.Face',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'isReferenceRep':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'featureName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'instanceName':</span> <span class="pre">typing.Optional[float]},</span> <span class="pre">'__doc__':</span> <span class="pre">'Faces</span> <span class="pre">are</span> <span class="pre">two-dimensional</span> <span class="pre">regions</span> <span class="pre">of</span> <span class="pre">geometry.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSets[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSurfaces[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSets[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSurfaces[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].sets[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].surfaces[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].sets[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].surfaces[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSets[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSurfaces[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSets[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSurfaces[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].sets[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].surfaces[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].sets[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.sets[name].faces[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.surfaces[name].faces[i]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`Face</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facepyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'index':</span> <span class="pre">None,</span> <span class="pre">'isReferenceRep':</span> <span class="pre">OFF,</span> <span class="pre">'pointOn':</span> <span class="pre">None,</span> <span class="pre">'featureName':</span> <span class="pre">None,</span> <span class="pre">'instanceName':</span> <span class="pre">None,</span> <span class="pre">'getCentroid':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getCentroid&gt;,</span> <span class="pre">'getCurvature':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getCurvature&gt;,</span> <span class="pre">'getElements':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getElements&gt;,</span> <span class="pre">'getElementFaces':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getElementFaces&gt;,</span> <span class="pre">'getNodes':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getNodes&gt;,</span> <span class="pre">'getNormal':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getNormal&gt;,</span> <span class="pre">'getSize':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getSize&gt;,</span> <span class="pre">'getEdges':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getEdges&gt;,</span> <span class="pre">'getVertices':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getVertices&gt;,</span> <span class="pre">'getCells':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getCells&gt;,</span> <span class="pre">'getAdjacentFaces':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getAdjacentFaces&gt;,</span> <span class="pre">'getFacesByFaceAngle':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getFacesByFaceAngle&gt;,</span> <span class="pre">'getFacesByCurvature':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getFacesByCurvature&gt;,</span> <span class="pre">'isNormalFlipped':</span> <span class="pre">&lt;function</span> <span class="pre">Face.isNormalFlipped&gt;,</span> <span class="pre">'getCADAttributes':</span> <span class="pre">&lt;function</span> <span class="pre">Face.getCADAttributes&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Face'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Face'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Face.py#L7-L301"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.Face'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Face.py#L7-L301"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Face.py#L7-L301"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Face.Face.featureName">
 <span class="sig-name descname"><span class="pre">featureName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.10）"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Face.py#L52-L53"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Face.Face.featureName" title="永久链接至目标">#</a></dt>
@@ -2776,16 +2651,6 @@ must be updated for that part.</p>
 </table>
 </details></div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.FaceArray.FaceArray.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/FaceArray.py#L11-L318"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.FaceArray.FaceArray.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.FaceArray',</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">FaceArray</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">Face</span> <span class="pre">objects.</span> <span class="pre">If</span> <span class="pre">the</span> <span class="pre">part</span> <span class="pre">is</span> <span class="pre">modified,</span> <span class="pre">then</span> <span class="pre">FaceArray\n</span>&#160;&#160;&#160; <span class="pre">must</span> <span class="pre">be</span> <span class="pre">updated</span> <span class="pre">for</span> <span class="pre">that</span> <span class="pre">part.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSets[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSurfaces[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSets[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSurfaces[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].sets[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].surfaces[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].sets[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].surfaces[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSets[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSurfaces[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSets[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSurfaces[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].sets[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].surfaces[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].sets[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].surfaces[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.sets[name].faces\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.surfaces[name].faces\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`FaceArray</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">FaceArray.__init__&gt;,</span> <span class="pre">'findAt':</span> <span class="pre">&lt;function</span> <span class="pre">FaceArray.findAt&gt;,</span> <span class="pre">'getExteriorEdges':</span> <span class="pre">&lt;function</span> <span class="pre">FaceArray.getExteriorEdges&gt;,</span> <span class="pre">'getSequenceFromMask':</span> <span class="pre">&lt;function</span> <span class="pre">FaceArray.getSequenceFromMask&gt;,</span> <span class="pre">'getMask':</span> <span class="pre">&lt;function</span> <span class="pre">FaceArray.getMask&gt;,</span> <span class="pre">'getByBoundingBox':</span> <span class="pre">&lt;function</span> <span class="pre">FaceArray.getByBoundingBox&gt;,</span> <span class="pre">'getByBoundingCylinder':</span> <span class="pre">&lt;function</span> <span class="pre">FaceArray.getByBoundingCylinder&gt;,</span> <span class="pre">'getByBoundingSphere':</span> <span class="pre">&lt;function</span> <span class="pre">FaceArray.getByBoundingSphere&gt;,</span> <span class="pre">'getBoundingBox':</span> <span class="pre">&lt;function</span> <span class="pre">FaceArray.getBoundingBox&gt;,</span> <span class="pre">'getClosest':</span> <span class="pre">&lt;function</span> <span class="pre">FaceArray.getClosest&gt;,</span> <span class="pre">'__orig_bases__':</span> <span class="pre">(typing.List[abaqus.BasicGeometry.Face.Face],),</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'FaceArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'FaceArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__parameters__':</span> <span class="pre">(),</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/FaceArray.py#L11-L318"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.FaceArray.FaceArray.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">faces</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/FaceArray.py#L44-L64"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__init__" title="永久链接至目标">#</a></dt>
@@ -2812,27 +2677,6 @@ must be updated for that part.</p>
 <dd class="field-odd"><p><a class="reference internal" href="#abaqus.BasicGeometry.FaceArray.FaceArray" title="abaqus.BasicGeometry.FaceArray.FaceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">FaceArray</span></code></a></p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.FaceArray.FaceArray.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.FaceArray'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/FaceArray.py#L11-L318"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.FaceArray.FaceArray.__orig_bases__">
-<span class="sig-name descname"><span class="pre">__orig_bases__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(typing.List[abaqus.BasicGeometry.Face.Face],)</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/FaceArray.py#L11-L318"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__orig_bases__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.FaceArray.FaceArray.__parameters__">
-<span class="sig-name descname"><span class="pre">__parameters__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/FaceArray.py#L11-L318"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__parameters__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.FaceArray.FaceArray.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/FaceArray.py#L11-L318"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -3148,27 +2992,6 @@ away by a virtual topology feature.</p>
 </table>
 </div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdge.py#L6-L87"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.IgnoredEdge',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float]},</span> <span class="pre">'__doc__':</span> <span class="pre">'An</span> <span class="pre">:py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge`</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">one-dimensional</span> <span class="pre">region</span> <span class="pre">of</span> <span class="pre">geometry</span> <span class="pre">that</span> <span class="pre">has</span> <span class="pre">been</span> <span class="pre">abstracted\n</span>&#160;&#160;&#160; <span class="pre">away</span> <span class="pre">by</span> <span class="pre">a</span> <span class="pre">virtual</span> <span class="pre">topology</span> <span class="pre">feature.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].ignoredEdges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].ignoredEdges[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].ignoredEdges[i]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`IgnoredEdge</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignorededgepyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'index':</span> <span class="pre">None,</span> <span class="pre">'pointOn':</span> <span class="pre">None,</span> <span class="pre">'getSize':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredEdge.getSize&gt;,</span> <span class="pre">'getRadius':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredEdge.getRadius&gt;,</span> <span class="pre">'getCurvature':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredEdge.getCurvature&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'IgnoredEdge'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'IgnoredEdge'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdge.py#L6-L87"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.IgnoredEdge'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdge.py#L6-L87"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdge.py#L6-L87"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature">
 <span class="sig-name descname"><span class="pre">getCurvature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parameter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdge.py#L60-L87"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature" title="永久链接至目标">#</a></dt>
@@ -3425,37 +3248,6 @@ IgnoredEdgeArray must be updated for that part.</p>
 </table>
 </details></div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdgeArray.py#L10-L133"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.IgnoredEdgeArray',</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">IgnoredEdgeArray</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">IgnoredEdge</span> <span class="pre">objects.</span> <span class="pre">If</span> <span class="pre">the</span> <span class="pre">part</span> <span class="pre">is</span> <span class="pre">modified,</span> <span class="pre">then\n</span>&#160;&#160;&#160; <span class="pre">IgnoredEdgeArray</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">updated</span> <span class="pre">for</span> <span class="pre">that</span> <span class="pre">part.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].ignoredEdges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].ignoredEdges\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].ignoredEdges\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`IgnoredEdgeArray</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignorededgearraypyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'findAt':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredEdgeArray.findAt&gt;,</span> <span class="pre">'getSequenceFromMask':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredEdgeArray.getSequenceFromMask&gt;,</span> <span class="pre">'getMask':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredEdgeArray.getMask&gt;,</span> <span class="pre">'getClosest':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredEdgeArray.getClosest&gt;,</span> <span class="pre">'__orig_bases__':</span> <span class="pre">(typing.List[abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge],),</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'IgnoredEdgeArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'IgnoredEdgeArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__parameters__':</span> <span class="pre">(),</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdgeArray.py#L10-L133"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.IgnoredEdgeArray'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdgeArray.py#L10-L133"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__orig_bases__">
-<span class="sig-name descname"><span class="pre">__orig_bases__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(typing.List[abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge],)</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdgeArray.py#L10-L133"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__orig_bases__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__parameters__">
-<span class="sig-name descname"><span class="pre">__parameters__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdgeArray.py#L10-L133"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__parameters__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdgeArray.py#L10-L133"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt">
 <span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printWarning</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredEdgeArray.py#L25-L63"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt" title="永久链接至目标">#</a></dt>
@@ -3624,27 +3416,6 @@ virtual topology feature.</p>
 </table>
 </div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertex.py#L6-L25"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.IgnoredVertex',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float]},</span> <span class="pre">'__doc__':</span> <span class="pre">'An</span> <span class="pre">:py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex`</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">point</span> <span class="pre">region</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">geometry</span> <span class="pre">that</span> <span class="pre">was</span> <span class="pre">abstracted</span> <span class="pre">away</span> <span class="pre">by</span> <span class="pre">a\n</span>&#160;&#160;&#160; <span class="pre">virtual</span> <span class="pre">topology</span> <span class="pre">feature.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].ignoredVertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].ignoredVertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].ignoredVertices[i]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`IgnoredVertex</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignoredvertexpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'index':</span> <span class="pre">None,</span> <span class="pre">'pointOn':</span> <span class="pre">None,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'IgnoredVertex'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'IgnoredVertex'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertex.py#L6-L25"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.IgnoredVertex'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertex.py#L6-L25"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertex.py#L6-L25"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.index">
 <span class="sig-name descname"><span class="pre">index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.10）"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.10）"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertex.py#L21-L22"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.index" title="永久链接至目标">#</a></dt>
@@ -3828,37 +3599,6 @@ then IgnoredVertexArray must be updated for that part.</p>
 </table>
 </details></div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertexArray.py#L10-L131"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.IgnoredVertexArray',</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">IgnoredVertexArray</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">IgnoredVertex</span> <span class="pre">objects.</span> <span class="pre">If</span> <span class="pre">the</span> <span class="pre">part</span> <span class="pre">is</span> <span class="pre">modified,\n</span>&#160;&#160;&#160; <span class="pre">then</span> <span class="pre">IgnoredVertexArray</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">updated</span> <span class="pre">for</span> <span class="pre">that</span> <span class="pre">part.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].ignoredVertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].ignoredVertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].ignoredVertices\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`IgnoredVertexArray</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignoredvertexarraypyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'findAt':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredVertexArray.findAt&gt;,</span> <span class="pre">'getSequenceFromMask':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredVertexArray.getSequenceFromMask&gt;,</span> <span class="pre">'getMask':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredVertexArray.getMask&gt;,</span> <span class="pre">'getClosest':</span> <span class="pre">&lt;function</span> <span class="pre">IgnoredVertexArray.getClosest&gt;,</span> <span class="pre">'__orig_bases__':</span> <span class="pre">(typing.List[abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex],),</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'IgnoredVertexArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'IgnoredVertexArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__parameters__':</span> <span class="pre">(),</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertexArray.py#L10-L131"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.IgnoredVertexArray'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertexArray.py#L10-L131"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__orig_bases__">
-<span class="sig-name descname"><span class="pre">__orig_bases__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(typing.List[abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex],)</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertexArray.py#L10-L131"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__orig_bases__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__parameters__">
-<span class="sig-name descname"><span class="pre">__parameters__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertexArray.py#L10-L131"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__parameters__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertexArray.py#L10-L131"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt">
 <span class="sig-name descname"><span class="pre">findAt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coordinates</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printWarning</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/IgnoredVertexArray.py#L25-L60"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt" title="永久链接至目标">#</a></dt>
@@ -4025,11 +3765,6 @@ object.</p>
 </table>
 </div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.InterestingPoint',</span> <span class="pre">'__doc__':</span> <span class="pre">'Interesting</span> <span class="pre">points</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">located</span> <span class="pre">at</span> <span class="pre">the</span> <span class="pre">following:\n\n</span>&#160;&#160;&#160; <span class="pre">-</span> <span class="pre">The</span> <span class="pre">middle</span> <span class="pre">of</span> <span class="pre">an</span> <span class="pre">edge.\n</span>&#160;&#160;&#160; <span class="pre">-</span> <span class="pre">The</span> <span class="pre">middle</span> <span class="pre">of</span> <span class="pre">an</span> <span class="pre">arc.\n</span>&#160;&#160;&#160; <span class="pre">-</span> <span class="pre">The</span> <span class="pre">center</span> <span class="pre">of</span> <span class="pre">an</span> <span class="pre">arc.\n</span>&#160;&#160;&#160; <span class="pre">\n</span>&#160;&#160;&#160; <span class="pre">An</span> <span class="pre">:py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint`</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">temporary</span> <span class="pre">object</span> <span class="pre">and</span> <span class="pre">cannot</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">Mdb\n</span>&#160;&#160;&#160; <span class="pre">object.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`InterestingPoint</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interestingpointpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">InterestingPoint.__init__&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'InterestingPoint'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'InterestingPoint'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/InterestingPoint.py#L8-L51"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rule</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/InterestingPoint.py#L26-L51"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__" title="永久链接至目标">#</a></dt>
@@ -4064,17 +3799,6 @@ MIDDLE or CENTER.</p></li>
 </dl>
 </dd></dl>
 
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.InterestingPoint'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/InterestingPoint.py#L8-L51"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/InterestingPoint.py#L8-L51"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 </dd></dl>
 
 </section>
@@ -4089,26 +3813,10 @@ object.</p>
 <p class="admonition-title">备注</p>
 <p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modeldotpyc.htm?contextscope=all">ModelDot on help.3ds.com/2023</a>.</p>
 </div>
-<hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ModelDot.ModelDot.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.ModelDot',</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">ModelDot</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">used</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">an</span> <span class="pre">actual</span> <span class="pre">MeshNode,</span> <span class="pre">ReferencePoint,</span> <span class="pre">or</span> <span class="pre">ConstrainedSketchVertex\n</span>&#160;&#160;&#160; <span class="pre">object.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`ModelDot</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modeldotpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'ModelDot'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'ModelDot'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ModelDot.py#L4-L9"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ModelDot.ModelDot.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ModelDot.ModelDot.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.ModelDot'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ModelDot.py#L4-L9"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ModelDot.ModelDot.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ModelDot.ModelDot.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ModelDot.py#L4-L9"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ModelDot.ModelDot.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="modeldotarray">
 <h3>ModelDotArray<a class="headerlink" href="#modeldotarray" title="此标题的永久链接">#</a></h3>
 <dl class="py attribute">
@@ -4163,11 +3871,6 @@ ReferencePoint object.</p>
 </table>
 </div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.ReferencePoint',</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">ReferencePoint</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">direct</span> <span class="pre">constructor;</span> <span class="pre">it</span> <span class="pre">is</span> <span class="pre">created</span> <span class="pre">when</span> <span class="pre">a</span> <span class="pre">Feature</span> <span class="pre">object\n</span>&#160;&#160;&#160; <span class="pre">is</span> <span class="pre">created.</span> <span class="pre">The</span> <span class="pre">ReferencePoint</span> <span class="pre">method</span> <span class="pre">creates</span> <span class="pre">a</span> <span class="pre">Feature</span> <span class="pre">object</span> <span class="pre">that</span> <span class="pre">creates</span> <span class="pre">a\n</span>&#160;&#160;&#160; <span class="pre">ReferencePoint</span> <span class="pre">object.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSets[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSets[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].sets[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].sets[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSets[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSets[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].sets[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].sets[name].referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.referencePoints[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.sets[name].referencePoints[i]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`ReferencePoint</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-referencepointpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">ReferencePoint.__init__&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'ReferencePoint'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'ReferencePoint'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoint.py#L10-L65"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instanceName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoint.py#L37-L65"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__" title="永久链接至目标">#</a></dt>
@@ -4203,17 +3906,6 @@ location.</p>
 </dl>
 </dd></dl>
 
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.ReferencePoint'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoint.py#L10-L65"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoint.py#L10-L65"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 </dd></dl>
 
 </section>
@@ -4235,7 +3927,7 @@ location.</p>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__getitem__" title="abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__getitem__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></a>(key)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code>(key)</p></td>
 <td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
 </tr>
 </tbody>
@@ -4284,7 +3976,7 @@ location.</p>
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>()</p></td>
 <td><p>Return len(self).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__getitem__" title="abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__getitem__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></a>(key)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code>(key)</p></td>
 <td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
@@ -4361,47 +4053,10 @@ location.</p>
 </tbody>
 </table>
 </details></div>
-<hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoints.py#L6-L11"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.ReferencePoints',</span> <span class="pre">'__getitem__':</span> <span class="pre">&lt;function</span> <span class="pre">ReferencePoints.__getitem__&gt;,</span> <span class="pre">'__orig_bases__':</span> <span class="pre">(typing.Dict[int,</span> <span class="pre">abaqus.BasicGeometry.ReferencePoint.ReferencePoint],),</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'ReferencePoints'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'ReferencePoints'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__doc__':</span> <span class="pre">None,</span> <span class="pre">'__parameters__':</span> <span class="pre">(),</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoints.py#L6-L11"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__getitem__">
-<span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoints.py#L7-L11"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__getitem__" title="永久链接至目标">#</a></dt>
-<dd><p>x.__getitem__(y) &lt;==&gt; x[y]</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.ReferencePoints'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoints.py#L6-L11"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__orig_bases__">
-<span class="sig-name descname"><span class="pre">__orig_bases__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(typing.Dict[int,</span> <span class="pre">abaqus.BasicGeometry.ReferencePoint.ReferencePoint],)</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoints.py#L6-L11"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__orig_bases__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__parameters__">
-<span class="sig-name descname"><span class="pre">__parameters__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoints.py#L6-L11"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__parameters__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/ReferencePoints.py#L6-L11"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 </dd></dl>
 
 </section>
+<hr class="docutils" />
 <section id="transform">
 <h3>Transform<a class="headerlink" href="#transform" title="此标题的永久链接">#</a></h3>
 <dl class="py class">
@@ -4433,22 +4088,6 @@ transformation from sketch coordinates to assembly coordinates or to part coordi
 </table>
 </div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Transform.Transform.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.Transform',</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">MakeSketchTransform</span> <span class="pre">method</span> <span class="pre">creates</span> <span class="pre">a</span> <span class="pre">Transform</span> <span class="pre">object.</span> <span class="pre">The</span> <span class="pre">Transform</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no\n</span>&#160;&#160;&#160; <span class="pre">direct</span> <span class="pre">constructor.</span> <span class="pre">A</span> <span class="pre">:py:class:`~abaqus.BasicGeometry.Transform.Transform`</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">4×3</span> <span class="pre">matrix</span> <span class="pre">of</span> <span class="pre">Floats</span> <span class="pre">that</span> <span class="pre">represents</span> <span class="pre">the\n</span>&#160;&#160;&#160; <span class="pre">transformation</span> <span class="pre">from</span> <span class="pre">sketch</span> <span class="pre">coordinates</span> <span class="pre">to</span> <span class="pre">assembly</span> <span class="pre">coordinates</span> <span class="pre">or</span> <span class="pre">to</span> <span class="pre">part</span> <span class="pre">coordinates.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`Transform</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-transformpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'matrix':</span> <span class="pre">&lt;function</span> <span class="pre">Transform.matrix&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Transform'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Transform'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Transform.py#L6-L29"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Transform.Transform.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Transform.Transform.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.Transform'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Transform.py#L6-L29"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Transform.Transform.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Transform.Transform.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Transform.py#L6-L29"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Transform.Transform.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Transform.Transform.matrix">
 <span class="sig-name descname"><span class="pre">matrix</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Transform.py#L19-L29"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Transform.Transform.matrix" title="永久链接至目标">#</a></dt>
@@ -4537,27 +4176,6 @@ transformation from sketch coordinates to assembly coordinates or to part coordi
 </table>
 </div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Vertex.Vertex.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'featureName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'instanceName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'isReferenceRep':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Vertex.py#L7-L84"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Vertex.Vertex.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.Vertex',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'index':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'isReferenceRep':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'pointOn':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'featureName':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'instanceName':</span> <span class="pre">typing.Optional[float]},</span> <span class="pre">'__doc__':</span> <span class="pre">'Vertices</span> <span class="pre">are</span> <span class="pre">point</span> <span class="pre">regions</span> <span class="pre">of</span> <span class="pre">geometry.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSets[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSets[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].sets[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].sets[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSets[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSets[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].sets[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].sets[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.sets[name].vertices[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.vertices[i]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`Vertex</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'index':</span> <span class="pre">None,</span> <span class="pre">'isReferenceRep':</span> <span class="pre">OFF,</span> <span class="pre">'pointOn':</span> <span class="pre">None,</span> <span class="pre">'featureName':</span> <span class="pre">None,</span> <span class="pre">'instanceName':</span> <span class="pre">None,</span> <span class="pre">'getEdges':</span> <span class="pre">&lt;function</span> <span class="pre">Vertex.getEdges&gt;,</span> <span class="pre">'getNodes':</span> <span class="pre">&lt;function</span> <span class="pre">Vertex.getNodes&gt;,</span> <span class="pre">'getElements':</span> <span class="pre">&lt;function</span> <span class="pre">Vertex.getElements&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Vertex'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Vertex'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Vertex.py#L7-L84"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Vertex.Vertex.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.Vertex'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Vertex.py#L7-L84"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.Vertex.Vertex.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Vertex.py#L7-L84"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
-</dd></dl>
-
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.Vertex.Vertex.featureName">
 <span class="sig-name descname"><span class="pre">featureName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.10）"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/Vertex.py#L42-L43"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.Vertex.Vertex.featureName" title="永久链接至目标">#</a></dt>
@@ -4830,16 +4448,6 @@ VertexArray must be updated for that part.</p>
 </table>
 </details></div>
 <hr class="docutils" />
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.VertexArray.VertexArray.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/VertexArray.py#L11-L261"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.VertexArray.VertexArray.__dict__">
-<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.BasicGeometry.VertexArray',</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">VertexArray</span> <span class="pre">is</span> <span class="pre">a</span> <span class="pre">sequence</span> <span class="pre">of</span> <span class="pre">ConstrainedSketchVertex</span> <span class="pre">objects.</span> <span class="pre">If</span> <span class="pre">the</span> <span class="pre">part</span> <span class="pre">is</span> <span class="pre">modified,</span> <span class="pre">then\n</span>&#160;&#160;&#160; <span class="pre">VertexArray</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">updated</span> <span class="pre">for</span> <span class="pre">that</span> <span class="pre">part.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">part\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allInternalSets[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].allSets[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].sets[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].parts[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">assembly\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].sets[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInstances[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allInternalSets[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.allSets[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].sets[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.instances[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].sets[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.modelInstances[i].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.sets[name].vertices\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].rootAssembly.vertices\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`VertexArray</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">VertexArray.__init__&gt;,</span> <span class="pre">'findAt':</span> <span class="pre">&lt;function</span> <span class="pre">VertexArray.findAt&gt;,</span> <span class="pre">'getSequenceFromMask':</span> <span class="pre">&lt;function</span> <span class="pre">VertexArray.getSequenceFromMask&gt;,</span> <span class="pre">'getMask':</span> <span class="pre">&lt;function</span> <span class="pre">VertexArray.getMask&gt;,</span> <span class="pre">'getByBoundingBox':</span> <span class="pre">&lt;function</span> <span class="pre">VertexArray.getByBoundingBox&gt;,</span> <span class="pre">'getByBoundingCylinder':</span> <span class="pre">&lt;function</span> <span class="pre">VertexArray.getByBoundingCylinder&gt;,</span> <span class="pre">'getByBoundingSphere':</span> <span class="pre">&lt;function</span> <span class="pre">VertexArray.getByBoundingSphere&gt;,</span> <span class="pre">'getBoundingBox':</span> <span class="pre">&lt;function</span> <span class="pre">VertexArray.getBoundingBox&gt;,</span> <span class="pre">'getClosest':</span> <span class="pre">&lt;function</span> <span class="pre">VertexArray.getClosest&gt;,</span> <span class="pre">'__orig_bases__':</span> <span class="pre">(typing.List[abaqus.BasicGeometry.Vertex.Vertex],),</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'VertexArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'VertexArray'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__parameters__':</span> <span class="pre">(),</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/VertexArray.py#L11-L261"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__dict__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.BasicGeometry.VertexArray.VertexArray.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vertices</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/VertexArray.py#L37-L57"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__init__" title="永久链接至目标">#</a></dt>
@@ -4866,27 +4474,6 @@ VertexArray must be updated for that part.</p>
 <dd class="field-odd"><p><a class="reference internal" href="#abaqus.BasicGeometry.VertexArray.VertexArray" title="abaqus.BasicGeometry.VertexArray.VertexArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">VertexArray</span></code></a></p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.VertexArray.VertexArray.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.BasicGeometry.VertexArray'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/VertexArray.py#L11-L261"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.VertexArray.VertexArray.__orig_bases__">
-<span class="sig-name descname"><span class="pre">__orig_bases__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(typing.List[abaqus.BasicGeometry.Vertex.Vertex],)</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/VertexArray.py#L11-L261"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__orig_bases__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.VertexArray.VertexArray.__parameters__">
-<span class="sig-name descname"><span class="pre">__parameters__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/VertexArray.py#L11-L261"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__parameters__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abaqus.BasicGeometry.VertexArray.VertexArray.__weakref__">
-<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/BasicGeometry/VertexArray.py#L11-L261"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__weakref__" title="永久链接至目标">#</a></dt>
-<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py method">
@@ -5182,42 +4769,6 @@ efficient.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Cell.Cell.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Cell.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Cell.Cell.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Cell.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Cell.Cell.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Cell.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Cell.Cell.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Cell.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Cell.Cell.featureName">
          <code class="docutils literal notranslate">
           <span class="pre">
@@ -5353,64 +4904,10 @@ efficient.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.CellArray.CellArray.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           CellArray.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.CellArray.CellArray.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           CellArray.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.CellArray.CellArray.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            CellArray.__init__()
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.CellArray.CellArray.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           CellArray.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.CellArray.CellArray.__orig_bases__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           CellArray.__orig_bases__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.CellArray.CellArray.__parameters__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           CellArray.__parameters__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.CellArray.CellArray.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           CellArray.__weakref__
           </span>
          </code>
         </a>
@@ -5505,42 +5002,6 @@ efficient.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Edge.Edge.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Edge.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Edge.Edge.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Edge.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Edge.Edge.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Edge.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Edge.Edge.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Edge.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Edge.Edge.featureName">
          <code class="docutils literal notranslate">
@@ -5695,64 +5156,10 @@ efficient.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           EdgeArray.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           EdgeArray.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            EdgeArray.__init__()
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           EdgeArray.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__orig_bases__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           EdgeArray.__orig_bases__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__parameters__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           EdgeArray.__parameters__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.EdgeArray.EdgeArray.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           EdgeArray.__weakref__
           </span>
          </code>
         </a>
@@ -5847,42 +5254,6 @@ efficient.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Face.Face.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Face.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Face.Face.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Face.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Face.Face.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Face.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Face.Face.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Face.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Face.Face.featureName">
          <code class="docutils literal notranslate">
@@ -6082,64 +5453,10 @@ efficient.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           FaceArray.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           FaceArray.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            FaceArray.__init__()
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           FaceArray.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__orig_bases__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           FaceArray.__orig_bases__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__parameters__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           FaceArray.__parameters__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.FaceArray.FaceArray.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           FaceArray.__weakref__
           </span>
          </code>
         </a>
@@ -6244,42 +5561,6 @@ efficient.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredEdge.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredEdge.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredEdge.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredEdge.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature">
          <code class="docutils literal notranslate">
           <span class="pre">
@@ -6343,60 +5624,6 @@ efficient.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredEdgeArray.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredEdgeArray.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredEdgeArray.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__orig_bases__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredEdgeArray.__orig_bases__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__parameters__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredEdgeArray.__parameters__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredEdgeArray.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt">
          <code class="docutils literal notranslate">
           <span class="pre">
@@ -6451,42 +5678,6 @@ efficient.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredVertex.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredVertex.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredVertex.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredVertex.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.index">
          <code class="docutils literal notranslate">
           <span class="pre">
@@ -6522,60 +5713,6 @@ efficient.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredVertexArray.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredVertexArray.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredVertexArray.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__orig_bases__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredVertexArray.__orig_bases__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__parameters__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredVertexArray.__parameters__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           IgnoredVertexArray.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt">
          <code class="docutils literal notranslate">
@@ -6631,37 +5768,10 @@ efficient.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           InterestingPoint.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            InterestingPoint.__init__()
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           InterestingPoint.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.InterestingPoint.InterestingPoint.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           InterestingPoint.__weakref__
           </span>
          </code>
         </a>
@@ -6683,35 +5793,6 @@ efficient.</p>
         </span>
        </code>
       </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ModelDot.ModelDot.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ModelDot.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ModelDot.ModelDot.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ModelDot.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ModelDot.ModelDot.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ModelDot.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
-      </ul>
      </li>
     </ul>
    </li>
@@ -6746,37 +5827,10 @@ efficient.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ReferencePoint.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            ReferencePoint.__init__()
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ReferencePoint.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ReferencePoint.__weakref__
           </span>
          </code>
         </a>
@@ -6814,71 +5868,6 @@ efficient.</p>
         </span>
        </code>
       </a>
-      <ul class="nav section-nav flex-column">
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ReferencePoints.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ReferencePoints.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__getitem__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ReferencePoints.__getitem__()
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ReferencePoints.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__orig_bases__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ReferencePoints.__orig_bases__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__parameters__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ReferencePoints.__parameters__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           ReferencePoints.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
-      </ul>
      </li>
     </ul>
    </li>
@@ -6896,33 +5885,6 @@ efficient.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Transform.Transform.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Transform.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Transform.Transform.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Transform.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Transform.Transform.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Transform.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Transform.Transform.matrix">
          <code class="docutils literal notranslate">
@@ -6950,42 +5912,6 @@ efficient.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Vertex.Vertex.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Vertex.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Vertex.Vertex.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Vertex.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Vertex.Vertex.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Vertex.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Vertex.Vertex.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           Vertex.__weakref__
-          </span>
-         </code>
-        </a>
-       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.Vertex.Vertex.featureName">
          <code class="docutils literal notranslate">
@@ -7077,64 +6003,10 @@ efficient.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__annotations__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           VertexArray.__annotations__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__dict__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           VertexArray.__dict__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            VertexArray.__init__()
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__module__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           VertexArray.__module__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__orig_bases__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           VertexArray.__orig_bases__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__parameters__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           VertexArray.__parameters__
-          </span>
-         </code>
-        </a>
-       </li>
-       <li class="toc-h5 nav-item toc-entry">
-        <a class="reference internal nav-link" href="#abaqus.BasicGeometry.VertexArray.VertexArray.__weakref__">
-         <code class="docutils literal notranslate">
-          <span class="pre">
-           VertexArray.__weakref__
           </span>
          </code>
         </a>
