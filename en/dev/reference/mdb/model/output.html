@@ -1045,7 +1045,7 @@ specific diagnostic checks</p>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([allke, criticalElement, dmass, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.__init__" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([allke, criticalElement, dmass, ...])</p></td>
 <td><p>This method creates a DiagnosticPrint object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
@@ -1055,6 +1055,66 @@ specific diagnostic checks</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">allke</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criticalElement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dmass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">etotal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contact</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelChange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plasticity</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">residual</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/DiagnosticPrint.py#L74-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a DiagnosticPrint object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">DiagnosticPrint</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-diagnosticprintpyc.htm?contextscope=all#simaker-diagnosticprint__init__pyc">DiagnosticPrint.__init__ on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>allke</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying a request for a column containing the total kinetic energy. This
+argument is valid only for an Abaqus/Explicit analysis. The default value is ON.</p></li>
+<li><p><strong>criticalElement</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying a request for a column containing the element that has the smallest
+stable time increment and a column listing the value. This argument is valid only for an
+Abaqus/Explicit analysis. The default value is ON.</p></li>
+<li><p><strong>dmass</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying a request for a column containing the percent change in total mass
+of the model as a result of mass scaling. This argument is valid only for an
+Abaqus/Explicit analysis. The default value is OFF unless mass scaling is present in the
+model.</p></li>
+<li><p><strong>etotal</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying a request for a column containing the energy balance of the model.
+This argument is valid only for an Abaqus/Explicit analysis. The default value is OFF.</p></li>
+<li><p><strong>contact</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying a request for detailed output of points that are contacting or
+separating in interface and gap problems. This argument is valid only for an
+Abaqus/Standard analysis. The default value is ON.</p></li>
+<li><p><strong>modelChange</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying a request for detailed output of which elements are being removed
+or reactivated in the step. This argument is valid only for an Abaqus/Standard analysis.
+The default value is OFF.</p></li>
+<li><p><strong>plasticity</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying a request for detailed output of element and integration point
+numbers for which the plasticity algorithms have failed to converge in the material
+routines. This argument is valid only for an Abaqus/Standard analysis. The default value
+is OFF.</p></li>
+<li><p><strong>residual</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying a request for output of equilibrium residuals during the
+equilibrium iterations. This argument is valid only for an Abaqus/Standard analysis. The
+default value is ON.</p></li>
+<li><p><strong>frequency</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">1</span></code>) – An Int specifying the frequency of output, in increments. The default value is 1.</p></li>
+<li><p><strong>solve</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying a request for information regarding the actual number of equations
+and the wavefront in each iteration. This argument is valid only for an Abaqus/Standard
+analysis. The default value is ON.</p></li>
+<li><p><strong>mass</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying a request for a column containing the total mass of the model as a
+result of mass scaling. This argument is valid only for an Abaqus/Explicit analysis. The
+default value is OFF.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A <a class="reference internal" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint"><code class="xref py py-class docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a> object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint" title="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint"><code class="xref py py-class docutils literal notranslate"><span class="pre">DiagnosticPrint</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.allke">
 <span class="sig-name descname"><span class="pre">allke</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/DiagnosticPrint.py#L21-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.allke" title="Permalink to this definition">#</a></dt>
@@ -1194,7 +1254,7 @@ default value is ON.</p>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, createStepName[, region, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.__init__" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name, createStepName[, region, ...])</p></td>
 <td><p>This method creates a FieldOutputRequest object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate" title="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
@@ -1222,6 +1282,80 @@ default value is ON.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MODEL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PRESELECT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ALL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeInterval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.EVERY_TIME_INCREMENT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numIntervals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeMarks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boltLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sectionPoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rebar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.EXCLUDE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fasteners</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assembledFastener</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assembledFastenerSet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exteriorOnly</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layupNames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layupLocationMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SPECIFIED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputAtPlyTop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputAtPlyMid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputAtPlyBottom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.INTEGRATION_POINTS</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/FieldOutputRequest.py#L51-L170"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a FieldOutputRequest object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">FieldOutputRequest</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldoutputrequestpyc.htm?contextscope=all#simaker-fieldoutputrequest__init__pyc">FieldOutputRequest.__init__ on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the repository key.</p></li>
+<li><p><strong>createStepName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the name of the step in which the object is created.</p></li>
+<li><p><strong>region</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[MODEL], <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">MODEL</span></code>) – The SymbolicConstant MODEL or a Region object specifying the region from which output is
+requested. The SymbolicConstant MODEL represents the whole model. The default value is
+MODEL.</p></li>
+<li><p><strong>variables</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[PRESELECT, ALL]], default: <code class="docutils literal notranslate"><span class="pre">PRESELECT</span></code>) – A sequence of Strings specifying output request variable or component names, or the
+SymbolicConstant PRESELECT or ALL. PRESELECT represents all default output variables for
+the given step. ALL represents all valid output variables. The default value is
+PRESELECT.</p></li>
+<li><p><strong>frequency</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[LAST_INCREMENT]], default: <code class="docutils literal notranslate"><span class="pre">1</span></code>) – The SymbolicConstant LAST_INCREMENT or an Int specifying the output frequency in
+increments. The default value is 1.</p></li>
+<li><p><strong>modes</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[ALL], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]], default: <code class="docutils literal notranslate"><span class="pre">ALL</span></code>) – The SymbolicConstant ALL or a sequence of Ints specifying a list of eigenmodes for which
+output is desired. The default value is ALL.</p></li>
+<li><p><strong>timeInterval</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[EVERY_TIME_INCREMENT], <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">EVERY_TIME_INCREMENT</span></code>) – The SymbolicConstant EVERY_TIME_INCREMENT or a Float specifying the time interval at
+which the output states are to be written. The default value is EVERY_TIME_INCREMENT.</p></li>
+<li><p><strong>numIntervals</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">20</span></code>) – An Int specifying the number of intervals during the step at which output database
+states are to be written. The default value is 20.</p></li>
+<li><p><strong>timeMarks</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying when to write results to the output database. OFF indicates that
+output is written immediately after the time dictated by the specified number of
+intervals. ON indicates that output is written at the exact times dictated by the
+specified number of intervals. The default value is OFF.</p></li>
+<li><p><strong>boltLoad</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying a bolt load from which output is requested.</p></li>
+<li><p><strong>sectionPoints</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[DEFAULT]], default: <code class="docutils literal notranslate"><span class="pre">DEFAULT</span></code>) – The SymbolicConstant DEFAULT or a sequence of Ints specifying the section points for
+which output requested. The default is DEFAULT.</p></li>
+<li><p><strong>interactions</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – None or a sequence of Strings specifying the interaction names. The default value is
+None.The sequence can contain only one String.</p></li>
+<li><p><strong>rebar</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[EXCLUDE, INCLUDE, ONLY], default: <code class="docutils literal notranslate"><span class="pre">EXCLUDE</span></code>) – A SymbolicConstant specifying whether output is requested for rebar. Possible values are
+EXCLUDE, INCLUDE, and ONLY. The default value is EXCLUDE.</p></li>
+<li><p><strong>filter</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[ANTIALIASING], <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – The SymbolicConstant ANTIALIASING or a String specifying the name of an output filter
+object. The default value is None.</p></li>
+<li><p><strong>directions</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying whether to output directions of the local material coordinate
+system. The default value is ON.</p></li>
+<li><p><strong>fasteners</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying the fastener name. The default value is an empty string.</p></li>
+<li><p><strong>assembledFastener</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying the assembled fastener name. The default value is an empty string.</p></li>
+<li><p><strong>assembledFastenerSet</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying the set name from the model referenced by the assembled fastener,
+<strong>assembledFastener</strong>. The default value is an empty string.</p></li>
+<li><p><strong>exteriorOnly</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying whether the output domain is restricted to the exterior of the
+model. This argument is only valid if <strong>region</strong> = MODEL. The default value is OFF.</p></li>
+<li><p><strong>layupNames</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A List of Composite Layer Names.</p></li>
+<li><p><strong>layupLocationMethod</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">SPECIFIED</span></code>) – A Symbolic constant specifying the method used to indicate the output locations for
+composite layups. Possible values are ALL_LOCATIONS, SPECIFIED and TYPED_IN. The default
+value is SPECIFIED.</p></li>
+<li><p><strong>outputAtPlyTop</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – A Boolean specifying whether to output at the ply top section point. The default value
+is False.</p></li>
+<li><p><strong>outputAtPlyMid</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">True</span></code>) – A Boolean specifying whether to output at the ply mid section point. The default value
+is True.</p></li>
+<li><p><strong>outputAtPlyBottom</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – A Boolean specifying whether to output at the ply bottom section point. The default
+value is False.</p></li>
+<li><p><strong>position</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[INTEGRATION_POINTS, AVERAGED_AT_NODES, CENTROIDAL, NODES], default: <code class="docutils literal notranslate"><span class="pre">INTEGRATION_POINTS</span></code>) – A SymbolicConstant specifying the position on an element where output needs to be
+written. Possible values are INTEGRATION_POINTS, AVERAGED_AT_NODES, CENTROIDAL, and
+NODES. The default value is INTEGRATION_POINTS.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.boltLoad">
 <span class="sig-name descname"><span class="pre">boltLoad</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/FieldOutputRequest.py#L39-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.boltLoad" title="Permalink to this definition">#</a></dt>
@@ -1669,7 +1803,7 @@ variables. Possible values are UNSET, SET, and UNCHANGED.</p>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, createStepName[, region, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.__init__" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name, createStepName[, region, ...])</p></td>
 <td><p>This method creates a HistoryOutputRequest object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate" title="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.deactivate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deactivate</span></code></a>(stepName)</p></td>
@@ -1697,6 +1831,79 @@ variables. Possible values are UNSET, SET, and UNCHANGED.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MODEL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PRESELECT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ALL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeInterval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.EVERY_TIME_INCREMENT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numIntervals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boltLoad</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sectionPoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contourIntegral</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfContours</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stressInitializationStep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contourType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.J_INTEGRAL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kFactorDirection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MTS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rebar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.EXCLUDE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">integratedOutputSection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">springs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fasteners</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assembledFastener</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assembledFastenerSet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useGlobal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/HistoryOutputRequest.py#L57-L175"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a HistoryOutputRequest object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">HistoryOutputRequest</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputrequestpyc.htm?contextscope=all#simaker-historyoutputrequest__init__pyc">HistoryOutputRequest.__init__ on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the repository key.</p></li>
+<li><p><strong>createStepName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the name of the step in which the object is created.</p></li>
+<li><p><strong>region</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[MODEL], <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">MODEL</span></code>) – The SymbolicConstant MODEL or a Region object specifying the region from which output is
+requested. The SymbolicConstant MODEL represents the whole model. The default value is
+MODEL.If the region is a surface region, the surface must lie within the general contact
+surface domain.</p></li>
+<li><p><strong>variables</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[PRESELECT, ALL]], default: <code class="docutils literal notranslate"><span class="pre">PRESELECT</span></code>) – A sequence of Strings specifying output request variable or component names, or the
+SymbolicConstant PRESELECT or ALL. PRESELECT represents all default output variables for
+the given step. ALL represents all valid output variables. The default value is
+PRESELECT.</p></li>
+<li><p><strong>frequency</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[LAST_INCREMENT]], default: <code class="docutils literal notranslate"><span class="pre">1</span></code>) – The SymbolicConstant LAST_INCREMENT or an Int specifying the output frequency in
+increments. The default value is 1.</p></li>
+<li><p><strong>modes</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[ALL], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]], default: <code class="docutils literal notranslate"><span class="pre">ALL</span></code>) – The SymbolicConstant ALL or a sequence of Ints specifying a list of eigenmodes for which
+output is desired. The default value is ALL.</p></li>
+<li><p><strong>timeInterval</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[EVERY_TIME_INCREMENT], <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">EVERY_TIME_INCREMENT</span></code>) – The SymbolicConstant EVERY_TIME_INCREMENT or a Float specifying the time interval at
+which the output states are to be written. The default value is EVERY_TIME_INCREMENT.</p></li>
+<li><p><strong>numIntervals</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">20</span></code>) – An Int specifying the number of intervals during the step at which output database
+states are to be written. The default value is 20.</p></li>
+<li><p><strong>boltLoad</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying a bolt load from which output is requested. The default value is an
+empty string.</p></li>
+<li><p><strong>sectionPoints</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[DEFAULT], <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Sequence" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]], default: <code class="docutils literal notranslate"><span class="pre">DEFAULT</span></code>) – The SymbolicConstant DEFAULT or a sequence of Ints specifying the section points for
+which output is requested. The default value is DEFAULT.</p></li>
+<li><p><strong>stepName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying the name of the step. The default value is an empty string.</p></li>
+<li><p><strong>interactions</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – None or a sequence of Strings specifying the interaction names. The default value is
+None.The sequence can contain only one String.</p></li>
+<li><p><strong>contourIntegral</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – A String specifying the contour integral name. The default value is None.</p></li>
+<li><p><strong>numberOfContours</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) – An Int specifying the number of contour integrals to output for the contour integral
+object. The default value is 0.</p></li>
+<li><p><strong>stressInitializationStep</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – A String specifying the name of the stress initialization step. The default value is
+None.</p></li>
+<li><p><strong>contourType</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[J_INTEGRAL, C_INTEGRAL, T_STRESS, K_FACTORS], default: <code class="docutils literal notranslate"><span class="pre">J_INTEGRAL</span></code>) – A SymbolicConstant specifying the type of contour integral. Possible values are
+J_INTEGRAL, C_INTEGRAL, T_STRESS, and K_FACTORS. The default value is J_INTEGRAL.</p></li>
+<li><p><strong>kFactorDirection</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[MTS, MERR, K110], default: <code class="docutils literal notranslate"><span class="pre">MTS</span></code>) – A SymbolicConstant specifying the stress intensity factor direction. Possible values are
+MTS, MERR, and K110. The <strong>kFactorDirection</strong> argument is valid only if
+<strong>contourType</strong> = K_FACTORS. The default value is MTS.</p></li>
+<li><p><strong>rebar</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[EXCLUDE, INCLUDE, ONLY], default: <code class="docutils literal notranslate"><span class="pre">EXCLUDE</span></code>) – A SymbolicConstant specifying whether output is requested for rebar. Possible values are
+EXCLUDE, INCLUDE, and ONLY. The default value is EXCLUDE.</p></li>
+<li><p><strong>integratedOutputSection</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying the integrated output section. The default value is an empty string.</p></li>
+<li><p><strong>springs</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – A sequence of Strings specifying the springs/dashpots names. The default value is None.
+The sequence can contain only one String.</p></li>
+<li><p><strong>filter</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – The SymbolicConstant ANTIALIASING or a String specifying the name of an output filter
+object. The default value is None.</p></li>
+<li><p><strong>fasteners</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying the fastener name. The default value is an empty string.</p></li>
+<li><p><strong>assembledFastener</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying the assembled fastener name. The default value is an empty string.</p></li>
+<li><p><strong>assembledFastenerSet</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying the set name from the model referenced by the assembled fastener,
+<strong>assembledFastener</strong>. The default value is an empty string.</p></li>
+<li><p><strong>sensor</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying whether to associate the output request with a sensor definition.
+The default value is OFF.</p></li>
+<li><p><strong>useGlobal</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">True</span></code>) – A Boolean specifying whether to output vector-valued nodal variables in the global
+directions. The default value is True.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.boltLoad">
 <span class="sig-name descname"><span class="pre">boltLoad</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/HistoryOutputRequest.py#L39-L41"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.boltLoad" title="Permalink to this definition">#</a></dt>
@@ -2117,7 +2324,7 @@ variables. Possible values are UNSET, SET, and UNCHANGED.</p>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, surface[, refPoint, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.__init__" title="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name, surface[, refPoint, ...])</p></td>
 <td><p>This method creates an IntegratedOutputSection object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues" title="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(surface[, refPoint, ...])</p></td>
@@ -2127,6 +2334,57 @@ variables. Possible values are UNSET, SET, and UNCHANGED.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCenter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointMotion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.INDEPENDENT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projectOrientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/IntegratedOutputSection.py#L59-L116"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates an IntegratedOutputSection object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">IntegratedOutputSection</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-integratedoutputsectionpyc.htm?contextscope=all#simaker-integratedoutputsection__init__pyc">IntegratedOutputSection.__init__ on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the repository key.</p></li>
+<li><p><strong>surface</strong> (<a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a>) – A <a class="reference internal" href="part_assembly/region.html#abaqus.Region.Region.Region" title="abaqus.Region.Region.Region"><code class="xref py py-class docutils literal notranslate"><span class="pre">Region</span></code></a> object specifying the surface over which the output is based.</p></li>
+<li><p><strong>refPoint</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – None or a Region object specifying the anchor point about which the integrated moment
+over the output region is computed or the SymbolicConstant None representing the global
+origin. The default value is None.</p></li>
+<li><p><strong>refPointAtCenter</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying that the <strong>refPoint</strong> be adjusted so that it coincides with the
+center of the output region in the initial configuration. This argument is valid only
+when you include the <strong>refPoint</strong> argument. The default value is OFF.</p></li>
+<li><p><strong>refPointMotion</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Literal" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code></a>[AVERAGE_TRANSLATION, AVERAGE, INDEPENDENT], default: <code class="docutils literal notranslate"><span class="pre">INDEPENDENT</span></code>) – A SymbolicConstant specifying how to relate the motion of <strong>refPoint</strong> to the average
+motion of the output region. A value of INDEPENDENT will allow the <strong>refPoint</strong> to move
+independent of the output region. A value of AVERAGE_TRANSLATION will set the
+displacement of the <strong>refPoint</strong> equal to the average translation of the output region. A
+value of AVERAGE will set the displacement and rotation of the <strong>refPoint</strong> equal to the
+average translation of the output region. The default value is INDEPENDENT.This argument
+is valid only when you include the <strong>refPoint</strong> argument.</p></li>
+<li><p><strong>localCsys</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – None or a DatumCsys object specifying the local coordinate system used to express vector
+output. If <strong>localCsys</strong> = None, the degrees of freedom are defined in the global coordinate
+system. The default value is None.</p></li>
+<li><p><strong>projectOrientation</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying that the coordinate system be projected onto the <strong>surface</strong> such
+that the 1-axis is normal to the <strong>surface</strong>. Projection onto a planar <strong>surface</strong> is such
+that the 1-axis is normal to the surface, and a projection onto a nonplanar <strong>surface</strong> is
+such that a least-squares fit surface will be used. The default value is OFF.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An <a class="reference internal" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection" title="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntegratedOutputSection</span></code></a> object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection" title="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection"><code class="xref py py-class docutils literal notranslate"><span class="pre">IntegratedOutputSection</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.localCsys">
 <span class="sig-name descname"><span class="pre">localCsys</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/IntegratedOutputSection.py#L48-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.localCsys" title="Permalink to this definition">#</a></dt>
@@ -2250,7 +2508,7 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(node, dof, frequency)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.Monitor.Monitor.__init__" title="abaqus.StepOutput.Monitor.Monitor.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(node, dof, frequency)</p></td>
 <td><p>This method creates a request for a degree of freedom to be monitored in a general or modal procedure.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.Monitor.Monitor.setValues" title="abaqus.StepOutput.Monitor.Monitor.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
@@ -2260,6 +2518,62 @@ such that a least-squares fit surface will be used. The default value is OFF.</p
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dof</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/Monitor.py#L48-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a request for a degree of freedom to be monitored in a general or
+modal procedure.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Monitor</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitorpyc.htm?contextscope=all#simaker-monitor__init__pyc">Monitor.__init__ on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>node</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the name of the region to be monitored.</p></li>
+<li><p><strong>dof</strong> (<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>) – <p>A SymbolicConstant specifying the degree of freedom to be monitored at the node.
+Possible values are:</p>
+<ul>
+<li><p>U1</p></li>
+<li><p>U2</p></li>
+<li><p>U3</p></li>
+<li><p>UR1</p></li>
+<li><p>UR2</p></li>
+<li><p>UR3</p></li>
+<li><p>WARP</p></li>
+<li><p>FLUID_PRESSURE</p></li>
+<li><p>ELECTRICAL_POTENTIAL</p></li>
+<li><p>NT11</p></li>
+<li><p>NT30</p></li>
+<li><p>NN11</p></li>
+<li><p>NN30</p></li>
+</ul>
+<p>The NT identifiers are not available for mass diffusion. The NN identifiers are
+available only for mass diffusion.</p>
+</p></li>
+<li><p><strong>frequency</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – An Int specifying the output frequency in increments. This argument is valid only for an
+Abaqus/Standard analysis.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A <a class="reference internal" href="#abaqus.StepOutput.Monitor.Monitor" title="abaqus.StepOutput.Monitor.Monitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monitor</span></code></a> object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#abaqus.StepOutput.Monitor.Monitor" title="abaqus.StepOutput.Monitor.Monitor"><code class="xref py py-class docutils literal notranslate"><span class="pre">Monitor</span></code></a></p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>RangeError</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Monitor.Monitor.dof">
 <span class="sig-name descname"><span class="pre">dof</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/Monitor.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Monitor.Monitor.dof" title="Permalink to this definition">#</a></dt>
@@ -2356,7 +2670,7 @@ Abaqus/Standard analysis.</p>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([numberIntervals, timeMarks, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.Restart.Restart.__init__" title="abaqus.StepOutput.Restart.Restart.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([numberIntervals, timeMarks, ...])</p></td>
 <td><p>This method creates a restart request.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.Restart.Restart.setValues" title="abaqus.StepOutput.Restart.Restart.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
@@ -2366,6 +2680,48 @@ Abaqus/Standard analysis.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.StepOutput.Restart.Restart.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">numberIntervals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeMarks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overlay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/Restart.py#L38-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a restart request.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">Restart</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-restartpyc.htm?contextscope=all#simaker-restart__init__pyc">Restart.__init__ on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>numberIntervals</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) – An Int specifying the number of intervals during the step at which restart information
+will be written. The default value is 0. The default value is 1.</p></li>
+<li><p><strong>timeMarks</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying whether to use exact time marks for writing during an analysis. The
+default value is OFF. The default value is OFF.</p></li>
+<li><p><strong>overlay</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying that only one increment per step should be retained on the restart
+file, thus minimizing the size of the restart file. The default value is OFF. The
+default value is ON.</p></li>
+<li><p><strong>frequency</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0</span></code>) – An Int specifying the increments at which restart information will be written. The
+default value is 0. The default value is 0.This argument applies only to Abaqus/Standard
+analyses.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A <a class="reference internal" href="#abaqus.StepOutput.Restart.Restart" title="abaqus.StepOutput.Restart.Restart"><code class="xref py py-class docutils literal notranslate"><span class="pre">Restart</span></code></a> object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#abaqus.StepOutput.Restart.Restart" title="abaqus.StepOutput.Restart.Restart"><code class="xref py py-class docutils literal notranslate"><span class="pre">Restart</span></code></a></p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>RangeError</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepOutput.Restart.Restart.frequency">
 <span class="sig-name descname"><span class="pre">frequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/Restart.py#L33-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.Restart.Restart.frequency" title="Permalink to this definition">#</a></dt>
@@ -2437,7 +2793,7 @@ database or restart files.</p>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name, points)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.StepOutput.TimePoint.TimePoint.__init__" title="abaqus.StepOutput.TimePoint.TimePoint.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name, points)</p></td>
 <td><p>This method creates a TimePoint object.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.StepOutput.TimePoint.TimePoint.setValues" title="abaqus.StepOutput.TimePoint.TimePoint.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*args, **kwargs)</p></td>
@@ -2447,6 +2803,44 @@ database or restart files.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.StepOutput.TimePoint.TimePoint.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/TimePoint.py#L26-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.TimePoint.TimePoint.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates a TimePoint object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">TimePoint</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-timepointpyc.htm?contextscope=all#simaker-timepoint__init__pyc">TimePoint.__init__ on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the repository key.</p></li>
+<li><p><strong>points</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a>) – A sequence of sequences of Floats specifying time points at which data are written to
+the output database or restart files.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A <a class="reference internal" href="#abaqus.StepOutput.TimePoint.TimePoint" title="abaqus.StepOutput.TimePoint.TimePoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">TimePoint</span></code></a> object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#abaqus.StepOutput.TimePoint.TimePoint" title="abaqus.StepOutput.TimePoint.TimePoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">TimePoint</span></code></a></p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>InvalidNameError</strong> – </p></li>
+<li><p><strong>RangeError</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.StepOutput.TimePoint.TimePoint.name">
 <span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/StepOutput/TimePoint.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.StepOutput.TimePoint.TimePoint.name" title="Permalink to this definition">#</a></dt>
@@ -2634,6 +3028,15 @@ the output database or restart files.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.__init__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DiagnosticPrint.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint.allke">
          <code class="docutils literal notranslate">
           <span class="pre">
@@ -2750,6 +3153,15 @@ the output database or restart files.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.__init__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           FieldOutputRequest.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest.boltLoad">
          <code class="docutils literal notranslate">
@@ -3021,6 +3433,15 @@ the output database or restart files.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.__init__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           HistoryOutputRequest.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.boltLoad">
          <code class="docutils literal notranslate">
           <span class="pre">
@@ -3282,6 +3703,15 @@ the output database or restart files.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.__init__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           IntegratedOutputSection.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection.localCsys">
          <code class="docutils literal notranslate">
           <span class="pre">
@@ -3372,6 +3802,15 @@ the output database or restart files.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.StepOutput.Monitor.Monitor.__init__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Monitor.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.StepOutput.Monitor.Monitor.dof">
          <code class="docutils literal notranslate">
           <span class="pre">
@@ -3425,6 +3864,15 @@ the output database or restart files.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.StepOutput.Restart.Restart.__init__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Restart.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.StepOutput.Restart.Restart.frequency">
          <code class="docutils literal notranslate">
@@ -3488,6 +3936,15 @@ the output database or restart files.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.StepOutput.TimePoint.TimePoint.__init__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           TimePoint.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.StepOutput.TimePoint.TimePoint.name">
          <code class="docutils literal notranslate">
