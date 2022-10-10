@@ -509,7 +509,7 @@ objects can be created using the methods described in this section.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all">InputFile on help.3ds.com/0.1.</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all">InputFile on help.3ds.com/2023</a>.</p>
 </div>
 </dd></dl>
 
@@ -535,7 +535,7 @@ The numeric elements can be:</p>
 cases, it will be False.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-abaqusndarraypyc.htm?contextscope=all">AbaqusNDarray on help.3ds.com/0.1.</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-abaqusndarraypyc.htm?contextscope=all">AbaqusNDarray on help.3ds.com/2023</a>.</p>
 </div>
 </dd></dl>
 
@@ -557,7 +557,7 @@ objects can be created using the methods described in this section.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all">InputFile on help.3ds.com/0.1.</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all">InputFile on help.3ds.com/2023</a>.</p>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -582,7 +582,7 @@ objects can be created using the methods described in this section.</p>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(file[, directory])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.__init__" title="abaqus.InputFileParser.InputFile.InputFile.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(file[, directory])</p></td>
 <td><p>This method creates an InputFile object by reading an Abaqus input file.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.parse" title="abaqus.InputFileParser.InputFile.InputFile.parse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse</span></code></a>([organize, verbose, bulk, usePyArray])</p></td>
@@ -592,6 +592,37 @@ objects can be created using the methods described in this section.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.InputFileParser.InputFile.InputFile.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/InputFileParser/InputFile.py#L30-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>This method creates an InputFile object by reading an Abaqus input file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">inpParser</span><span class="o">.</span><span class="n">InputFile</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all#simaker-inputfile__init__pyc">InputFile.__init__ on help.3ds.com/2023</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the path to the input file.</p></li>
+<li><p><strong>directory</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – A String specifying the path to the directory containing the input file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An <a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile" title="abaqus.InputFileParser.InputFile.InputFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputFile</span></code></a> object.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile" title="abaqus.InputFileParser.InputFile.InputFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputFile</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.InputFileParser.InputFile.InputFile.directory">
 <span class="sig-name descname"><span class="pre">directory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/InputFileParser/InputFile.py#L19-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.InputFileParser.InputFile.InputFile.directory" title="Permalink to this definition">#</a></dt>
@@ -624,7 +655,7 @@ not be located.</p>
 <dd><p>This method parses the input file associated with the InputFile object.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all#simaker-inputfileparsepyc">InputFile.parse on help.3ds.com/0.1.</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all#simaker-inputfileparsepyc">InputFile.parse on help.3ds.com/2023</a>.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -674,7 +705,7 @@ Keyword objects are returned via the InputFile.parse() method.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Check <a class="reference external" href="https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordpyc.htm?contextscope=all">Keyword on help.3ds.com/0.1.</a>.</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordpyc.htm?contextscope=all">Keyword on help.3ds.com/2023</a>.</p>
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
@@ -817,6 +848,15 @@ arrays) are expected, it is recommended that you use the option usePyArray=True.
        </code>
       </a>
       <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.InputFileParser.InputFile.InputFile.__init__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           InputFile.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.InputFileParser.InputFile.InputFile.directory">
          <code class="docutils literal notranslate">
