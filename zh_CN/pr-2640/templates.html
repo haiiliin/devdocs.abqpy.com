@@ -697,28 +697,6 @@ templates.</p>
 <span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.ScriptTemplate.write" title="abqpy.template.ScriptTemplate.write"><span class="n">template</span><span class="o">.</span><span class="n">write</span></a><span class="p">(</span><span class="s1">'script.py'</span><span class="p">,</span> <span class="n">param1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">param2</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.__annotations__">
-<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'_config':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">typing.Dict[str,</span> <span class="pre">typing.Union[str,</span> <span class="pre">int,</span> <span class="pre">float,</span> <span class="pre">bool]]],</span> <span class="pre">'_config_source':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'_params':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">typing.Union[str,</span> <span class="pre">int,</span> <span class="pre">float,</span> <span class="pre">bool]],</span> <span class="pre">'_params_source':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'_template_source':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abqpy/template.py#L31-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.__annotations__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.__module__">
-<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abqpy.template'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abqpy/template.py#L31-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.__module__" title="永久链接至目标">#</a></dt>
-<dd></dd></dl>
-<dl class="py method">
-<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.__new__">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">__new__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abqpy/template.py#L67-L108"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.__new__" title="永久链接至目标">#</a></dt>
-<dd><p>Create a new template.</p>
-<dl class="field-list simple">
-<dt class="field-odd">参数<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>template</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> or <code class="xref py py-class docutils literal notranslate"><span class="pre">PathLike</span></code> or <code class="xref py py-class docutils literal notranslate"><span class="pre">Template</span></code>) – The template source.</p></li>
-<li><p><strong>config</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> or <code class="xref py py-class docutils literal notranslate"><span class="pre">PathLike</span></code> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>, <em>optional</em>) – The config file (a json or toml file) or dict, by default None</p></li>
-<li><p><strong>params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> or <code class="xref py py-class docutils literal notranslate"><span class="pre">PathLike</span></code> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>, <em>optional</em>) – The user params config file (a json or toml file) or dict, by default None</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.check">
 <span class="sig-name descname"><span class="pre">check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correct_bounds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abqpy/template.py#L110-L146"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.check" title="永久链接至目标">#</a></dt>
@@ -871,33 +849,6 @@ templates.</p>
 </code>
 </a>
 <ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry">
-<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.__annotations__">
-<code class="docutils literal notranslate">
-<span class="pre">
-         ScriptTemplate.__annotations__
-        </span>
-</code>
-</a>
-</li>
-<li class="toc-h4 nav-item toc-entry">
-<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.__module__">
-<code class="docutils literal notranslate">
-<span class="pre">
-         ScriptTemplate.__module__
-        </span>
-</code>
-</a>
-</li>
-<li class="toc-h4 nav-item toc-entry">
-<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.__new__">
-<code class="docutils literal notranslate">
-<span class="pre">
-         ScriptTemplate.__new__()
-        </span>
-</code>
-</a>
-</li>
 <li class="toc-h4 nav-item toc-entry">
 <a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.check">
 <code class="docutils literal notranslate">
