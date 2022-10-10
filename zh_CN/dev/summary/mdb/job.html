@@ -684,34 +684,34 @@ available.</p>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>([pathName])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.__init__" title="abaqus.Mdb.MdbBase.MdbBase.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>([pathName])</p></td>
 <td><p>This constructor creates an empty Mdb object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">importDxf</span></code>(fileName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.importDxf" title="abaqus.Mdb.MdbBase.MdbBase.importDxf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">importDxf</span></code></a>(fileName)</p></td>
 <td><p>This method creates a ConstrainedSketch object from a file containing dxf-format (AutoCAD) geometry.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openMdb</span></code>(pathName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.openMdb" title="abaqus.Mdb.MdbBase.MdbBase.openMdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openMdb</span></code></a>(pathName)</p></td>
 <td><p>This method opens an existing model database file.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.close" title="abaqus.Mdb.MdbBase.MdbBase.close"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code></a>()</p></td>
 <td><p>This method closes an open Mdb object but does not save the Mdb object to disk.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.save" title="abaqus.Mdb.MdbBase.MdbBase.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>()</p></td>
 <td><p>This method saves an Mdb object to disk at the location specified by <strong>pathName</strong> (<em>pathName</em> is a member of the Mdb object).</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code>(pathName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.saveAs" title="abaqus.Mdb.MdbBase.MdbBase.saveAs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveAs</span></code></a>(pathName)</p></td>
 <td><p>This method saves an Mdb object to disk at the specified location.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openAuxMdb</span></code>(pathName)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.openAuxMdb" title="abaqus.Mdb.MdbBase.MdbBase.openAuxMdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openAuxMdb</span></code></a>(pathName)</p></td>
 <td><p>This method opens an auxiliary Mdb object on the disk at the specified location.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">closeAuxMdb</span></code>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb" title="abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">closeAuxMdb</span></code></a>()</p></td>
 <td><p>This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAuxMdbModelNames</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames" title="abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAuxMdbModelNames</span></code></a>()</p></td>
 <td><p>This method returns a list of model names present in the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyAuxMdbModel</span></code>(fromName[, toName])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel" title="abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyAuxMdbModel</span></code></a>(fromName[, toName])</p></td>
 <td><p>This method copies a specified model from the auxiliary Mdb which had been opened earlier using the openAuxMdb command.</p></td>
 </tr>
 </tbody>
@@ -1000,49 +1000,49 @@ local machine. The default value is OFF.</p></li>
 </table>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([kernelMemoryLimit])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.setValues" title="abaqus.Session.SessionBase.SessionBase.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([kernelMemoryLimit])</p></td>
 <td><p>This method modifies the Session object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableCADConnection</span></code>(CADName[, portNum])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.enableCADConnection" title="abaqus.Session.SessionBase.SessionBase.enableCADConnection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableCADConnection</span></code></a>(CADName[, portNum])</p></td>
 <td><p>This method enables the Abaqus/CAE listening port for the specified <strong>CAD</strong> system.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isCADConnectionEnabled</span></code>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled" title="abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isCADConnectionEnabled</span></code></a>()</p></td>
 <td><p>This method checks the status of CAD Connection.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableCADConnection</span></code>(CADName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.disableCADConnection" title="abaqus.Session.SessionBase.SessionBase.disableCADConnection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableCADConnection</span></code></a>(CADName)</p></td>
 <td><p>This method disables an associative import CAD connection that was enabled.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableParameterUpdate</span></code>(CADName, CADVersion[, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.enableParameterUpdate" title="abaqus.Session.SessionBase.SessionBase.enableParameterUpdate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableParameterUpdate</span></code></a>(CADName, CADVersion[, ...])</p></td>
 <td><p>This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setCADPortNumber</span></code>(CADName, Port)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.setCADPortNumber" title="abaqus.Session.SessionBase.SessionBase.setCADPortNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setCADPortNumber</span></code></a>(CADName, Port)</p></td>
 <td><p>This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCADParameters</span></code>(modelName, CADName, ...)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.updateCADParameters" title="abaqus.Session.SessionBase.SessionBase.updateCADParameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCADParameters</span></code></a>(modelName, CADName, ...)</p></td>
 <td><p>This method updates the parameters for the specified model using the specified parameter file.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableParameterUpdate</span></code>(CADName)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.disableParameterUpdate" title="abaqus.Session.SessionBase.SessionBase.disableParameterUpdate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableParameterUpdate</span></code></a>(CADName)</p></td>
 <td><p>This method disables an associative CAD connection using parameters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToFile</span></code>(fileName[, format, ...])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.printToFile" title="abaqus.Session.SessionBase.SessionBase.printToFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToFile</span></code></a>(fileName[, format, ...])</p></td>
 <td><p>This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToPrinter</span></code>([printCommand, numCopies, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.printToPrinter" title="abaqus.Session.SessionBase.SessionBase.printToPrinter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToPrinter</span></code></a>([printCommand, numCopies, ...])</p></td>
 <td><p>This method prints canvas objects to a Windows printer or to a PostScript printer.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveOptions</span></code>(directory)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.saveOptions" title="abaqus.Session.SessionBase.SessionBase.saveOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveOptions</span></code></a>(directory)</p></td>
 <td><p>This method saves your customized display settings.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVrmlFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.writeVrmlFile" title="abaqus.Session.SessionBase.SessionBase.writeVrmlFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVrmlFile</span></code></a>(fileName[, format, canvasObjects])</p></td>
 <td><p>This method exports the current viewport objects to a file.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">write3DXMLFile</span></code>(fileName[, format, canvasObjects])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.write3DXMLFile" title="abaqus.Session.SessionBase.SessionBase.write3DXMLFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write3DXMLFile</span></code></a>(fileName[, format, canvasObjects])</p></td>
 <td><p>This method exports the current viewport objects to a file.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code>(fileName[, canvasObjects])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.writeOBJFile" title="abaqus.Session.SessionBase.SessionBase.writeOBJFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code></a>(fileName[, canvasObjects])</p></td>
 <td><p>This method exports the current viewport objects to a file.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code>(name[, path, readOnly])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../reference/session.html#abaqus.Session.SessionBase.SessionBase.openOdb" title="abaqus.Session.SessionBase.SessionBase.openOdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code></a>(name[, path, readOnly])</p></td>
 <td><p>This method opens an existing output database (<cite>.odb</cite>) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::.</p></td>
 </tr>
 </tbody>
