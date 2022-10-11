@@ -501,7 +501,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DataObject</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/DataObject.py#L7-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject" title="Permalink to this definition">#</a></dt>
-<dd><p>An instance of the DataObject object is passed to each callback. The DataObject object
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>An instance of the DataObject object is passed to each callback. The DataObject object
 has no methods. The members of a DataObject object depend on the type of the object. All
 DataObject instances have the following members, regardless of type:</p>
 <div class="admonition note">
@@ -591,6 +592,27 @@ DataObject instances have the following members, regardless of type:</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'attempts':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'clientHost':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'clientName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'dof':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'equilibrium':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'file':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'heading':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'increment':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'iterations':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'message':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'node':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'nset':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'phase':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'processId':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'severe':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'step':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'stepId':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'stepName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'stepTime':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'threadId':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'time':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'timeIncrement':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'timeStamp':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'totalTime':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'value':</span> <span class="pre">typing.Optional[float]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/DataObject.py#L7-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Messaging.DataObject',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'phase':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'processId':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'threadId':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'timeStamp':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'attempts':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'dof':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'equilibrium':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'increment':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'iterations':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'node':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'severe':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'step':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'stepId':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'stepTime':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'time':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'timeIncrement':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'totalTime':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'value':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'clientHost':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'clientName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'file':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'heading':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'message':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'nset':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'stepName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;},</span> <span class="pre">'__doc__':</span> <span class="pre">'An</span> <span class="pre">instance</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">DataObject</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">passed</span> <span class="pre">to</span> <span class="pre">each</span> <span class="pre">callback.</span> <span class="pre">The</span> <span class="pre">DataObject</span> <span class="pre">object\n</span>&#160;&#160;&#160; <span class="pre">has</span> <span class="pre">no</span> <span class="pre">methods.</span> <span class="pre">The</span> <span class="pre">members</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">DataObject</span> <span class="pre">object</span> <span class="pre">depend</span> <span class="pre">on</span> <span class="pre">the</span> <span class="pre">type</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">object.</span> <span class="pre">All\n</span>&#160;&#160;&#160; <span class="pre">DataObject</span> <span class="pre">instances</span> <span class="pre">have</span> <span class="pre">the</span> <span class="pre">following</span> <span class="pre">members,</span> <span class="pre">regardless</span> <span class="pre">of</span> <span class="pre">type:\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`DataObject</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-dataobjectpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'phase':</span> <span class="pre">None,</span> <span class="pre">'processId':</span> <span class="pre">None,</span> <span class="pre">'threadId':</span> <span class="pre">None,</span> <span class="pre">'timeStamp':</span> <span class="pre">None,</span> <span class="pre">'attempts':</span> <span class="pre">None,</span> <span class="pre">'dof':</span> <span class="pre">None,</span> <span class="pre">'equilibrium':</span> <span class="pre">None,</span> <span class="pre">'increment':</span> <span class="pre">None,</span> <span class="pre">'iterations':</span> <span class="pre">None,</span> <span class="pre">'node':</span> <span class="pre">None,</span> <span class="pre">'severe':</span> <span class="pre">None,</span> <span class="pre">'step':</span> <span class="pre">None,</span> <span class="pre">'stepId':</span> <span class="pre">None,</span> <span class="pre">'stepTime':</span> <span class="pre">None,</span> <span class="pre">'time':</span> <span class="pre">None,</span> <span class="pre">'timeIncrement':</span> <span class="pre">None,</span> <span class="pre">'totalTime':</span> <span class="pre">None,</span> <span class="pre">'value':</span> <span class="pre">None,</span> <span class="pre">'clientHost':</span> <span class="pre">'',</span> <span class="pre">'clientName':</span> <span class="pre">'',</span> <span class="pre">'file':</span> <span class="pre">'',</span> <span class="pre">'heading':</span> <span class="pre">'',</span> <span class="pre">'message':</span> <span class="pre">'',</span> <span class="pre">'nset':</span> <span class="pre">'',</span> <span class="pre">'stepName':</span> <span class="pre">'',</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'DataObject'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'DataObject'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/DataObject.py#L7-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Messaging.DataObject'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/DataObject.py#L7-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/DataObject.py#L7-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.attempts">
 <span class="sig-name descname"><span class="pre">attempts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/DataObject.py#L30-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.attempts" title="Permalink to this definition">#</a></dt>
@@ -763,7 +785,8 @@ or multiprocessing; in most cases <strong>threadId</strong> is set to zero.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Messaging.MonitorMgr.MonitorMgr">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MonitorMgr</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/MonitorMgr.py#L5-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.MonitorMgr.MonitorMgr" title="Permalink to this definition">#</a></dt>
-<dd><p>An instance of the MonitorMgr object is created when you import the abaqus module. No
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>An instance of the MonitorMgr object is created when you import the abaqus module. No
 other instance of the MonitorMgr object is required. (This MonitorMgr object is not to
 be confused with the degree of freedom (DOF) monitor that is constructed from the Step
 object.)</p>
@@ -795,6 +818,22 @@ object.)</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.MonitorMgr.MonitorMgr.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Messaging.MonitorMgr',</span> <span class="pre">'__doc__':</span> <span class="pre">'An</span> <span class="pre">instance</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">MonitorMgr</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">created</span> <span class="pre">when</span> <span class="pre">you</span> <span class="pre">import</span> <span class="pre">the</span> <span class="pre">abaqus</span> <span class="pre">module.</span> <span class="pre">No\n</span>&#160;&#160;&#160; <span class="pre">other</span> <span class="pre">instance</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">MonitorMgr</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">required.</span> <span class="pre">(This</span> <span class="pre">MonitorMgr</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">to\n</span>&#160;&#160;&#160; <span class="pre">be</span> <span class="pre">confused</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">degree</span> <span class="pre">of</span> <span class="pre">freedom</span> <span class="pre">(DOF)</span> <span class="pre">monitor</span> <span class="pre">that</span> <span class="pre">is</span> <span class="pre">constructed</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">Step\n</span>&#160;&#160;&#160; <span class="pre">object.)\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">monitorManager\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`MonitorMgr</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitormgrpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'addMessageCallback':</span> <span class="pre">&lt;function</span> <span class="pre">MonitorMgr.addMessageCallback&gt;,</span> <span class="pre">'removeMessageCallback':</span> <span class="pre">&lt;function</span> <span class="pre">MonitorMgr.removeMessageCallback&gt;,</span> <span class="pre">'checkMonitorStatus':</span> <span class="pre">&lt;function</span> <span class="pre">MonitorMgr.checkMonitorStatus&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'MonitorMgr'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'MonitorMgr'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__annotations__':</span> <span class="pre">{}})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/MonitorMgr.py#L5-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.MonitorMgr.MonitorMgr.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Messaging.MonitorMgr'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/MonitorMgr.py#L5-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.MonitorMgr.MonitorMgr.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/MonitorMgr.py#L5-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback">
 <span class="sig-name descname"><span class="pre">addMessageCallback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jobName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">messageType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Messaging/MonitorMgr.py#L18-L74"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback" title="Permalink to this definition">#</a></dt>
@@ -975,6 +1014,42 @@ the original call to addMessageCallback.</p></li>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.__weakref__
+          </span>
+         </code>
+        </a>
+       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.attempts">
          <code class="docutils literal notranslate">
@@ -1218,6 +1293,33 @@ the original call to addMessageCallback.</p></li>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MonitorMgr.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MonitorMgr.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MonitorMgr.__weakref__
+          </span>
+         </code>
+        </a>
+       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback">
          <code class="docutils literal notranslate">

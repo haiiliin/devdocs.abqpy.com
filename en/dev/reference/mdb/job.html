@@ -655,7 +655,8 @@ local machine. The default value is OFF.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Coexecution</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Coexecution.py#L9-L154"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution" title="Permalink to this definition">#</a></dt>
-<dd><p>The Coexecution object contains a set of jobs as associated parameters to define a
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Coexecution object contains a set of jobs as associated parameters to define a
 co-simulation analysis.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -740,6 +741,27 @@ co-simulation analysis.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'atTime':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'jobs':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Job.Job.Job],</span> <span class="pre">'licenseType':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'mainAnalysisProduct':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'mainModel':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'queue':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'secondaryAnalysisProducts':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'secondaryModels':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;,</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'type':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'waitHours':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'waitMinutes':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Coexecution.py#L9-L154"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Job.Coexecution',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'type':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'mainAnalysisProduct':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'waitHours':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'waitMinutes':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'queue':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'atTime':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'jobs':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Job.Job.Job],</span> <span class="pre">'secondaryModels':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;,</span> <span class="pre">'secondaryAnalysisProducts':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'mainModel':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'licenseType':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">Coexecution</span> <span class="pre">object</span> <span class="pre">contains</span> <span class="pre">a</span> <span class="pre">set</span> <span class="pre">of</span> <span class="pre">jobs</span> <span class="pre">as</span> <span class="pre">associated</span> <span class="pre">parameters</span> <span class="pre">to</span> <span class="pre">define</span> <span class="pre">a\n</span>&#160;&#160;&#160; <span class="pre">co-simulation</span> <span class="pre">analysis.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">job\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.coexecutions[name]\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">The</span> <span class="pre">corresponding</span> <span class="pre">analysis</span> <span class="pre">keywords</span> <span class="pre">are:\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">-</span> <span class="pre">HEADING\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">-</span> <span class="pre">PREPRINT\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`Coexecution</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coexecutionpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'name':</span> <span class="pre">'',</span> <span class="pre">'type':</span> <span class="pre">ANALYSIS,</span> <span class="pre">'mainAnalysisProduct':</span> <span class="pre">ABAQUS,</span> <span class="pre">'waitHours':</span> <span class="pre">0,</span> <span class="pre">'waitMinutes':</span> <span class="pre">0,</span> <span class="pre">'status':</span> <span class="pre">None,</span> <span class="pre">'queue':</span> <span class="pre">'',</span> <span class="pre">'atTime':</span> <span class="pre">'',</span> <span class="pre">'jobs':</span> <span class="pre">{},</span> <span class="pre">'secondaryModels':</span> <span class="pre">(),</span> <span class="pre">'secondaryAnalysisProducts':</span> <span class="pre">None,</span> <span class="pre">'mainModel':</span> <span class="pre">'',</span> <span class="pre">'licenseType':</span> <span class="pre">DEFAULT,</span> <span class="pre">'kill':</span> <span class="pre">&lt;function</span> <span class="pre">Coexecution.kill&gt;,</span> <span class="pre">'submit':</span> <span class="pre">&lt;function</span> <span class="pre">Coexecution.submit&gt;,</span> <span class="pre">'writeInput':</span> <span class="pre">&lt;function</span> <span class="pre">Coexecution.writeInput&gt;,</span> <span class="pre">'waitForCompletion':</span> <span class="pre">&lt;function</span> <span class="pre">Coexecution.waitForCompletion&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Coexecution'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Coexecution'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Coexecution.py#L9-L154"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Job.Coexecution'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Coexecution.py#L9-L154"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Coexecution.py#L9-L154"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.Coexecution.Coexecution.atTime">
 <span class="sig-name descname"><span class="pre">atTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Coexecution.py#L64-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Coexecution.Coexecution.atTime" title="Permalink to this definition">#</a></dt>
@@ -921,7 +943,8 @@ unless you are absolutely sure the models are all consistent.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Job.Job.Job">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Job</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Job.py#L9-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job" title="Permalink to this definition">#</a></dt>
-<dd><p>The Job object is the abstract base type for other Job objects. The Job object has no
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Job object is the abstract base type for other Job objects. The Job object has no
 explicit constructor. The methods and members of the Job object are common to all
 objects derived from Job.</p>
 <div class="admonition note">
@@ -1041,6 +1064,27 @@ objects derived from Job.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'activateLoadBalancing':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'analysis':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'atTime':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'environment':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;,</span> <span class="pre">'explicitPrecision':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'getMemoryFromAnalysis':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'licenseType':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'memory':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'memoryUnits':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'messages':</span> <span class="pre">typing.List[abaqus.Job.Message.Message],</span> <span class="pre">'multiprocessingMode':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'nodalOutputPrecision':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'numCpus':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'numDomains':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'numThreadsPerMpiProcess':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'parallelizationMethodExplicit':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'queue':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'scratch':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'type':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'userSubroutine':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'waitHours':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'waitMinutes':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Job.py#L9-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Job.Job',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'type':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'waitHours':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'waitMinutes':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'numCpus':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'memory':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'memoryUnits':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'getMemoryFromAnalysis':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'explicitPrecision':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'nodalOutputPrecision':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'parallelizationMethodExplicit':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'numDomains':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'activateLoadBalancing':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'multiprocessingMode':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'numThreadsPerMpiProcess':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'analysis':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'queue':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'atTime':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'scratch':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'userSubroutine':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'messages':</span> <span class="pre">typing.List[abaqus.Job.Message.Message],</span> <span class="pre">'environment':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;,</span> <span class="pre">'licenseType':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">Job</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">abstract</span> <span class="pre">base</span> <span class="pre">type</span> <span class="pre">for</span> <span class="pre">other</span> <span class="pre">Job</span> <span class="pre">objects.</span> <span class="pre">The</span> <span class="pre">Job</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no\n</span>&#160;&#160;&#160; <span class="pre">explicit</span> <span class="pre">constructor.</span> <span class="pre">The</span> <span class="pre">methods</span> <span class="pre">and</span> <span class="pre">members</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">Job</span> <span class="pre">object</span> <span class="pre">are</span> <span class="pre">common</span> <span class="pre">to</span> <span class="pre">all\n</span>&#160;&#160;&#160; <span class="pre">objects</span> <span class="pre">derived</span> <span class="pre">from</span> <span class="pre">Job.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">job\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.coexecutions[name].jobs[name]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.jobs[name]\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">The</span> <span class="pre">corresponding</span> <span class="pre">analysis</span> <span class="pre">keywords</span> <span class="pre">are:\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">-</span> <span class="pre">HEADING\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">-</span> <span class="pre">PREPRINT\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`Job</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'name':</span> <span class="pre">'',</span> <span class="pre">'type':</span> <span class="pre">ANALYSIS,</span> <span class="pre">'waitHours':</span> <span class="pre">0,</span> <span class="pre">'waitMinutes':</span> <span class="pre">0,</span> <span class="pre">'numCpus':</span> <span class="pre">1,</span> <span class="pre">'memory':</span> <span class="pre">90,</span> <span class="pre">'memoryUnits':</span> <span class="pre">PERCENTAGE,</span> <span class="pre">'getMemoryFromAnalysis':</span> <span class="pre">ON,</span> <span class="pre">'explicitPrecision':</span> <span class="pre">SINGLE,</span> <span class="pre">'nodalOutputPrecision':</span> <span class="pre">SINGLE,</span> <span class="pre">'parallelizationMethodExplicit':</span> <span class="pre">DOMAIN,</span> <span class="pre">'numDomains':</span> <span class="pre">1,</span> <span class="pre">'activateLoadBalancing':</span> <span class="pre">OFF,</span> <span class="pre">'multiprocessingMode':</span> <span class="pre">DEFAULT,</span> <span class="pre">'numThreadsPerMpiProcess':</span> <span class="pre">1,</span> <span class="pre">'analysis':</span> <span class="pre">None,</span> <span class="pre">'status':</span> <span class="pre">None,</span> <span class="pre">'queue':</span> <span class="pre">'',</span> <span class="pre">'atTime':</span> <span class="pre">'',</span> <span class="pre">'scratch':</span> <span class="pre">'',</span> <span class="pre">'userSubroutine':</span> <span class="pre">'',</span> <span class="pre">'messages':</span> <span class="pre">[],</span> <span class="pre">'environment':</span> <span class="pre">(),</span> <span class="pre">'licenseType':</span> <span class="pre">DEFAULT,</span> <span class="pre">'kill':</span> <span class="pre">&lt;function</span> <span class="pre">Job.kill&gt;,</span> <span class="pre">'submit':</span> <span class="pre">&lt;function</span> <span class="pre">Job.submit&gt;,</span> <span class="pre">'waitForCompletion':</span> <span class="pre">&lt;function</span> <span class="pre">Job.waitForCompletion&gt;,</span> <span class="pre">'clearMessage':</span> <span class="pre">&lt;function</span> <span class="pre">Job.clearMessage&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Job'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Job'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Job.py#L9-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Job.Job'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Job.py#L9-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Job.Job.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Job.py#L9-L186"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.Job.Job.activateLoadBalancing">
 <span class="sig-name descname"><span class="pre">activateLoadBalancing</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">OFF</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Job.py#L86-L88"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Job.Job.activateLoadBalancing" title="Permalink to this definition">#</a></dt>
@@ -1282,7 +1326,8 @@ with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JobFromInputFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputFileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ANALYSIS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitHours</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scratch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userSubroutine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCpus</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memoryUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PERCENTAGE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explicitPrecision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SINGLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodalOutputPrecision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SINGLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallelizationMethodExplicit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DOMAIN</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDomains</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activateLoadBalancing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiprocessingMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">licenseType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/JobFromInputFile.py#L10-L357"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile" title="Permalink to this definition">#</a></dt>
-<dd><p>The JobFromInputFile object defines a Job object which analyzes a model contained in an
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a></p>
+<p>The JobFromInputFile object defines a Job object which analyzes a model contained in an
 input file.
 The JobFromInputFile object is derived from the Job object.</p>
 <div class="admonition note">
@@ -1476,6 +1521,11 @@ The JobFromInputFile object is derived from the Job object.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'activateLoadBalancing':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'analysis':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'atTime':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'environment':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;,</span> <span class="pre">'explicitPrecision':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'getMemoryFromAnalysis':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'inputFileName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'licenseType':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'memory':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'memoryUnits':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'messages':</span> <span class="pre">typing.List[abaqus.Job.Message.Message],</span> <span class="pre">'multiprocessingMode':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'nodalOutputPrecision':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'numCpus':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'numDomains':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'parallelizationMethodExplicit':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'queue':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'scratch':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'type':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'userSubroutine':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'waitHours':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'waitMinutes':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/JobFromInputFile.py#L10-L357"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inputFileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ANALYSIS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitHours</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scratch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userSubroutine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCpus</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memoryUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PERCENTAGE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explicitPrecision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SINGLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodalOutputPrecision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SINGLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallelizationMethodExplicit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DOMAIN</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDomains</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activateLoadBalancing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiprocessingMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">licenseType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/JobFromInputFile.py#L140-L262"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.__init__" title="Permalink to this definition">#</a></dt>
@@ -1570,6 +1620,11 @@ available.</p>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Job.JobFromInputFile'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/JobFromInputFile.py#L10-L357"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing">
@@ -1828,7 +1883,8 @@ with <strong>waitHours</strong>. <strong>waitMinutes</strong> and <strong>atTime
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Job.Message.Message">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Message</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Message.py#L7-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Message.Message" title="Permalink to this definition">#</a></dt>
-<dd><p>The Message object contains information about a given phase of the simulation. Job
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Message object contains information about a given phase of the simulation. Job
 messages are not returned if a script is run without the Abaqus/CAE GUI (using the noGUI
 option).</p>
 <div class="admonition note">
@@ -1858,6 +1914,27 @@ option).</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Message.Message.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'data':</span> <span class="pre">typing.Optional[dict],</span> <span class="pre">'type':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Message.py#L7-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Message.Message.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Message.Message.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Job.Message',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'type':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'data':</span> <span class="pre">typing.Optional[dict]},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">Message</span> <span class="pre">object</span> <span class="pre">contains</span> <span class="pre">information</span> <span class="pre">about</span> <span class="pre">a</span> <span class="pre">given</span> <span class="pre">phase</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">simulation.</span> <span class="pre">Job\n</span>&#160;&#160;&#160; <span class="pre">messages</span> <span class="pre">are</span> <span class="pre">not</span> <span class="pre">returned</span> <span class="pre">if</span> <span class="pre">a</span> <span class="pre">script</span> <span class="pre">is</span> <span class="pre">run</span> <span class="pre">without</span> <span class="pre">the</span> <span class="pre">Abaqus/CAE</span> <span class="pre">GUI</span> <span class="pre">(using</span> <span class="pre">the</span> <span class="pre">noGUI\n</span>&#160;&#160;&#160; <span class="pre">option).\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">job\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.coexecutions[name].jobs[name].messages[i]\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.jobs[name].messages[i]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`Message</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-messagepyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'type':</span> <span class="pre">None,</span> <span class="pre">'data':</span> <span class="pre">None,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Message'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Message'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Message.py#L7-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Message.Message.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Message.Message.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Job.Message'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Message.py#L7-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Message.Message.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Message.Message.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Message.py#L7-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Message.Message.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.Message.Message.data">
 <span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><span class="pre">dict</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Message.py#L7-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Message.Message.data" title="Permalink to this definition">#</a></dt>
@@ -1914,7 +1991,8 @@ DataObject.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ModelJob</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ANALYSIS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitHours</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">echoPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contactPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">historyPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scratch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userSubroutine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCpus</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memoryUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PERCENTAGE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explicitPrecision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SINGLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodalOutputPrecision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SINGLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallelizationMethodExplicit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DOMAIN</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDomains</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activateLoadBalancing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiprocessingMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">licenseType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/ModelJob.py#L10-L299"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob" title="Permalink to this definition">#</a></dt>
-<dd><p>The ModelJob object defines a Job object which analyzes a model on a model database
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Job.Job.Job" title="abaqus.Job.Job.Job"><code class="xref py py-class docutils literal notranslate"><span class="pre">Job</span></code></a></p>
+<p>The ModelJob object defines a Job object which analyzes a model on a model database
 (MDB).
 The ModelJob object is derived from the Job object.</p>
 <div class="admonition note">
@@ -2130,6 +2208,11 @@ The ModelJob object is derived from the Job object.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'activateLoadBalancing':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'analysis':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'atTime':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'contactPrint':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'description':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'echoPrint':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'environment':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;,</span> <span class="pre">'explicitPrecision':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'getMemoryFromAnalysis':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'historyPrint':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'memory':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'memoryUnits':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'messages':</span> <span class="pre">typing.List[abaqus.Job.Message.Message],</span> <span class="pre">'model':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'modelPrint':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'multiprocessingMode':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'nodalOutputPrecision':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'numCpus':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'numDomains':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'parallelizationMethodExplicit':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'queue':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'scratch':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'type':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'userSubroutine':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'waitHours':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'waitMinutes':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/ModelJob.py#L10-L299"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ANALYSIS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitHours</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waitMinutes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">echoPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contactPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">historyPrint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scratch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userSubroutine</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numCpus</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memoryUnits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PERCENTAGE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explicitPrecision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SINGLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodalOutputPrecision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SINGLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parallelizationMethodExplicit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DOMAIN</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numDomains</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activateLoadBalancing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiprocessingMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">licenseType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/ModelJob.py#L149-L281"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.__init__" title="Permalink to this definition">#</a></dt>
@@ -2222,6 +2305,11 @@ available.</p></li>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Job.ModelJob'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/ModelJob.py#L10-L299"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.ModelJob.ModelJob.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Job.ModelJob.ModelJob.activateLoadBalancing">
@@ -2463,7 +2551,8 @@ absolutely sure the model is consistent.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OptimizationProcess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prototypeJob</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxDesignCycle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataSaveFrequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.OPT_DATASAVE_SPECIFY_CYCLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveInitial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveFirst</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveLast</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveEvery</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/OptimizationProcess.py#L8-L261"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess" title="Permalink to this definition">#</a></dt>
-<dd><p>The OptimizationProcess object defines a process to perform an optimization of a model
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The OptimizationProcess object defines a process to perform an optimization of a model
 defined using an optimization task.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2531,6 +2620,16 @@ defined using an optimization task.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'dataSaveFrequency':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'description':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'maxDesignCycle':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'model':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'prototypeJob':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'saveEvery':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'saveFirst':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'saveInitial':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'saveLast':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'task':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/OptimizationProcess.py#L8-L261"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Job.OptimizationProcess',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'model':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'task':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'prototypeJob':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'description':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'maxDesignCycle':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'dataSaveFrequency':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'saveInitial':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'saveFirst':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'saveLast':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'saveEvery':</span> <span class="pre">typing.Optional[int]},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">OptimizationProcess</span> <span class="pre">object</span> <span class="pre">defines</span> <span class="pre">a</span> <span class="pre">process</span> <span class="pre">to</span> <span class="pre">perform</span> <span class="pre">an</span> <span class="pre">optimization</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">model\n</span>&#160;&#160;&#160; <span class="pre">defined</span> <span class="pre">using</span> <span class="pre">an</span> <span class="pre">optimization</span> <span class="pre">task.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">job\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.optimizationProcesses[name]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`OptimizationProcess</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optimizationprocesspyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'description':</span> <span class="pre">'',</span> <span class="pre">'maxDesignCycle':</span> <span class="pre">15,</span> <span class="pre">'dataSaveFrequency':</span> <span class="pre">OPT_DATASAVE_SPECIFY_CYCLE,</span> <span class="pre">'saveInitial':</span> <span class="pre">True,</span> <span class="pre">'saveFirst':</span> <span class="pre">True,</span> <span class="pre">'saveLast':</span> <span class="pre">True,</span> <span class="pre">'saveEvery':</span> <span class="pre">None,</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">OptimizationProcess.__init__&gt;,</span> <span class="pre">'writeParAndInputFiles':</span> <span class="pre">&lt;function</span> <span class="pre">OptimizationProcess.writeParAndInputFiles&gt;,</span> <span class="pre">'submit':</span> <span class="pre">&lt;function</span> <span class="pre">OptimizationProcess.submit&gt;,</span> <span class="pre">'waitForCompletion':</span> <span class="pre">&lt;function</span> <span class="pre">OptimizationProcess.waitForCompletion&gt;,</span> <span class="pre">'extract':</span> <span class="pre">&lt;function</span> <span class="pre">OptimizationProcess.extract&gt;,</span> <span class="pre">'setValues':</span> <span class="pre">&lt;function</span> <span class="pre">OptimizationProcess.setValues&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'OptimizationProcess'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'OptimizationProcess'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/OptimizationProcess.py#L8-L261"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">task</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prototypeJob</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxDesignCycle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataSaveFrequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.OPT_DATASAVE_SPECIFY_CYCLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveInitial</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveFirst</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveLast</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">saveEvery</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/OptimizationProcess.py#L67-L137"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.__init__" title="Permalink to this definition">#</a></dt>
@@ -2586,6 +2685,17 @@ and so on. The default value is None.</p></li>
 <dd class="field-even"><p><strong>AbaqusException</strong> – </p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Job.OptimizationProcess'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/OptimizationProcess.py#L8-L261"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.OptimizationProcess.OptimizationProcess.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/OptimizationProcess.py#L8-L261"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -2781,7 +2891,8 @@ immediately.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Job.Queue.Queue">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Queue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queueName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">driver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remotePlatform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Linux'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filesToCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ALL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deleteAfterCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Queue.py#L5-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue" title="Permalink to this definition">#</a></dt>
-<dd><p>A <a class="reference internal" href="#abaqus.Job.Queue.Queue" title="abaqus.Job.Queue.Queue"><code class="xref py py-class docutils literal notranslate"><span class="pre">Queue</span></code></a> object tells the job where and how to submit a job remotely. A <a class="reference internal" href="#abaqus.Job.Queue.Queue" title="abaqus.Job.Queue.Queue"><code class="xref py py-class docutils literal notranslate"><span class="pre">Queue</span></code></a> object can
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A <a class="reference internal" href="#abaqus.Job.Queue.Queue" title="abaqus.Job.Queue.Queue"><code class="xref py py-class docutils literal notranslate"><span class="pre">Queue</span></code></a> object tells the job where and how to submit a job remotely. A <a class="reference internal" href="#abaqus.Job.Queue.Queue" title="abaqus.Job.Queue.Queue"><code class="xref py py-class docutils literal notranslate"><span class="pre">Queue</span></code></a> object can
 be used as the <strong>queue</strong> argument to the Job method.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2795,6 +2906,16 @@ be used as the <strong>queue</strong> argument to the Job method.</p>
 <p class="admonition-title">Note</p>
 <p>Check <a class="reference external" href="https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-queuepyc.htm?contextscope=all">Queue on help.3ds.com/2023</a>.</p>
 </div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'deleteAfterCopy':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'description':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'directory':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'driver':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'fileCopy':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'filesToCopy':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'hostName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'queueName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'remotePlatform':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Queue.py#L5-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Job.Queue',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'queueName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'hostName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'fileCopy':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'directory':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'driver':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'remotePlatform':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'filesToCopy':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'deleteAfterCopy':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'description':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;},</span> <span class="pre">'__doc__':</span> <span class="pre">'A</span> <span class="pre">:py:class:`~abaqus.Job.Queue.Queue`</span> <span class="pre">object</span> <span class="pre">tells</span> <span class="pre">the</span> <span class="pre">job</span> <span class="pre">where</span> <span class="pre">and</span> <span class="pre">how</span> <span class="pre">to</span> <span class="pre">submit</span> <span class="pre">a</span> <span class="pre">job</span> <span class="pre">remotely.</span> <span class="pre">A</span> <span class="pre">:py:class:`~abaqus.Job.Queue.Queue`</span> <span class="pre">object</span> <span class="pre">can\n</span>&#160;&#160;&#160; <span class="pre">be</span> <span class="pre">used</span> <span class="pre">as</span> <span class="pre">the</span> <span class="pre">**queue**</span> <span class="pre">argument</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">Job</span> <span class="pre">method.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">job\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">session.queues[name]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`Queue</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-queuepyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'hostName':</span> <span class="pre">'',</span> <span class="pre">'fileCopy':</span> <span class="pre">ON,</span> <span class="pre">'directory':</span> <span class="pre">'',</span> <span class="pre">'driver':</span> <span class="pre">'',</span> <span class="pre">'remotePlatform':</span> <span class="pre">'Linux',</span> <span class="pre">'filesToCopy':</span> <span class="pre">ALL,</span> <span class="pre">'deleteAfterCopy':</span> <span class="pre">OFF,</span> <span class="pre">'description':</span> <span class="pre">'',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">Queue.__init__&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Queue'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Queue'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Queue.py#L5-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">queueName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">driver</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remotePlatform</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Linux'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filesToCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ALL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deleteAfterCopy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Queue.py#L54-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.__init__" title="Permalink to this definition">#</a></dt>
@@ -2844,6 +2965,17 @@ local machine. The default value is OFF.</p></li>
 </dd>
 </dl>
 <p>:raises Directory in which` to :class:<a href="#id4"><span class="problematic" id="id5">`</span></a>run the job on the remote computer is not set: If <strong>fileCopy</strong> = ON and <strong>directory</strong> is empty.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Job.Queue'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Queue.py#L5-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.Queue.Queue.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/Queue.py#L5-L118"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.Queue.Queue.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -2997,6 +3129,42 @@ default value is Linux.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Coexecution.Coexecution.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Coexecution.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Coexecution.Coexecution.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Coexecution.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Coexecution.Coexecution.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Coexecution.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Coexecution.Coexecution.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Coexecution.__weakref__
+          </span>
+         </code>
+        </a>
+       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Job.Coexecution.Coexecution.atTime">
          <code class="docutils literal notranslate">
@@ -3168,6 +3336,42 @@ default value is Linux.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Job.Job.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Job.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Job.Job.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Job.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Job.Job.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Job.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Job.Job.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Job.__weakref__
+          </span>
+         </code>
+        </a>
+       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Job.Job.Job.activateLoadBalancing">
          <code class="docutils literal notranslate">
@@ -3439,10 +3643,28 @@ default value is Linux.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           JobFromInputFile.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            JobFromInputFile.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.JobFromInputFile.JobFromInputFile.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           JobFromInputFile.__module__
           </span>
          </code>
         </a>
@@ -3682,6 +3904,42 @@ default value is Linux.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Message.Message.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Message.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Message.Message.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Message.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Message.Message.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Message.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Message.Message.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Message.__weakref__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Job.Message.Message.data">
          <code class="docutils literal notranslate">
           <span class="pre">
@@ -3734,10 +3992,28 @@ default value is Linux.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.ModelJob.ModelJob.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           ModelJob.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Job.ModelJob.ModelJob.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            ModelJob.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.ModelJob.ModelJob.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           ModelJob.__module__
           </span>
          </code>
         </a>
@@ -4031,10 +4307,46 @@ default value is Linux.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           OptimizationProcess.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           OptimizationProcess.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            OptimizationProcess.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           OptimizationProcess.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.OptimizationProcess.OptimizationProcess.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           OptimizationProcess.__weakref__
           </span>
          </code>
         </a>
@@ -4202,10 +4514,46 @@ default value is Linux.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Queue.Queue.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Queue.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Queue.Queue.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Queue.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Job.Queue.Queue.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            Queue.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Queue.Queue.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Queue.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.Queue.Queue.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Queue.__weakref__
           </span>
          </code>
         </a>
