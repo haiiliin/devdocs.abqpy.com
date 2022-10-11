@@ -511,7 +511,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Mdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/Mdb.py#L11-L90"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb" title="永久链接至目标">#</a></dt>
-<dd><p>The Mdb object is the high-level Abaqus model database. A model database stores models
+<dd><p>基类：<a class="reference internal" href="#abaqus.Part.AcisMdb.AcisMdb" title="abaqus.Part.AcisMdb.AcisMdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">AcisMdb</span></code></a>, <a class="reference internal" href="#abaqus.Job.JobMdb.JobMdb" title="abaqus.Job.JobMdb.JobMdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobMdb</span></code></a></p>
+<p>The Mdb object is the high-level Abaqus model database. A model database stores models
 and analysis controls.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -701,7 +702,8 @@ that instances this model. The default value is ON.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MdbBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/MdbBase.py#L14-L273"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase" title="永久链接至目标">#</a></dt>
-<dd><p>The Mdb object is the high-level Abaqus model database. A model database stores models
+<dd><p>基类：<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Mdb object is the high-level Abaqus model database. A model database stores models
 and analysis controls.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -1110,7 +1112,8 @@ you do not provide a file extension, .cae is appended automatically to the path.
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Part.AcisMdb.AcisMdb">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AcisMdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Part/AcisMdb.py#L9-L323"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Part.AcisMdb.AcisMdb" title="永久链接至目标">#</a></dt>
-<dd><p>The Mdb object is the high-level Abaqus model database. A model database stores models
+<dd><p>基类：<a class="reference internal" href="#abaqus.Mdb.MdbBase.MdbBase" title="abaqus.Mdb.MdbBase.MdbBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></a></p>
+<p>The Mdb object is the high-level Abaqus model database. A model database stores models
 and analysis controls.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -1556,7 +1559,8 @@ This object is subsequently used by the PartFromGeometryFile method.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Job.JobMdb.JobMdb">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JobMdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/JobMdb.py#L13-L402"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Job.JobMdb.JobMdb" title="永久链接至目标">#</a></dt>
-<dd><p>The Mdb object is the high-level Abaqus model database. A model database stores models
+<dd><p>基类：<a class="reference internal" href="#abaqus.Mdb.MdbBase.MdbBase" title="abaqus.Mdb.MdbBase.MdbBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></a></p>
+<p>The Mdb object is the high-level Abaqus model database. A model database stores models
 and analysis controls.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
