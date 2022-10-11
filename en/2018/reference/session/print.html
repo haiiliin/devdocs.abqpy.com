@@ -500,7 +500,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Print.EpsOptions.EpsOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EpsOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Print/EpsOptions.py#L9-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Print.EpsOptions.EpsOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The EpsOptions object stores the settings that Abaqus uses when printing using
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The EpsOptions object stores the settings that Abaqus uses when printing using
 Encapsulated PostScript format. The EpsOptions object has no constructor. Abaqus creates
 the <strong>epsOptions</strong> member when a session is started.</p>
 <div class="admonition note">
@@ -653,7 +654,8 @@ value is INCHES.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageSetupOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Print/PageSetupOptions.py#L9-L133"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The PageSetupOptions object stores the settings that Abaqus uses when printing using a
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The PageSetupOptions object stores the settings that Abaqus uses when printing using a
 Windows printer. The PageSetupOptions object has no constructor. Abaqus creates the
 <strong>pageSetupOptions</strong> member when a session is started.</p>
 <div class="admonition note">
@@ -849,7 +851,8 @@ values are INCHES and MM. The default value is INCHES.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Print.PngOptions.PngOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PngOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Print/PngOptions.py#L6-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Print.PngOptions.PngOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The PngOptions object stores the settings that Abaqus uses when printing in PNG format.
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The PngOptions object stores the settings that Abaqus uses when printing in PNG format.
 The PngOptions object has no constructor. Abaqus creates the <strong>pngOptions</strong> member when a
 session is started.</p>
 <div class="admonition note">
@@ -939,7 +942,8 @@ screen dimensions.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Print.PrintOptions.PrintOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PrintOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Print/PrintOptions.py#L6-L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Print.PrintOptions.PrintOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The PrintOptions object stores the common settings that Abaqus uses for all print
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The PrintOptions object stores the common settings that Abaqus uses for all print
 methods. The PrintOptions object has no constructor. Abaqus creates the <strong>printOptions</strong>
 member when a session is started.</p>
 <div class="admonition note">
@@ -1091,7 +1095,8 @@ default value is ON.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PsOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Print/PsOptions.py#L7-L162"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The PsOptions object stores the settings that Abaqus uses when printing using PostScript
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The PsOptions object stores the settings that Abaqus uses when printing using PostScript
 format. The PsOptions object has no constructor. Abaqus creates the <strong>psOptions</strong> member
 when a session is started.</p>
 <div class="admonition note">
@@ -1325,7 +1330,8 @@ default value is MEDIUM.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Print.SvgOptions.SvgOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SvgOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Print/SvgOptions.py#L6-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Print.SvgOptions.SvgOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The SvgOptions object stores the settings that Abaqus uses when printing in SVG format.
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></p>
+<p>The SvgOptions object stores the settings that Abaqus uses when printing in SVG format.
 The SvgOptions object has no constructor. Abaqus creates the <strong>svgOptions</strong> member when a
 session is started.</p>
 <div class="admonition note">

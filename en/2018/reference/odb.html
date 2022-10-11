@@ -500,7 +500,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.Odb.Odb">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Odb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisTitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/Odb.py#L15-L196"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.Odb.Odb" title="Permalink to this definition">#</a></dt>
-<dd><p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
+<dd><p>Bases: <a class="reference internal" href="mdb/model/amplitude.html#abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb" title="abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">AmplitudeOdb</span></code></a>, <a class="reference internal" href="mdb/model/filter.html#abaqus.Filter.FilterOdb.FilterOdb" title="abaqus.Filter.FilterOdb.FilterOdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">FilterOdb</span></code></a>, <a class="reference internal" href="mdb/model/material.html#abaqus.Material.MaterialOdb.MaterialOdb" title="abaqus.Material.MaterialOdb.MaterialOdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">MaterialOdb</span></code></a>, <a class="reference internal" href="mdb/model/profile.html#abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb" title="abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">BeamSectionProfileOdb</span></code></a>, <a class="reference internal" href="session/canvas.html#abaqus.Canvas.Displayable.Displayable" title="abaqus.Canvas.Displayable.Displayable"><code class="xref py py-class docutils literal notranslate"><span class="pre">Displayable</span></code></a></p>
+<p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -863,7 +864,8 @@ default value is −1.0.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbBase.OdbBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisTitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbBase.py#L20-L166"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbBase.OdbBase" title="Permalink to this definition">#</a></dt>
-<dd><p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -1147,7 +1149,8 @@ have been written to the output database, update adds them to the Odb object.</p
 <dl class="py class">
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AmplitudeOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisTitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Amplitude/AmplitudeOdb.py#L20-L561"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Odb.OdbBase.OdbBase" title="abaqus.Odb.OdbBase.OdbBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></a></p>
+<p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -1742,7 +1745,8 @@ and TOTAL. The default value is STEP.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FilterOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisTitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Filter/FilterOdb.py#L12-L283"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Odb.OdbBase.OdbBase" title="abaqus.Odb.OdbBase.OdbBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></a></p>
+<p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -2063,7 +2067,8 @@ values are NONE, FIRST, and SECOND. The default value is NONE.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MaterialOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisTitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Material/MaterialOdb.py#L6-L45"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Odb.OdbBase.OdbBase" title="abaqus.Odb.OdbBase.OdbBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></a></p>
+<p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -2197,7 +2202,8 @@ string.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BeamSectionProfileOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisTitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py#L17-L473"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
-<dd><p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Odb.OdbBase.OdbBase" title="abaqus.Odb.OdbBase.OdbBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></a></p>
+<p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -2771,7 +2777,8 @@ library](<a class="reference external" href="https://help.3ds.com/2021/English/D
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.AnalyticSurface.AnalyticSurface">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AnalyticSurface</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/AnalyticSurface.py#L8-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.AnalyticSurface.AnalyticSurface" title="Permalink to this definition">#</a></dt>
-<dd><p>The AnalyticSurface object is a geometric surface that can be described with straight
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The AnalyticSurface object is a geometric surface that can be described with straight
 and/or curved line segments.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2852,7 +2859,8 @@ SEGMENTS, CYLINDER, and REVOLUTION.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AnalyticSurfaceSegment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/AnalyticSurfaceSegment.py#L5-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment" title="Permalink to this definition">#</a></dt>
-<dd><p>An individual segment of the analytic surface.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>An individual segment of the analytic surface.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -2941,7 +2949,8 @@ START, LINE, CIRCLE, and PARABOLA.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.BeamOrientation.BeamOrientation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BeamOrientation</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/BeamOrientation.py#L8-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.BeamOrientation.BeamOrientation" title="Permalink to this definition">#</a></dt>
-<dd><p>The BeamOrientation object represents the direction of the first beam section axis n1n1.
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The BeamOrientation object represents the direction of the first beam section axis n1n1.
 Specifying the beam orientation using an additional node in the element connectivity
 list is not supported.</p>
 <div class="admonition note">
@@ -3012,7 +3021,8 @@ cross-section.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.FieldBulkData.FieldBulkData">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldBulkData</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/FieldBulkData.py#L10-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldBulkData.FieldBulkData" title="Permalink to this definition">#</a></dt>
-<dd><p>The FieldBulkData object represents the entire field data for a class of elements or
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The FieldBulkData object represents the entire field data for a class of elements or
 nodes. All elements in a class correspond to the same element type and material.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3183,7 +3193,8 @@ TENSOR_2D_SURFACE.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.FieldLocation.FieldLocation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldLocation</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/FieldLocation.py#L8-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldLocation.FieldLocation" title="Permalink to this definition">#</a></dt>
-<dd><p>The FieldLocation object specifies locations for which data are available in the field.
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The FieldLocation object specifies locations for which data are available in the field.
 For example, a displacement field will have a FieldLocation object with a <strong>position</strong>
 member value of NODAL. The FieldLocation object has no constructor; it is created
 automatically as an element of the <strong>location</strong> member of a FieldOutput object by the
@@ -3248,7 +3259,8 @@ extrapolating results calculated at the integration points.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.FieldOutput.FieldOutput">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldOutput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/FieldOutput.py#L13-L754"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldOutput.FieldOutput" title="Permalink to this definition">#</a></dt>
-<dd><p>A <a class="reference internal" href="#abaqus.Odb.FieldOutput.FieldOutput" title="abaqus.Odb.FieldOutput.FieldOutput"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldOutput</span></code></a> object contains field data for a specific output variable.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A <a class="reference internal" href="#abaqus.Odb.FieldOutput.FieldOutput" title="abaqus.Odb.FieldOutput.FieldOutput"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldOutput</span></code></a> object contains field data for a specific output variable.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -3570,7 +3582,8 @@ description of the order.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.FieldValue.FieldValue">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldValue</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/FieldValue.py#L10-L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.FieldValue.FieldValue" title="Permalink to this definition">#</a></dt>
-<dd><p>The FieldValue object represents the field data at a point. The FieldValue object has no
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The FieldValue object represents the field data at a point. The FieldValue object has no
 constructor; it is created by the Odb object when data are added to the FieldOutput
 object using the addData method. For faster, bulk-data access, see Using bulk data
 access to an output database.</p>
@@ -3909,7 +3922,8 @@ TENSOR_2D_SURFACE.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.HistoryOutput.HistoryOutput">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HistoryOutput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validInvariants</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/HistoryOutput.py#L10-L132"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.HistoryOutput.HistoryOutput" title="Permalink to this definition">#</a></dt>
-<dd><p>The HistoryOutput object contains the history output at a point for the specified
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The HistoryOutput object contains the history output at a point for the specified
 variable.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -4047,7 +4061,8 @@ MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.HistoryPoint.HistoryPoint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HistoryPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/HistoryPoint.py#L15-L231"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.HistoryPoint.HistoryPoint" title="Permalink to this definition">#</a></dt>
-<dd><p>The HistoryPoint object specifies the point at which history data will be collected. The
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The HistoryPoint object specifies the point at which history data will be collected. The
 HistoryPoint object is a temporary object used as an argument to the HistoryRegion
 method.</p>
 <div class="admonition note">
@@ -4206,7 +4221,8 @@ surface facets have integration points.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.HistoryRegion.HistoryRegion">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HistoryRegion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loadCase</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/HistoryRegion.py#L14-L173"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.HistoryRegion.HistoryRegion" title="Permalink to this definition">#</a></dt>
-<dd><p>The HistoryRegion object contains history data for a single location in the model.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The HistoryRegion object contains history data for a single location in the model.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -4372,7 +4388,8 @@ NODAL, INTEGRATION_POINT, WHOLE_ELEMENT, WHOLE_REGION, and WHOLE_MODEL.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.JobData.JobData">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JobData</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/JobData.py#L7-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.JobData.JobData" title="Permalink to this definition">#</a></dt>
-<dd><p>The JobData object describes the context in which the analysis was run.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The JobData object describes the context in which the analysis was run.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -4476,7 +4493,8 @@ values are AQUA, DESIGN, BIORID, CEL, SOLITER, and CAVPARALLEL.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbAssembly.OdbAssembly">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbAssembly</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbAssembly.py#L15-L324"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbAssembly.OdbAssembly" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase" title="abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbAssemblyBase</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbAssemblyBase</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -4857,11 +4875,11 @@ The default value is INPUT.</p></li>
 <li><p><strong>isothermal</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying specify whether the OdbRigidBody can have temperature gradients or
 be isothermal. This is used only for fully coupled thermal-stress analysis The default
 value is ON.</p></li>
-<li><p><strong>elements</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff193a063b0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the element set whose motion is governed by the motion of
+<li><p><strong>elements</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f2ad2c589a0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the element set whose motion is governed by the motion of
 rigid body reference node.</p></li>
-<li><p><strong>tieNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff193a06380&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have both translational and rotational
+<li><p><strong>tieNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f2ad2ced8d0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have both translational and rotational
 degrees of freedom associated with the rigid body.</p></li>
-<li><p><strong>pinNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff193a05c30&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have only translational degrees of
+<li><p><strong>pinNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f2ad2ced4b0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have only translational degrees of
 freedom associated with the rigid body.</p></li>
 </ul>
 </dd>
@@ -4882,7 +4900,8 @@ freedom associated with the rigid body.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbAssemblyBase</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbAssemblyBase.py#L18-L234"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase" title="Permalink to this definition">#</a></dt>
-<dd><p>The OdbAssembly object has no constructor; it is created automatically when an Odb
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The OdbAssembly object has no constructor; it is created automatically when an Odb
 object is created. Abaqus creates the <strong>rootAssembly</strong> member when an Odb object is
 created.</p>
 <div class="admonition note">
@@ -5372,7 +5391,8 @@ database.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbDatumCsys.OdbDatumCsys">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbDatumCsys</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbDatumCsys.py#L8-L220"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbDatumCsys.OdbDatumCsys" title="Permalink to this definition">#</a></dt>
-<dd><p>The OdbDatumCsys object contains a coordinate system that can be stored in an output
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The OdbDatumCsys object contains a coordinate system that can be stored in an output
 database. You can create the datum coordinate system in the Visualization module during
 an Abaqus/CAE session and save the datum coordinate system to the output database before
 you exit Abaqus/CAE. Alternatively, the analysis code can write the datum coordinate
@@ -5673,7 +5693,8 @@ system.</p>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span></dt>
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loadCase</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><span class="pre">OdbLoadCase</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span></dt>
-<dd><p>The domain of the OdbFrame object is taken from the parent step.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The domain of the OdbFrame object is taken from the parent step.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -5842,7 +5863,8 @@ the same increment number is duplicated for each loadcase.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbInstance.OdbInstance">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbInstance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCoordSystem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbInstance.py#L9-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbInstance.OdbInstance" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Odb.OdbInstanceBase.OdbInstanceBase" title="abaqus.Odb.OdbInstanceBase.OdbInstanceBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbInstanceBase</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbInstanceBase</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -5986,7 +6008,8 @@ an assembly:`nodes=(instance1.nodes[6:7], instance2.nodes[1:5])</cite></p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbInstanceBase.OdbInstanceBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbInstanceBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCoordSystem</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbInstanceBase.py#L21-L388"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbInstanceBase.OdbInstanceBase" title="Permalink to this definition">#</a></dt>
-<dd><p>A part instance is the usage of a part within an assembly.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A part instance is the usage of a part within an assembly.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -6494,7 +6517,8 @@ DEFORMABLE_BODY is currently supported.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbLoadCase.OdbLoadCase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbLoadCase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbLoadCase.py#L3-L38"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="Permalink to this definition">#</a></dt>
-<dd><p>The OdbLoadCase object describes a load case.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The OdbLoadCase object describes a load case.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -6562,7 +6586,8 @@ DEFORMABLE_BODY is currently supported.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbMeshElement.OdbMeshElement">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbMeshElement</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbMeshElement.py#L8-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbMeshElement.OdbMeshElement" title="Permalink to this definition">#</a></dt>
-<dd><p>OdbMeshElement objects are created with the part.addElements or rootAssembly.addElements
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>OdbMeshElement objects are created with the part.addElements or rootAssembly.addElements
 methods.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -6728,7 +6753,8 @@ exist.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbMeshNode.OdbMeshNode">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbMeshNode</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbMeshNode.py#L6-L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbMeshNode.OdbMeshNode" title="Permalink to this definition">#</a></dt>
-<dd><p>OdbMeshNode objects are created with the part.addNodes method.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>OdbMeshNode objects are created with the part.addNodes method.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -6796,7 +6822,8 @@ system.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbPart.OdbPart">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embeddedSpace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbPart.py#L10-L79"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbPart.OdbPart" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Odb.OdbPartBase.OdbPartBase" title="abaqus.Odb.OdbPartBase.OdbPartBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbPartBase</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbPartBase</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -6961,7 +6988,8 @@ is used only for a fully-coupled thermal stress analysis.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbPartBase.OdbPartBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbPartBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embeddedSpace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbPartBase.py#L19-L390"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbPartBase.OdbPartBase" title="Permalink to this definition">#</a></dt>
-<dd><p>The OdbPart object is similar to the kernel Part object and contains nodes and elements,
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The OdbPart object is similar to the kernel Part object and contains nodes and elements,
 but not geometry.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -7379,7 +7407,8 @@ AXIS_1.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbPretensionSection.OdbPretensionSection">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbPretensionSection</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbPretensionSection.py#L7-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbPretensionSection.OdbPretensionSection" title="Permalink to this definition">#</a></dt>
-<dd><p>The pretension section object is used to define an assembly load. It associates a
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The pretension section object is used to define an assembly load. It associates a
 pretension node with a pretension section.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -7454,7 +7483,8 @@ pretension node with a pretension section.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbRigidBody.OdbRigidBody">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbRigidBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">referenceNode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position=abaqusConstants.INPUT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isothermal=ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elements=&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieNodes=&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pinNodes=&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analyticSurface=None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbRigidBody.py#L9-L102"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbRigidBody.OdbRigidBody" title="Permalink to this definition">#</a></dt>
-<dd><p>The Rigid body object is used to bind a set of elements and/or a set of nodes and/or an
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Rigid body object is used to bind a set of elements and/or a set of nodes and/or an
 analytical surface with a reference node.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -7533,11 +7563,11 @@ The default value is INPUT.</p></li>
 <li><p><strong>isothermal</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying specify whether the OdbRigidBody can have temperature gradients or
 be isothermal. This is used only for fully coupled thermal-stress analysis The default
 value is ON.</p></li>
-<li><p><strong>elements</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff1939344f0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the element set whose motion is governed by the motion of
+<li><p><strong>elements</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f2ad09f88e0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the element set whose motion is governed by the motion of
 rigid body reference node.</p></li>
-<li><p><strong>tieNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff1939366e0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have both translational and rotational
+<li><p><strong>tieNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f2ad09fad70&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have both translational and rotational
 degrees of freedom associated with the rigid body.</p></li>
-<li><p><strong>pinNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff193937340&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have only translational degrees of
+<li><p><strong>pinNodes</strong> (<a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbSet.OdbSet</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f2ad09fada0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbSet.OdbSet" title="abaqus.Odb.OdbSet.OdbSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSet</span></code></a> object specifying the node set which have only translational degrees of
 freedom associated with the rigid body.</p></li>
 <li><p><strong>analyticSurface</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference internal" href="#abaqus.Odb.AnalyticSurface.AnalyticSurface" title="abaqus.Odb.AnalyticSurface.AnalyticSurface"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnalyticSurface</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – An <a class="reference internal" href="#abaqus.Odb.AnalyticSurface.AnalyticSurface" title="abaqus.Odb.AnalyticSurface.AnalyticSurface"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnalyticSurface</span></code></a> object specifying the analytic surface whose motion is governed by
 the motion of rigid body reference node.</p></li>
@@ -7619,7 +7649,8 @@ degrees of freedom associated with the rigid body.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbSequenceAnalyticSurfaceSegment</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbSequenceAnalyticSurfaceSegment.py#L3-L83"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment" title="Permalink to this definition">#</a></dt>
-<dd><p>A sequence of AnalyticSurfaceSegment describing an analytic surface profile.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A sequence of AnalyticSurfaceSegment describing an analytic surface profile.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -7757,7 +7788,8 @@ profile.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbSession.OdbSession">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbSession</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbSession.py#L7-L29"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbSession.OdbSession" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="session.html#abaqus.Session.SessionBase.SessionBase" title="abaqus.Session.SessionBase.SessionBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -8070,7 +8102,8 @@ profile.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbSet.OdbSet">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nodes</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbSet.py#L11-L259"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbSet.OdbSet" title="Permalink to this definition">#</a></dt>
-<dd><p>The set objects are used to identify regions of a model.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The set objects are used to identify regions of a model.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -8454,7 +8487,8 @@ one part instance, this member is a sequence of sequences for each part instance
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbStep.OdbStep">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbStep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timePeriod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">previousStepName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">procedure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">totalTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbStep.py#L11-L166"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbStep.OdbStep" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Odb.OdbStepBase.OdbStepBase" title="abaqus.Odb.OdbStepBase.OdbStepBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbStepBase</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbStepBase</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -8605,7 +8639,8 @@ object. The default value is None.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.OdbStepBase.OdbStepBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbStepBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">domain</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timePeriod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">previousStepName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">procedure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">totalTime</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/OdbStepBase.py#L16-L313"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.OdbStepBase.OdbStepBase" title="Permalink to this definition">#</a></dt>
-<dd><p>An output database contains the same steps of the model database that originated it.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>An output database contains the same steps of the model database that originated it.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -8815,7 +8850,7 @@ model.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>point</strong> (<a class="reference internal" href="#abaqus.Odb.HistoryPoint.HistoryPoint" title="abaqus.Odb.HistoryPoint.HistoryPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryPoint</span></code></a>) – A <a class="reference internal" href="#abaqus.Odb.HistoryPoint.HistoryPoint" title="abaqus.Odb.HistoryPoint.HistoryPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryPoint</span></code></a> object specifying the point in the model.</p></li>
-<li><p><strong>loadCase</strong> (<a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbLoadCase.OdbLoadCase</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7ff193937ee0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a> object specifying a load case in the step.</p></li>
+<li><p><strong>loadCase</strong> (<a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">&lt;abaqus.Odb.OdbLoadCase.OdbLoadCase</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7f2ad0b8bcd0&gt;</span></code>) – An <a class="reference internal" href="#abaqus.Odb.OdbLoadCase.OdbLoadCase" title="abaqus.Odb.OdbLoadCase.OdbLoadCase"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbLoadCase</span></code></a> object specifying a load case in the step.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -8923,7 +8958,8 @@ mass of the acoustic media if any present.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.RebarOrientation.RebarOrientation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RebarOrientation</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/RebarOrientation.py#L9-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.RebarOrientation.RebarOrientation" title="Permalink to this definition">#</a></dt>
-<dd><p>The RebarOrientation object represents the orientation of the rebar reference.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The RebarOrientation object represents the orientation of the rebar reference.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -9001,7 +9037,8 @@ AXIS_2, and AXIS_3.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.ScratchOdb.ScratchOdb">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ScratchOdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/ScratchOdb.py#L5-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.ScratchOdb.ScratchOdb" title="Permalink to this definition">#</a></dt>
-<dd><p>A scratch output database is associated with an open output database and is used to
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A scratch output database is associated with an open output database and is used to
 store session-related, non-persistent objects, such as Step, Frame and FieldOutput
 objects. Abaqus creates a scratch output database when needed for these non-persistent
 objects during an Abaqus/CAE session. Abaqus deletes the scratch output database when
@@ -9065,7 +9102,8 @@ the associated output database is closed.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.SectionCategory.SectionCategory">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SectionCategory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/SectionCategory.py#L6-L94"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.SectionCategory.SectionCategory" title="Permalink to this definition">#</a></dt>
-<dd><p>The SectionCategory object is used to group regions of the model with like sections.
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The SectionCategory object is used to group regions of the model with like sections.
 Section definitions that contain the same number of section points or integration points
 are grouped together.
 To access data for a particular section definition, use the individual Section objects
@@ -9212,7 +9250,8 @@ for the numbering convention.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.SectionPoint.SectionPoint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SectionPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/SectionPoint.py#L3-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.SectionPoint.SectionPoint" title="Permalink to this definition">#</a></dt>
-<dd><p>The SectionPoint object describes the location of a section point within a section
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The SectionPoint object describes the location of a section point within a section
 category.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -9317,7 +9356,8 @@ for the numbering convention.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.SectorDefinition.SectorDefinition">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SectorDefinition</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/SectorDefinition.py#L6-L23"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.SectorDefinition.SectorDefinition" title="Permalink to this definition">#</a></dt>
-<dd><p>The SectorDefinition object describes the number of symmetry sectors and axis of
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The SectorDefinition object describes the number of symmetry sectors and axis of
 symmetry for a cyclic symmetry model.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -9366,7 +9406,8 @@ symmetry.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.UserData.UserData">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UserData</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/UserData.py#L4-L5"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.UserData.UserData" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AnimationUserData</span></code></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">UserDataBase</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -9438,7 +9479,8 @@ symmetry.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Odb.UserDataBase.UserDataBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">UserDataBase</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/Odb/UserDataBase.py#L9-L122"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Odb.UserDataBase.UserDataBase" title="Permalink to this definition">#</a></dt>
-<dd><p>The UserData object contains user-defined XY data. The UserData object has no
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The UserData object contains user-defined XY data. The UserData object has no
 constructor; it is created automatically when an Odb object is created.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
