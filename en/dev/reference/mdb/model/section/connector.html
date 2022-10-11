@@ -500,6 +500,67 @@
 <dt class="sig sig-object py" id="abaqus.Connector.ConnectorSection.ConnectorSection">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConnectorSection</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Connector/ConnectorSection.py#L22-L756"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Connector.ConnectorSection.ConnectorSection" title="Permalink to this definition">#</a></dt>
 <dd><p>Bases: <a class="reference internal" href="../section.html#abaqus.Section.SectionBase.SectionBase" title="abaqus.Section.SectionBase.SectionBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectionBase</span></code></a></p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SectionBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">behaviorOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="#abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray" title="abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConnectorBehaviorOptionArray</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">beamTransverseShear</span></code></p></td>
+<td><p>A <a class="reference internal" href="../section.html#abaqus.Section.TransverseShearBeam.TransverseShearBeam" title="abaqus.Section.TransverseShearBeam.TransverseShearBeam"><code class="xref py py-class docutils literal notranslate"><span class="pre">TransverseShearBeam</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">transverseShear</span></code></p></td>
+<td><p>A <a class="reference internal" href="../section.html#abaqus.Section.TransverseShearShell.TransverseShearShell" title="abaqus.Section.TransverseShearShell.TransverseShearShell"><code class="xref py py-class docutils literal notranslate"><span class="pre">TransverseShearShell</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorDamage</span></code></a>([coupling, criterion, ...])</p></td>
+<td><p>This method creates a connector damage behavior option for a ConnectorSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamping"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorDamping</span></code></a>([type, behavior, coupling, ...])</p></td>
+<td><p>This method creates a connector damping behavior option for a ConnectorSection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorElasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorElasticity</span></code></a>([behavior, coupling, ...])</p></td>
+<td><p>This method creates a connector elasticity behavior option for a ConnectorSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFailure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorFailure</span></code></a>([releaseComponent, ...])</p></td>
+<td><p>This method creates a connector failure behavior option for a ConnectorSection object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorFriction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorFriction</span></code></a>([frictionModel, ...])</p></td>
+<td><p>This method creates a connector friction behavior option for a ConnectorSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorLock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorLock</span></code></a>([lockingComponent, minMotion, ...])</p></td>
+<td><p>This method creates a connector lock behavior option for a ConnectorSection.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorPlasticity</span></code></a>([coupling, isotropic, ...])</p></td>
+<td><p>This method creates a connector plasticity behavior option for a ConnectorSection object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorPotential</span></code></a>([componentStyle, ...])</p></td>
+<td><p>This method creates a connector potential object to be used in conjunction with an allowable connector behavior option.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop" title="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConnectorStop</span></code></a>([minMotion, maxMotion, components])</p></td>
+<td><p>This method creates a connector stop behavior option for a ConnectorSection object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SectionBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../section.html#abaqus.Section.SectionBase.SectionBase.sectionsFromOdb" title="abaqus.Section.SectionBase.SectionBase.sectionsFromOdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectionsFromOdb</span></code></a>(fileName)</p></td>
+<td><p>This method creates Section objects by reading an output database.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage">
 <span class="sig-name descname"><span class="pre">ConnectorDamage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coupling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNCOUPLED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">criterion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.FORCE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationTemperature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationPotentialOperator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SUM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationPotentialExponent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationDependencies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MOTION_TYPE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">softening</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.LINEAR</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useAffected</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">degradation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MAXIMUM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionTemperature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionDependencies</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionPotentialOperator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SUM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionPotentialExponent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationPotentials</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionPotentials</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initiationTable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evolutionTable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">affectedComponents</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">components</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Connector/ConnectorSection.py#L24-L156"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorDamage" title="Permalink to this definition">#</a></dt>
