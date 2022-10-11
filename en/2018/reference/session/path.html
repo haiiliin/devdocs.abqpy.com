@@ -498,7 +498,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.PathSession.PathSession">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PathSession</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/PathAndProbe/PathSession.py#L11-L185"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.PathSession.PathSession" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="../session.html#abaqus.Session.SessionBase.SessionBase" title="abaqus.Session.SessionBase.SessionBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -939,7 +940,8 @@ representation of the node selected in the viewport.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.FreeBody.FreeBody">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FreeBody</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/PathAndProbe/FreeBody.py#L5-L141"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.FreeBody.FreeBody" title="Permalink to this definition">#</a></dt>
-<dd><p>The FreeBody object defines a section across which resultant forces and moments are
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The FreeBody object defines a section across which resultant forces and moments are
 computed.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1092,7 +1094,8 @@ NORMAL_TANGENTIAL and CSYS. The default value is NORMAL_TANGENTIAL.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CurrentProbeValues</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/PathAndProbe/CurrentProbeValues.py#L6-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="Permalink to this definition">#</a></dt>
-<dd><p>The CurrentProbeValues object has no constructor. The CurrentProbeValues object is
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The CurrentProbeValues object has no constructor. The CurrentProbeValues object is
 created when you import the Visualization module.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1132,7 +1135,8 @@ constantly as the user moves the mouse over the object being probed.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.NodeQuery.NodeQuery">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">NodeQuery</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/PathAndProbe/NodeQuery.py#L6-L25"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="Permalink to this definition">#</a></dt>
-<dd><p>The NodeQuery object specifies nodes and their coordinates in a path. The NodeQuery
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The NodeQuery object specifies nodes and their coordinates in a path. The NodeQuery
 object has no constructor or methods. Abaqus creates the <strong>nodeQuery</strong> member when you
 import the visualization module.</p>
 <div class="admonition note">
@@ -1183,7 +1187,8 @@ queried node.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.Path.Path">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">circleDefinition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numSegments</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radialAngle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startRadius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endRadius</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/PathAndProbe/Path.py#L7-L185"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.Path.Path" title="Permalink to this definition">#</a></dt>
-<dd><p>The Path object defines a line through your model by specifying a series of nodes or
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Path object defines a line through your model by specifying a series of nodes or
 points.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1397,7 +1402,8 @@ NODE_LIST, POINT_LIST, EDGE_LIST, CIRCUMFERENTIAL, and RADIAL.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.ProbeOptions.ProbeOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ProbeOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/PathAndProbe/ProbeOptions.py#L7-L199"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The ProbeOptions object is used to store settings associated with probing a model or an
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ProbeOptions object is used to store settings associated with probing a model or an
 <strong>X - Y</strong> plot. The ProbeOptions object has no constructor. Abaqus creates the
 <strong>defaultProbeOptions</strong> and the <strong>probeOptions</strong> members when you import the Visualization
 module. When probing is initiated for the first time, the values in the <strong>probeOptions</strong>
@@ -1702,7 +1708,8 @@ ON.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.ProbeReport.ProbeReport">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ProbeReport</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/PathAndProbe/ProbeReport.py#L7-L64"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="Permalink to this definition">#</a></dt>
-<dd><p>The ProbeReport object is used to store settings associated with tabular reports of
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ProbeReport object is used to store settings associated with tabular reports of
 probe data. The ProbeReport object has no constructor. Abaqus creates the
 <strong>defaultProbeReport</strong> and the <strong>probeReport</strong> members when you import the Visualization
 module. When probing is initiated for the first time, the values in the <strong>probeReport</strong>
@@ -1773,7 +1780,8 @@ output result (when <strong>probeObject</strong> = ”ODB”) or the <strong>x</
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SelectedProbeValues</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/PathAndProbe/SelectedProbeValues.py#L7-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="Permalink to this definition">#</a></dt>
-<dd><p>The SelectedProbeValues object has no constructor. The SelectedProbeValues object is
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The SelectedProbeValues object has no constructor. The SelectedProbeValues object is
 created when you import the Visualization module.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1840,7 +1848,8 @@ to writing to a file).</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.Spectrum.Spectrum">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Spectrum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/PathAndProbe/Spectrum.py#L3-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.Spectrum.Spectrum" title="Permalink to this definition">#</a></dt>
-<dd><p>The Spectrum object defines a color spectrum for the contour display.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Spectrum object defines a color spectrum for the contour display.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -1903,7 +1912,8 @@ to writing to a file).</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.PathAndProbe.Stream.Stream">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numPointsOnRake</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointA</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointB</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2018/src/abaqus/PathAndProbe/Stream.py#L3-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.PathAndProbe.Stream.Stream" title="Permalink to this definition">#</a></dt>
-<dd><p>TheStream object defines a set of streamlines in fluid mechanics.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>TheStream object defines a set of streamlines in fluid mechanics.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
