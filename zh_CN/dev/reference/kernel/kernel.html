@@ -504,7 +504,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.CustomKernel.CommandRegister.CommandRegister">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CommandRegister</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/CustomKernel/CommandRegister.py#L4-L30"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.CommandRegister.CommandRegister" title="永久链接至目标">#</a></dt>
-<dd><p>This class allows you to derive a general class that can be queried from the GUI and is
+<dd><p>基类：<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>This class allows you to derive a general class that can be queried from the GUI and is
 capable of notifying the GUI when the contents of the class change.</p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -558,7 +559,8 @@ capable of notifying the GUI when the contents of the class change.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredDictionary</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/CustomKernel/RegisteredDictionary.py#L5-L55"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary" title="永久链接至目标">#</a></dt>
-<dd><p>This class allows you to create a dictionary that can be queried from the GUI and is
+<dd><p>基类：<a class="reference internal" href="#abaqus.CustomKernel.CommandRegister.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
+<p>This class allows you to create a dictionary that can be queried from the GUI and is
 capable of notifying the GUI when the contents of the dictionary change. The keys to a
 RegisteredDictionary must be either strings or integers.
 The RegisteredDictionary object is derived from the CommandRegister object.</p>
@@ -751,7 +753,8 @@ addition, the RegisteredDictionary object supports the changeKey method.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredList.RegisteredList">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredList</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/CustomKernel/RegisteredList.py#L5-L37"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList" title="永久链接至目标">#</a></dt>
-<dd><p>This class allows you to create a list that can be queried from the GUI and is capable
+<dd><p>基类：<a class="reference internal" href="#abaqus.CustomKernel.CommandRegister.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a></p>
+<p>This class allows you to create a list that can be queried from the GUI and is capable
 of notifying the GUI when the contents of the list change.
 The RegisteredList object is derived from the CommandRegister object.</p>
 <div class="admonition note">
@@ -927,7 +930,8 @@ The RegisteredList object is derived from the CommandRegister object.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredTuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/CustomKernel/RegisteredTuple.py#L5-L42"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple" title="永久链接至目标">#</a></dt>
-<dd><p>This class allows you to create a tuple that can be queried from the GUI and is capable
+<dd><p>基类：<a class="reference internal" href="#abaqus.CustomKernel.CommandRegister.CommandRegister" title="abaqus.CustomKernel.CommandRegister.CommandRegister"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></p>
+<p>This class allows you to create a tuple that can be queried from the GUI and is capable
 of notifying the GUI when the contents of any of the tuple’s members change.
 The RegisteredTuple object is derived from the CommandRegister object.</p>
 <div class="admonition note">
