@@ -501,7 +501,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.CommonOptions.CommonOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CommonOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/OdbDisplay/CommonOptions.py#L10-L374"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.CommonOptions.CommonOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The CommonOptions object stores values and attributes that are common to all plot
+<dd><p>Bases: <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DGCommonOptions.DGCommonOptions" title="abaqus.PlotOptions.DGCommonOptions.DGCommonOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DGCommonOptions</span></code></a></p>
+<p>The CommonOptions object stores values and attributes that are common to all plot
 states. The CommonOptions object has no constructor command. Abaqus creates a
 <em>defaultOdbDisplay.commonOptions</em> member when you import the Visualization module.
 Abaqus creates a <strong>commonOptions</strong> member when it creates the OdbDisplay object, using the
@@ -1158,7 +1159,8 @@ FEATURE, FREE, and NONE. The default value is EXTERIOR.NONE can be used only whe
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.ContourOptions.ContourOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ContourOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/OdbDisplay/ContourOptions.py#L10-L379"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.ContourOptions.ContourOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The ContourOptions object stores values and attributes associated with a contour plot.
+<dd><p>Bases: <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DGContourOptions.DGContourOptions" title="abaqus.PlotOptions.DGContourOptions.DGContourOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DGContourOptions</span></code></a></p>
+<p>The ContourOptions object stores values and attributes associated with a contour plot.
 The ContourOptions object has no constructor command. Abaqus creates a
 <em>defaultOdbDisplay.contourOptions</em> member when you import the Visualization module.
 Abaqus creates a <strong>contourOptions</strong> member when it creates the OdbDisplay object, using
@@ -1774,7 +1776,8 @@ displays contours on the element faces. The default value is OFF.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DefaultOdbDisplay</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/OdbDisplay/DefaultOdbDisplay.py#L14-L54"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay" title="Permalink to this definition">#</a></dt>
-<dd><p>The DefaultOdbDisplay object is a limited-functionality version of the OdbDisplay
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The DefaultOdbDisplay object is a limited-functionality version of the OdbDisplay
 object.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1894,7 +1897,8 @@ object.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayBodyOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/OdbDisplay/DisplayBodyOptions.py#L9-L160"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The DisplayBodyOptions object stores values and attributes that are common to all plot
+<dd><p>Bases: <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions" title="abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DGDisplayBodyOptions</span></code></a></p>
+<p>The DisplayBodyOptions object stores values and attributes that are common to all plot
 states. The DisplayBodyOptions object has no constructor command. Abaqus creates a
 <em>defaultOdbDisplay.displayBodyOptions</em> member when you import the Visualization module.
 Abaqus creates a <strong>displayBodyOptions</strong> member when it creates the OdbDisplay object,
@@ -2172,7 +2176,8 @@ FEATURE, FREE, and NONE. The default value is EXTERIOR.NONE can be used only whe
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.OdbDisplay.OdbDisplay">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbDisplay</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/OdbDisplay/OdbDisplay.py#L27-L647"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.OdbDisplay.OdbDisplay" title="Permalink to this definition">#</a></dt>
-<dd><p>The OdbDisplay object stores the context of an output database for a viewport. The
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The OdbDisplay object stores the context of an output database for a viewport. The
 OdbDisplay object has no constructor. Abaqus creates the <strong>defaultOdbDisplay</strong> member when
 you import the Visualization module. Abaqus creates the <strong>odbDisplay</strong> member when a
 viewport is created, using the attributes from the previous active viewport. The
@@ -2975,7 +2980,8 @@ removed based on the status variable</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.OrientationOptions.OrientationOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OrientationOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/OdbDisplay/OrientationOptions.py#L9-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.OrientationOptions.OrientationOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The OrientationOptions object stores values and attributes associated with a material
+<dd><p>Bases: <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions" title="abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DGOrientationOptions</span></code></a></p>
+<p>The OrientationOptions object stores values and attributes associated with a material
 orientation plot. The OrientationOptions object has no constructor command. Abaqus
 creates a <em>defaultOdbDisplay.materialOrientationOptions</em> member when you import the
 Visualization module. Abaqus creates a <strong>materialOrientationOptions</strong> member when it
@@ -3225,7 +3231,8 @@ displayed. The default value is ON.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SuperimposeOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/OdbDisplay/SuperimposeOptions.py#L10-L352"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The SuperimposeOptions object stores values and attributes associated with the
+<dd><p>Bases: <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions" title="abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DGSuperimposeOptions</span></code></a></p>
+<p>The SuperimposeOptions object stores values and attributes associated with the
 undeformed shape when the display contains both the deformed shape and the undeformed
 shape. The SuperimposeOptions object has no constructor command. Abaqus creates a
 <em>defaultOdbDisplay.superimposeOptions</em> member when you import the Visualization module.
@@ -3853,7 +3860,8 @@ FEATURE, FREE, and NONE. The default value is FEATURE.NONE can be used only when
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.SymbolOptions.SymbolOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SymbolOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/OdbDisplay/SymbolOptions.py#L10-L326"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.SymbolOptions.SymbolOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The SymbolOptions object stores values and attributes associated with a symbol plot. The
+<dd><p>Bases: <a class="reference internal" href="plot_options.html#abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions" title="abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DGSymbolOptions</span></code></a></p>
+<p>The SymbolOptions object stores values and attributes associated with a symbol plot. The
 SymbolOptions object has no constructor command. Abaqus creates a
 <em>defaultOdbDisplay.symbolOptions</em> member when you import the Visualization module.
 Abaqus creates a <strong>symbolOptions</strong> member when it creates the OdbDisplay object, using the
@@ -4494,7 +4502,8 @@ RESULTANT and VECTOR_COMPONENT. The default value is RESULTANT.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.ViewCut.ViewCut">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ViewCut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">origin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normal</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csysName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cylinderAxis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">followDeformation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overrideAveraging</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">referenceFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.FIRST_FRAME</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/OdbDisplay/ViewCut.py#L8-L293"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.ViewCut.ViewCut" title="Permalink to this definition">#</a></dt>
-<dd><p>The ViewCut object is used to store values and attributes associate with ViewCut type
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ViewCut object is used to store values and attributes associate with ViewCut type
 objects. ViewCut objects can be created using the methods described below. The methods
 accessed via the OdbDisplay object cause the ViewCut object to be added to the
 session.viewports[name].odbDisplay.viewCuts repository.</p>
@@ -4890,7 +4899,8 @@ the current primary variable.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.OdbDisplay.ViewerOptions.ViewerOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ViewerOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/OdbDisplay/ViewerOptions.py#L5-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.OdbDisplay.ViewerOptions.ViewerOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The ViewerOptions object specifies options to set the result caching parameters. The
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ViewerOptions object specifies options to set the result caching parameters. The
 ViewerOptions object has no constructor. Abaqus creates the <strong>viewerOptions</strong> member when
 a session is started.</p>
 <div class="admonition note">

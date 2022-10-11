@@ -499,7 +499,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportSession.FieldReportSession">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldReportSession</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/FieldReport/FieldReportSession.py#L10-L140"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession" title="Permalink to this definition">#</a></dt>
-<dd><dl class="py method">
+<dd><p>Bases: <a class="reference internal" href="../session.html#abaqus.Session.SessionBase.SessionBase" title="abaqus.Session.SessionBase.SessionBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></a></p>
+<dl class="py method">
 <dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport">
 <span class="sig-name descname"><span class="pre">writeFieldReport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sortItem</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputPosition</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayGroup</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numericForm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepFrame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SPECIFY</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/FieldReport/FieldReportSession.py#L12-L95"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport" title="Permalink to this definition">#</a></dt>
 <dd><p>This method writes a FieldOutput object to a user-defined ASCII file.</p>
@@ -614,7 +615,8 @@ SPECIFY.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.FieldReport.FieldReportOptions.FieldReportOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FieldReportOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/FieldReport/FieldReportOptions.py#L7-L123"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The FieldReportOptions object stores settings used by the writeFieldReport method when
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The FieldReportOptions object stores settings used by the writeFieldReport method when
 you write a FieldOutput object to an ASCII file. The FieldReportOptions object has no
 constructor. Abaqus creates the <strong>fieldReportOptions</strong> member when you import the
 Visualization module.</p>
@@ -755,7 +757,8 @@ tabular report. The default value is OFF.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FreeBodyReportOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/FieldReport/FreeBodyReportOptions.py#L7-L57"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method
 when you write free body computational results to an ASCII file. The
 FreeBodyReportOptions object has no constructor. Abaqus creates the
 <strong>freeBodyReportOptions</strong> member when you import the Visualization module.</p>
@@ -822,7 +825,8 @@ LOCAL. The default value is GLOBAL.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbFieldVarList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/FieldReport/OdbFieldVarList.py#L6-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList" title="Permalink to this definition">#</a></dt>
-<dd><p>The read-only OdbFieldVarList object is a sequence listing all variables available for
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+<p>The read-only OdbFieldVarList object is a sequence listing all variables available for
 the current step and frame. Each item in the sequence is itself a sequence fully
 describing the given variable.</p>
 <div class="admonition note">
@@ -976,7 +980,8 @@ describing the given variable.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OdbModelFieldVarList</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/FieldReport/OdbModelFieldVarList.py#L4-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList" title="Permalink to this definition">#</a></dt>
-<dd><p>The read-only OdbModelFieldVarList object lists all variables available for the model in
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The read-only OdbModelFieldVarList object lists all variables available for the model in
 the current OdbDisplay object.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
