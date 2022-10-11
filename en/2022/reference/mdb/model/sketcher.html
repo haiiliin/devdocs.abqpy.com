@@ -499,7 +499,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.SketchModel.SketchModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SketchModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.NOT_SET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.STANDARD_EXPLICIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/SketchModel.py#L8-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.SketchModel.SketchModel" title="Permalink to this definition">#</a></dt>
-<dd><p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
+<dd><p>Bases: <a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></p>
+<p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -759,7 +760,8 @@ position the sketch on the <strong>X - Y</strong> plane centered at the origin.<
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">sheetSize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">gridSpacing</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transform</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><span class="pre">tuple</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketch.py#L32-L730"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="Permalink to this definition">#</a></dt>
 <dt class="sig sig-object py">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">objectToCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><span class="pre">ConstrainedSketch</span></a></span></em><span class="sig-paren">)</span></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraintModel</span></code></a>, <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel" title="abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchDimensionModel</span></code></a>, <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometryModel</span></code></a>, <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel" title="abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchParameterModel</span></code></a>, <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel" title="abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchVertexModel</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchBase</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -1692,7 +1694,8 @@ are STANDARD, AUTOCAD, SOLIDWORKS, JAMA, and MSBO.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchConstraintModel</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py#L9-L308"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel" title="Permalink to this definition">#</a></dt>
-<dd><p>A <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object contains the entities that are used to create a sketch. The
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchBase</span></code></p>
+<p>A <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object contains the entities that are used to create a sketch. The
 objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
 such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
 contained in their respective repositories.</p>
@@ -2142,7 +2145,8 @@ constrains it to be vertical.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchDimensionModel</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py#L12-L260"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel" title="Permalink to this definition">#</a></dt>
-<dd><p>A <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object contains the entities that are used to create a sketch. The
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchBase</span></code></p>
+<p>A <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object contains the entities that are used to create a sketch. The
 objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
 such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
 contained in their respective repositories.</p>
@@ -2442,7 +2446,8 @@ simply measures the angle between two lines.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchGeometryModel</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py#L8-L384"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel" title="Permalink to this definition">#</a></dt>
-<dd><p>A <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object contains the entities that are used to create a sketch. The
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchBase</span></code></p>
+<p>A <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object contains the entities that are used to create a sketch. The
 objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
 such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
 contained in their respective repositories.</p>
@@ -2970,7 +2975,8 @@ given ConstrainedSketchGeometry object.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchParameterModel</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchParameter/ConstrainedSketchParameterModel.py#L5-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel" title="Permalink to this definition">#</a></dt>
-<dd><p>A <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object contains the entities that are used to create a sketch. The
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchBase</span></code></p>
+<p>A <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object contains the entities that are used to create a sketch. The
 objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
 such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
 contained in their respective repositories.</p>
@@ -3072,7 +3078,8 @@ parameters can reference the same parameter as the previous parameter.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchVertexModel</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexModel.py#L7-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel" title="Permalink to this definition">#</a></dt>
-<dd><p>A <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object contains the entities that are used to create a sketch. The
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchBase</span></code></p>
+<p>A <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch" title="abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketch</span></code></a> object contains the entities that are used to create a sketch. The
 objects include ConstrainedSketchGeometry objects contained in the ConstrainedSketchGeometry Repository,
 such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
 contained in their respective repositories.</p>
@@ -3163,7 +3170,8 @@ contained in their respective repositories.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.CoincidentConstraint.CoincidentConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CoincidentConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/CoincidentConstraint.py#L8-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.CoincidentConstraint.CoincidentConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3215,7 +3223,8 @@ objects of the same type and constrains them to be coincident.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.ConcentricConstraint.ConcentricConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConcentricConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/ConcentricConstraint.py#L8-L39"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConcentricConstraint.ConcentricConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3270,7 +3279,8 @@ vertex.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchConstraint</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraint.py#L4-L15"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="Permalink to this definition">#</a></dt>
-<dd><p>The ConstrainedSketchConstraint object stores the constraints associated with a sketch.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ConstrainedSketchConstraint object stores the constraints associated with a sketch.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -3292,7 +3302,8 @@ vertex.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.EqualDistanceConstraint.EqualDistanceConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EqualDistanceConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">midpoint</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualDistanceConstraint.py#L9-L42"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.EqualDistanceConstraint.EqualDistanceConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3348,7 +3359,8 @@ vertices or lines.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.EqualLengthConstraint.EqualLengthConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EqualLengthConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualLengthConstraint.py#L8-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.EqualLengthConstraint.EqualLengthConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3399,7 +3411,8 @@ constrains them such that their lengths are equal.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.EqualRadiusConstraint.EqualRadiusConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EqualRadiusConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualRadiusConstraint.py#L8-L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.EqualRadiusConstraint.EqualRadiusConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3450,7 +3463,8 @@ arcs and constrains them such that their radii are equal.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.FixedConstraint.FixedConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FixedConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/FixedConstraint.py#L8-L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.FixedConstraint.FixedConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3500,7 +3514,8 @@ space.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.HorizontalConstraint.HorizontalConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/HorizontalConstraint.py#L8-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.HorizontalConstraint.HorizontalConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3548,7 +3563,8 @@ constrains it to be horizontal.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.ParallelConstraint.ParallelConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ParallelConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/ParallelConstraint.py#L8-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ParallelConstraint.ParallelConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3599,7 +3615,8 @@ constrains them to be parallel.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.PerpendicularConstraint.PerpendicularConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PerpendicularConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/PerpendicularConstraint.py#L8-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.PerpendicularConstraint.PerpendicularConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3651,7 +3668,8 @@ each other.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.TangentConstraint.TangentConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">TangentConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/TangentConstraint.py#L8-L35"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.TangentConstraint.TangentConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3702,7 +3720,8 @@ ConstrainedSketchGeometry objects and constrains them to remain tangential.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchConstraint.VerticalConstraint.VerticalConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchConstraint/VerticalConstraint.py#L8-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchConstraint.VerticalConstraint.VerticalConstraint" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint" title="abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchConstraint</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3750,7 +3769,8 @@ constrains it to be vertical.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchDimension.AngularDimension.AngularDimension">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AngularDimension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchDimension/AngularDimension.py#L11-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchDimension.AngularDimension.AngularDimension" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchDimension</span></code></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3805,7 +3825,8 @@ simply measures the angle between two lines.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DistanceDimension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entity1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">entity2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchDimension/DistanceDimension.py#L9-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchDimension</span></code></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3865,7 +3886,8 @@ simply measures the angle between two lines.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchDimension.HorizontalDimension.HorizontalDimension">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">HorizontalDimension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vertex1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertex2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchDimension/HorizontalDimension.py#L9-L49"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchDimension.HorizontalDimension.HorizontalDimension" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchDimension</span></code></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3921,7 +3943,8 @@ simply measures the distance between the two vertices.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchDimension.ObliqueDimension.ObliqueDimension">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ObliqueDimension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vertex1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertex2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchDimension/ObliqueDimension.py#L9-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchDimension.ObliqueDimension.ObliqueDimension" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchDimension</span></code></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -3976,7 +3999,8 @@ simply measures the distance between the two vertices.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchDimension.RadialDimension.RadialDimension">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RadialDimension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">curve</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">majorRadius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minorRadius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchDimension/RadialDimension.py#L11-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchDimension.RadialDimension.RadialDimension" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchDimension</span></code></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -4035,7 +4059,8 @@ with <strong>value</strong> and <strong>majorRadius</strong>.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchDimension.VerticalDimension.VerticalDimension">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VerticalDimension</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vertex1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vertex2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchDimension/VerticalDimension.py#L9-L48"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchDimension.VerticalDimension.VerticalDimension" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchDimension</span></code></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
@@ -4090,7 +4115,8 @@ simply measures the angle between two lines.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchGeometry</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometry.py#L7-L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="Permalink to this definition">#</a></dt>
-<dd><p>The ConstrainedSketchGeometry object stores the geometry of a sketch, such as lines,
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ConstrainedSketchGeometry object stores the geometry of a sketch, such as lines,
 circles, arcs, and construction lines.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -4160,7 +4186,8 @@ REFERENCE, and CONSTRUCTION.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchGeometryArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryArray.py#L8-L37"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray" title="Permalink to this definition">#</a></dt>
-<dd><p>The ConstrainedSketchGeometryArray is a sequence of ConstrainedSketchGeometry objects.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a>]</p>
+<p>The ConstrainedSketchGeometryArray is a sequence of ConstrainedSketchGeometry objects.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -4344,7 +4371,8 @@ at the specified location. The default value is True.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.Arc3Points.Arc3Points">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Arc3Points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point3</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/Arc3Points.py#L7-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.Arc3Points.Arc3Points" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -4415,7 +4443,8 @@ the arc.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ArcByCenterEnds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/ArcByCenterEnds.py#L8-L52"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -4494,7 +4523,8 @@ and COUNTERCLOCKWISE.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.ArcByStartEndTangent.ArcByStartEndTangent">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ArcByStartEndTangent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/ArcByStartEndTangent.py#L7-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ArcByStartEndTangent.ArcByStartEndTangent" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -4565,7 +4595,8 @@ geometry repository of the ConstrainedSketch object.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.CircleByCenterPerimeter.CircleByCenterPerimeter">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CircleByCenterPerimeter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/CircleByCenterPerimeter.py#L7-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.CircleByCenterPerimeter.CircleByCenterPerimeter" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -4635,7 +4666,8 @@ circle is added to the geometry repository of the ConstrainedSketch object.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionCircleByCenterPerimeter.ConstructionCircleByCenterPerimeter">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstructionCircleByCenterPerimeter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstructionCircleByCenterPerimeter.py#L7-L33"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionCircleByCenterPerimeter.ConstructionCircleByCenterPerimeter" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -4706,7 +4738,8 @@ object.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionLine.ConstructionLine">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstructionLine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstructionLine.py#L7-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionLine.ConstructionLine" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -4775,7 +4808,8 @@ object.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.EllipseByCenterPerimeter.EllipseByCenterPerimeter">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EllipseByCenterPerimeter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axisPoint1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axisPoint2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/EllipseByCenterPerimeter.py#L7-L37"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.EllipseByCenterPerimeter.EllipseByCenterPerimeter" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -4847,7 +4881,8 @@ object.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.FilletByRadius.FilletByRadius">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">FilletByRadius</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curve1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nearPoint1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curve2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nearPoint2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/FilletByRadius.py#L7-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.FilletByRadius.FilletByRadius" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -4927,7 +4962,8 @@ hint to draw the fillet.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.getPointAtDistance.getPointAtDistance">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">getPointAtDistance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">percentage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/getPointAtDistance.py#L8-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.getPointAtDistance.getPointAtDistance" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -4994,7 +5030,8 @@ relative to the length of the ConstrainedSketchGeometry object.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.Line.Line">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point2</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/Line.py#L7-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.Line.Line" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -5063,7 +5100,8 @@ relative to the length of the ConstrainedSketchGeometry object.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.Spline.Spline">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Spline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constrainPoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/Spline.py#L6-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.Spline.Spline" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -5134,7 +5172,8 @@ performance gains may be achieved by setting the value to False.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchGeometry.Spot.Spot">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Spot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchGeometry/Spot.py#L7-L30"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchGeometry.Spot.Spot" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry" title="abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchGeometry</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -5201,7 +5240,8 @@ spot is added to the vertex repository of the ConstrainedSketch object.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketcherOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketcherOptions.py#L7-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The ConstrainedSketcherOptions object is used to store values and attributes which will
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ConstrainedSketcherOptions object is used to store values and attributes which will
 be applied to all sketches used in the current session. The ConstrainedSketcherOptions
 object has no constructor.</p>
 <div class="admonition note">
@@ -5281,7 +5321,8 @@ MINIMUM_MOVE, STANDARD, WEIGHTED, and RELAXATION. The default value is STANDARD.
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchImageOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchImageOptions.py#L7-L61"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The ConstrainedSketchImageOptions object is used to store values and attributes
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ConstrainedSketchImageOptions object is used to store values and attributes
 associated with the background image for a particular sketch. The
 ConstrainedSketchImageOptions object has no constructor.</p>
 <div class="admonition note">
@@ -5349,7 +5390,8 @@ The default value is 1.0.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py#L8-L120"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions" title="Permalink to this definition">#</a></dt>
-<dd><p>The ConstrainedSketchOptions object is used to store values and attributes associated
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ConstrainedSketchOptions object is used to store values and attributes associated
 with a particular sketch. The ConstrainedSketchOptions object has no constructor.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -5447,7 +5489,8 @@ MINIMUM_MOVE, STANDARD, WEIGHTED, and RELAXATION. The default value is STANDARD.
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchParameter.Parameter.Parameter">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Parameter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expression</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">previous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchParameter/Parameter.py#L5-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchParameter.Parameter.Parameter" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchParameter</span></code></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchParameter</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
@@ -5531,7 +5574,8 @@ parameters can reference the same parameter as the previous parameter.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchVertex</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertex.py#L6-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex" title="Permalink to this definition">#</a></dt>
-<dd><p>The ConstrainedSketchVertex object stores the vertex position.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ConstrainedSketchVertex object stores the vertex position.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -5608,7 +5652,8 @@ parameters can reference the same parameter as the previous parameter.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstrainedSketchVertexArray</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexArray.py#L8-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray" title="Permalink to this definition">#</a></dt>
-<dd><p>The ConstrainedSketchVertexArray is a sequence of ConstrainedSketchVertex objects.</p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex" title="abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchVertex</span></code></a>]</p>
+<p>The ConstrainedSketchVertexArray is a sequence of ConstrainedSketchVertex objects.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -5791,7 +5836,8 @@ at the specified location. The default value is True.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Sketcher.ConstrainedSketchVertex.Spot.Spot">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Spot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2022/src/abaqus/Sketcher/ConstrainedSketchVertex/Spot.py#L7-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Sketcher.ConstrainedSketchVertex.Spot.Spot" title="Permalink to this definition">#</a></dt>
-<dd><div class="autoclasstoc docutils container">
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex" title="abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchVertex</span></code></a></p>
+<div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
 <details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketchVertex</span></code></summary><table class="autosummary longtable table autosummary">
 <tbody>
