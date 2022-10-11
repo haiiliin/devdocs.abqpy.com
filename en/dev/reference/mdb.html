@@ -510,7 +510,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Mdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/Mdb.py#L11-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb" title="Permalink to this definition">#</a></dt>
-<dd><p>The Mdb object is the high-level Abaqus model database. A model database stores models
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Part.AcisMdb.AcisMdb" title="abaqus.Part.AcisMdb.AcisMdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">AcisMdb</span></code></a>, <a class="reference internal" href="#abaqus.Job.JobMdb.JobMdb" title="abaqus.Job.JobMdb.JobMdb"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobMdb</span></code></a></p>
+<p>The Mdb object is the high-level Abaqus model database. A model database stores models
 and analysis controls.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -692,6 +693,16 @@ that instances this model. The default value is ON.</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/Mdb.py#L11-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.Mdb.Mdb.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Mdb.Mdb'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/Mdb.py#L11-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.Mdb.Mdb.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </section>
@@ -700,7 +711,8 @@ that instances this model. The default value is ON.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MdbBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/MdbBase.py#L14-L273"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase" title="Permalink to this definition">#</a></dt>
-<dd><p>The Mdb object is the high-level Abaqus model database. A model database stores models
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The Mdb object is the high-level Abaqus model database. A model database stores models
 and analysis controls.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -788,6 +800,16 @@ and analysis controls.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'adaptivityProcesses':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess],</span> <span class="pre">'annotations':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Annotation.Annotation.Annotation],</span> <span class="pre">'coexecutions':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Job.Coexecution.Coexecution],</span> <span class="pre">'customData':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.CustomKernel.RepositorySupport.RepositorySupport'&gt;,</span> <span class="pre">'jobs':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Job.Job.Job],</span> <span class="pre">'lastChangedCount':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'meshEditOptions':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.EditMesh.MeshEditOptions.MeshEditOptions'&gt;,</span> <span class="pre">'models':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Model.Model.Model],</span> <span class="pre">'optimizationProcesses':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Job.OptimizationProcess.OptimizationProcess],</span> <span class="pre">'version':</span> <span class="pre">typing.Optional[int]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/MdbBase.py#L14-L273"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Mdb.MdbBase',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'version':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'lastChangedCount':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'jobs':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Job.Job.Job],</span> <span class="pre">'adaptivityProcesses':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess],</span> <span class="pre">'coexecutions':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Job.Coexecution.Coexecution],</span> <span class="pre">'optimizationProcesses':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Job.OptimizationProcess.OptimizationProcess],</span> <span class="pre">'meshEditOptions':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.EditMesh.MeshEditOptions.MeshEditOptions'&gt;,</span> <span class="pre">'models':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Model.Model.Model],</span> <span class="pre">'customData':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.CustomKernel.RepositorySupport.RepositorySupport'&gt;,</span> <span class="pre">'annotations':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Annotation.Annotation.Annotation]},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">Mdb</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">high-level</span> <span class="pre">Abaqus</span> <span class="pre">model</span> <span class="pre">database.</span> <span class="pre">A</span> <span class="pre">model</span> <span class="pre">database</span> <span class="pre">stores</span> <span class="pre">models\n</span>&#160;&#160;&#160; <span class="pre">and</span> <span class="pre">analysis</span> <span class="pre">controls.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`MdbBase</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'version':</span> <span class="pre">None,</span> <span class="pre">'lastChangedCount':</span> <span class="pre">None,</span> <span class="pre">'jobs':</span> <span class="pre">{},</span> <span class="pre">'adaptivityProcesses':</span> <span class="pre">{},</span> <span class="pre">'coexecutions':</span> <span class="pre">{},</span> <span class="pre">'optimizationProcesses':</span> <span class="pre">{},</span> <span class="pre">'meshEditOptions':</span> <span class="pre">&lt;abaqus.EditMesh.MeshEditOptions.MeshEditOptions</span> <span class="pre">object&gt;,</span> <span class="pre">'models':</span> <span class="pre">{'Model-1':</span> <span class="pre">&lt;abaqus.Model.Model.Model</span> <span class="pre">object&gt;},</span> <span class="pre">'customData':</span> <span class="pre">&lt;abaqus.CustomKernel.RepositorySupport.RepositorySupport</span> <span class="pre">object&gt;,</span> <span class="pre">'annotations':</span> <span class="pre">{},</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">MdbBase.__init__&gt;,</span> <span class="pre">'importDxf':</span> <span class="pre">&lt;function</span> <span class="pre">MdbBase.importDxf&gt;,</span> <span class="pre">'openMdb':</span> <span class="pre">&lt;function</span> <span class="pre">MdbBase.openMdb&gt;,</span> <span class="pre">'close':</span> <span class="pre">&lt;function</span> <span class="pre">MdbBase.close&gt;,</span> <span class="pre">'save':</span> <span class="pre">&lt;function</span> <span class="pre">MdbBase.save&gt;,</span> <span class="pre">'saveAs':</span> <span class="pre">&lt;function</span> <span class="pre">MdbBase.saveAs&gt;,</span> <span class="pre">'openAuxMdb':</span> <span class="pre">&lt;function</span> <span class="pre">MdbBase.openAuxMdb&gt;,</span> <span class="pre">'closeAuxMdb':</span> <span class="pre">&lt;function</span> <span class="pre">MdbBase.closeAuxMdb&gt;,</span> <span class="pre">'getAuxMdbModelNames':</span> <span class="pre">&lt;function</span> <span class="pre">MdbBase.getAuxMdbModelNames&gt;,</span> <span class="pre">'copyAuxMdbModel':</span> <span class="pre">&lt;function</span> <span class="pre">MdbBase.copyAuxMdbModel&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'MdbBase'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'MdbBase'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/MdbBase.py#L14-L273"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/MdbBase.py#L57-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.__init__" title="Permalink to this definition">#</a></dt>
@@ -816,6 +838,17 @@ default value is an empty string.</p>
 <dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Mdb</span></code></p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Mdb.MdbBase'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/MdbBase.py#L14-L273"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Mdb.MdbBase.MdbBase.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Mdb/MdbBase.py#L14-L273"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Mdb.MdbBase.MdbBase.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1109,7 +1142,8 @@ you do not provide a file extension, .cae is appended automatically to the path.
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Part.AcisMdb.AcisMdb">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AcisMdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Part/AcisMdb.py#L9-L323"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.AcisMdb.AcisMdb" title="Permalink to this definition">#</a></dt>
-<dd><p>The Mdb object is the high-level Abaqus model database. A model database stores models
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Mdb.MdbBase.MdbBase" title="abaqus.Mdb.MdbBase.MdbBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></a></p>
+<p>The Mdb object is the high-level Abaqus model database. A model database stores models
 and analysis controls.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1225,6 +1259,16 @@ and analysis controls.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.AcisMdb.AcisMdb.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Part/AcisMdb.py#L9-L323"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.AcisMdb.AcisMdb.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Part.AcisMdb.AcisMdb.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Part.AcisMdb'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Part/AcisMdb.py#L9-L323"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.AcisMdb.AcisMdb.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Part.AcisMdb.AcisMdb.openAcis">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">openAcis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scaleFromFile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Part/AcisMdb.py#L20-L51"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Part.AcisMdb.AcisMdb.openAcis" title="Permalink to this definition">#</a></dt>
@@ -1555,7 +1599,8 @@ This object is subsequently used by the PartFromGeometryFile method.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Job.JobMdb.JobMdb">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">JobMdb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pathName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/JobMdb.py#L13-L402"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobMdb.JobMdb" title="Permalink to this definition">#</a></dt>
-<dd><p>The Mdb object is the high-level Abaqus model database. A model database stores models
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Mdb.MdbBase.MdbBase" title="abaqus.Mdb.MdbBase.MdbBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">MdbBase</span></code></a></p>
+<p>The Mdb object is the high-level Abaqus model database. A model database stores models
 and analysis controls.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1885,6 +1930,16 @@ and so on. The default value is None.</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobMdb.JobMdb.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/JobMdb.py#L13-L402"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobMdb.JobMdb.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Job.JobMdb.JobMdb.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Job.JobMdb'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Job/JobMdb.py#L13-L402"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Job.JobMdb.JobMdb.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1957,6 +2012,24 @@ and so on. The default value is None.</p></li>
          </code>
         </a>
        </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Mdb.Mdb.Mdb.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Mdb.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Mdb.Mdb.Mdb.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Mdb.__module__
+          </span>
+         </code>
+        </a>
+       </li>
       </ul>
      </li>
     </ul>
@@ -1976,10 +2049,46 @@ and so on. The default value is None.</p></li>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Mdb.MdbBase.MdbBase.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MdbBase.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Mdb.MdbBase.MdbBase.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MdbBase.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Mdb.MdbBase.MdbBase.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            MdbBase.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Mdb.MdbBase.MdbBase.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MdbBase.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Mdb.MdbBase.MdbBase.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MdbBase.__weakref__
           </span>
          </code>
         </a>
@@ -2174,6 +2283,24 @@ and so on. The default value is None.</p></li>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Part.AcisMdb.AcisMdb.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AcisMdb.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Part.AcisMdb.AcisMdb.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AcisMdb.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Part.AcisMdb.AcisMdb.openAcis">
          <code class="docutils literal notranslate">
           <span class="pre">
@@ -2286,6 +2413,24 @@ and so on. The default value is None.</p></li>
          <code class="docutils literal notranslate">
           <span class="pre">
            JobMdb.OptimizationProcess()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.JobMdb.JobMdb.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           JobMdb.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Job.JobMdb.JobMdb.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           JobMdb.__module__
           </span>
          </code>
         </a>

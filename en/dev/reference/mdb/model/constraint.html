@@ -499,7 +499,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ConstraintModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.NOT_SET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.STANDARD_EXPLICIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/ConstraintModel.py#L21-L542"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel" title="Permalink to this definition">#</a></dt>
-<dd><p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
+<dd><p>Bases: <a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></p>
+<p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -1136,6 +1137,16 @@ ON.</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/ConstraintModel.py#L21-L542"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ConstraintModel.ConstraintModel.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.ConstraintModel'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/ConstraintModel.py#L21-L542"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1146,7 +1157,8 @@ ON.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Constraint</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Constraint.py#L5-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint" title="Permalink to this definition">#</a></dt>
-<dd><p>The ConstrainedSketchConstraint object is the abstract base type for other ConstrainedSketchConstraint objects. The
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The ConstrainedSketchConstraint object is the abstract base type for other ConstrainedSketchConstraint objects. The
 ConstrainedSketchConstraint object has no explicit constructor. The members of the ConstrainedSketchConstraint object are
 common to all objects derived from the ConstrainedSketchConstraint.</p>
 <div class="admonition note">
@@ -1191,6 +1203,27 @@ common to all objects derived from the ConstrainedSketchConstraint.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Constraint.py#L5-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Constraint.Constraint',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool]},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">ConstrainedSketchConstraint</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">abstract</span> <span class="pre">base</span> <span class="pre">type</span> <span class="pre">for</span> <span class="pre">other</span> <span class="pre">ConstrainedSketchConstraint</span> <span class="pre">objects.</span> <span class="pre">The\n</span>&#160;&#160;&#160; <span class="pre">ConstrainedSketchConstraint</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">explicit</span> <span class="pre">constructor.</span> <span class="pre">The</span> <span class="pre">members</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">ConstrainedSketchConstraint</span> <span class="pre">object</span> <span class="pre">are\n</span>&#160;&#160;&#160; <span class="pre">common</span> <span class="pre">to</span> <span class="pre">all</span> <span class="pre">objects</span> <span class="pre">derived</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">ConstrainedSketchConstraint.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">interaction\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].constraints[name]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`Constraint</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-constraintpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'name':</span> <span class="pre">'',</span> <span class="pre">'suppressed':</span> <span class="pre">OFF,</span> <span class="pre">'resume':</span> <span class="pre">&lt;function</span> <span class="pre">Constraint.resume&gt;,</span> <span class="pre">'suppress':</span> <span class="pre">&lt;function</span> <span class="pre">Constraint.suppress&gt;,</span> <span class="pre">'delete':</span> <span class="pre">&lt;function</span> <span class="pre">Constraint.delete&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'Constraint'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'Constraint'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Constraint.py#L5-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.Constraint'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Constraint.py#L5-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Constraint.py#L5-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Constraint.Constraint.delete">
 <span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indices</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Constraint.py#L35-L44"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Constraint.Constraint.delete" title="Permalink to this definition">#</a></dt>
@@ -1239,7 +1272,8 @@ OFF.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdjustPoints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoints</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/AdjustPoints.py#L7-L64"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints" title="Permalink to this definition">#</a></dt>
-<dd><p>The AdjustPoints constraint object is used to adjust points (nodes) to a surface.
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint" title="abaqus.Constraint.Constraint.Constraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></a></p>
+<p>The AdjustPoints constraint object is used to adjust points (nodes) to a surface.
 The AdjustPoints object is derived from the ConstrainedSketchConstraint object.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1304,6 +1338,11 @@ The AdjustPoints object is derived from the ConstrainedSketchConstraint object.<
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'controlPoints':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'surface':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/AdjustPoints.py#L7-L64"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoints</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/AdjustPoints.py#L36-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.__init__" title="Permalink to this definition">#</a></dt>
@@ -1335,6 +1374,11 @@ The AdjustPoints object is derived from the ConstrainedSketchConstraint object.<
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.AdjustPoints'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/AdjustPoints.py#L7-L64"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.AdjustPoints.AdjustPoints.controlPoints">
@@ -1369,7 +1413,8 @@ OFF.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Coupling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceRadius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">couplingType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightingMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNIFORM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Coupling.py#L9-L244"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling" title="Permalink to this definition">#</a></dt>
-<dd><p>The Coupling object defines a constraint between a group of coupling nodes located on a
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint" title="abaqus.Constraint.Constraint.Constraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></a></p>
+<p>The Coupling object defines a constraint between a group of coupling nodes located on a
 region and a reference point.
 The Coupling object is derived from the ConstrainedSketchConstraint object.</p>
 <div class="admonition note">
@@ -1465,6 +1510,11 @@ The Coupling object is derived from the ConstrainedSketchConstraint object.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'adjust':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'alpha':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'controlPoint':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'couplingType':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'influenceRadius':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant,</span> <span class="pre">float],</span> <span class="pre">'localCsys':</span> <span class="pre">typing.Optional[str],</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'surface':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'u1':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'u2':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'u3':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'ur1':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'ur2':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'ur3':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'weightingMethod':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Coupling.py#L9-L244"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceRadius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">couplingType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightingMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNIFORM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Coupling.py#L99-L187"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.__init__" title="Permalink to this definition">#</a></dt>
@@ -1533,6 +1583,11 @@ The alpha argument applies only when couplingType=KINEMATIC.</p>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.Coupling'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Coupling.py#L9-L244"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Coupling.Coupling.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.Coupling.Coupling.adjust">
@@ -1701,7 +1756,8 @@ The default value is UNIFORM.The <strong>weightingMethod</strong> argument appli
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplayBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoints</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/DisplayBody.py#L8-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody" title="Permalink to this definition">#</a></dt>
-<dd><p>The DisplayBody object defines a constraint such that the specified instance is used for
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint" title="abaqus.Constraint.Constraint.Constraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></a></p>
+<p>The DisplayBody object defines a constraint such that the specified instance is used for
 display only and does not take part in the analysis. However it will still be visible
 during postprocessing and its position at any frame will be defined by the translation
 and rotation of the specified control points.
@@ -1769,6 +1825,11 @@ The DisplayBody object is derived from the ConstrainedSketchConstraint object.</
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'controlPoints':</span> <span class="pre">typing.List[abaqus.BasicGeometry.ModelDot.ModelDot],</span> <span class="pre">'instance':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Assembly.PartInstance.PartInstance'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/DisplayBody.py#L8-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoints</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/DisplayBody.py#L44-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody.__init__" title="Permalink to this definition">#</a></dt>
@@ -1804,6 +1865,11 @@ three objects.</p></li>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.DisplayBody'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/DisplayBody.py#L8-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.DisplayBody.DisplayBody.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.DisplayBody.DisplayBody.controlPoints">
@@ -1842,7 +1908,8 @@ OFF.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmbeddedRegion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embeddedRegion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostRegion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightFactorTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toleranceMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.BOTH</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fractionalTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/EmbeddedRegion.py#L9-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion" title="Permalink to this definition">#</a></dt>
-<dd><p>The EmbeddedRegion object allows you to embed a region of the model within a “host”
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint" title="abaqus.Constraint.Constraint.Constraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></a></p>
+<p>The EmbeddedRegion object allows you to embed a region of the model within a “host”
 region of the model or within the whole model.
 The EmbeddedRegion object is derived from the ConstrainedSketchConstraint object.</p>
 <div class="admonition note">
@@ -1920,6 +1987,11 @@ The EmbeddedRegion object is derived from the ConstrainedSketchConstraint object
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'absoluteTolerance':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'embeddedRegion':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'fractionalTolerance':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'hostRegion':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'toleranceMethod':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'weightFactorTolerance':</span> <span class="pre">typing.Optional[float]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/EmbeddedRegion.py#L9-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embeddedRegion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hostRegion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weightFactorTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toleranceMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.BOTH</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fractionalTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/EmbeddedRegion.py#L62-L113"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__" title="Permalink to this definition">#</a></dt>
@@ -1966,6 +2038,11 @@ specified, the smaller value will be used.This argument applies only when
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.EmbeddedRegion'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/EmbeddedRegion.py#L9-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.absoluteTolerance">
@@ -2059,7 +2136,8 @@ The default value is 10-6.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Equation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">terms</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Equation.py#L6-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation" title="Permalink to this definition">#</a></dt>
-<dd><p>The Equation object defines a linear multi-point constraint between a set of degrees of
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint" title="abaqus.Constraint.Constraint.Constraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></a></p>
+<p>The Equation object defines a linear multi-point constraint between a set of degrees of
 freedom.
 The Equation object is derived from the ConstrainedSketchConstraint object.</p>
 <div class="admonition note">
@@ -2125,6 +2203,11 @@ The Equation object is derived from the ConstrainedSketchConstraint object.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'terms':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Equation.py#L6-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">terms</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Equation.py#L34-L60"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation.__init__" title="Permalink to this definition">#</a></dt>
@@ -2158,6 +2241,11 @@ degree of freedom, and coordinate system ID. The coordinate system ID is optiona
 <p>:raises If <strong>terms</strong> does not contain more than one entry`, <code class="xref py py-class docutils literal notranslate"><span class="pre">Equation</span> <span class="pre">must</span> <span class="pre">have</span> <span class="pre">two</span></code> or :class:<a href="#id4"><span class="problematic" id="id5">`</span></a>more terms.:</p>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.Equation'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Equation.py#L6-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Equation.Equation.setValues">
 <span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Equation.py#L62-L70"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Equation.Equation.setValues" title="Permalink to this definition">#</a></dt>
@@ -2187,7 +2275,8 @@ degree of freedom, and coordinate system ID. The coordinate system ID is optiona
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipointConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mpcType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DOF_MODE_MPC</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/MultipointConstraint.py#L9-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint" title="Permalink to this definition">#</a></dt>
-<dd><p>The MultipointConstraint object defines a constraint between a group of
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint" title="abaqus.Constraint.Constraint.Constraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></a></p>
+<p>The MultipointConstraint object defines a constraint between a group of
 MultipointConstraint nodes located on a region and a reference point.
 The MultipointConstraint object is derived from the ConstrainedSketchConstraint object.</p>
 <div class="admonition note">
@@ -2262,6 +2351,11 @@ The MultipointConstraint object is derived from the ConstrainedSketchConstraint 
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'controlPoint':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'csys':</span> <span class="pre">typing.Optional[str],</span> <span class="pre">'mpcType':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'surface':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'userMode':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'userType':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/MultipointConstraint.py#L9-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlPoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mpcType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userMode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DOF_MODE_MPC</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/MultipointConstraint.py#L60-L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__" title="Permalink to this definition">#</a></dt>
@@ -2306,6 +2400,11 @@ DOF_MODE_MPC.The <strong>userMode</strong> argument applies only when <strong>mp
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.MultipointConstraint'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/MultipointConstraint.py#L9-L136"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.MultipointConstraint.MultipointConstraint.controlPoint">
@@ -2393,7 +2492,8 @@ MultipointConstraint. The default value is 0.The <strong>userType</strong> argum
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RigidBody</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointRegion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bodyRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pinRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfaceRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCOM</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isothermal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/RigidBody.py#L9-L144"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody" title="Permalink to this definition">#</a></dt>
-<dd><p>The RigidBody object constrains all the degrees of freedom on the specified regions to
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint" title="abaqus.Constraint.Constraint.Constraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></a></p>
+<p>The RigidBody object constrains all the degrees of freedom on the specified regions to
 the degree of freedom of its associated reference point.
 The RigidBody object is derived from the ConstrainedSketchConstraint object.</p>
 <div class="admonition note">
@@ -2477,6 +2577,11 @@ The RigidBody object is derived from the ConstrainedSketchConstraint object.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'bodyRegion':</span> <span class="pre">typing.Optional[str],</span> <span class="pre">'isothermal':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'pinRegion':</span> <span class="pre">typing.Optional[str],</span> <span class="pre">'refPointAtCOM':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'refPointRegion':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'surfaceRegion':</span> <span class="pre">typing.Optional[str],</span> <span class="pre">'tieRegion':</span> <span class="pre">typing.Optional[str]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/RigidBody.py#L9-L144"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointRegion</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bodyRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pinRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surfaceRegion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refPointAtCOM</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isothermal</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/RigidBody.py#L60-L109"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.__init__" title="Permalink to this definition">#</a></dt>
@@ -2519,6 +2624,11 @@ The default value is OFF.</p></li>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.RigidBody'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/RigidBody.py#L9-L144"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.RigidBody.RigidBody.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.RigidBody.RigidBody.bodyRegion">
@@ -2611,7 +2721,8 @@ point. The default value is None.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ShellSolidCoupling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shellEdge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solidFace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.COMPUTED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistanceMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/ShellSolidCoupling.py#L7-L130"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling" title="Permalink to this definition">#</a></dt>
-<dd><p>The ShellSolidCoupling object defines two surfaces to be tied together for the duration
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint" title="abaqus.Constraint.Constraint.Constraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></a></p>
+<p>The ShellSolidCoupling object defines two surfaces to be tied together for the duration
 of a simulation.
 The ShellSolidCoupling object is derived from the ConstrainedSketchConstraint object.</p>
 <div class="admonition note">
@@ -2689,6 +2800,11 @@ The ShellSolidCoupling object is derived from the ConstrainedSketchConstraint ob
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'influenceDistance':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'influenceDistanceMethod':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'positionTolerance':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'positionToleranceMethod':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'shellEdge':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'solidFace':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/ShellSolidCoupling.py#L7-L130"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shellEdge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">solidFace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.COMPUTED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistanceMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">influenceDistance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/ShellSolidCoupling.py#L55-L101"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__" title="Permalink to this definition">#</a></dt>
@@ -2730,6 +2846,11 @@ when <strong>influenceDistanceMethod</strong> = SPECIFIED. The default value is 
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.ShellSolidCoupling'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/ShellSolidCoupling.py#L7-L130"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistance">
@@ -2814,7 +2935,8 @@ OFF.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Tie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secondary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.COMPUTED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRotations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatioMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintEnforcement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SOLVER_DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Tie.py#L8-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie" title="Permalink to this definition">#</a></dt>
-<dd><p>The Tie object defines two surfaces to be tied together for the duration of a
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Constraint.Constraint.Constraint" title="abaqus.Constraint.Constraint.Constraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">Constraint</span></code></a></p>
+<p>The Tie object defines two surfaces to be tied together for the duration of a
 simulation.
 The Tie object is derived from the ConstrainedSketchConstraint object.</p>
 <div class="admonition note">
@@ -2907,6 +3029,11 @@ The Tie object is derived from the ConstrainedSketchConstraint object.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'adjust':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'constraintEnforcement':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'constraintRatio':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'constraintRatioMethod':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'main':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'positionTolerance':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'positionToleranceMethod':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'secondary':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'thickness':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'tieRotations':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Tie.py#L8-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">main</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">secondary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">adjust</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionToleranceMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.COMPUTED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positionTolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tieRotations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatioMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintRatio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constraintEnforcement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SOLVER_DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thickness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Tie.py#L78-L146"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.__init__" title="Permalink to this definition">#</a></dt>
@@ -2964,6 +3091,11 @@ ON.</p></li>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Constraint.Tie'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Constraint/Tie.py#L8-L198"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Constraint.Tie.Tie.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Constraint.Tie.Tie.adjust">
@@ -3228,6 +3360,24 @@ value is ON.</p>
        </code>
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.__annotations__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         ConstraintModel.__annotations__
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Constraint.ConstraintModel.ConstraintModel.__module__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         ConstraintModel.__module__
+        </span>
+       </code>
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -3251,6 +3401,42 @@ value is ON.</p>
        </code>
       </a>
       <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.Constraint.Constraint.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Constraint.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.Constraint.Constraint.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Constraint.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.Constraint.Constraint.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Constraint.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.Constraint.Constraint.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Constraint.__weakref__
+          </span>
+         </code>
+        </a>
+       </li>
        <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Constraint.Constraint.Constraint.delete">
          <code class="docutils literal notranslate">
@@ -3315,10 +3501,28 @@ value is ON.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdjustPoints.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            AdjustPoints.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.AdjustPoints.AdjustPoints.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdjustPoints.__module__
           </span>
          </code>
         </a>
@@ -3378,10 +3582,28 @@ value is ON.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.Coupling.Coupling.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Coupling.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Constraint.Coupling.Coupling.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            Coupling.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.Coupling.Coupling.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Coupling.__module__
           </span>
          </code>
         </a>
@@ -3549,10 +3771,28 @@ value is ON.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.DisplayBody.DisplayBody.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DisplayBody.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Constraint.DisplayBody.DisplayBody.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            DisplayBody.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.DisplayBody.DisplayBody.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DisplayBody.__module__
           </span>
          </code>
         </a>
@@ -3612,10 +3852,28 @@ value is ON.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           EmbeddedRegion.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            EmbeddedRegion.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           EmbeddedRegion.__module__
           </span>
          </code>
         </a>
@@ -3711,10 +3969,28 @@ value is ON.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.Equation.Equation.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Equation.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Constraint.Equation.Equation.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            Equation.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.Equation.Equation.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Equation.__module__
           </span>
          </code>
         </a>
@@ -3765,10 +4041,28 @@ value is ON.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MultipointConstraint.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            MultipointConstraint.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.MultipointConstraint.MultipointConstraint.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MultipointConstraint.__module__
           </span>
          </code>
         </a>
@@ -3864,10 +4158,28 @@ value is ON.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.RigidBody.RigidBody.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RigidBody.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Constraint.RigidBody.RigidBody.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            RigidBody.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.RigidBody.RigidBody.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RigidBody.__module__
           </span>
          </code>
         </a>
@@ -3972,10 +4284,28 @@ value is ON.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           ShellSolidCoupling.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            ShellSolidCoupling.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           ShellSolidCoupling.__module__
           </span>
          </code>
         </a>
@@ -4071,10 +4401,28 @@ value is ON.</p>
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.Tie.Tie.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Tie.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Constraint.Tie.Tie.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            Tie.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Constraint.Tie.Tie.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Tie.__module__
           </span>
          </code>
         </a>

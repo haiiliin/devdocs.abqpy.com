@@ -500,7 +500,8 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptivityModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.NOT_SET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.STANDARD_EXPLICIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityModel.py#L20-L497"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel" title="Permalink to this definition">#</a></dt>
-<dd><p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
+<dd><p>Bases: <a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></p>
+<p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This object can be accessed by:</p>
@@ -1019,6 +1020,16 @@ INDEPENDENT.</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityModel.py#L20-L497"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.AdaptivityModel'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityModel.py#L20-L497"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh">
 <span class="sig-name descname"><span class="pre">adaptiveRemesh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odb</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityModel.py#L30-L45"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh" title="Permalink to this definition">#</a></dt>
@@ -1049,7 +1060,8 @@ indicator results from a previous analysis.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptivityStep</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityStep.py#L15-L346"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep" title="Permalink to this definition">#</a></dt>
-<dd><p>The Step object stores the parameters that determine the context of the step. The Step
+<dd><p>Bases: <a class="reference internal" href="step.html#abaqus.Step.StepBase.StepBase" title="abaqus.Step.StepBase.StepBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">StepBase</span></code></a></p>
+<p>The Step object stores the parameters that determine the context of the step. The Step
 object is the abstract base type for other Step objects. The Step object has no explicit
 constructor. The methods and members of the Step object are common to all objects
 derived from the Step.</p>
@@ -1397,6 +1409,16 @@ constraint has no amplitude reference.</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityStep.py#L15-L346"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.AdaptivityStep'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityStep.py#L15-L346"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 </section>
@@ -1405,7 +1427,8 @@ constraint has no amplitude reference.</p></li>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptivityIteration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iteration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jobName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odbPath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remeshingErrors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityIteration.py#L10-L159"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration" title="Permalink to this definition">#</a></dt>
-<dd><p>The AdaptivityIteration object contains information about a given iteration of the
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The AdaptivityIteration object contains information about a given iteration of the
 varying topology adaptivity process (adaptive remeshing).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1525,6 +1548,16 @@ Remeshing Rule.</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'iteration':</span> <span class="pre">'int',</span> <span class="pre">'jobName':</span> <span class="pre">'str',</span> <span class="pre">'modelName':</span> <span class="pre">'str',</span> <span class="pre">'odbPath':</span> <span class="pre">'str',</span> <span class="pre">'remeshingErrors':</span> <span class="pre">'int',</span> <span class="pre">'ruleResults':</span> <span class="pre">'Dict[str,</span> <span class="pre">RuleResult]'}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityIteration.py#L10-L159"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Adaptivity.AdaptivityIteration',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'ruleResults':</span> <span class="pre">'Dict[str,</span> <span class="pre">RuleResult]',</span> <span class="pre">'iteration':</span> <span class="pre">'int',</span> <span class="pre">'jobName':</span> <span class="pre">'str',</span> <span class="pre">'modelName':</span> <span class="pre">'str',</span> <span class="pre">'odbPath':</span> <span class="pre">'str',</span> <span class="pre">'remeshingErrors':</span> <span class="pre">'int'},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">AdaptivityIteration</span> <span class="pre">object</span> <span class="pre">contains</span> <span class="pre">information</span> <span class="pre">about</span> <span class="pre">a</span> <span class="pre">given</span> <span class="pre">iteration</span> <span class="pre">of</span> <span class="pre">the\n</span>&#160;&#160;&#160; <span class="pre">varying</span> <span class="pre">topology</span> <span class="pre">adaptivity</span> <span class="pre">process</span> <span class="pre">(adaptive</span> <span class="pre">remeshing).\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">job\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.adaptivityProcesses[name].iterations[i]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`AdaptivityIteration</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivityiterationpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'ruleResults':</span> <span class="pre">{},</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptivityIteration.__init__&gt;,</span> <span class="pre">'ErrorIndicatorResult':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptivityIteration.ErrorIndicatorResult&gt;,</span> <span class="pre">'RuleResult':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptivityIteration.RuleResult&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'AdaptivityIteration'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'AdaptivityIteration'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityIteration.py#L10-L159"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iteration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jobName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">odbPath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remeshingErrors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityIteration.py#L44-L80"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__" title="Permalink to this definition">#</a></dt>
@@ -1559,6 +1592,17 @@ the model in this iteration of the adaptivity process.</p></li>
 <dd class="field-odd"><p><a class="reference internal" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration" title="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptivityIteration</span></code></a></p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.AdaptivityIteration'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityIteration.py#L10-L159"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityIteration.py#L10-L159"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1611,7 +1655,8 @@ process.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptiveMeshConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraint.py#L9-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint" title="Permalink to this definition">#</a></dt>
-<dd><p>The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary
 Lagrangian Eularian (ALE) style AdaptiveMeshConstraint objects. The
 AdaptiveMeshConstraint object has no explicit constructor. The methods and members of
 the AdaptiveMeshConstraint object are common to all objects derived from the
@@ -1676,6 +1721,16 @@ AdaptiveMeshConstraint object.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'category':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'localCsys':</span> <span class="pre">typing.Optional[abaqus.Datum.DatumCsys.DatumCsys],</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'region':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraint.py#L9-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Adaptivity.AdaptiveMeshConstraint',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'category':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'region':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'localCsys':</span> <span class="pre">typing.Optional[abaqus.Datum.DatumCsys.DatumCsys]},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">AdaptiveMeshConstraint</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">abstract</span> <span class="pre">base</span> <span class="pre">type</span> <span class="pre">for</span> <span class="pre">other</span> <span class="pre">Arbitrary\n</span>&#160;&#160;&#160; <span class="pre">Lagrangian</span> <span class="pre">Eularian</span> <span class="pre">(ALE)</span> <span class="pre">style</span> <span class="pre">AdaptiveMeshConstraint</span> <span class="pre">objects.</span> <span class="pre">The\n</span>&#160;&#160;&#160; <span class="pre">AdaptiveMeshConstraint</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">explicit</span> <span class="pre">constructor.</span> <span class="pre">The</span> <span class="pre">methods</span> <span class="pre">and</span> <span class="pre">members</span> <span class="pre">of\n</span>&#160;&#160;&#160; <span class="pre">the</span> <span class="pre">AdaptiveMeshConstraint</span> <span class="pre">object</span> <span class="pre">are</span> <span class="pre">common</span> <span class="pre">to</span> <span class="pre">all</span> <span class="pre">objects</span> <span class="pre">derived</span> <span class="pre">from</span> <span class="pre">the\n</span>&#160;&#160;&#160; <span class="pre">AdaptiveMeshConstraint</span> <span class="pre">object.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">step\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].adaptiveMeshConstraints[name]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`AdaptiveMeshConstraint</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshconstraintpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'name':</span> <span class="pre">'',</span> <span class="pre">'category':</span> <span class="pre">None,</span> <span class="pre">'region':</span> <span class="pre">&lt;abaqus.Region.Region.Region</span> <span class="pre">object&gt;,</span> <span class="pre">'localCsys':</span> <span class="pre">None,</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshConstraint.__init__&gt;,</span> <span class="pre">'deactivate':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshConstraint.deactivate&gt;,</span> <span class="pre">'move':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshConstraint.move&gt;,</span> <span class="pre">'reset':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshConstraint.reset&gt;,</span> <span class="pre">'resume':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshConstraint.resume&gt;,</span> <span class="pre">'suppress':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshConstraint.suppress&gt;,</span> <span class="pre">'delete':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshConstraint.delete&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'AdaptiveMeshConstraint'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'AdaptiveMeshConstraint'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraint.py#L9-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraint.py#L39-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__" title="Permalink to this definition">#</a></dt>
@@ -1707,6 +1762,17 @@ system. The default value is None.</p></li>
 </ul>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.AdaptiveMeshConstraint'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraint.py#L9-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraint.py#L9-L145"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -1834,7 +1900,8 @@ reset.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptiveMeshConstraintState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amplitudeState</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraintState.py#L7-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState" title="Permalink to this definition">#</a></dt>
-<dd><p>The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary
 Lagrangian Eularian (ALE) style AdaptiveMeshConstraintState objects. The
 AdaptiveMeshConstraintState object has no explicit constructor or methods. The members
 of the AdaptiveMeshConstraintState object are common to all objects derived from the
@@ -1878,6 +1945,16 @@ AdaptiveMeshConstraintState object.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'amplitude':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'amplitudeState':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraintState.py#L7-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Adaptivity.AdaptiveMeshConstraintState',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'amplitudeState':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'amplitude':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">AdaptiveMeshConstraintState</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">the</span> <span class="pre">abstract</span> <span class="pre">base</span> <span class="pre">type</span> <span class="pre">for</span> <span class="pre">other</span> <span class="pre">Arbitrary\n</span>&#160;&#160;&#160; <span class="pre">Lagrangian</span> <span class="pre">Eularian</span> <span class="pre">(ALE)</span> <span class="pre">style</span> <span class="pre">AdaptiveMeshConstraintState</span> <span class="pre">objects.</span> <span class="pre">The\n</span>&#160;&#160;&#160; <span class="pre">AdaptiveMeshConstraintState</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">explicit</span> <span class="pre">constructor</span> <span class="pre">or</span> <span class="pre">methods.</span> <span class="pre">The</span> <span class="pre">members\n</span>&#160;&#160;&#160; <span class="pre">of</span> <span class="pre">the</span> <span class="pre">AdaptiveMeshConstraintState</span> <span class="pre">object</span> <span class="pre">are</span> <span class="pre">common</span> <span class="pre">to</span> <span class="pre">all</span> <span class="pre">objects</span> <span class="pre">derived</span> <span class="pre">from</span> <span class="pre">the\n</span>&#160;&#160;&#160; <span class="pre">AdaptiveMeshConstraintState</span> <span class="pre">object.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">step\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].steps[name].adaptiveMeshConstraintStates[name]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`AdaptiveMeshConstraintState</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshconstraintstatepyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'amplitudeState':</span> <span class="pre">None,</span> <span class="pre">'status':</span> <span class="pre">None,</span> <span class="pre">'amplitude':</span> <span class="pre">'',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshConstraintState.__init__&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'AdaptiveMeshConstraintState'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'AdaptiveMeshConstraintState'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraintState.py#L7-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amplitudeState</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraintState.py#L47-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__" title="Permalink to this definition">#</a></dt>
@@ -1927,6 +2004,17 @@ constraint has no amplitude reference.</p></li>
 </dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.AdaptiveMeshConstraintState'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraintState.py#L7-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraintState.py#L7-L91"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.amplitude">
 <span class="sig-name descname"><span class="pre">amplitude</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshConstraintState.py#L43-L45"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.amplitude" title="Permalink to this definition">#</a></dt>
 <dd><p>A String specifying the name of the amplitude reference. The String is empty if the
@@ -1969,7 +2057,8 @@ object. Possible values are:</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptiveMeshControl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remapping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SECOND_ORDER_ADVECTION</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smoothingAlgorithm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.GEOMETRY_ENHANCED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smoothingPriority</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNIFORM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initialFeatureAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transitionFeatureAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentumAdvection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ELEMENT_CENTER_PROJECTION</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshingPredictor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.CURRENT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curvatureRefinement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">volumetricSmoothingWeight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">laplacianSmoothingWeight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">equipotentialSmoothingWeight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshConstraintAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">originalConfigurationProjectionWeight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">standardVolumetricSmoothingWeight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshControl.py#L6-L237"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl" title="Permalink to this definition">#</a></dt>
-<dd><p>The AdaptiveMeshControl object is used to control various aspects of Arbitrary
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The AdaptiveMeshControl object is used to control various aspects of Arbitrary
 Lagrangian Eularian (ALE) style adaptive smoothing and advection algorithms applied to
 an ALE adaptive mesh domain.</p>
 <div class="admonition note">
@@ -2047,6 +2136,16 @@ an ALE adaptive mesh domain.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'curvatureRefinement':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'equipotentialSmoothingWeight':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'initialFeatureAngle':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'laplacianSmoothingWeight':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'meshConstraintAngle':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'meshingPredictor':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'momentumAdvection':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'originalConfigurationProjectionWeight':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'remapping':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'smoothingAlgorithm':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'smoothingPriority':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'standardVolumetricSmoothingWeight':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'transitionFeatureAngle':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'volumetricSmoothingWeight':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshControl.py#L6-L237"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Adaptivity.AdaptiveMeshControl',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'remapping':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'smoothingAlgorithm':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'smoothingPriority':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'initialFeatureAngle':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'transitionFeatureAngle':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'momentumAdvection':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'meshingPredictor':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'curvatureRefinement':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'volumetricSmoothingWeight':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'laplacianSmoothingWeight':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'equipotentialSmoothingWeight':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'meshConstraintAngle':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'originalConfigurationProjectionWeight':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'standardVolumetricSmoothingWeight':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">AdaptiveMeshControl</span> <span class="pre">object</span> <span class="pre">is</span> <span class="pre">used</span> <span class="pre">to</span> <span class="pre">control</span> <span class="pre">various</span> <span class="pre">aspects</span> <span class="pre">of</span> <span class="pre">Arbitrary\n</span>&#160;&#160;&#160; <span class="pre">Lagrangian</span> <span class="pre">Eularian</span> <span class="pre">(ALE)</span> <span class="pre">style</span> <span class="pre">adaptive</span> <span class="pre">smoothing</span> <span class="pre">and</span> <span class="pre">advection</span> <span class="pre">algorithms</span> <span class="pre">applied</span> <span class="pre">to\n</span>&#160;&#160;&#160; <span class="pre">an</span> <span class="pre">ALE</span> <span class="pre">adaptive</span> <span class="pre">mesh</span> <span class="pre">domain.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">step\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].adaptiveMeshControls[name]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`AdaptiveMeshControl</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshcontrolpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'remapping':</span> <span class="pre">SECOND_ORDER_ADVECTION,</span> <span class="pre">'smoothingAlgorithm':</span> <span class="pre">GEOMETRY_ENHANCED,</span> <span class="pre">'smoothingPriority':</span> <span class="pre">UNIFORM,</span> <span class="pre">'initialFeatureAngle':</span> <span class="pre">30,</span> <span class="pre">'transitionFeatureAngle':</span> <span class="pre">30,</span> <span class="pre">'momentumAdvection':</span> <span class="pre">ELEMENT_CENTER_PROJECTION,</span> <span class="pre">'meshingPredictor':</span> <span class="pre">CURRENT,</span> <span class="pre">'curvatureRefinement':</span> <span class="pre">1,</span> <span class="pre">'volumetricSmoothingWeight':</span> <span class="pre">1,</span> <span class="pre">'laplacianSmoothingWeight':</span> <span class="pre">0,</span> <span class="pre">'equipotentialSmoothingWeight':</span> <span class="pre">0,</span> <span class="pre">'meshConstraintAngle':</span> <span class="pre">60,</span> <span class="pre">'originalConfigurationProjectionWeight':</span> <span class="pre">1,</span> <span class="pre">'standardVolumetricSmoothingWeight':</span> <span class="pre">0,</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshControl.__init__&gt;,</span> <span class="pre">'setValues':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshControl.setValues&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'AdaptiveMeshControl'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'AdaptiveMeshControl'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshControl.py#L6-L237"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remapping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SECOND_ORDER_ADVECTION</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smoothingAlgorithm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.GEOMETRY_ENHANCED</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">smoothingPriority</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNIFORM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initialFeatureAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transitionFeatureAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">momentumAdvection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.ELEMENT_CENTER_PROJECTION</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshingPredictor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.CURRENT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curvatureRefinement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">volumetricSmoothingWeight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">laplacianSmoothingWeight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">equipotentialSmoothingWeight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshConstraintAngle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">originalConfigurationProjectionWeight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">standardVolumetricSmoothingWeight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshControl.py#L80-L164"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__" title="Permalink to this definition">#</a></dt>
@@ -2108,6 +2207,17 @@ method. The default value is 0.0.</p></li>
 <dd class="field-even"><p><strong>RangeError</strong> – </p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.AdaptiveMeshControl'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshControl.py#L6-L237"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshControl.py#L6-L237"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -2273,7 +2383,8 @@ method. The default value is 1.0.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptiveMeshDomain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initialMeshSweeps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshSweeps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshDomain.py#L5-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain" title="Permalink to this definition">#</a></dt>
-<dd><p>The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary
 Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2320,6 +2431,16 @@ Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'controls':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'frequency':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'initialMeshSweeps':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'meshSweeps':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'region':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshDomain.py#L5-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Adaptivity.AdaptiveMeshDomain',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'region':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;,</span> <span class="pre">'controls':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'frequency':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'initialMeshSweeps':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'meshSweeps':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">AdaptiveMeshDomain</span> <span class="pre">object</span> <span class="pre">defines</span> <span class="pre">the</span> <span class="pre">region</span> <span class="pre">and</span> <span class="pre">controls</span> <span class="pre">that</span> <span class="pre">govern</span> <span class="pre">an</span> <span class="pre">Arbitrary\n</span>&#160;&#160;&#160; <span class="pre">Lagrangian</span> <span class="pre">Eularian</span> <span class="pre">(ALE)</span> <span class="pre">style</span> <span class="pre">adaptive</span> <span class="pre">smoothing</span> <span class="pre">mesh</span> <span class="pre">domain.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">step\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].steps[name].adaptiveMeshDomains[name]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`AdaptiveMeshDomain</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshdomainpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'controls':</span> <span class="pre">'',</span> <span class="pre">'frequency':</span> <span class="pre">10,</span> <span class="pre">'initialMeshSweeps':</span> <span class="pre">5,</span> <span class="pre">'meshSweeps':</span> <span class="pre">1,</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshDomain.__init__&gt;,</span> <span class="pre">'setValues':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptiveMeshDomain.setValues&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'AdaptiveMeshDomain'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'AdaptiveMeshDomain'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshDomain.py#L5-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initialMeshSweeps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshSweeps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshDomain.py#L35-L76"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__" title="Permalink to this definition">#</a></dt>
@@ -2358,6 +2479,17 @@ increment. The default value is 1.</p></li>
 <dd class="field-even"><p><strong>RangeError</strong> – </p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.AdaptiveMeshDomain'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshDomain.py#L5-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptiveMeshDomain.py#L5-L86"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -2412,7 +2544,8 @@ increment. The default value is 1.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">AdaptivityProcess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxIterations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jobPrefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityProcess.py#L9-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess" title="Permalink to this definition">#</a></dt>
-<dd><p>The AdaptivityProcess object defines a series of jobs that will be submitted for
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The AdaptivityProcess object defines a series of jobs that will be submitted for
 analysis. Abaqus performs adaptive remeshing between each job.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2501,6 +2634,16 @@ the model in this iteration of the adaptivity process.</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'iterations':</span> <span class="pre">typing.Dict[int,</span> <span class="pre">abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration],</span> <span class="pre">'job':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Job.ModelJob.ModelJob'&gt;,</span> <span class="pre">'jobPrefix':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'maxIterations':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityProcess.py#L9-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Adaptivity.AdaptivityProcess',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'iterations':</span> <span class="pre">typing.Dict[int,</span> <span class="pre">abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration],</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'job':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Job.ModelJob.ModelJob'&gt;,</span> <span class="pre">'maxIterations':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'jobPrefix':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">AdaptivityProcess</span> <span class="pre">object</span> <span class="pre">defines</span> <span class="pre">a</span> <span class="pre">series</span> <span class="pre">of</span> <span class="pre">jobs</span> <span class="pre">that</span> <span class="pre">will</span> <span class="pre">be</span> <span class="pre">submitted</span> <span class="pre">for\n</span>&#160;&#160;&#160; <span class="pre">analysis.</span> <span class="pre">Abaqus</span> <span class="pre">performs</span> <span class="pre">adaptive</span> <span class="pre">remeshing</span> <span class="pre">between</span> <span class="pre">each</span> <span class="pre">job.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">job\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.adaptivityProcesses[name]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`AdaptivityProcess</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivityprocesspyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'status':</span> <span class="pre">None,</span> <span class="pre">'iterations':</span> <span class="pre">{},</span> <span class="pre">'maxIterations':</span> <span class="pre">3,</span> <span class="pre">'jobPrefix':</span> <span class="pre">'',</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptivityProcess.__init__&gt;,</span> <span class="pre">'submit':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptivityProcess.submit&gt;,</span> <span class="pre">'setValues':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptivityProcess.setValues&gt;,</span> <span class="pre">'AdaptivityIteration':</span> <span class="pre">&lt;function</span> <span class="pre">AdaptivityProcess.AdaptivityIteration&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'AdaptivityProcess'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'AdaptivityProcess'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityProcess.py#L9-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">job</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxIterations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jobPrefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityProcess.py#L46-L82"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__" title="Permalink to this definition">#</a></dt>
@@ -2540,6 +2683,17 @@ default value is an empty string.</p></li>
 <dd class="field-even"><p><strong>AbaqusException</strong> – </p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.AdaptivityProcess'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityProcess.py#L9-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/AdaptivityProcess.py#L9-L163"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -2637,7 +2791,8 @@ default value is False. The datacheckJob and continueJob arguments cannot both b
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplacementAdaptiveMeshConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">motionType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.INDEPENDENT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py#L10-L215"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint" title="Permalink to this definition">#</a></dt>
-<dd><p>The AdaptivityProcess object defines a series of jobs that will be submitted for
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint" title="abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptiveMeshConstraint</span></code></a></p>
+<p>The AdaptivityProcess object defines a series of jobs that will be submitted for
 analysis. Abaqus performs adaptive remeshing between each job.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2728,6 +2883,11 @@ analysis. Abaqus performs adaptive remeshing between each job.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'category':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'localCsys':</span> <span class="pre">typing.Optional[str],</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'region':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py#L10-L215"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">motionType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.INDEPENDENT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py#L37-L111"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__" title="Permalink to this definition">#</a></dt>
@@ -2787,6 +2947,11 @@ in the global coordinate system. The default value is None.</p></li>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py#L10-L215"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.category">
@@ -2903,7 +3068,8 @@ the <strong>amplitude</strong> argument only if it is valid for the specified st
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DisplacementAdaptiveMeshConstraintState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitudeState</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraintState.py#L8-L173"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState" title="Permalink to this definition">#</a></dt>
-<dd><p>The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState" title="abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptiveMeshConstraintState</span></code></a></p>
+<p>The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an
 Arbitrary Lagrangian Eularian (ALE) style displacement/rotation adaptive mesh constraint
 in a step. One instance of this object is created internally by the
 DisplacementAdaptiveMeshConstraint object for each step. The instance is also deleted
@@ -3010,6 +3176,11 @@ AdaptiveMeshConstraintState object.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'amplitude':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'amplitudeState':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'u1':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'u1State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'u2':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'u2State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'u3':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'u3State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'ur1':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'ur1State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'ur2':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'ur2State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'ur3':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'ur3State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraintState.py#L8-L173"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u1State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u2State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">u3State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur1State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur2State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ur3State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitudeState</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraintState.py#L93-L173"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__" title="Permalink to this definition">#</a></dt>
@@ -3067,6 +3238,11 @@ constraint has no amplitude reference.</p></li>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraintState.py#L8-L173"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.amplitude">
@@ -3184,7 +3360,8 @@ MODIFIED.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ErrorIndicatorResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/ErrorIndicatorResult.py#L5-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult" title="Permalink to this definition">#</a></dt>
-<dd><p>The ErrorIndicatorResult object contains result information corresponding to an error
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Adaptivity.RuleResult.RuleResult" title="abaqus.Adaptivity.RuleResult.RuleResult"><code class="xref py py-class docutils literal notranslate"><span class="pre">RuleResult</span></code></a></p>
+<p>The ErrorIndicatorResult object contains result information corresponding to an error
 indicator variable in a RemeshingRule object for an adaptivity iteration.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3226,6 +3403,11 @@ indicator variable in a RemeshingRule object for an adaptivity iteration.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'results':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/ErrorIndicatorResult.py#L5-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">results</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/ErrorIndicatorResult.py#L25-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__" title="Permalink to this definition">#</a></dt>
@@ -3264,6 +3446,11 @@ corresponding to the error indicator variable represented by this ErrorIndicator
 </dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.ErrorIndicatorResult'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/ErrorIndicatorResult.py#L5-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.name">
 <span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/ErrorIndicatorResult.py"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.name" title="Permalink to this definition">#</a></dt>
 <dd><p>A String specifying the name of the error indicator variable to which these results
@@ -3285,7 +3472,8 @@ corresponding to the error indicator variable represented by this ErrorIndicator
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.RemeshingRule.RemeshingRule">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RemeshingRule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MODEL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizingMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errorTarget</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxSolutionErrorTarget</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSolutionErrorTarget</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshBias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minElementSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputFrequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.LAST_INCREMENT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specifyMinSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specifyMaxSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coarseningFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT_LIMIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refinementFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT_LIMIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementCountLimit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RemeshingRule.py#L8-L309"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule" title="Permalink to this definition">#</a></dt>
-<dd><p>The RemeshingRule object controls the adaptive remeshing resizing and the error
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The RemeshingRule object controls the adaptive remeshing resizing and the error
 indicators written to the output database for a specified region of the model.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3374,6 +3562,16 @@ indicators written to the output database for a specified region of the model.</
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RemeshingRule.RemeshingRule.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'coarseningFactor':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'description':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'elementCountLimit':</span> <span class="pre">typing.Optional[int],</span> <span class="pre">'errorTarget':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'maxElementSize':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'maxSolutionErrorTarget':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'meshBias':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'minElementSize':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'minSolutionErrorTarget':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'outputFrequency':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'refinementFactor':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'region':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'sizingMethod':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'specifyMaxSize':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'specifyMinSize':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'stepName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'variables':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RemeshingRule.py#L8-L309"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RemeshingRule.RemeshingRule.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Adaptivity.RemeshingRule',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'suppressed':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'stepName':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'variables':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;,</span> <span class="pre">'description':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'region':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'sizingMethod':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'errorTarget':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'maxSolutionErrorTarget':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'minSolutionErrorTarget':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'meshBias':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'minElementSize':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'maxElementSize':</span> <span class="pre">&lt;class</span> <span class="pre">'float'&gt;,</span> <span class="pre">'outputFrequency':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'specifyMinSize':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'specifyMaxSize':</span> <span class="pre">typing.Union[abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean,</span> <span class="pre">bool],</span> <span class="pre">'coarseningFactor':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'refinementFactor':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant'&gt;,</span> <span class="pre">'elementCountLimit':</span> <span class="pre">typing.Optional[int]},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">RemeshingRule</span> <span class="pre">object</span> <span class="pre">controls</span> <span class="pre">the</span> <span class="pre">adaptive</span> <span class="pre">remeshing</span> <span class="pre">resizing</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">error\n</span>&#160;&#160;&#160; <span class="pre">indicators</span> <span class="pre">written</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">output</span> <span class="pre">database</span> <span class="pre">for</span> <span class="pre">a</span> <span class="pre">specified</span> <span class="pre">region</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">model.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">mesh\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.models[name].remeshingRules[name]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`RemeshingRule</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-remeshingrulepyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'suppressed':</span> <span class="pre">OFF,</span> <span class="pre">'description':</span> <span class="pre">'',</span> <span class="pre">'region':</span> <span class="pre">MODEL,</span> <span class="pre">'sizingMethod':</span> <span class="pre">DEFAULT,</span> <span class="pre">'errorTarget':</span> <span class="pre">0,</span> <span class="pre">'maxSolutionErrorTarget':</span> <span class="pre">0,</span> <span class="pre">'minSolutionErrorTarget':</span> <span class="pre">0,</span> <span class="pre">'meshBias':</span> <span class="pre">0,</span> <span class="pre">'minElementSize':</span> <span class="pre">0,</span> <span class="pre">'maxElementSize':</span> <span class="pre">0,</span> <span class="pre">'outputFrequency':</span> <span class="pre">LAST_INCREMENT,</span> <span class="pre">'specifyMinSize':</span> <span class="pre">OFF,</span> <span class="pre">'specifyMaxSize':</span> <span class="pre">ON,</span> <span class="pre">'coarseningFactor':</span> <span class="pre">DEFAULT_LIMIT,</span> <span class="pre">'refinementFactor':</span> <span class="pre">DEFAULT_LIMIT,</span> <span class="pre">'elementCountLimit':</span> <span class="pre">None,</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">RemeshingRule.__init__&gt;,</span> <span class="pre">'resume':</span> <span class="pre">&lt;function</span> <span class="pre">RemeshingRule.resume&gt;,</span> <span class="pre">'suppress':</span> <span class="pre">&lt;function</span> <span class="pre">RemeshingRule.suppress&gt;,</span> <span class="pre">'setValues':</span> <span class="pre">&lt;function</span> <span class="pre">RemeshingRule.setValues&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'RemeshingRule'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'RemeshingRule'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RemeshingRule.py#L8-L309"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MODEL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sizingMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">errorTarget</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxSolutionErrorTarget</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSolutionErrorTarget</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">meshBias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minElementSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxElementSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputFrequency</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.LAST_INCREMENT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specifyMinSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">specifyMaxSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coarseningFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT_LIMIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refinementFactor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DEFAULT_LIMIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">elementCountLimit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RemeshingRule.py#L107-L213"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__" title="Permalink to this definition">#</a></dt>
@@ -3451,6 +3649,17 @@ value is None.</p></li>
 <dd class="field-even"><p><strong>AbaqusException</strong> – </p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RemeshingRule.RemeshingRule.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.RemeshingRule'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RemeshingRule.py#L8-L309"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RemeshingRule.RemeshingRule.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RemeshingRule.py#L8-L309"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3677,7 +3886,8 @@ error indicators.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RuleResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicatorResults</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numElems</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeElemCount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">satisfiedVars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RuleResult.py#L11-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult" title="Permalink to this definition">#</a></dt>
-<dd><p>The RuleResult object contains result information corresponding to a RemeshingRule
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>The RuleResult object contains result information corresponding to a RemeshingRule
 object for an adaptivity iteration.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3712,6 +3922,16 @@ object for an adaptivity iteration.</p>
 </table>
 </div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'indicatorResults':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Adaptivity.RuleResult.ErrorIndicatorResult],</span> <span class="pre">'minSizeElemCount':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'numElems':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'satisfiedVars':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RuleResult.py#L11-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.__dict__">
+<span class="sig-name descname"><span class="pre">__dict__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">mappingproxy({'__module__':</span> <span class="pre">'abaqus.Adaptivity.RuleResult',</span> <span class="pre">'__annotations__':</span> <span class="pre">{'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'indicatorResults':</span> <span class="pre">typing.Dict[str,</span> <span class="pre">abaqus.Adaptivity.RuleResult.ErrorIndicatorResult],</span> <span class="pre">'numElems':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'minSizeElemCount':</span> <span class="pre">&lt;class</span> <span class="pre">'int'&gt;,</span> <span class="pre">'satisfiedVars':</span> <span class="pre">&lt;class</span> <span class="pre">'tuple'&gt;},</span> <span class="pre">'__doc__':</span> <span class="pre">'The</span> <span class="pre">RuleResult</span> <span class="pre">object</span> <span class="pre">contains</span> <span class="pre">result</span> <span class="pre">information</span> <span class="pre">corresponding</span> <span class="pre">to</span> <span class="pre">a</span> <span class="pre">RemeshingRule\n</span>&#160;&#160;&#160; <span class="pre">object</span> <span class="pre">for</span> <span class="pre">an</span> <span class="pre">adaptivity</span> <span class="pre">iteration.\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::</span> <span class="pre">\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">This</span> <span class="pre">object</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">accessed</span> <span class="pre">by::\n\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">import</span> <span class="pre">job\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">mdb.adaptivityProcesses[name].iterations[i].ruleResults[name]\n\n</span>&#160;&#160;&#160; <span class="pre">..</span> <span class="pre">note::\n</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">Check</span> <span class="pre">`RuleResult</span> <span class="pre">on</span> <span class="pre">help.3ds.com/2023</span> <span class="pre">&lt;https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ruleresultpyc.htm?contextscope=all&gt;`__.',</span> <span class="pre">'satisfiedVars':</span> <span class="pre">(),</span> <span class="pre">'__init__':</span> <span class="pre">&lt;function</span> <span class="pre">RuleResult.__init__&gt;,</span> <span class="pre">'__dict__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__dict__'</span> <span class="pre">of</span> <span class="pre">'RuleResult'</span> <span class="pre">objects&gt;,</span> <span class="pre">'__weakref__':</span> <span class="pre">&lt;attribute</span> <span class="pre">'__weakref__'</span> <span class="pre">of</span> <span class="pre">'RuleResult'</span> <span class="pre">objects&gt;})</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RuleResult.py#L11-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.__dict__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indicatorResults</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numElems</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minSizeElemCount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">satisfiedVars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RuleResult.py#L42-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.__init__" title="Permalink to this definition">#</a></dt>
@@ -3752,6 +3972,17 @@ Remeshing Rule.</p></li>
 <dd class="field-even"><p><strong>AbaqusException</strong> – </p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.RuleResult'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RuleResult.py#L11-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.RuleResult.RuleResult.__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/RuleResult.py#L11-L85"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.RuleResult.RuleResult.__weakref__" title="Permalink to this definition">#</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -3796,7 +4027,8 @@ Remeshing Rule.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VelocityAdaptiveMeshConstraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">motionType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.INDEPENDENT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py#L9-L216"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint" title="Permalink to this definition">#</a></dt>
-<dd><p>The VelocityAdaptiveMeshConstraint object stores the data for an Arbitrary Lagrangian
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint" title="abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptiveMeshConstraint</span></code></a></p>
+<p>The VelocityAdaptiveMeshConstraint object stores the data for an Arbitrary Lagrangian
 Eularian (ALE) style velocity adaptive mesh constraint.
 The VelocityAdaptiveMeshConstraint object is derived from the AdaptiveMeshConstraint
 object.</p>
@@ -3889,6 +4121,11 @@ object.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'category':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'localCsys':</span> <span class="pre">typing.Optional[str],</span> <span class="pre">'name':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'region':</span> <span class="pre">&lt;class</span> <span class="pre">'abaqus.Region.Region.Region'&gt;}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py#L9-L216"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">createStepName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.UNSET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">motionType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.INDEPENDENT</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py#L38-L112"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__" title="Permalink to this definition">#</a></dt>
@@ -3948,6 +4185,11 @@ INDEPENDENT.</p></li>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.VelocityAdaptiveMeshConstraint'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py#L9-L216"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.category">
@@ -4064,7 +4306,8 @@ the <strong>amplitude</strong> argument only if it is valid for the specified st
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VelocityAdaptiveMeshConstraintState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v1State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v2State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v3State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr1State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr2State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr3State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitudeState</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraintState.py#L8-L174"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState" title="Permalink to this definition">#</a></dt>
-<dd><p>The VelocityAdaptiveMeshConstraintState object stores the propagating data for an
+<dd><p>Bases: <a class="reference internal" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState" title="abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState"><code class="xref py py-class docutils literal notranslate"><span class="pre">AdaptiveMeshConstraintState</span></code></a></p>
+<p>The VelocityAdaptiveMeshConstraintState object stores the propagating data for an
 Arbitrary Lagrangian Eularian (ALE) style velocity adaptive mesh constraint in a step.
 One instance of this object is created internally by the VelocityAdaptiveMeshConstraint
 object for each step. The instance is also deleted internally by the
@@ -4171,6 +4414,11 @@ AdaptiveMeshConstraintState object.</p>
 </table>
 </details></div>
 <hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__annotations__">
+<span class="sig-name descname"><span class="pre">__annotations__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'amplitude':</span> <span class="pre">&lt;class</span> <span class="pre">'str'&gt;,</span> <span class="pre">'amplitudeState':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'status':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'v1':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'v1State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'v2':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'v2State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'v3':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'v3State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'vr1':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'vr1State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'vr2':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'vr2State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant],</span> <span class="pre">'vr3':</span> <span class="pre">typing.Optional[float],</span> <span class="pre">'vr3State':</span> <span class="pre">typing.Optional[abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant]}</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraintState.py#L8-L174"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__annotations__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__">
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr1</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr3</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v1State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v2State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v3State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr1State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr2State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vr3State</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitudeState</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amplitude</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraintState.py#L87-L174"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__" title="Permalink to this definition">#</a></dt>
@@ -4236,6 +4484,11 @@ constraint has no amplitude reference.</p></li>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__module__">
+<span class="sig-name descname"><span class="pre">__module__</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraintState.py#L8-L174"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__module__" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.amplitude">
@@ -4443,6 +4696,24 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.__annotations__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         AdaptivityModel.__annotations__
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.__module__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         AdaptivityModel.__module__
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh">
        <code class="docutils literal notranslate">
         <span class="pre">
@@ -4505,6 +4776,24 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
        </code>
       </a>
      </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.__annotations__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         AdaptivityStep.__annotations__
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.__module__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         AdaptivityStep.__module__
+        </span>
+       </code>
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -4542,10 +4831,46 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__annotations__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         AdaptivityIteration.__annotations__
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__dict__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         AdaptivityIteration.__dict__
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__">
        <code class="docutils literal notranslate">
         <span class="pre">
          AdaptivityIteration.__init__()
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__module__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         AdaptivityIteration.__module__
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__weakref__">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         AdaptivityIteration.__weakref__
         </span>
        </code>
       </a>
@@ -4628,10 +4953,46 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshConstraint.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshConstraint.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            AdaptiveMeshConstraint.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshConstraint.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshConstraint.__weakref__
           </span>
          </code>
         </a>
@@ -4745,10 +5106,46 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshConstraintState.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshConstraintState.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            AdaptiveMeshConstraintState.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshConstraintState.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshConstraintState.__weakref__
           </span>
          </code>
         </a>
@@ -4799,10 +5196,46 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshControl.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshControl.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            AdaptiveMeshControl.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshControl.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshControl.__weakref__
           </span>
          </code>
         </a>
@@ -4970,10 +5403,46 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshDomain.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshDomain.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            AdaptiveMeshDomain.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshDomain.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptiveMeshDomain.__weakref__
           </span>
          </code>
         </a>
@@ -5060,10 +5529,46 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
         </a>
        </li>
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptivityProcess.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptivityProcess.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            AdaptivityProcess.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptivityProcess.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           AdaptivityProcess.__weakref__
           </span>
          </code>
         </a>
@@ -5159,10 +5664,28 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DisplacementAdaptiveMeshConstraint.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            DisplacementAdaptiveMeshConstraint.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DisplacementAdaptiveMeshConstraint.__module__
           </span>
          </code>
         </a>
@@ -5240,10 +5763,28 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DisplacementAdaptiveMeshConstraintState.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            DisplacementAdaptiveMeshConstraintState.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DisplacementAdaptiveMeshConstraintState.__module__
           </span>
          </code>
         </a>
@@ -5402,10 +5943,28 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           ErrorIndicatorResult.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            ErrorIndicatorResult.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           ErrorIndicatorResult.__module__
           </span>
          </code>
         </a>
@@ -5447,10 +6006,46 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RemeshingRule.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RemeshingRule.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            RemeshingRule.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RemeshingRule.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.RemeshingRule.RemeshingRule.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RemeshingRule.__weakref__
           </span>
          </code>
         </a>
@@ -5672,10 +6267,46 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.RuleResult.RuleResult.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RuleResult.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.RuleResult.RuleResult.__dict__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RuleResult.__dict__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.RuleResult.RuleResult.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            RuleResult.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.RuleResult.RuleResult.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RuleResult.__module__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.RuleResult.RuleResult.__weakref__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RuleResult.__weakref__
           </span>
          </code>
         </a>
@@ -5744,10 +6375,28 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           VelocityAdaptiveMeshConstraint.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            VelocityAdaptiveMeshConstraint.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           VelocityAdaptiveMeshConstraint.__module__
           </span>
          </code>
         </a>
@@ -5825,10 +6474,28 @@ about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MOD
       </a>
       <ul class="nav section-nav flex-column">
        <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__annotations__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           VelocityAdaptiveMeshConstraintState.__annotations__
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
         <a class="reference internal nav-link" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__">
          <code class="docutils literal notranslate">
           <span class="pre">
            VelocityAdaptiveMeshConstraintState.__init__()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__module__">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           VelocityAdaptiveMeshConstraintState.__module__
           </span>
          </code>
         </a>
