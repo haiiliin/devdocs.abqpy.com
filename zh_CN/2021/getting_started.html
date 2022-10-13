@@ -344,8 +344,7 @@ it using pip:</p>
 <p>您可以通过克隆 <a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub仓库</a> 来安装最新的开发版本，并使用 <cite>python</cite> 从本地目录进行安装：</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/haiiliin/abqpy.git
 <span class="nb">cd</span> abqpy
-pip install -r requirements.txt
-python setup.py install
+pip install .
 </pre></div>
 </div>
 <section id="optional-requirements">
@@ -356,9 +355,8 @@ python setup.py install
 </pre></div>
 </div>
 </section>
-</section>
 <section id="install-a-specific-version">
-<h2>安装特定版本<a class="headerlink" href="#install-a-specific-version" title="此标题的永久链接">#</a></h2>
+<h3>安装特定版本<a class="headerlink" href="#install-a-specific-version" title="此标题的永久链接">#</a></h3>
 <p>您可以在安装 <cite>abqpy</cite> 时指定版本号，例如：</p>
 <p>Using <cite>pip</cite>:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install <span class="nv">abqpy</span><span class="o">==</span><span class="m">2021</span>.3.9
@@ -372,8 +370,10 @@ python setup.py install
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install <span class="nv">abqpy</span><span class="o">==</span><span class="m">2021</span>.*
 </pre></div>
 </div>
+</section>
+</section>
 <section id="write-your-abaqus-python-script">
-<h3>Write your Abaqus/Python script<a class="headerlink" href="#write-your-abaqus-python-script" title="此标题的永久链接">#</a></h3>
+<h2>Write your Abaqus/Python script<a class="headerlink" href="#write-your-abaqus-python-script" title="此标题的永久链接">#</a></h2>
 <p>After installing the <cite>abqpy</cite> package, you can start writing your own Abaqus/Python script
 to build your model. You can refer
 <a class="reference external" href="https://github.com/haiiliin/abqpy/tree/main/examples">abqpy/examples at main · haiiliin/abqpy</a>
@@ -381,7 +381,7 @@ for some tests of the script, for more detailed documentation, please check
 <a class="reference external" href="https://haiiliin.com/abqpy/">abqpy documentation</a>.</p>
 </section>
 <section id="setup-your-abaqus-environment">
-<h3>Setup your Abaqus Environment<a class="headerlink" href="#setup-your-abaqus-environment" title="此标题的永久链接">#</a></h3>
+<h2>Setup your Abaqus Environment<a class="headerlink" href="#setup-your-abaqus-environment" title="此标题的永久链接">#</a></h2>
 <p>In order to use Abaqus command to execute the Python script and submit the job, you need to tell
 <cite>abqpy</cite> where the Abaqus command is located. Usually, Abaqus command locates in a directory like this:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>C:/SIMULIA/Commands/abaqus.bat
@@ -389,16 +389,8 @@ for some tests of the script, for more detailed documentation, please check
 </div>
 <p>您可以将目录 <cite>C/SIMULIA/Commands</cite> 添加到系统环境变量 <cite>Path</cite> 中，也可以创建一个名为 <cite>ABAQUS_BAT_PATH</cite> 的新系统变量，并将值设置为 Abaqus 命令的文件路径，即 <cite>C:/SIMULIA/Commands/abaqus.bat</cite>。</p>
 </section>
-</section>
-<section id="abaqus-command">
-<h2>Abaqus 命令<a class="headerlink" href="#abaqus-command" title="此标题的永久链接">#</a></h2>
-<p>为了使用 Abaqus 命令执行 Python 脚本并提交作业，您需要告诉 <cite>abqpy</cite> Abaqus 命令所在的位置。通常，Abaqus 命令位于如下目录中：</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>C:/SIMULIA/Commands/abaqus.bat
-</pre></div>
-</div>
-<p>您可以将目录 <cite>C/SIMULIA/Commands</cite> 添加到系统环境变量 <cite>Path</cite> 中，也可以创建一个名为 <cite>ABAQUS_BAT_PATH</cite> 的新系统变量，并将值设置为 Abaqus 命令的文件路径，即 <cite>C:/SIMULIA/Commands/abaqus.bat</cite>。</p>
 <section id="run-your-abaqus-python-script">
-<h3>Run your Abaqus/Python script<a class="headerlink" href="#run-your-abaqus-python-script" title="此标题的永久链接">#</a></h3>
+<h2>Run your Abaqus/Python script<a class="headerlink" href="#run-your-abaqus-python-script" title="此标题的永久链接">#</a></h2>
 <p>Now you can just run your Abaqus/Python script using your own Python interpreter that <cite>abqpy</cite> is installed.</p>
 <ul class="simple">
 <li><p>Create an Abaqus Model</p></li>
@@ -408,7 +400,6 @@ for some tests of the script, for more detailed documentation, please check
 <li><p>Extract Output Data</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/output-code.png"><img alt="Extract Output Data" class="align-center" src="_images/output-code.png" style="width: 100%;"/></a>
-</section>
 </section>
 <section id="what-next">
 <h2>What next?<a class="headerlink" href="#what-next" title="此标题的永久链接">#</a></h2>
@@ -474,36 +465,27 @@ for more detailed API references.</p>
      Optional Requirements
     </a>
 </li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry">
+<li class="toc-h3 nav-item toc-entry">
 <a class="reference internal nav-link" href="#install-a-specific-version">
-   安装特定版本
-  </a>
-<ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry">
-<a class="reference internal nav-link" href="#write-your-abaqus-python-script">
-     Write your Abaqus/Python script
-    </a>
-</li>
-<li class="toc-h3 nav-item toc-entry">
-<a class="reference internal nav-link" href="#setup-your-abaqus-environment">
-     Setup your Abaqus Environment
+     安装特定版本
     </a>
 </li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry">
-<a class="reference internal nav-link" href="#abaqus-command">
-   Abaqus 命令
+<a class="reference internal nav-link" href="#write-your-abaqus-python-script">
+   Write your Abaqus/Python script
   </a>
-<ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry">
-<a class="reference internal nav-link" href="#run-your-abaqus-python-script">
-     Run your Abaqus/Python script
-    </a>
 </li>
-</ul>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#setup-your-abaqus-environment">
+   Setup your Abaqus Environment
+  </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#run-your-abaqus-python-script">
+   Run your Abaqus/Python script
+  </a>
 </li>
 <li class="toc-h2 nav-item toc-entry">
 <a class="reference internal nav-link" href="#what-next">
