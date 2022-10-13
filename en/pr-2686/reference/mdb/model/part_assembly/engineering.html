@@ -500,6 +500,76 @@
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EngineeringFeature</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/EngineeringFeature/EngineeringFeature.py#L23-L912"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature" title="Permalink to this definition">#</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">EngineeringFeatureBase</span></code></a></p>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">EngineeringFeatureBase</span></code></a></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inertias</span></code></a></p></td>
+<td><p>A repository of Inertia objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cracks</span></code></a></p></td>
+<td><p>A repository of Crack objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fasteners</span></code></a></p></td>
+<td><p>A repository of Fastener objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">springDashpots</span></code></a></p></td>
+<td><p>A repository of SpringDashpot objects.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AssembledFastener</span></code></a>(name, region, ...[, ...])</p></td>
+<td><p>This method creates an AssembledFastener object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContourIntegral</span></code></a>(name, crackFront, crackTip, ...)</p></td>
+<td><p>This method creates a ContourIntegral object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DebondVCCT</span></code></a>(name, initiationStep, ...[, ...])</p></td>
+<td><p>This method creates a DebondVCCT object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DiscreteFastener</span></code></a>(name, region, influenceRadius)</p></td>
+<td><p>This method creates a DiscreteFastener object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HeatCapacitance</span></code></a>(name, region, table[, ...])</p></td>
+<td><p>This method creates a HeatCapacitance object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NonstructuralMass</span></code></a>(name, region, units, magnitude)</p></td>
+<td><p>This method creates a NonstructuralMass object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PointFastener</span></code></a>(name, region, physicalRadius)</p></td>
+<td><p>This method creates a PointFastener object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PointMassInertia</span></code></a>(name, region[, mass, ...])</p></td>
+<td><p>This method creates a PointMassInertia object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpringDashpotToGround</span></code></a>(name, region, dof[, ...])</p></td>
+<td><p>This method creates a SpringDashpotToGround object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TwoPointSpringDashpot</span></code></a>(name, regionPairs, axis)</p></td>
+<td><p>This method creates a TwoPointSpringDashpot object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XFEMCrack</span></code></a>(name, crackDomain[, ...])</p></td>
+<td><p>This method creates a XFEMCrack object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">EngineeringFeatureBase</span></code></a></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignSeam</span></code></a>(regions)</p></td>
+<td><p>This method creates a seam crack along an edge or a face.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam" title="abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteSeam</span></code></a>(regions)</p></td>
+<td><p>This method deletes a seam crack.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
 <dl class="py method">
 <dt class="sig sig-object py" id="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener">
 <span class="sig-name descname"><span class="pre">AssembledFastener</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">region</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">templateModel</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controlSet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">templateSurfaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assignedSurfaces</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">propertyPrefix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orientMethod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.NORMALS</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">localCsys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scriptName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/EngineeringFeature/EngineeringFeature.py#L25-L100"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener" title="Permalink to this definition">#</a></dt>
