@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -42,6 +50,10 @@
     <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/js/hoverxref.js"></script>
+    <script src="../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../_static/js/micromodal.min.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user/examples';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/_static/versions.json';
@@ -517,9 +529,9 @@
 <li><p>How you can use commands from the Abaqus Scripting Interface to create a simple model, submit it for analysis, and view the results. <a class="reference internal" href="examples/cantilever.html"><span class="doc">Reproducing the cantilever beam tutorial</span></a> uses Abaqus Scripting Interface commands to reproduce the cantilever beam tutorial described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-c-caebeammodel.htm?contextscope=all#simagsa-c-caebeammodel">Understanding Abaqus/CAE modules</a>.</p></li>
 <li><p>How you can use the Abaqus Scripting Interface to control the output from the Visualization module in Abaqus/CAE (Abaqus/Viewer).</p>
 <ul>
-<li><p><a class="reference internal" href="examples/plot.html#opening-the-tutorial-output-database"><span class="std std-ref">Opening the tutorial output database</span></a> explains how to use <strong>abaqus fetch</strong> to retrieve the Abaqus/CAE tutorial output database.</p></li>
-<li><p><a class="reference internal" href="examples/plot.html#opening-an-output-database-and-displaying-a-contour-plot"><span class="std std-ref">Opening an output database and displaying a contour plot</span></a> explains how to open the tutorial output database, display a contour plot, and print the resulting viewport to a file.</p></li>
-<li><p><a class="reference internal" href="examples/plot.html#printing-a-contour-plot-at-the-end-of-each-step"><span class="std std-ref">Printing a contour plot at the end of each step</span></a> explains how to open the tutorial output database, customize the legend, display a contour plot at the end of each step, and print the resulting viewports to a file.</p></li>
+<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="examples/plot.html#opening-the-tutorial-output-database"><span class="std std-ref">Opening the tutorial output database</span></a> explains how to use <strong>abaqus fetch</strong> to retrieve the Abaqus/CAE tutorial output database.</p></li>
+<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="examples/plot.html#opening-an-output-database-and-displaying-a-contour-plot"><span class="std std-ref">Opening an output database and displaying a contour plot</span></a> explains how to open the tutorial output database, display a contour plot, and print the resulting viewport to a file.</p></li>
+<li><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="examples/plot.html#printing-a-contour-plot-at-the-end-of-each-step"><span class="std std-ref">Printing a contour plot at the end of each step</span></a> explains how to open the tutorial output database, customize the legend, display a contour plot at the end of each step, and print the resulting viewports to a file.</p></li>
 </ul>
 </li>
 <li><p>How you can introduce more complex programming techniques into your Abaqus Scripting Interface scripts. <a class="reference internal" href="examples/sensitivity.html"><span class="doc">Investigating the skew sensitivity of shell elements</span></a> reproduces the problem found in <a class="reference internal" href="examples/sensitivity.html"><span class="doc">Investigating the skew sensitivity of shell elements</span></a>. You use Abaqus/CAE to create the model, and you use Abaqus Scripting Interface commands to parameterize an evaluation of the model by changing its geometry and element type. The example investigates the sensitivity of the shell elements in Abaqus to skew distortion when they are used as thin plates.</p></li>

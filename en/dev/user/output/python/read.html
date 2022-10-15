@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -42,6 +50,10 @@
     <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/js/hoverxref.js"></script>
+    <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../../../_static/js/micromodal.min.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user/output/python/read';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/_static/versions.json';
@@ -547,7 +559,7 @@
 </section>
 <section id="reading-model-data">
 <h2>Reading model data<a class="headerlink" href="#reading-model-data" title="Permalink to this heading">#</a></h2>
-<p>The following list describes the objects in model data and the commands you use to read model data. Many of the objects are repositories, and you will find the keys() method useful for determining the names of the objects in the repository. For more information, see <a class="reference internal" href="../../python/introduction/programming.html#using-dictionaries"><span class="std std-ref">Using dictionaries</span></a> and <a class="reference internal" href="../../python/python-abaqus/types.html#repositories"><span class="std std-ref">Repositories</span></a>.</p>
+<p>The following list describes the objects in model data and the commands you use to read model data. Many of the objects are repositories, and you will find the keys() method useful for determining the names of the objects in the repository. For more information, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../python/introduction/programming.html#using-dictionaries"><span class="std std-ref">Using dictionaries</span></a> and <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../python/python-abaqus/types.html#repositories"><span class="std std-ref">Repositories</span></a>.</p>
 <ul>
 <li><p><strong>The root assembly</strong></p>
 <p>An output database contains only one root assembly. You access the root assembly through the OdbAssembly object.</p>
@@ -868,7 +880,7 @@
 <div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="mi">1000</span> <span class="n">array</span><span class="p">([</span><span class="mf">0.0000</span><span class="p">,</span> <span class="o">-</span><span class="mf">76.4555</span><span class="p">],</span> <span class="s1">&#39;d&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the <cite>len()</cite> function, and the <cite>range() `function, see :doc:</cite>/user/python/introduction/python-basics:sequences` and <a class="reference internal" href="../../python/introduction/python-basics.html#sequence-operations"><span class="std std-ref">Sequence operations</span></a>.</p>
+<p>The arguments to getSubset are a region, an element type, a position, or section point data. The following is a second example that uses an element set to define the region and generates formatted output. For more information on tuples, the <cite>len()</cite> function, and the <cite>range() `function, see :doc:</cite>/user/python/introduction/python-basics:sequences` and <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../python/introduction/python-basics.html#sequence-operations"><span class="std std-ref">Sequence operations</span></a>.</p>
 <div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">opCenter</span> <span class="o">=</span> \
     <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;PART-1-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">elementSets</span><span class="p">[</span><span class="s1">&#39;CENT&#39;</span><span class="p">]</span>
 <span class="n">stressField</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;Step-2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]</span>
@@ -938,7 +950,7 @@
 <p class="admonition-title">Note</p>
 <p>History data from an analysis cannot contain multiple points.</p>
 </div>
-<p>The history data object model is shown in <a class="reference internal" href="#odb-history-nls"><span class="std std-numref">Fig. 26</span></a></p>
+<p>The history data object model is shown in <a class="hxr-hoverxref hxr-tooltip reference internal" href="#odb-history-nls"><span class="std std-numref">Fig. 26</span></a></p>
 <figure class="align-center" id="id1">
 <span id="odb-history-nls"></span><a class="reference internal image-reference" href="../../../_images/odb-history-nls.png"><img alt="../../../_images/odb-history-nls.png" src="../../../_images/odb-history-nls.png" style="width: 100%;" /></a>
 <figcaption>
