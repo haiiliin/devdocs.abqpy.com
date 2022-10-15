@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -42,7 +50,11 @@
     <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/js/hoverxref.js"></script>
+    <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../../../_static/js/micromodal.min.js"></script>
     <script src="../../../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user/output/cpp/write';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/_static/versions.json';
@@ -514,7 +526,7 @@
 <h1>Writing to an output database<a class="headerlink" href="#writing-to-an-output-database" title="此标题的永久链接">#</a></h1>
 <p>You can write your own data to an output database, and you can use Abaqus/CAE to view the data. Writing to an output database is very similar to reading from an output database. When you open an existing database, the Odb object contains all the objects found in the output database, such as instances, steps, and field output data. In contrast, when you are writing to a new output database, these objects do not exist. As a result you must use a constructor to create the objects. For example, you use the Part constructor to create a Part object, the Instance constructor to create an OdbInstance object, and the Step constructor to create an OdbStep object.</p>
 <p>After you create an object, you use methods of the objects to enter or modify the data associated with the object. For example, if you are creating an output database, you first create an Odb object. You then use the Part constructor to create a part. After creating the part, you use the addNodes and addElements methods of the Part object to add nodes and elements, respectively. Similarly, you use the addData method of the FieldOutput object to add field output data to the output database. After creating an output database, you should use the save method on the Odb object to save the output database.</p>
-<p>The example script in <a class="reference internal" href="../python/examples.html#creating-an-output-database"><span class="std std-ref">Creating an output database</span></a> also illustrates how you can write to an output database.</p>
+<p>The example script in <a class="hxr-hoverxref hxr-tooltip reference internal" href="../python/examples.html#creating-an-output-database"><span class="std std-ref">Creating an output database</span></a> also illustrates how you can write to an output database.</p>
 <section id="creating-a-new-output-database">
 <h2>Creating a new output database<a class="headerlink" href="#creating-a-new-output-database" title="此标题的永久链接">#</a></h2>
 <p>You use the Odb constructor to create a new, empty Odb object.</p>
@@ -522,12 +534,12 @@
 <span class="w">    </span><span class="s">&quot;test problem&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;testWrite.odb&quot;</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the Odb command, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a> object. Abaqus creates the RootAssembly object when you create or open an output database.</p>
+<p>For a full description of the Odb command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.Odb.Odb" title="abaqus.Odb.Odb.Odb"><code class="xref py py-class docutils literal notranslate"><span class="pre">Odb</span></code></a> object. Abaqus creates the RootAssembly object when you create or open an output database.</p>
 <p>You use the <cite>save</cite> method to <cite>save</cite> the output database.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb</span><span class="p">.</span><span class="n">save</span><span class="p">();</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the save command, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.save" title="abaqus.Odb.OdbBase.OdbBase.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">save()</span></code></a>.</p>
+<p>For a full description of the save command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbBase.OdbBase.save" title="abaqus.Odb.OdbBase.OdbBase.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">save()</span></code></a>.</p>
 </section>
 <section id="writing-model-data">
 <h2>Writing model data<a class="headerlink" href="#writing-model-data" title="此标题的永久链接">#</a></h2>
@@ -539,7 +551,7 @@
 <span class="w">    </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">THREE_D</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">DEFORMABLE_BODY</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the Part constructor, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbPart.OdbPart" title="abaqus.Odb.OdbPart.OdbPart"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbPart</span></code></a>. The new Part object is empty and does not contain geometry. After you create the Part object, you add nodes and elements.</p>
+<p>For a full description of the Part constructor, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbPart.OdbPart" title="abaqus.Odb.OdbPart.OdbPart"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbPart</span></code></a>. The new Part object is empty and does not contain geometry. After you create the Part object, you add nodes and elements.</p>
 <p>You use the addNodes method to add nodes by defining node labels and coordinates. You can also define an optional node set. For example,</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_SequenceInt</span><span class="w"> </span><span class="n">nodeLabels</span><span class="p">;</span><span class="w"></span>
 <span class="n">nodeLabels</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
@@ -597,7 +609,7 @@
 <span class="n">odb</span><span class="p">.</span><span class="n">rootAssembly</span><span class="p">().</span><span class="n">Instance</span><span class="p">(</span><span class="s">&quot;part-1-1&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">part1</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>You can also supply an optional local coordinate system that specifies the rotation and translation of the part instance. You can add nodes and elements only to a part; you cannot add elements and nodes to a part instance. As a result, you should create the nodes and elements that define the geometry of a part before you instance the part. For a full description of the Instance command, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbInstance.OdbInstance" title="abaqus.Odb.OdbInstance.OdbInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbInstance</span></code></a>.</p>
+<p>You can also supply an optional local coordinate system that specifies the rotation and translation of the part instance. You can add nodes and elements only to a part; you cannot add elements and nodes to a part instance. As a result, you should create the nodes and elements that define the geometry of a part before you instance the part. For a full description of the Instance command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbInstance.OdbInstance" title="abaqus.Odb.OdbInstance.OdbInstance"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbInstance</span></code></a>.</p>
 </li>
 <li><p><strong>Regions</strong></p>
 <p>Region commands are used to create sets from element labels, node labels, and element faces. You can create a set on a part, part instance, or the root assembly. Node and element labels are unique within an instance but not within the assembly. As a result, a set on the root assembly requires the names of the part instances associated with the nodes and elements. You can also use region commands to create surfaces. For example,</p>
@@ -697,14 +709,14 @@
 <span class="w">    </span><span class="s">&quot;Frequency analysis&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">FREQUENCY</span><span class="p">,</span><span class="w"> </span><span class="mf">123.4</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>The <cite>Step</cite> constructor has an optional previousStepName argument that specifies the step after which this step must be inserted in the steps repository. For a full description of the Step command, see <a class="reference internal" href="../../../reference/mdb/model/step.html#abaqus.Step.Step.Step" title="abaqus.Step.Step.Step"><code class="xref py py-class docutils literal notranslate"><span class="pre">Step</span></code></a>.</p>
+<p>The <cite>Step</cite> constructor has an optional previousStepName argument that specifies the step after which this step must be inserted in the steps repository. For a full description of the Step command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/mdb/model/step.html#abaqus.Step.Step.Step" title="abaqus.Step.Step.Step"><code class="xref py py-class docutils literal notranslate"><span class="pre">Step</span></code></a>.</p>
 </li>
 <li><p><strong>Frames</strong></p>
 <p>You use the Frame constructor to create a frame for field output. For example,</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_Frame</span><span class="w"> </span><span class="n">frameOne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step2</span><span class="p">.</span><span class="n">Frame</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;first frame&quot;</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the Frame command, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbFrame.OdbFrame" title="abaqus.Odb.OdbFrame.OdbFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbFrame</span></code></a>.</p>
+<p>For a full description of the Frame command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.OdbFrame.OdbFrame" title="abaqus.Odb.OdbFrame.OdbFrame"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbFrame</span></code></a>.</p>
 </li>
 </ul>
 </section>
@@ -738,7 +750,7 @@
 <span class="w">                    </span><span class="n">labels2</span><span class="p">,</span><span class="w"> </span><span class="n">vecDat</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the FieldOutput constructor, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.FieldOutput.FieldOutput" title="abaqus.Odb.FieldOutput.FieldOutput"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldOutput</span></code></a>.</p>
+<p>For a full description of the FieldOutput constructor, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.FieldOutput.FieldOutput" title="abaqus.Odb.FieldOutput.FieldOutput"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldOutput</span></code></a>.</p>
 <p>The <strong>type</strong> argument to the FieldOutput constructor describes the type of the data—tensor, vector, or scalar. The properties of the different tensor types are:</p>
 <ul>
 <li><p>Full tensor</p>
@@ -834,7 +846,7 @@
 <span class="w">            </span><span class="n">tensorDat</span><span class="p">,</span><span class="w"> </span><span class="n">topShell</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the <cite>addData</cite> command, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.FieldOutput.FieldOutput.addData" title="abaqus.Odb.FieldOutput.FieldOutput.addData"><code class="xref py py-meth docutils literal notranslate"><span class="pre">addData()</span></code></a>.</p>
+<p>For a full description of the <cite>addData</cite> command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.FieldOutput.FieldOutput.addData" title="abaqus.Odb.FieldOutput.FieldOutput.addData"><code class="xref py py-meth docutils literal notranslate"><span class="pre">addData()</span></code></a>.</p>
 <p>As a convenience, <strong>localCoordSystem</strong> can be a single transform or a list of transforms. If <strong>localCoordSystem</strong> is a single transform, it applies to all values. If <strong>localCoordSystem</strong> is a list of transforms, the number of items in the list must match the number of data values.</p>
 </section>
 <section id="default-display-properties">
@@ -862,13 +874,13 @@
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">db_HistoryPoint</span><span class="w"> </span><span class="nf">hPoint1</span><span class="p">(</span><span class="n">instanceA</span><span class="p">.</span><span class="n">elements</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the HistoryPoint command, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.HistoryPoint.HistoryPoint" title="abaqus.Odb.HistoryPoint.HistoryPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryPoint</span></code></a>.</p>
+<p>For a full description of the HistoryPoint command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.HistoryPoint.HistoryPoint" title="abaqus.Odb.HistoryPoint.HistoryPoint"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryPoint</span></code></a>.</p>
 <p>You then use the HistoryRegion constructor to create a HistoryRegion object:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_HistoryRegion</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hr1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step1</span><span class="p">.</span><span class="n">HistoryRegion</span><span class="p">(</span><span class="s">&quot;ElHist&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">                          </span><span class="s">&quot;output at element&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hPoint1</span><span class="p">);</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For a full description of the HistoryRegion command, see <a class="reference internal" href="../../../reference/odb.html#abaqus.Odb.HistoryRegion.HistoryRegion" title="abaqus.Odb.HistoryRegion.HistoryRegion"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryRegion</span></code></a>.</p>
+<p>For a full description of the HistoryRegion command, see <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../../reference/odb.html#abaqus.Odb.HistoryRegion.HistoryRegion" title="abaqus.Odb.HistoryRegion.HistoryRegion"><code class="xref py py-class docutils literal notranslate"><span class="pre">HistoryRegion</span></code></a>.</p>
 <p>You use the HistoryOutput constructor to add variables to the HistoryRegion object.</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_HistoryRegion</span><span class="o">&amp;</span><span class="w"> </span><span class="n">hr1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">step1</span><span class="p">.</span><span class="n">HistoryRegion</span><span class="p">(</span><span class="s">&quot;ElHist&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">                          </span><span class="s">&quot;output at element&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hPoint1</span><span class="p">);</span><span class="w"></span>

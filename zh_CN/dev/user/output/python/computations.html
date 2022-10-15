@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -42,6 +50,9 @@
     <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/js/hoverxref.js"></script>
+    <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../../../_static/js/micromodal.min.js"></script>
     <script src="../../../_static/translations.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user/output/python/computations';</script>
@@ -535,7 +546,7 @@
 <li><p>Operations on tensors are performed in the local coordinate system, if it is available. Otherwise the global system is used. Abaqus assumes that the local coordinate systems are consistent for operations involving more than one tensor.</p></li>
 <li><p>Operations between FieldValue objects associated with different locations in the model are allowed only if the data types are the same. If the locations in the model differ, the FieldValue computed will not be associated with a location. If the local coordinate systems of the FieldValue objects are not the same, the local coordinate systems of both fieldValues will be disregarded and the fieldValue computed will have no local coordinate system.</p></li>
 </ul>
-<p>The FieldOutput operations are significantly more efficient than the FieldValue operators. You can save the computed FieldOutput objects with the following procedure (see the example, <a class="reference internal" href="examples.html#computations-with-fieldoutput-objects"><span class="std std-ref">Computations with FieldOutput objects</span></a>):</p>
+<p>The FieldOutput operations are significantly more efficient than the FieldValue operators. You can save the computed FieldOutput objects with the following procedure (see the example, <a class="hxr-hoverxref hxr-tooltip reference internal" href="examples.html#computations-with-fieldoutput-objects"><span class="std std-ref">Computations with FieldOutput objects</span></a>):</p>
 <ul class="simple">
 <li><p>Create a new FieldOutput object in the output database.</p></li>
 <li><p>Use the addData method to add the new computed field objects to the new FieldOutput object.</p></li>
@@ -757,7 +768,7 @@ HistoryVariable objects, or floating point numbers</p></td>
 <section id="transformation-of-results">
 <h2>Transformation of results<a class="headerlink" href="#transformation-of-results" title="此标题的永久链接">#</a></h2>
 <p>Transformations of vector and tensor fields are supported for rectangular, cylindrical, and spherical coordinate systems. The coordinate systems can be fixed or model based. Model-based coordinate systems refer to nodes for position and orientation. Abaqus uses the coordinates of the deformed state to determine a systems origin and orientation for model-based coordinate systems. Transformations that use a model-based coordinate system can account for large displacements of both the coordinate system and the structure.</p>
-<p>The steps required to transform results are (see also the example <a class="reference internal" href="examples.html#transformation-of-field-results"><span class="std std-ref">Transformation of field results</span></a>):</p>
+<p>The steps required to transform results are (see also the example <a class="hxr-hoverxref hxr-tooltip reference internal" href="examples.html#transformation-of-field-results"><span class="std std-ref">Transformation of field results</span></a>):</p>
 <ul class="simple">
 <li><p>Create the coordinate system.</p></li>
 <li><p>Retrieve the field from the database.</p></li>
