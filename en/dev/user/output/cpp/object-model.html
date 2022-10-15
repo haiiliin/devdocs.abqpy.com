@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -42,6 +50,10 @@
     <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/js/hoverxref.js"></script>
+    <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../../../_static/js/micromodal.min.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user/output/cpp/object-model';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/_static/versions.json';
@@ -512,7 +524,7 @@
   <section id="how-the-object-model-for-the-output-database-relates-to-commands">
 <h1>How the object model for the output database relates to commands<a class="headerlink" href="#how-the-object-model-for-the-output-database-relates-to-commands" title="Permalink to this heading">#</a></h1>
 <p>You need to understand the object model for the output database both to read data from it and to write data to it. An object model describes the relationship between objects. The object model for the Abaqus/CAE model is described in <a class="reference internal" href="../../python/use-scripts/object-model.html"><span class="doc">The Abaqus object model</span></a>.</p>
-<p>For example, consider the object model for field output data shown in <a class="reference internal" href="#odb-overview-nls-1"><span class="std std-numref">Fig. 28</span></a> The Odb object at the top of the figure is created when you issue the command to open or create an output database. As you move down the object model, an OdbStep object is a member of the Odb object; similarly, a Frame object is a member of the OdbStep object. The FieldOutput object has two members—fieldValue and fieldLocation.</p>
+<p>For example, consider the object model for field output data shown in <a class="hxr-hoverxref hxr-tooltip reference internal" href="#odb-overview-nls-1"><span class="std std-numref">Fig. 28</span></a> The Odb object at the top of the figure is created when you issue the command to open or create an output database. As you move down the object model, an OdbStep object is a member of the Odb object; similarly, a Frame object is a member of the OdbStep object. The FieldOutput object has two members—fieldValue and fieldLocation.</p>
 <figure class="align-center" id="id1">
 <span id="odb-overview-nls-1"></span><a class="reference internal image-reference" href="../../../_images/odb-overview-nls.png"><img alt="../../../_images/odb-overview-nls.png" src="../../../_images/odb-overview-nls.png" style="width: 100%;" /></a>
 <figcaption>

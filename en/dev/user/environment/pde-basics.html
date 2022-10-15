@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -42,6 +50,10 @@
     <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/js/hoverxref.js"></script>
+    <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../../_static/js/micromodal.min.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user/environment/pde-basics';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/_static/versions.json';
@@ -548,7 +560,7 @@
 <p>When the Set Last Main File on Startup setting is toggled on, the Abaqus PDE automatically reopens the main file that was open when you closed your last session.</p>
 <p>The default file extensions for use with the Abaqus PDE are .py and .guiLog. A .py file typically designates a standard Python or Abaqus Scripting Interface script, and a .guiLog file is a specialized Python script that records actions in the Abaqus/CAE GUI.</p>
 <p>As you play a main file script, the Abaqus PDE automatically opens any files that contain functions called by the script, if the files are available in the current path (sys.path). These files are added to the recently used files list in the File menu. The Abaqus PDE also saves a list of recently used files and other files (dependent files) called when you run a main file. This list is saved in the current directory as abaqus_pde.deps.</p>
-<p><a class="reference internal" href="#cmd-pde-filemenu-nls"><span class="std std-numref">Fig. 16</span></a> shows the items in the Abaqus PDE File menu.</p>
+<p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#cmd-pde-filemenu-nls"><span class="std std-numref">Fig. 16</span></a> shows the items in the Abaqus PDE File menu.</p>
 <figure class="align-center" id="id2">
 <span id="cmd-pde-filemenu-nls"></span><a class="reference internal image-reference" href="../../_images/cmd-pde-filemenu-nls.png"><img alt="../../_images/cmd-pde-filemenu-nls.png" src="../../_images/cmd-pde-filemenu-nls.png" style="width: 50%;" /></a>
 <figcaption>
@@ -610,7 +622,7 @@
 <section id="id1">
 <h2>Selecting the settings for use with a file<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
 <p>Use the <strong>Settings</strong> menu and tools to change some of the options in the Abaqus PDE.</p>
-<p><a class="reference internal" href="#cmd-pde-settingsmenu-nls"><span class="std std-numref">Fig. 17</span></a> shows the items and default selections in the Abaqus PDE <strong>Settings</strong> menu.</p>
+<p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#cmd-pde-settingsmenu-nls"><span class="std std-numref">Fig. 17</span></a> shows the items and default selections in the Abaqus PDE <strong>Settings</strong> menu.</p>
 <figure class="align-center" id="id3">
 <span id="cmd-pde-settingsmenu-nls"></span><a class="reference internal image-reference" href="../../_images/cmd-pde-settingsmenu-nls.png"><img alt="../../_images/cmd-pde-settingsmenu-nls.png" src="../../_images/cmd-pde-settingsmenu-nls.png" style="width: 50%;" /></a>
 <figcaption>

@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -42,6 +50,10 @@
     <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/js/hoverxref.js"></script>
+    <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../../../_static/js/micromodal.min.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/mdb/model/calibration';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/_static/versions.json';
@@ -499,7 +511,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="abaqus.Calibration.CalibrationModel.CalibrationModel">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CalibrationModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.NOT_SET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.STANDARD_EXPLICIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Calibration/CalibrationModel.py#L6-L36"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Calibration.CalibrationModel.CalibrationModel" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></p>
+<dd><p>Bases: <a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></p>
 <p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -514,165 +526,165 @@
 </div>
 <div class="autoclasstoc docutils container">
 <p class="rubric">Public Data Attributes:</p>
-<details><summary>Inherited from <a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></summary><table class="autosummary longtable table autosummary">
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.name" title="abaqus.Model.ModelBase.ModelBase.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.name" title="abaqus.Model.ModelBase.ModelBase.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
 <td><p>A String specifying the repository key.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.stefanBoltzmann" title="abaqus.Model.ModelBase.ModelBase.stefanBoltzmann"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stefanBoltzmann</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.stefanBoltzmann" title="abaqus.Model.ModelBase.ModelBase.stefanBoltzmann"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stefanBoltzmann</span></code></a></p></td>
 <td><p>None or a Float specifying the Stefan-Boltzmann constant.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.absoluteZero" title="abaqus.Model.ModelBase.ModelBase.absoluteZero"><code class="xref py py-obj docutils literal notranslate"><span class="pre">absoluteZero</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.absoluteZero" title="abaqus.Model.ModelBase.ModelBase.absoluteZero"><code class="xref py py-obj docutils literal notranslate"><span class="pre">absoluteZero</span></code></a></p></td>
 <td><p>None or a Float specifying the absolute zero constant.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.waveFormulation" title="abaqus.Model.ModelBase.ModelBase.waveFormulation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waveFormulation</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.waveFormulation" title="abaqus.Model.ModelBase.ModelBase.waveFormulation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">waveFormulation</span></code></a></p></td>
 <td><p>A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.universalGas" title="abaqus.Model.ModelBase.ModelBase.universalGas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">universalGas</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.universalGas" title="abaqus.Model.ModelBase.ModelBase.universalGas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">universalGas</span></code></a></p></td>
 <td><p>None or a Float specifying the universal gas constant.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.noPartsInputFile" title="abaqus.Model.ModelBase.ModelBase.noPartsInputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">noPartsInputFile</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.noPartsInputFile" title="abaqus.Model.ModelBase.ModelBase.noPartsInputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">noPartsInputFile</span></code></a></p></td>
 <td><p>A Boolean specifying whether an input file should be written without parts and assemblies.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.restartIncrement" title="abaqus.Model.ModelBase.ModelBase.restartIncrement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartIncrement</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.restartIncrement" title="abaqus.Model.ModelBase.ModelBase.restartIncrement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartIncrement</span></code></a></p></td>
 <td><p>An Int specifying the increment, interval, iteration or cycle where the restart analysis will start.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.endRestartStep" title="abaqus.Model.ModelBase.ModelBase.endRestartStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">endRestartStep</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.endRestartStep" title="abaqus.Model.ModelBase.ModelBase.endRestartStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">endRestartStep</span></code></a></p></td>
 <td><p>A Boolean specifying that the step specified by <strong>restartStep</strong> should be terminated at the increment specified by <strong>restartIncrement</strong>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.shellToSolid" title="abaqus.Model.ModelBase.ModelBase.shellToSolid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">shellToSolid</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.shellToSolid" title="abaqus.Model.ModelBase.ModelBase.shellToSolid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">shellToSolid</span></code></a></p></td>
 <td><p>A Boolean specifying that a shell global model drives a solid submodel.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.lastChangedCount" title="abaqus.Model.ModelBase.ModelBase.lastChangedCount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.lastChangedCount" title="abaqus.Model.ModelBase.ModelBase.lastChangedCount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></a></p></td>
 <td><p>A Float specifying the time stamp that indicates when the model was last changed.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.description" title="abaqus.Model.ModelBase.ModelBase.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.description" title="abaqus.Model.ModelBase.ModelBase.description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></a></p></td>
 <td><p>A String specifying the purpose and contents of the Model object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.restartJob" title="abaqus.Model.ModelBase.ModelBase.restartJob"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartJob</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.restartJob" title="abaqus.Model.ModelBase.ModelBase.restartJob"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartJob</span></code></a></p></td>
 <td><p>A String specifying the name of the job that generated the restart data.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.restartStep" title="abaqus.Model.ModelBase.ModelBase.restartStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartStep</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.restartStep" title="abaqus.Model.ModelBase.ModelBase.restartStep"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartStep</span></code></a></p></td>
 <td><p>A String specifying the name of the step where the restart analysis will start.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.globalJob" title="abaqus.Model.ModelBase.ModelBase.globalJob"><code class="xref py py-obj docutils literal notranslate"><span class="pre">globalJob</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.globalJob" title="abaqus.Model.ModelBase.ModelBase.globalJob"><code class="xref py py-obj docutils literal notranslate"><span class="pre">globalJob</span></code></a></p></td>
 <td><p>A String specifying the name of the job that generated the results for the global model.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.copyConstraints" title="abaqus.Model.ModelBase.ModelBase.copyConstraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConstraints</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.copyConstraints" title="abaqus.Model.ModelBase.ModelBase.copyConstraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConstraints</span></code></a></p></td>
 <td><p>A boolean specifying the status of constraints created in a model, in the model which instances this model.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.copyConnectors" title="abaqus.Model.ModelBase.ModelBase.copyConnectors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConnectors</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.copyConnectors" title="abaqus.Model.ModelBase.ModelBase.copyConnectors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConnectors</span></code></a></p></td>
 <td><p>A boolean specifying the status of connectors created in a model, in the model which instances this model.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.copyInteractions" title="abaqus.Model.ModelBase.ModelBase.copyInteractions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyInteractions</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.copyInteractions" title="abaqus.Model.ModelBase.ModelBase.copyInteractions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyInteractions</span></code></a></p></td>
 <td><p>A boolean specifying the status of interactions created in a model, in the model which instances this model.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.keywordBlock" title="abaqus.Model.ModelBase.ModelBase.keywordBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keywordBlock</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.keywordBlock" title="abaqus.Model.ModelBase.ModelBase.keywordBlock"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keywordBlock</span></code></a></p></td>
 <td><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordBlock</span></code> object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.rootAssembly" title="abaqus.Model.ModelBase.ModelBase.rootAssembly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></a></p></td>
-<td><p>An <a class="reference internal" href="assembly.html#abaqus.Assembly.Assembly.Assembly" title="abaqus.Assembly.Assembly.Assembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code></a> object.</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.rootAssembly" title="abaqus.Model.ModelBase.ModelBase.rootAssembly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></a></p></td>
+<td><p>An <a class="hxr-hoverxref hxr-tooltip reference internal" href="assembly.html#abaqus.Assembly.Assembly.Assembly" title="abaqus.Assembly.Assembly.Assembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code></a> object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.amplitudes" title="abaqus.Model.ModelBase.ModelBase.amplitudes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.amplitudes" title="abaqus.Model.ModelBase.ModelBase.amplitudes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></a></p></td>
 <td><p>A repository of Amplitude objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.profiles" title="abaqus.Model.ModelBase.ModelBase.profiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.profiles" title="abaqus.Model.ModelBase.ModelBase.profiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></a></p></td>
 <td><p>A repository of Profile objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.boundaryConditions" title="abaqus.Model.ModelBase.ModelBase.boundaryConditions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundaryConditions</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.boundaryConditions" title="abaqus.Model.ModelBase.ModelBase.boundaryConditions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundaryConditions</span></code></a></p></td>
 <td><p>A repository of BoundaryCondition objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.constraints" title="abaqus.Model.ModelBase.ModelBase.constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraints</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.constraints" title="abaqus.Model.ModelBase.ModelBase.constraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraints</span></code></a></p></td>
 <td><p>A repository of ConstrainedSketchConstraint objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.analyticalFields" title="abaqus.Model.ModelBase.ModelBase.analyticalFields"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyticalFields</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.analyticalFields" title="abaqus.Model.ModelBase.ModelBase.analyticalFields"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyticalFields</span></code></a></p></td>
 <td><p>A repository of AnalyticalField objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.discreteFields" title="abaqus.Model.ModelBase.ModelBase.discreteFields"><code class="xref py py-obj docutils literal notranslate"><span class="pre">discreteFields</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.discreteFields" title="abaqus.Model.ModelBase.ModelBase.discreteFields"><code class="xref py py-obj docutils literal notranslate"><span class="pre">discreteFields</span></code></a></p></td>
 <td><p>A repository of DiscreteField objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.predefinedFields" title="abaqus.Model.ModelBase.ModelBase.predefinedFields"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFields</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.predefinedFields" title="abaqus.Model.ModelBase.ModelBase.predefinedFields"><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFields</span></code></a></p></td>
 <td><p>A repository of PredefinedField objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.interactions" title="abaqus.Model.ModelBase.ModelBase.interactions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactions</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.interactions" title="abaqus.Model.ModelBase.ModelBase.interactions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactions</span></code></a></p></td>
 <td><p>A repository of Interaction objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.interactionProperties" title="abaqus.Model.ModelBase.ModelBase.interactionProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionProperties</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.interactionProperties" title="abaqus.Model.ModelBase.ModelBase.interactionProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionProperties</span></code></a></p></td>
 <td><p>A repository of InteractionProperty objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.contactControls" title="abaqus.Model.ModelBase.ModelBase.contactControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactControls</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.contactControls" title="abaqus.Model.ModelBase.ModelBase.contactControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactControls</span></code></a></p></td>
 <td><p>A repository of ContactControl objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.contactInitializations" title="abaqus.Model.ModelBase.ModelBase.contactInitializations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactInitializations</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.contactInitializations" title="abaqus.Model.ModelBase.ModelBase.contactInitializations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactInitializations</span></code></a></p></td>
 <td><p>A repository of ContactInitialization objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.contactStabilizations" title="abaqus.Model.ModelBase.ModelBase.contactStabilizations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactStabilizations</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.contactStabilizations" title="abaqus.Model.ModelBase.ModelBase.contactStabilizations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactStabilizations</span></code></a></p></td>
 <td><p>A repository of ContactStabilization objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.linkedInstances" title="abaqus.Model.ModelBase.ModelBase.linkedInstances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedInstances</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.linkedInstances" title="abaqus.Model.ModelBase.ModelBase.linkedInstances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedInstances</span></code></a></p></td>
 <td><p>A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.linkedParts" title="abaqus.Model.ModelBase.ModelBase.linkedParts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedParts</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.linkedParts" title="abaqus.Model.ModelBase.ModelBase.linkedParts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedParts</span></code></a></p></td>
 <td><p>A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.loads" title="abaqus.Model.ModelBase.ModelBase.loads"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loads</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.loads" title="abaqus.Model.ModelBase.ModelBase.loads"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loads</span></code></a></p></td>
 <td><p>A repository of Load objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.materials" title="abaqus.Model.ModelBase.ModelBase.materials"><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.materials" title="abaqus.Model.ModelBase.ModelBase.materials"><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></a></p></td>
 <td><p>A repository of Material objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.calibrations" title="abaqus.Model.ModelBase.ModelBase.calibrations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calibrations</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.calibrations" title="abaqus.Model.ModelBase.ModelBase.calibrations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calibrations</span></code></a></p></td>
 <td><p>A repository of Calibration objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.sections" title="abaqus.Model.ModelBase.ModelBase.sections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.sections" title="abaqus.Model.ModelBase.ModelBase.sections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></a></p></td>
 <td><p>A repository of Section objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.remeshingRules" title="abaqus.Model.ModelBase.ModelBase.remeshingRules"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remeshingRules</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.remeshingRules" title="abaqus.Model.ModelBase.ModelBase.remeshingRules"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remeshingRules</span></code></a></p></td>
 <td><p>A repository of RemeshingRule objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.sketches" title="abaqus.Model.ModelBase.ModelBase.sketches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketches</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.sketches" title="abaqus.Model.ModelBase.ModelBase.sketches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketches</span></code></a></p></td>
 <td><p>A repository of ConstrainedSketch objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.parts" title="abaqus.Model.ModelBase.ModelBase.parts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.parts" title="abaqus.Model.ModelBase.ModelBase.parts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></a></p></td>
 <td><p>A repository of Part objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.steps" title="abaqus.Model.ModelBase.ModelBase.steps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.steps" title="abaqus.Model.ModelBase.ModelBase.steps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></a></p></td>
 <td><p>A repository of Step objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.featureOptions" title="abaqus.Model.ModelBase.ModelBase.featureOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">featureOptions</span></code></a></p></td>
-<td><p>A <a class="reference internal" href="part_assembly/feature.html#abaqus.Feature.FeatureOptions.FeatureOptions" title="abaqus.Feature.FeatureOptions.FeatureOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureOptions</span></code></a> object.</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.featureOptions" title="abaqus.Model.ModelBase.ModelBase.featureOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">featureOptions</span></code></a></p></td>
+<td><p>A <a class="hxr-hoverxref hxr-tooltip reference internal" href="part_assembly/feature.html#abaqus.Feature.FeatureOptions.FeatureOptions" title="abaqus.Feature.FeatureOptions.FeatureOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureOptions</span></code></a> object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints" title="abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshConstraints</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints" title="abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshConstraints</span></code></a></p></td>
 <td><p>A repository of AdaptiveMeshConstraint objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls" title="abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshControls</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls" title="abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls"><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshControls</span></code></a></p></td>
 <td><p>A repository of AdaptiveMeshControl objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.timePoints" title="abaqus.Model.ModelBase.ModelBase.timePoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timePoints</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.timePoints" title="abaqus.Model.ModelBase.ModelBase.timePoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timePoints</span></code></a></p></td>
 <td><p>A repository of TimePoint objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.filters" title="abaqus.Model.ModelBase.ModelBase.filters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.filters" title="abaqus.Model.ModelBase.ModelBase.filters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></a></p></td>
 <td><p>A repository of Filter objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.integratedOutputSections" title="abaqus.Model.ModelBase.ModelBase.integratedOutputSections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">integratedOutputSections</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.integratedOutputSections" title="abaqus.Model.ModelBase.ModelBase.integratedOutputSections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">integratedOutputSections</span></code></a></p></td>
 <td><p>A repository of IntegratedOutputSection objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.fieldOutputRequests" title="abaqus.Model.ModelBase.ModelBase.fieldOutputRequests"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputRequests</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.fieldOutputRequests" title="abaqus.Model.ModelBase.ModelBase.fieldOutputRequests"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputRequests</span></code></a></p></td>
 <td><p>A repository of FieldOutputRequest objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.historyOutputRequests" title="abaqus.Model.ModelBase.ModelBase.historyOutputRequests"><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyOutputRequests</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.historyOutputRequests" title="abaqus.Model.ModelBase.ModelBase.historyOutputRequests"><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyOutputRequests</span></code></a></p></td>
 <td><p>A repository of HistoryOutputRequest objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.optimizationTasks" title="abaqus.Model.ModelBase.ModelBase.optimizationTasks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationTasks</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.optimizationTasks" title="abaqus.Model.ModelBase.ModelBase.optimizationTasks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationTasks</span></code></a></p></td>
 <td><p>A repository of OptimizationTask objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.tableCollections" title="abaqus.Model.ModelBase.ModelBase.tableCollections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tableCollections</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.tableCollections" title="abaqus.Model.ModelBase.ModelBase.tableCollections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tableCollections</span></code></a></p></td>
 <td><p>A repository of TableCollection objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.eventSeriesTypes" title="abaqus.Model.ModelBase.ModelBase.eventSeriesTypes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">eventSeriesTypes</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.eventSeriesTypes" title="abaqus.Model.ModelBase.ModelBase.eventSeriesTypes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">eventSeriesTypes</span></code></a></p></td>
 <td><p>A repository of EventSeriesType objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.eventSeriesDatas" title="abaqus.Model.ModelBase.ModelBase.eventSeriesDatas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">eventSeriesDatas</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.eventSeriesDatas" title="abaqus.Model.ModelBase.ModelBase.eventSeriesDatas"><code class="xref py py-obj docutils literal notranslate"><span class="pre">eventSeriesDatas</span></code></a></p></td>
 <td><p>A repository of EventSeriesData objects.</p></td>
 </tr>
 </tbody>
@@ -682,26 +694,26 @@
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration" title="abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Calibration</span></code></a>(name)</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration" title="abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Calibration</span></code></a>(name)</p></td>
 <td><p>This method creates a Calibration object.</p></td>
 </tr>
 </tbody>
 </table>
-<details><summary>Inherited from <a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></summary><table class="autosummary longtable table autosummary">
+<details><summary>Inherited from <a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase" title="abaqus.Model.ModelBase.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></a></summary><table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.__init__" title="abaqus.Model.ModelBase.ModelBase.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name[, description, ...])</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.__init__" title="abaqus.Model.ModelBase.ModelBase.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name[, description, ...])</p></td>
 <td><p>This method creates a Model object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.ModelFromInputFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromInputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromInputFile</span></code></a>(name, inputFileName)</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.ModelFromInputFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromInputFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromInputFile</span></code></a>(name, inputFileName)</p></td>
 <td><p>This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromOdbFile</span></code></a>(name, odbFileName)</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromOdbFile</span></code></a>(name, odbFileName)</p></td>
 <td><p>This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromNastranFile</span></code></a>(modelName, inputFileName)</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile" title="abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromNastranFile</span></code></a>(modelName, inputFileName)</p></td>
 <td><p>This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.setValues" title="abaqus.Model.ModelBase.ModelBase.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([description, noPartsInputFile, ...])</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="../model.html#abaqus.Model.ModelBase.ModelBase.setValues" title="abaqus.Model.ModelBase.ModelBase.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([description, noPartsInputFile, ...])</p></td>
 <td><p>This method modifies the Model object.</p></td>
 </tr>
 </tbody>
@@ -731,7 +743,7 @@
 <dd class="field-even"><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">Calibration</span></code> object.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration" title="abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration"><code class="xref py py-class docutils literal notranslate"><span class="pre">Calibration</span></code></a></p>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration" title="abaqus.Calibration.CalibrationModel.CalibrationModel.Calibration"><code class="xref py py-class docutils literal notranslate"><span class="pre">Calibration</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -765,11 +777,11 @@ Calibration object stores the data that is used for specifying materials from te
 <p class="rubric">Public Data Attributes:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.Calibration.Calibration.dataSets" title="abaqus.Calibration.Calibration.Calibration.dataSets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataSets</span></code></a></p></td>
-<td><p>A <a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Calibration.Calibration.dataSets" title="abaqus.Calibration.Calibration.Calibration.dataSets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dataSets</span></code></a></p></td>
+<td><p>A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Calibration.Calibration.Calibration.behaviors" title="abaqus.Calibration.Calibration.Calibration.behaviors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">behaviors</span></code></a></p></td>
-<td><p>A <a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a> object.</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Calibration.Calibration.behaviors" title="abaqus.Calibration.Calibration.Calibration.behaviors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">behaviors</span></code></a></p></td>
+<td><p>A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a> object.</p></td>
 </tr>
 </tbody>
 </table>
@@ -778,13 +790,13 @@ Calibration object stores the data that is used for specifying materials from te
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.Calibration.Calibration.__init__" title="abaqus.Calibration.Calibration.Calibration.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name)</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Calibration.Calibration.__init__" title="abaqus.Calibration.Calibration.Calibration.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name)</p></td>
 <td><p>This method creates a Calibration object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Calibration.Calibration.Calibration.Behavior" title="abaqus.Calibration.Calibration.Calibration.Behavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Behavior</span></code></a>(name, typeName)</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Calibration.Calibration.Behavior" title="abaqus.Calibration.Calibration.Calibration.Behavior"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Behavior</span></code></a>(name, typeName)</p></td>
 <td><p>This method creates a Behavior object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.Calibration.Calibration.DataSet" title="abaqus.Calibration.Calibration.Calibration.DataSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataSet</span></code></a>(name[, data, type, form])</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Calibration.Calibration.DataSet" title="abaqus.Calibration.Calibration.Calibration.DataSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DataSet</span></code></a>(name[, data, type, form])</p></td>
 <td><p>This method creates a DataSet object.</p></td>
 </tr>
 </tbody>
@@ -815,10 +827,10 @@ Calibration object stores the data that is used for specifying materials from te
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A <a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a> object.</p>
+<dd class="field-even"><p>A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a> object.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#abaqus.Calibration.Calibration.Calibration.Behavior" title="abaqus.Calibration.Calibration.Calibration.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a></p>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Calibration.Calibration.Behavior" title="abaqus.Calibration.Calibration.Calibration.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -852,10 +864,10 @@ default value is “NOMINAl”.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A <a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
+<dd class="field-even"><p>A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#abaqus.Calibration.Calibration.Calibration.DataSet" title="abaqus.Calibration.Calibration.Calibration.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a></p>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Calibration.Calibration.DataSet" title="abaqus.Calibration.Calibration.Calibration.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -883,21 +895,21 @@ default value is “NOMINAl”.</p></li>
 <dd class="field-even"><p>A <code class="xref py py-class docutils literal notranslate"><span class="pre">Calibration</span></code> object.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#abaqus.Calibration.Calibration.Calibration" title="abaqus.Calibration.Calibration.Calibration"><code class="xref py py-class docutils literal notranslate"><span class="pre">Calibration</span></code></a></p>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Calibration.Calibration" title="abaqus.Calibration.Calibration.Calibration"><code class="xref py py-class docutils literal notranslate"><span class="pre">Calibration</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Calibration.Calibration.Calibration.behaviors">
-<span class="sig-name descname"><span class="pre">behaviors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><span class="pre">Behavior</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Calibration/Calibration.py#L23-L24"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Calibration.Calibration.Calibration.behaviors" title="Permalink to this definition">#</a></dt>
-<dd><p>A <a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a> object.</p>
+<span class="sig-name descname"><span class="pre">behaviors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><span class="pre">Behavior</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Calibration/Calibration.py#L23-L24"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Calibration.Calibration.Calibration.behaviors" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a> object.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="abaqus.Calibration.Calibration.Calibration.dataSets">
-<span class="sig-name descname"><span class="pre">dataSets</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><span class="pre">DataSet</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Calibration/Calibration.py#L20-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Calibration.Calibration.Calibration.dataSets" title="Permalink to this definition">#</a></dt>
-<dd><p>A <a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
+<span class="sig-name descname"><span class="pre">dataSets</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><span class="pre">DataSet</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/2023/src/abaqus/Calibration/Calibration.py#L20-L21"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Calibration.Calibration.Calibration.dataSets" title="Permalink to this definition">#</a></dt>
+<dd><p>A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -932,16 +944,16 @@ default value is “NOMINAl”.</p></li>
 <p class="rubric">Public Data Attributes:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.modelName" title="abaqus.Calibration.Behavior.Behavior.modelName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modelName</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.modelName" title="abaqus.Calibration.Behavior.Behavior.modelName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">modelName</span></code></a></p></td>
 <td><p>A string specifying the name of the model to which the behavior belongs.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.calibrationName" title="abaqus.Calibration.Behavior.Behavior.calibrationName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calibrationName</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.calibrationName" title="abaqus.Calibration.Behavior.Behavior.calibrationName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calibrationName</span></code></a></p></td>
 <td><p>A string specifying the name of calibration to which the behavior belongs.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.biAxialAllName" title="abaqus.Calibration.Behavior.Behavior.biAxialAllName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">biAxialAllName</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.biAxialAllName" title="abaqus.Calibration.Behavior.Behavior.biAxialAllName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">biAxialAllName</span></code></a></p></td>
 <td><p>A String specifying the name of the dataset containing all the raw data in the test data file.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.uniAxialAllName" title="abaqus.Calibration.Behavior.Behavior.uniAxialAllName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">uniAxialAllName</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.uniAxialAllName" title="abaqus.Calibration.Behavior.Behavior.uniAxialAllName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">uniAxialAllName</span></code></a></p></td>
 <td><p>A String specifying the name of the dataset containing all the raw data in the test data file.</p></td>
 </tr>
 </tbody>
@@ -951,31 +963,31 @@ default value is “NOMINAl”.</p></li>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.__init__" title="abaqus.Calibration.Behavior.Behavior.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name, typeName)</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.__init__" title="abaqus.Calibration.Behavior.Behavior.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name, typeName)</p></td>
 <td><p>This method creates a Behavior object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.setValues" title="abaqus.Calibration.Behavior.Behavior.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([E, nu, ds1Name, ds2Name, ...])</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.setValues" title="abaqus.Calibration.Behavior.Behavior.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([E, nu, ds1Name, ds2Name, ...])</p></td>
 <td><p>This method modifies the data for an existing behavior object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.mapToMaterial" title="abaqus.Calibration.Behavior.Behavior.mapToMaterial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mapToMaterial</span></code></a>(materialName)</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.mapToMaterial" title="abaqus.Calibration.Behavior.Behavior.mapToMaterial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mapToMaterial</span></code></a>(materialName)</p></td>
 <td><p>This method appends the calibration data obtained from the DataSet object to an existing material object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.compute_E" title="abaqus.Calibration.Behavior.Behavior.compute_E"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_E</span></code></a>(dataSet)</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.compute_E" title="abaqus.Calibration.Behavior.Behavior.compute_E"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_E</span></code></a>(dataSet)</p></td>
 <td><p>This method computes the value of young's modulus from the existing DataSet object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.compute_nu" title="abaqus.Calibration.Behavior.Behavior.compute_nu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_nu</span></code></a>(dataSet)</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.compute_nu" title="abaqus.Calibration.Behavior.Behavior.compute_nu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_nu</span></code></a>(dataSet)</p></td>
 <td><p>This method computes the value of Poisson's Ratio from the existing DataSet object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint" title="abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_ultimatePoint</span></code></a>(dataSet)</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint" title="abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_ultimatePoint</span></code></a>(dataSet)</p></td>
 <td><p>This method computes the coordinates of the Ultimate point from the existing DataSet object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.compute_elasticModulus" title="abaqus.Calibration.Behavior.Behavior.compute_elasticModulus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_elasticModulus</span></code></a>(yieldPoint)</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.compute_elasticModulus" title="abaqus.Calibration.Behavior.Behavior.compute_elasticModulus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_elasticModulus</span></code></a>(yieldPoint)</p></td>
 <td><p>This method computes the value of the elastic modulus from the yieldpoint value.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.compute_plasticPoints" title="abaqus.Calibration.Behavior.Behavior.compute_plasticPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_plasticPoints</span></code></a>(dataSet, slider_val, ...)</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.compute_plasticPoints" title="abaqus.Calibration.Behavior.Behavior.compute_plasticPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_plasticPoints</span></code></a>(dataSet, slider_val, ...)</p></td>
 <td><p>This method extracts the coordinates of the Plastic Points.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior.xyDataDissect" title="abaqus.Calibration.Behavior.Behavior.xyDataDissect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataDissect</span></code></a>(dsName, modelName, calibrationName)</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior.xyDataDissect" title="abaqus.Calibration.Behavior.Behavior.xyDataDissect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataDissect</span></code></a>(dsName, modelName, calibrationName)</p></td>
 <td><p>This method extracts primary, unload, reload and permanent DataSet objects from the existing DataSet object.The method is only valid for FeFpBehavior type of behavior.</p></td>
 </tr>
 </tbody>
@@ -1006,10 +1018,10 @@ default value is “NOMINAl”.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A <a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a> object.</p>
+<dd class="field-even"><p>A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a> object.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a></p>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.Behavior.Behavior" title="abaqus.Calibration.Behavior.Behavior"><code class="xref py py-class docutils literal notranslate"><span class="pre">Behavior</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1038,7 +1050,7 @@ method is only valid for ElasIsoBehavior type of behavior.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>dataSet</strong> (<a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a>) – A <a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
+<dd class="field-odd"><p><strong>dataSet</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a>) – A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
@@ -1083,7 +1095,7 @@ method is only valid for ElasIsoBehavior and ElasPlasIsoBehavior type of behavio
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>dataSet</strong> (<a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a>) – A <a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
+<dd class="field-odd"><p><strong>dataSet</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a>) – A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
@@ -1107,7 +1119,7 @@ ElasPlasIsoBehavior type of behavior.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>dataSet</strong> (<a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a>) – A <a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p></li>
+<li><p><strong>dataSet</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a>) – A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p></li>
 <li><p><strong>slider_val</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A float specifying the number of values to be taken.</p></li>
 <li><p><strong>start_index</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A float specifying the lower limit of the range.</p></li>
 <li><p><strong>end_index</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A float specifying the upper limit of the range.</p></li>
@@ -1134,7 +1146,7 @@ object. The method is only valid for ElasPlasIsoBehavior type of behavior.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>dataSet</strong> (<a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a>) – A <a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
+<dd class="field-odd"><p><strong>dataSet</strong> (<a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a>) – A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Coordinates of the ultimate point.</p>
@@ -1268,7 +1280,7 @@ existing DataSet object.The method is only valid for FeFpBehavior type of behavi
 <li><p><strong>dsName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A string specifying the name of the uniaxial/biaxial test dataset.</p></li>
 <li><p><strong>modelName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A string specifying the name of the model to which the calibration behavior belongs.</p></li>
 <li><p><strong>calibrationName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A string specifying the name of the Calibration object to which the behavior belongs.</p></li>
-<li><p><strong>biaxial</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">True</span></code>) – A boolean specifying whether the test data is biaxial or uniaxial. The default value is
+<li><p><strong>biaxial</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="../../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">True</span></code>) – A boolean specifying whether the test data is biaxial or uniaxial. The default value is
 True.</p></li>
 </ul>
 </dd>
@@ -1308,13 +1320,13 @@ unloading, reloading and primary datasets.</p>
 <p class="rubric">Public Data Attributes:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet.data" title="abaqus.Calibration.DataSet.DataSet.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet.data" title="abaqus.Calibration.DataSet.DataSet.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a></p></td>
 <td><p>A sequence of pairs of Floats specifying data set type pairs.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet.type" title="abaqus.Calibration.DataSet.DataSet.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet.type" title="abaqus.Calibration.DataSet.DataSet.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
 <td><p>A String specifying the type of the new dataset.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet.form" title="abaqus.Calibration.DataSet.DataSet.form"><code class="xref py py-obj docutils literal notranslate"><span class="pre">form</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet.form" title="abaqus.Calibration.DataSet.DataSet.form"><code class="xref py py-obj docutils literal notranslate"><span class="pre">form</span></code></a></p></td>
 <td><p>A String specifying the form of the new dataset.</p></td>
 </tr>
 </tbody>
@@ -1324,10 +1336,10 @@ unloading, reloading and primary datasets.</p>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet.__init__" title="abaqus.Calibration.DataSet.DataSet.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name[, data, type, form])</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet.__init__" title="abaqus.Calibration.DataSet.DataSet.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(name[, data, type, form])</p></td>
 <td><p>This method creates a DataSet object.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet.setValues" title="abaqus.Calibration.DataSet.DataSet.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([data])</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet.setValues" title="abaqus.Calibration.DataSet.DataSet.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([data])</p></td>
 <td><p>This method modifies the data for an existing DataSet object.</p></td>
 </tr>
 </tbody>
@@ -1363,10 +1375,10 @@ default value is “NOMINAl”.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A <a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
+<dd class="field-even"><p>A <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a> object.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a></p>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.Calibration.DataSet.DataSet" title="abaqus.Calibration.DataSet.DataSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataSet</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>

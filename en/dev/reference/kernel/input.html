@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -42,6 +50,10 @@
     <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/js/hoverxref.js"></script>
+    <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../../_static/js/micromodal.min.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/kernel/input';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/_static/versions.json';
@@ -566,16 +578,16 @@ objects can be created using the methods described in this section.</p>
 <p class="rubric">Public Data Attributes:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.file" title="abaqus.InputFileParser.InputFile.InputFile.file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">file</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.file" title="abaqus.InputFileParser.InputFile.InputFile.file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">file</span></code></a></p></td>
 <td><p>A String specifying the source file name of the Abaqus input file.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.directory" title="abaqus.InputFileParser.InputFile.InputFile.directory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">directory</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.directory" title="abaqus.InputFileParser.InputFile.InputFile.directory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">directory</span></code></a></p></td>
 <td><p>A String specifying the directory where the input file is located.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.includes" title="abaqus.InputFileParser.InputFile.InputFile.includes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">includes</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.includes" title="abaqus.InputFileParser.InputFile.InputFile.includes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">includes</span></code></a></p></td>
 <td><p>A sequence of Strings specifying any additional input files included in the specified input file.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.missingIncludes" title="abaqus.InputFileParser.InputFile.InputFile.missingIncludes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">missingIncludes</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.missingIncludes" title="abaqus.InputFileParser.InputFile.InputFile.missingIncludes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">missingIncludes</span></code></a></p></td>
 <td><p>A sequence of Strings for input files included in the specified input file that could not be located.</p></td>
 </tr>
 </tbody>
@@ -585,10 +597,10 @@ objects can be created using the methods described in this section.</p>
 <p class="rubric">Public Methods:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.__init__" title="abaqus.InputFileParser.InputFile.InputFile.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(file[, directory])</p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.__init__" title="abaqus.InputFileParser.InputFile.InputFile.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(file[, directory])</p></td>
 <td><p>This method creates an InputFile object by reading an Abaqus input file.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.parse" title="abaqus.InputFileParser.InputFile.InputFile.parse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse</span></code></a>([organize, verbose, bulk, usePyArray])</p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile.parse" title="abaqus.InputFileParser.InputFile.InputFile.parse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse</span></code></a>([organize, verbose, bulk, usePyArray])</p></td>
 <td><p>This method parses the input file associated with the InputFile object.</p></td>
 </tr>
 </tbody>
@@ -618,10 +630,10 @@ objects can be created using the methods described in this section.</p>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>An <a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile" title="abaqus.InputFileParser.InputFile.InputFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputFile</span></code></a> object.</p>
+<dd class="field-even"><p>An <a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile" title="abaqus.InputFileParser.InputFile.InputFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputFile</span></code></a> object.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#abaqus.InputFileParser.InputFile.InputFile" title="abaqus.InputFileParser.InputFile.InputFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputFile</span></code></a></p>
+<dd class="field-odd"><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.InputFile.InputFile" title="abaqus.InputFileParser.InputFile.InputFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputFile</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -663,14 +675,14 @@ not be located.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>organize</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – A Boolean specifying whether keywords should be organized into suboptions. The default
+<li><p><strong>organize</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – A Boolean specifying whether keywords should be organized into suboptions. The default
 is False.</p></li>
-<li><p><strong>verbose</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – A Boolean specifying whether verbose output is to be printed. If <strong>verbose</strong> is True,
+<li><p><strong>verbose</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – A Boolean specifying whether verbose output is to be printed. If <strong>verbose</strong> is True,
 information about fatal errors is printed. If no fatal errors occur, there is no output.
 The default is False.</p></li>
-<li><p><strong>bulk</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">True</span></code>) – A Boolean specifying whether the input file includes bulk data that should be parsed.
+<li><p><strong>bulk</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">True</span></code>) – A Boolean specifying whether the input file includes bulk data that should be parsed.
 The default is True.</p></li>
-<li><p><strong>usePyArray</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – A Boolean specifying that parse method can return an AbaqusNDarray object for a keyword
+<li><p><strong>usePyArray</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="hxr-hoverxref hxr-tooltip reference internal" href="utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – A Boolean specifying that parse method can return an AbaqusNDarray object for a keyword
 data value. In cases where large amounts of numerical data (i.e., large node arrays) are
 expected, it is recommended that you use the option usePyArray=True. The default is
 False.</p></li>
@@ -715,19 +727,19 @@ Keyword objects are returned via the InputFile.parse() method.</p>
 <p class="rubric">Public Data Attributes:</p>
 <table class="autosummary longtable table autosummary">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.name" title="abaqus.InputFileParser.Keyword.Keyword.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.name" title="abaqus.InputFileParser.Keyword.Keyword.name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></a></p></td>
 <td><p>A String specifying the name of the keyword.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.parameter" title="abaqus.InputFileParser.Keyword.Keyword.parameter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parameter</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.parameter" title="abaqus.InputFileParser.Keyword.Keyword.parameter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parameter</span></code></a></p></td>
 <td><p>A Dictionary of Strings specifying the keyword parameters.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.data" title="abaqus.InputFileParser.Keyword.Keyword.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.data" title="abaqus.InputFileParser.Keyword.Keyword.data"><code class="xref py py-obj docutils literal notranslate"><span class="pre">data</span></code></a></p></td>
 <td><p>A sequence of sequences or an AbaqusNDarray object specifying the keyword data.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.suboptions" title="abaqus.InputFileParser.Keyword.Keyword.suboptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suboptions</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.suboptions" title="abaqus.InputFileParser.Keyword.Keyword.suboptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">suboptions</span></code></a></p></td>
 <td><p>A KeywordSequence specifying the suboptions of the keyword.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.comments" title="abaqus.InputFileParser.Keyword.Keyword.comments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">comments</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="hxr-hoverxref hxr-tooltip reference internal" href="#abaqus.InputFileParser.Keyword.Keyword.comments" title="abaqus.InputFileParser.Keyword.Keyword.comments"><code class="xref py py-obj docutils literal notranslate"><span class="pre">comments</span></code></a></p></td>
 <td><p>A sequence of Strings specifying the comments.</p></td>
 </tr>
 </tbody>
