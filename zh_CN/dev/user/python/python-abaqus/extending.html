@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -42,7 +50,11 @@
     <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/js/hoverxref.js"></script>
+    <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../../../_static/js/micromodal.min.js"></script>
     <script src="../../../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user/python/python-abaqus/extending';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/_static/versions.json';
@@ -512,7 +524,7 @@
               
   <section id="extending-the-abaqus-scripting-interface">
 <h1>Extending the Abaqus Scripting Interface<a class="headerlink" href="#extending-the-abaqus-scripting-interface" title="此标题的永久链接">#</a></h1>
-<p>You can extend the functionality of the Abaqus Scripting Interface by writing your own modules that contain classes and functions to accomplish tasks that are not directly available in Abaqus. For example, you can write a function to print the names of all materials that have a density specified, or you can write a function that creates a contour plot using a custom set of contour plot options. Creating functions and modules in Python is described in <a class="reference internal" href="../introduction/programming.html#creating-functions"><span class="std std-ref">Creating functions</span></a> and <a class="reference internal" href="../introduction/programming.html#functions-and-modules"><span class="std std-ref">Functions and modules</span></a>.</p>
+<p>You can extend the functionality of the Abaqus Scripting Interface by writing your own modules that contain classes and functions to accomplish tasks that are not directly available in Abaqus. For example, you can write a function to print the names of all materials that have a density specified, or you can write a function that creates a contour plot using a custom set of contour plot options. Creating functions and modules in Python is described in <a class="hxr-hoverxref hxr-tooltip reference internal" href="../introduction/programming.html#creating-functions"><span class="std std-ref">Creating functions</span></a> and <a class="hxr-hoverxref hxr-tooltip reference internal" href="../introduction/programming.html#functions-and-modules"><span class="std std-ref">Functions and modules</span></a>.</p>
 <p>This section describes how you can extend the functionality of the Abaqus Scripting Interface.</p>
 <section id="storing-custom-data-in-the-model-database-or-in-other-objects">
 <h2>Storing custom data in the model database or in other objects<a class="headerlink" href="#storing-custom-data-in-the-model-database-or-in-other-objects" title="此标题的永久链接">#</a></h2>

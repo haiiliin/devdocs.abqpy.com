@@ -29,6 +29,14 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/micromodal.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -42,7 +50,11 @@
     <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/js/hoverxref.js"></script>
+    <script src="../../../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../../../_static/js/micromodal.min.js"></script>
     <script src="../../../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'user/output/python/exceptions';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/_static/versions.json';
@@ -512,7 +524,7 @@
               
   <section id="exception-handling-in-an-output-database">
 <h1>Exception handling in an output database<a class="headerlink" href="#exception-handling-in-an-output-database" title="此标题的永久链接">#</a></h1>
-<p>Python exception handling in the output database is identical to that in the model database. Python exception handling is described in <a class="reference internal" href="../../python/python-abaqus/errors.html#exception-handling"><span class="std std-ref">Exception handling</span></a>.</p>
+<p>Python exception handling in the output database is identical to that in the model database. Python exception handling is described in <a class="hxr-hoverxref hxr-tooltip reference internal" href="../../python/python-abaqus/errors.html#exception-handling"><span class="std std-ref">Exception handling</span></a>.</p>
 <p>The exceptions thrown are of type OdbError; for example, the following script catches exceptions thrown when the python interface in not successful in opening an output database:</p>
 <div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">invalidOdbName</span> <span class="o">=</span> <span class="s2">&quot;invalid.odb&quot;</span>
 <span class="k">try</span><span class="p">:</span>
