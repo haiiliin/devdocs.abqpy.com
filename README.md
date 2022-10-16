@@ -1,6 +1,6 @@
-# [docs.abqpy.com](https://docs.abqpy.com)
+# [devdocs.abqpy.com](https://devdocs.abqpy.com)
 
-[![pages-build-deployment](https://github.com/haiiliin/docs.abqpy.com/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/haiiliin/docs.abqpy.com/actions/workflows/pages/pages-build-deployment)
+[![pages-build-deployment](https://github.com/haiiliin/devdocs.abqpy.com/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/haiiliin/devdocs.abqpy.com/actions/workflows/pages/pages-build-deployment)
 
 This is the website for abqpy documentation.
 
