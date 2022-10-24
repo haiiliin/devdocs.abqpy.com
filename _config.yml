@@ -6,3 +6,4 @@ include:
   - _sources
   - _modules
   - _downloads
+  - _sphinx_design_static
