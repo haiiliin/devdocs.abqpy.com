@@ -1,0 +1,78 @@
+
+
+.. _sphx_glr_examples_Abaqus:
+
+Examples from Abaqus Documentation
+==================================
+
+Below are some examples from Abaqus documentation. 
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbnails">
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="viewerOpenOdbAndContour.py from `Opening an output database and displaying a contour plot &lt;http...">
+
+.. only:: html
+
+  .. image:: /examples/Abaqus/images/thumb/sphx_glr_viewerOpenOdbAndContour_thumb.png
+    :alt: Open Odb and Display a Contour Plot
+
+  :ref:`sphx_glr_examples_Abaqus_viewerOpenOdbAndContour.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Open Odb and Display a Contour Plot</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="viewerPrintContours.py from `Printing a contour plot at the end of each step &lt;https://help.3ds....">
+
+.. only:: html
+
+  .. image:: /examples/Abaqus/images/thumb/sphx_glr_viewerPrintContours_thumb.png
+    :alt: Print Contour Plots
+
+  :ref:`sphx_glr_examples_Abaqus_viewerPrintContours.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Print Contour Plots</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="beamExample.py from `Reproducing the cantilever beam tutorial &lt;https://help.3ds.com/2021/Englis...">
+
+.. only:: html
+
+  .. image:: /examples/Abaqus/images/thumb/sphx_glr_cantilever_thumb.png
+    :alt: Cantilever Beam
+
+  :ref:`sphx_glr_examples_Abaqus_cantilever.py`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Cantilever Beam</div>
+    </div>
+
+
+.. raw:: html
+
+    </div>
+
+
+.. toctree::
+   :hidden:
+
+   /examples/Abaqus/viewerOpenOdbAndContour
+   /examples/Abaqus/viewerPrintContours
+   /examples/Abaqus/cantilever
+
